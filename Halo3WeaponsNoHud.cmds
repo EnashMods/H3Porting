@@ -1,0 +1,541 @@
+echo Installing Halo 3 Weapons
+
+echo Installing Gravity Hammer
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\melee\gravity_hammer\gravity_hammer.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\grav_hammer.foot
+porttag replace matchshaders objects\weapons\melee\gravity_hammer\fx\hammer_on.effe
+porttag replace matchshaders objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.mode
+exit
+
+echo Installing Energy Sword
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\melee\energy_blade\energy_blade.mode
+porttag replace matchshaders fx\materials\objects\weapons\melee\energy_blade\energy_blade.foot
+porttag replace matchshaders sound\weapons\energy_sword\sword_loop\sword_loop.lsnd
+porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_activate.effe
+porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.effe
+porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.ligh
+porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.lens
+porttag replace matchshaders objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode
+exit
+DuplicateTag 0x00002305
+NameTag * objects\weapons\melee\energy_blade\shaders\energy_blade2
+EditTag objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
+SetField ShaderProperties[0].ShaderMaps[0].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_shield_mask.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].bitmap objects\weapons\melee\energy_blade\bitmaps\detail_mask.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_height.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].bitmap shaders\default_bitmaps\bitmaps\clouds_256.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].bitmap shaders\default_bitmaps\bitmaps\clouds_256.bitmap
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 0 0 0 0
+SetArgument noise_map_a 5 2.5 0 0
+SetArgument noise_map_b 5 2.5 0.5 0.6
+SetArgument color_medium 0.02352941 0.01568628 0.01568628 1
+SetArgument color_wide 0.3529412 0.2705882 0.7686275 1
+SetArgument color_sharp 0.3215686 0.7529413 0.8000001 1
+SetArgument self_illum_intensity 0 0 0 0
+SetArgument alpha_mask_map 1 1 0 0
+SetArgument thinness_medium 16 16 16 16
+SetArgument thinness_wide 4 4 4 4
+SetArgument thinness_sharp 32 32 32 32
+SaveTagChanges
+Exit
+EditTag 0x00002300
+SetField Materials[2].RenderMethod objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
+SaveTagChanges
+Exit
+
+echo Installing Assault Bomb
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\multiplayer\assault_bomb\assault_bomb.mode
+exit
+
+echo Installing Ball
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\multiplayer\ball\ball.mode
+exit
+
+echo Installing Flag
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\multiplayer\flag\flag.mode
+exit
+
+echo Installing Excavator
+duplicatetag objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
+nametag * objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\pistol\excavator\excavator.mode
+porttag replace matchshaders objects\weapons\pistol\excavator\fx\firing.ligh
+porttag replace matchshaders objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
+porttag replace matchshaders objects\weapons\pistol\excavator\fx\firing.effe
+exit
+edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+deletetag objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp.mode
+
+echo Installing Magnum
+duplicatetag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
+nametag * objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\pistol\magnum\magnum.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\magnum.foot
+porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.ligh
+porttag replace matchshaders sound\weapons\magnum\magnum_ammo.snd!
+porttag replace matchshaders objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
+porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.effe
+porttag replace matchshaders sound\weapons\magnum\magnum_dryfire.snd!
+exit
+edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+deletetag objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp.mode
+
+echo Installing Needler
+duplicatetag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
+nametag * objects\weapons\pistol\needler\fp_needler\fp_needlertemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\pistol\needler\needler.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\needler.foot
+porttag replace matchshaders objects\weapons\pistol\needler\fx\firing.ligh
+porttag replace matchshaders sound\weapons\needler\needler_ammo.snd!
+porttag replace matchshaders objects\weapons\pistol\needler\fp_needler\fp_needler.mode
+porttag replace matchshaders sound\weapons\needler\projectiles\needler_shard\needler_shard.proj
+porttag replace matchshaders objects\weapons\pistol\needler\fx\firing.effe
+porttag replace matchshaders sound\weapons\needler\dryfire.effe
+exit
+edittag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode
+copyblockelements markergroups 2 1
+exit
+edittag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
+removeblockelements markergroups 2 1
+pasteblockelements markergroups 2
+savetagchanges
+exit
+deletetag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode
+
+echo Installing Plasma Pistol
+duplicatetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
+nametag * objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\pistol\plasma_pistol\plasma_pistol.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\plasma_pistol.foot
+porttag replace matchshaders sound\weapons\plasma_pistol\plasmapistol_charging\plasmapistol_charging.lsnd
+porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\charging.effe
+porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\charging.ligh
+porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\firing.ligh
+porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\overheated.effe
+porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
+porttag replace matchshaders objects\weapons\pistol\plasma_pistol\projectiles\plasma_pistol_bolt.proj
+porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\firing.effe
+porttag replace matchshaders sound\weapons\plasma_pistol\dryfire.effe
+exit
+edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp.mode
+copyblockelements markergroups 2 1
+exit
+edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
+removeblockelements markergroups 2 1
+pasteblockelements markergroups 2
+savetagchanges
+exit
+EditTag objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_metal.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\ghost\bitmaps\ghost_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
+setfield shaderproperties[0].shadermaps[4].unknown2 17
+setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_illum.bitm
+setfield shaderproperties[0].shadermaps[5].bitmapflags 4
+setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
+savetagchanges
+exit
+deletetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp.mode  
+
+echo Installing Assault Rifle
+duplicatetag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
+nametag * objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\assault_rifle\assault_rifle.mode
+porttag replace matchshaders objects\weapons\rifle\assault_rifle\fx\firing.ligh
+porttag replace matchshaders objects\weapons\rifle\assault_rifle\flashlight_ar.ligh
+porttag replace matchshaders objects\weapons\rifle\assault_rifle\fx\flashlight.effe
+porttag replace matchshaders objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
+porttag replace matchshaders objects\weapons\rifle\assault_rifle\fx\firing.effe
+exit
+edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp.mode
+copyblockelements markergroups 0 5
+exit
+edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
+removeblockelements markergroups 0 5
+pasteblockelements markergroups 0
+savetagchanges
+exit
+deletetag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp.mode
+
+echo Installing Battle Rifle
+duplicatetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+nametag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\battle_rifle\battle_rifle.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\battle_rifle.foot
+porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\firing.ligh
+porttag replace matchshaders sound\weapons\battle_rifle\battle_rifle_ammo.snd!
+porttag replace matchshaders sound\weapons\battle_rifle\battle_rifle_zoom_in.snd!
+porttag replace matchshaders sound\weapons\battle_rifle\battle_rifle_zoom_out.snd!
+porttag replace matchshaders objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\firing.effe
+porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\empty.effe
+exit
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
+setfield shaderproperties[0].template 0x00001F0D
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap shaders\default_bitmaps\bitmaps\default_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap shaders\default_bitmaps\bitmaps\default_vector.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap shaders\default_bitmaps\bitmaps\gray_50_percent.bitm
+savetagchanges
+exit
+deletetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp.mode
+
+echo Installing Beam Rifle
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\beam_rifle\beam_rifle.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\beam_rifle.foot
+porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_overheat\beam_rifle_overheat.lsnd
+porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\firing.ligh
+porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\overheated.effe
+porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_zoom_in.snd!
+porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_zoom_out.snd!
+porttag replace matchshaders objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.mode
+porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\firing.effe
+porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_misfire.snd!
+exit
+EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\bitmaps\reflection_maps\mirror_surface.bitm
+setfield shaderproperties[0].shadermaps[4].unknown2 17
+setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitm
+setfield shaderproperties[0].shadermaps[5].bitmapflags 4
+setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
+savetagchanges
+exit   
+EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle2.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
+setfield shaderproperties[0].shadermaps[4].unknown2 17
+setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitm
+setfield shaderproperties[0].shadermaps[5].bitmapflags 4
+setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
+savetagchanges
+exit  
+
+echo Installing Carbine
+duplicatetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
+nametag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\covenant_carbine\covenant_carbine.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\covenant_carbine.foot
+porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\firing.ligh
+porttag replace matchshaders sound\weapons\covenant_carbine\carbine_ammo_pickup.snd!
+porttag replace matchshaders sound\weapons\covenant_carbine\carbine_zoom_in.snd!
+porttag replace matchshaders sound\weapons\covenant_carbine\carbine_zoom_out.snd!
+porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
+porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\firing.effe
+porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\carbine_misfire.effe
+exit
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+deletetag ui\chud\carbinetemp.chdt
+EditTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
+SaveTagChanges
+Exit
+EditTag objects\weapons\rifle\covenant_carbine\shaders\carbine_dull.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
+SaveTagChanges
+Exit
+deletetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
+
+echo Installing Plasma Rifle
+duplicatetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
+nametag * objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\plasma_rifle\plasma_rifle.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\plasma_rifle.foot
+porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fx\firing.ligh
+porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
+porttag replace matchshaders objects\weapons\rifle\plasma_rifle\projectiles\plasma_rifle_bolt.proj
+porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fx\firing.effe
+exit
+edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
+copyblockelements markergroups 3 1
+exit
+edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
+removeblockelements markergroups 3 1
+pasteblockelements markergroups 3
+savetagchanges
+exit
+EditTag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\bitmaps\reflection_maps\mirror_surface.bitm
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
+savetagchanges
+exit
+EditTag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_metal.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
+savetagchanges
+exit
+deletetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
+
+echo Installing Shotgun
+duplicatetag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
+nametag * objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\shotgun\shotgun.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\shotgun.foot
+porttag replace matchshaders objects\weapons\rifle\shotgun\fx\firing.ligh
+porttag replace matchshaders objects\weapons\rifle\shotgun\flashlight_sg.ligh
+porttag replace matchshaders objects\weapons\rifle\shotgun\fx\flashlight.effe
+porttag replace matchshaders sound\weapons\shotgun\shotgun_ammo.snd!
+porttag replace matchshaders objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
+porttag replace matchshaders objects\weapons\rifle\shotgun\fx\firing.effe
+porttag replace matchshaders objects\weapons\rifle\shotgun\fx\misfire.effe
+exit
+edittag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+deletetag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp.mode
+
+echo Installing SMG
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\smg\smg.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\smg.foot
+porttag replace matchshaders objects\weapons\rifle\smg\fx\firing.ligh
+porttag replace matchshaders sound\weapons\smg\smg_loop\smg_loop.lsnd
+porttag replace matchshaders sound\weapons\smg\smg_lod_far\smg_lod_far.lsnd
+porttag replace matchshaders sound\weapons\smg\smg_loop_left\smg_loop_left.lsnd
+porttag replace matchshaders sound\weapons\smg\smg_loop_right\smg_loop_right.lsnd
+porttag replace matchshaders sound\weapons\smg\smg_ammo.snd!
+porttag replace matchshaders objects\weapons\rifle\smg\fp_smg\fp_smg.mode
+porttag replace matchshaders objects\weapons\rifle\smg\fx\firing.effe
+porttag replace matchshaders sound\weapons\smg\dryfire.snd!
+exit
+
+echo Installing Sniper Rifle
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\sniper_rifle\sniper_rifle.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\sniper_rifle.foot
+porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fx\firing.ligh
+porttag replace matchshaders sound\weapons\sniper_rifle\sniper_ammo.snd!
+porttag replace matchshaders sound\weapons\sniper_rifle\zoom_in.snd!
+porttag replace matchshaders sound\weapons\sniper_rifle\zoom_out.snd!
+porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.mode
+porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fx\firing.effe
+exit
+EditTag objects\weapons\rifle\sniper_rifle\shaders\scope_alpha.shader_halogram
+SetField ShaderProperties[0].Template 0x00000F91
+RemoveBlockElements ShaderProperties[0].Arguments * 3
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 1 1 1 1
+SetArgument self_illum_map 0.6 0.6 0.2 0.2
+SetArgument self_illum_color 0.01568628 0.7176471 0.02352941 1
+SetArgument self_illum_intensity 1.362745 1.362745 1.362745 1.362745
+SetArgument self_illum_heat_color 0.1372549 1 0.1372549 1
+SetArgument overlay_map 1 1 0 0
+SetArgument overlay_detail_map 1 1 0 0
+SetArgument overlay_tint 0 0 0 1
+SetArgument overlay_intensity 1 1 1 1
+SetField InputVariable ParticleRandom1
+SetField RangeVariable ParticleAge
+SetField OutputModifier Times
+SaveTagChanges
+Exit 
+
+echo Installing Spiker
+duplicatetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
+nametag * objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\rifle\spike_rifle\spike_rifle.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\spike_rifle.foot
+porttag replace matchshaders objects\weapons\rifle\spike_rifle\fx\firing.ligh
+porttag replace matchshaders sound\weapons\spike_rifle\spike_rifle_ammo.snd!
+porttag replace matchshaders objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
+porttag replace matchshaders objects\weapons\rifle\spike_rifle\projectiles\spike_shard\spike_shard.proj
+porttag replace matchshaders objects\weapons\rifle\spike_rifle\fx\firing.effe
+exit
+edittag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp.mode
+copyblockelements markergroups 2 1
+exit
+edittag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
+removeblockelements markergroups 2 1
+pasteblockelements markergroups 2
+savetagchanges
+exit
+deletetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp.mode
+
+echo Installing Fuel Rod Cannon
+opencachefile dlcmaps\sandbox.map
+porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\flak_cannon.mode
+porttag replace recursive audio scripts rmhg print fx\material_effects\objects\weapons\flak_cannon.foot
+porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\fx\firing.ligh
+porttag replace recursive audio scripts rmhg print sound\weapons\equipment\equipment_pickup.snd!
+porttag replace recursive audio scripts rmhg print sound\weapons\flak_cannon\flak_cannon_zoom_in.snd!
+porttag replace recursive audio scripts rmhg print sound\weapons\flak_cannon\flak_cannon_zoom_out.snd!
+porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.mode
+porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\projectiles\flak_bolt\flak_bolt.proj
+porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\fx\firing.effe
+exit
+
+echo Installing Rocket Launcher
+duplicatetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
+nametag * objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\support_high\rocket_launcher\rocket_launcher.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\rocket_launcher.foot
+porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\firing.ligh
+porttag replace matchshaders sound\weapons\rocket_launcher\rocket_ammo.snd!
+porttag replace matchshaders sound\weapons\rocket_launcher\rocket_launcher_zoom_in.snd!
+porttag replace matchshaders sound\weapons\rocket_launcher\rocket_launcher_zoom_out.snd!
+porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
+porttag replace matchshaders objects\weapons\support_high\rocket_launcher\projectiles\rocket.proj
+porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\firing.effe
+exit
+edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+setfield markergroups[1].markers[0].translation 0.2643063 0.003026339 -0.01561892
+savetagchanges
+exit
+deletetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp.mode
+
+echo Installing Spartan Laser
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\support_high\spartan_laser\spartan_laser.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\spartan_laser.foot
+porttag replace matchshaders sound\weapons\spartan_laser\charging\charging.lsnd
+porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.ligh
+porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.effe
+porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.lens
+porttag replace matchshaders sound\weapons\spartan_laser\spartan_laser_zoom_in.snd!
+porttag replace matchshaders sound\weapons\spartan_laser\spartan_laser_zoom_out.snd!
+porttag replace matchshaders objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.mode
+exit
+edittag objects\weapons\support_high\spartan_laser\spartan_laser.weap
+setfield materialeffects fx\material_effects\objects\weapons\spartan_laser.foot
+savetagchanges
+exit
+
+echo Installing Brute Shot
+duplicatetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
+nametag * objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\support_low\brute_shot\brute_shot.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\brute_shot.foot
+porttag replace matchshaders objects\weapons\support_low\brute_shot\fx\firing.ligh
+porttag replace matchshaders sound\weapons\brute_shot\brute_shot_ammo.snd!
+porttag replace matchshaders objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
+porttag replace matchshaders objects\weapons\support_low\brute_shot\projectiles\grenade\grenade.proj
+porttag replace matchshaders objects\weapons\support_low\brute_shot\fx\firing.effe
+exit
+edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp.mode
+copyblockelements markergroups 0 1
+exit
+edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
+removeblockelements markergroups 0 1
+pasteblockelements markergroups 0
+savetagchanges
+exit
+deletetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp.mode
+
+echo Installing Sentinel Beam
+opencachefile dlcmaps\sandbox.map
+porttag replace matchshaders objects\weapons\support_low\sentinel_gun\sentinel_gun.mode
+porttag replace matchshaders fx\material_effects\objects\weapons\sentinel_beam.foot
+porttag replace matchshaders sound\characters\sentinel\sentinel_gun\sentinel_gun.lsnd
+porttag replace matchshaders sound\characters\sentinel\sentinel_beam_overheat\sentinel_beam_overheat.lsnd
+porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fx\overheated.effe
+porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fp_sentinel_gun\fp_sentinel_gun.mode
+porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fx\firing.effe
+exit
+
+savetagnames
+
+dumplog Halo3WeaponsNoHud.txt
+
+echo All weapons installed
