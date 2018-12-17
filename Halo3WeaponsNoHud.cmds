@@ -124,7 +124,29 @@ removeblockelements markergroups 2 1
 pasteblockelements markergroups 2
 savetagchanges
 exit
-deletetag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode
+EditTag objects\weapons\pistol\needler\shaders\needler_blue.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\pistol\needler\bitmaps\needler.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
+SaveTagChanges
+Exit
+EditTag objects\weapons\pistol\needler\shaders\needler_pink.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\pistol\needler\bitmaps\needler.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
+SaveTagChanges
+Exit
+deletetag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode     
 
 echo Installing Plasma Pistol
 duplicatetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
@@ -458,6 +480,17 @@ porttag replace recursive audio scripts rmhg print objects\weapons\support_high\
 porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\projectiles\flak_bolt\flak_bolt.proj
 porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\fx\firing.effe
 exit
+EditTag objects\weapons\support_high\flak_cannon\shaders\flak_cannon.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_illum.bitmap
+SaveTagChanges
+Exit  
 
 echo Installing Rocket Launcher
 duplicatetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
