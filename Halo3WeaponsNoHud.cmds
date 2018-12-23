@@ -473,6 +473,10 @@ SetField RangeVariable ParticleAge
 SetField OutputModifier Times
 SaveTagChanges
 Exit 
+edittag objects\weapons\rifle\sniper_rifle\shaders\sniper_rifle_glass.rmsh
+setfield shaderproperties[0].arguments[2].values 0.1 0.2 0.1 1
+savetagchanges
+exit
 
 echo Installing Spiker
 duplicatetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
@@ -526,6 +530,7 @@ SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\support_high\f
 SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
 SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
 SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_illum.bitmap
+setfield shaderproperties[0].arguments[11].values 0.03529412 0.0627451 0.03490196 1
 SaveTagChanges
 Exit  
 
