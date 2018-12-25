@@ -3,8 +3,6 @@ echo Installing Halo 3 Weapons
 echo Installing Gravity Hammer
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\melee\gravity_hammer\gravity_hammer.mode
-porttag replace matchshaders sound\weapons\gravity_hammer\hammer_drops.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\grav_hammer.material_effects
 porttag replace matchshaders objects\weapons\melee\gravity_hammer\fx\hammer_on.effe
 porttag replace matchshaders objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.mode
 exit
@@ -12,11 +10,6 @@ exit
 echo Installing Energy Sword
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode
-porttag replace matchshaders sound\weapons\energy_sword\energy_sword_drop.sound
-porttag replace matchshaders sound\weapons\energy_sword\sword_impact_env.sound
-porttag replace matchshaders sound\weapons\energy_sword\sword_impact_character.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\energy_sword.material_effects
-porttag replace matchshaders sound\weapons\energy_sword\sword_loop\sword_loop.lsnd
 porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_activate.effe
 porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.effe
 porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.ligh
@@ -90,14 +83,9 @@ duplicatetag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
 nametag * objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\pistol\magnum\magnum.mode
-porttag replace matchshaders sound\weapons\magnum\magnum_drop.sound
-porttag replace matchshaders sound\weapons\magnum\magnum_drop_soft.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\magnum.material_effects
 porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.ligh
-porttag replace matchshaders sound\weapons\magnum\magnum_ammo.snd!
 porttag replace matchshaders objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
 porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.effe
-porttag replace matchshaders sound\weapons\magnum\magnum_dryfire.snd!
 exit
 edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp.mode
 copyblockelements markergroups 1 1
@@ -114,18 +102,10 @@ duplicatetag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
 nametag * objects\weapons\pistol\needler\fp_needler\fp_needlertemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\pistol\needler\needler.mode
-porttag replace sound\weapons\needler\needler_drop.sound
-porttag replace sound\weapons\needler\needler_drop_soft.sound
-porttag replace sound\weapons\needler\needler_granite.sound
-porttag replace sound\materials\soft\cardboard\cardboard_hits_med_actee.sound
-porttag replace sound\weapons\needler\needle_ricc.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\needler.foot
 porttag replace matchshaders objects\weapons\pistol\needler\fx\firing.ligh
-porttag replace matchshaders sound\weapons\needler\needle_ammo.snd!
 porttag replace matchshaders objects\weapons\pistol\needler\fp_needler\fp_needler.mode
 porttag replace matchshaders objects\weapons\pistol\needler\projectiles\needler_shard\needler_shard.proj
 porttag replace matchshaders objects\weapons\pistol\needler\fx\firing.effe
-porttag replace matchshaders sound\weapons\needler\dryfire.effe
 exit
 edittag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode
 copyblockelements markergroups 2 1
@@ -164,10 +144,6 @@ duplicatetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pis
 nametag * objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\plasma_pistol.mode
-porttag replace matchshaders sound\weapons\plasma_pistol\plasma_pistol_drop.sound
-porttag replace matchshaders sound\weapons\plasma_pistol\plasma_pistol_drop_soft.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\plasma_pistol.foot
-porttag replace matchshaders sound\weapons\plasma_pistol\plasmapistol_charging\plasmapistol_charging.lsnd
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\charging.effe
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\charging.ligh
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\firing.ligh
@@ -175,7 +151,6 @@ porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\overheated.
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\projectiles\plasma_pistol_bolt.proj
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\firing.effe
-porttag replace matchshaders sound\weapons\plasma_pistol\dryfire.effe
 exit
 edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp.mode
 copyblockelements markergroups 2 1
@@ -228,13 +203,7 @@ duplicatetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.
 nametag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\battle_rifle.mode
-porttag replace matchshaders sound\weapons\battle_rifle\battle_rifle_drop.sound
-porttag replace matchshaders sound\weapons\battle_rifle\battle_rifle_drop_soft.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\battle_rifle.foot
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\firing.ligh
-porttag replace matchshaders sound\weapons\battle_rifle\battle_rifle_ammo.snd!
-porttag replace matchshaders sound\weapons\battle_rifle\battle_rifle_zoom_in.snd!
-porttag replace matchshaders sound\weapons\battle_rifle\battle_rifle_zoom_out.snd!
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\firing.effe
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\empty.effe
@@ -255,22 +224,19 @@ setfield shaderproperties[0].shadermaps[2].bitmap shaders\default_bitmaps\bitmap
 setfield shaderproperties[0].shadermaps[3].bitmap shaders\default_bitmaps\bitmaps\gray_50_percent.bitm
 savetagchanges
 exit
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal.shader
+setfield shaderproperties[0].template 0x56a7
+savetagchanges
+exit
 deletetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp.mode
 
 echo Installing Beam Rifle
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\beam_rifle.mode
-porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_drop.sound
-porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_drop_soft.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\beam_rifle.foot
-porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_overheat\beam_rifle_overheat.lsnd
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\firing.ligh
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\overheated.effe
-porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_zoom_in.snd!
-porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_zoom_out.snd!
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\firing.effe
-porttag replace matchshaders sound\weapons\beam_rifle\beam_rifle_misfire.snd!
 exit
 EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle.shader
 SetField ShaderProperties[0].Template 0x00001AEF
@@ -308,13 +274,7 @@ duplicatetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_coven
 nametag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\covenant_carbine.mode
-porttag replace matchshaders sound\weapons\covenant_carbine\carbine_drop.sound
-porttag replace matchshaders sound\weapons\covenant_carbine\carbine_drop_soft.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\covenant_carbine.foot
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\firing.ligh
-porttag replace matchshaders sound\weapons\covenant_carbine\carbine_ammo_pickup.snd!
-porttag replace matchshaders sound\weapons\covenant_carbine\carbine_zoom_in.snd!
-porttag replace matchshaders sound\weapons\covenant_carbine\carbine_zoom_out.snd!
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\firing.effe
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\carbine_misfire.effe
@@ -350,6 +310,10 @@ SetField ShaderProperties[0].ShaderMaps[4].Bitmap levels\solo\030_outskirts\e3\s
 SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
 SaveTagChanges
 Exit
+edittag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+setfield events[0].particlesystems[0].particle fx\particles\atmospheric\rolling_smoke\fireball_fuel_rod_large.prt3
+savetagchanges
+exit
 deletetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
 
 echo Installing Plasma Rifle
@@ -357,10 +321,6 @@ duplicatetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.
 nametag * objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\rifle\plasma_rifle\plasma_rifle.mode
-porttag replace matchshaders sound\weapons\plasma_rifle\plasma_rifle_drop.sound
-porttag replace matchshaders sound\weapons\plasma_rifle\plasma_rifle_drop_soft.sound
-porttag replace matchshaders sound\weapons\impacts_riccs\plasma_impacts_h3.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\plasma_rifle.foot
 porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fx\firing.ligh
 porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\plasma_rifle\projectiles\plasma_rifle_bolt.proj
@@ -396,6 +356,10 @@ addblockelements shaderproperties[0].shadermaps
 setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
 savetagchanges
 exit
+edittag objects\weapons\rifle\plasma_rifle\fx\overheated.effe
+setfield events[0].particlesystems[0].particle fx\particles\atmospheric\rolling_smoke\fireball_plasma_large.prt3
+savetagchanges
+exit
 deletetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
 
 echo Installing Shotgun
@@ -403,13 +367,9 @@ duplicatetag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
 nametag * objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\rifle\shotgun\shotgun.mode
-porttag replace matchshaders sound\weapons\shotgun\shotgun_drop.sound
-porttag replace matchshaders sound\weapons\shotgun\shotgun_drop_soft.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\shotgun.foot
 porttag replace matchshaders objects\weapons\rifle\shotgun\fx\firing.ligh
 porttag replace matchshaders objects\weapons\rifle\shotgun\flashlight_sg.ligh
 porttag replace matchshaders objects\weapons\rifle\shotgun\fx\flashlight.effe
-porttag replace matchshaders sound\weapons\shotgun\shotgun_ammo.snd!
 porttag replace matchshaders objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
 porttag replace matchshaders objects\weapons\rifle\shotgun\fx\firing.effe
 porttag replace matchshaders objects\weapons\rifle\shotgun\fx\misfire.effe
@@ -427,30 +387,19 @@ deletetag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp.mode
 echo Installing SMG
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\rifle\smg\smg.mode
-porttag replace matchshaders sound\weapons\smg\smg_drop.sound
-porttag replace matchshaders sound\weapons\smg\smg_drop_soft.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\smg.foot
 porttag replace matchshaders objects\weapons\rifle\smg\fx\firing.ligh
 porttag replace matchshaders sound\weapons\smg\smg_loop\smg_loop.lsnd
 porttag replace matchshaders sound\weapons\smg\smg_lod_far\smg_lod_far.lsnd
 porttag replace matchshaders sound\weapons\smg\smg_loop_left\smg_loop_left.lsnd
 porttag replace matchshaders sound\weapons\smg\smg_loop_right\smg_loop_right.lsnd
-porttag replace matchshaders sound\weapons\smg\smg_ammo.snd!
 porttag replace matchshaders objects\weapons\rifle\smg\fp_smg\fp_smg.mode
 porttag replace matchshaders objects\weapons\rifle\smg\fx\firing.effe
-porttag replace matchshaders sound\weapons\smg\dryfire.snd!
 exit
 
 echo Installing Sniper Rifle
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\rifle\sniper_rifle\sniper_rifle.mode
-porttag replace matchshaders sound\weapons\sniper_rifle\sniper_drop.sound
-porttag replace matchshaders sound\weapons\sniper_rifle\sniper_rifle_drop_soft.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\sniper_rifle.foot
 porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fx\firing.ligh
-porttag replace matchshaders sound\weapons\sniper_rifle\sniper_ammo.snd!
-porttag replace matchshaders sound\weapons\sniper_rifle\zoom_in.snd!
-porttag replace matchshaders sound\weapons\sniper_rifle\zoom_out.snd!
 porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fx\firing.effe
 exit
@@ -483,15 +432,7 @@ duplicatetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mod
 nametag * objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\spike_rifle.mode
-porttag replace matchshaders sound\weapons\spike_rifle\spike_rifle_drops\spike_rifle_drop.sound
-porttag replace matchshaders sound\weapons\spike_rifle\spike_rifle_drops\spike_rifle_drop_soft.sound
-porttag replace matchshaders sound\weapons\spike_rifle\spike_rifle_drops\spike_rifle_drop_dirt.sound
-porttag replace matchshaders sound\weapons\spike_rifle\spike_impacts.sound
-porttag replace matchshaders sound\weapons\spike_rifle\spike_impacts_soft.sound
-porttag replace matchshaders sound\weapons\spike_rifle\spike_impacts_dirt.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\spike_rifle.foot
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\fx\firing.ligh
-porttag replace matchshaders sound\weapons\spike_rifle\spike_rifle_ammo.snd!
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\projectiles\spike_shard\spike_shard.proj
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\fx\firing.effe
@@ -509,14 +450,7 @@ deletetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp.mo
 echo Installing Fuel Rod Cannon
 opencachefile dlcmaps\sandbox.map
 porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\flak_cannon.mode
-porttag replace matchshaders sound\weapons\flak_cannon\flak_cannon_drop.sound
-porttag replace matchshaders sound\weapons\flak_cannon\flak_cannon_drop_soft.sound
-porttag replace matchshaders sound\weapons\flak_cannon\flak_proj_bounce.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\flak_cannon.foot
 porttag replace matchshaders objects\weapons\support_high\flak_cannon\fx\firing.ligh
-porttag replace matchshaders sound\weapons\equipment\equipment_pickup.snd!
-porttag replace matchshaders sound\weapons\flak_cannon\flak_cannon_zoom_in.snd!
-porttag replace matchshaders sound\weapons\flak_cannon\flak_cannon_zoom_out.snd!
 porttag replace matchshaders objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.mode
 porttag replace matchshaders objects\weapons\support_high\flak_cannon\projectiles\flak_bolt\flak_bolt.proj
 porttag replace matchshaders objects\weapons\support_high\flak_cannon\fx\firing.effe
@@ -539,15 +473,8 @@ duplicatetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_
 nametag * objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\rocket_launcher.mode
-porttag replace matchshaders sound\weapons\rocket_launcher\rocket_launcher_drop.sound
-porttag replace matchshaders sound\weapons\rocket_launcher\rocket_launcher_drop_soft.sound
-porttag replace matchshaders sound\weapons\rocket_launcher\rocket_expl.sound
-porttag replace matchshaders sound\weapons\frag_grenade\frag_expl_water.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\rocket_launcher.foot
+porttag replace matchshaders fx\material_effects\objects\weapons\rocket_launcher.foot
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\firing.ligh
-porttag replace matchshaders sound\weapons\rocket_launcher\rocket_ammo.snd!
-porttag replace matchshaders sound\weapons\rocket_launcher\rocket_launcher_zoom_in.snd!
-porttag replace matchshaders sound\weapons\rocket_launcher\rocket_launcher_zoom_out.snd!
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\projectiles\rocket.proj
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\firing.effe
@@ -566,21 +493,12 @@ deletetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_roc
 echo Installing Spartan Laser
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\spartan_laser.mode
-porttag replace matchshaders sound\weapons\spartan_laser\spartan_laser_impacts.sound
-porttag replace matchshaders sound\weapons\spartan_laser\spartan_laser_impacts_lod_far.sound
-porttag replace matchshaders sound\weapons\spartan_laser\fire.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\spartan_laser.foot
 porttag replace matchshaders sound\weapons\spartan_laser\charging\charging.lsnd
+porttag replace matchshaders sound\weapons\spartan_laser\fire.snd!
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.ligh
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.effe
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.lens
-porttag replace matchshaders sound\weapons\spartan_laser\spartan_laser_zoom_in.snd!
-porttag replace matchshaders sound\weapons\spartan_laser\spartan_laser_zoom_out.snd!
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.mode
-exit
-edittag objects\weapons\support_high\spartan_laser\spartan_laser.weap
-setfield materialeffects fx\material_effects\objects\weapons\spartan_laser.foot
-savetagchanges
 exit
 
 echo Installing Brute Shot
@@ -588,13 +506,8 @@ duplicatetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.
 nametag * objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\support_low\brute_shot\brute_shot.mode
-porttag replace matchshaders sound\weapons\brute_shot\brute_shot_drop.sound
-porttag replace matchshaders sound\weapons\brute_shot\brute_shot_drop_soft.sound
-porttag replace matchshaders sound\weapons\brute_shot\brute_round_explode.sound
-porttag replace matchshaders sound\weapons\claymore_grenade\claymore_expl_water.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\brute_shot.foot
+porttag replace matchshaders fx\material_effects\objects\weapons\brute_shot.foot
 porttag replace matchshaders objects\weapons\support_low\brute_shot\fx\firing.ligh
-porttag replace matchshaders sound\weapons\brute_shot\brute_shot_ammo.snd!
 porttag replace matchshaders objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
 porttag replace matchshaders objects\weapons\support_low\brute_shot\projectiles\grenade\grenade.proj
 porttag replace matchshaders objects\weapons\support_low\brute_shot\fx\firing.effe
@@ -612,12 +525,6 @@ deletetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp
 echo Installing Sentinel Beam
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders objects\weapons\support_low\sentinel_gun\sentinel_gun.mode
-porttag replace matchshaders sound\characters\sentinel\sentinel_laser_drop.sound
-porttag replace matchshaders sound\characters\sentinel\sentinel_laser_drop_soft.sound
-porttag replace matchshaders sound\characters\sentinel\sent_laser_impact.sound
-porttag replace !recursive matchshaders fx\material_effects\objects\weapons\sentinel_beam.foot
-porttag replace matchshaders sound\characters\sentinel\sentinel_gun\sentinel_gun.lsnd
-porttag replace matchshaders sound\characters\sentinel\sentinel_beam_overheat\sentinel_beam_overheat.lsnd
 porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fx\overheated.effe
 porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fp_sentinel_gun\fp_sentinel_gun.mode
 porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fx\firing.effe
@@ -630,9 +537,7 @@ porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.jmad
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.mode
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp.mode
-porttag replace matchshaders sound\weapons\chain_gun\ammo_rattle\ammo_rattle.lsnd
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\fx\firing.ligh
-porttag replace matchshaders sound\weapons\chain_gun\chain_spin\chain_spin.lsnd
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\fx\firing.effe
 exit
 edittag objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.mode
