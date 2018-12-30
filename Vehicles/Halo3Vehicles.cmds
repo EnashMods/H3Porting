@@ -1,0 +1,200 @@
+echo Installing Halo 3 Vehicles
+
+echo Installing Prowler
+opencachefile ..\PortHalo3Weapons\dlcmaps\sandbox.map
+porttag replace matchshaders !ms30 objects\vehicles\mauler\mauler.mode
+exit
+
+echo Installing Chopper
+opencachefile ..\PortHalo3Weapons\dlcmaps\sidewinder.map
+porttag replace objects\vehicles\brute_chopper\brute_chopper.mode
+porttag replace objects\vehicles\brute_chopper\garbage\bit_b\bit_b.mode
+porttag replace objects\vehicles\brute_chopper\garbage\bit_l\bit_l.mode
+porttag replace objects\vehicles\brute_chopper\garbage\bit_r\bit_r.mode
+porttag replace objects\vehicles\brute_chopper\garbage\blade_l\blade_l.mode
+porttag replace objects\vehicles\brute_chopper\garbage\blade_r\blade_r.mode
+porttag replace objects\vehicles\brute_chopper\garbage\rotor_l\rotor_l.mode
+porttag replace objects\vehicles\brute_chopper\garbage\rotor_r\rotor_r.mode
+porttag replace objects\vehicles\brute_chopper\garbage\seat\seat.mode
+porttag replace objects\vehicles\brute_chopper\brute_chopper.jmad
+porttag replace fx\material_effects\objects\vehicles\brute_chopper.foot
+exit
+
+echo Installing Ghost
+opencachefile ..\PortHalo3Weapons\dlcmaps\sandbox.map
+porttag replace fx\material_effects\objects\vehicles\ghost.foot
+porttag replace objects\vehicles\ghost\garbage\anti_grav\anti_grav.mode
+porttag replace objects\vehicles\ghost\garbage\hull_shell\hull_shell.mode
+porttag replace objects\vehicles\ghost\garbage\l_gun\l_gun.mode
+porttag replace objects\vehicles\ghost\garbage\l_wing_shell\l_wing_shell.mode
+porttag replace objects\vehicles\ghost\garbage\seat\seat.mode
+porttag replace objects\vehicles\ghost\ghost.mode
+porttag replace objects\vehicles\ghost\ghost.jmad
+porttag replace !recursive objects\vehicles\ghost\ghost.hlmt
+exit
+
+echo Installing Mongoose
+opencachefile ..\PortHalo3Weapons\dlcmaps\shrine.map
+porttag replace objects\vehicles\mongoose\mongoose.mode
+porttag replace objects\vehicles\mongoose\mongoose.jmad
+porttag replace fx\material_effects\objects\vehicles\mongoose.foot
+porttag replace objects\vehicles\mongoose\garbage\cargo_shelf\cargo_shelf.mode
+porttag replace objects\vehicles\mongoose\garbage\cowl_left\cowl_left.mode
+porttag replace objects\vehicles\mongoose\garbage\cowl_right\cowl_right.mode
+porttag replace objects\vehicles\mongoose\garbage\lb_fender\lb_fender.mode
+porttag replace objects\vehicles\mongoose\garbage\ramp\ramp.mode
+porttag replace objects\vehicles\mongoose\garbage\rb_fender\rb_fender.mode
+porttag replace objects\vehicles\mongoose\garbage\wheel\wheel.mode
+exit
+
+echo Installing Scorpion
+opencachefile ..\PortHalo3Weapons\dlcmaps\shrine.map
+porttag replace objects\vehicles\scorpion\scorpion.mode
+porttag objects\vehicles\scorpion\scorpion.jmad
+porttag replace fx\material_effects\objects\vehicles\scorpion.foot
+porttag replace objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
+porttag replace objects\vehicles\scorpion\turrets\cannon\cannon.mode
+porttag replace objects\vehicles\scorpion\turrets\cannon\cannon.jmad
+porttag replace !recursive objects\vehicles\scorpion\turrets\cannon\cannon.hlmt
+porttag replace objects\vehicles\scorpion\garbage\driver_hatch\driver_hatch.mode
+porttag replace objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.mode
+porttag replace objects\vehicles\scorpion\garbage\engine_panel\engine_panel.mode
+porttag replace objects\vehicles\scorpion\garbage\lb_tread\lb_tread.mode
+porttag replace objects\vehicles\scorpion\garbage\lb_tread_cover\lb_tread_cover.mode
+porttag replace objects\vehicles\scorpion\garbage\lf_tread\lf_tread.mode
+porttag replace objects\vehicles\scorpion\garbage\l_big_panel\l_big_panel.mode
+porttag replace objects\vehicles\scorpion\garbage\l_tread_cover\l_tread_cover.mode
+porttag replace objects\vehicles\scorpion\garbage\rb_tread\rb_tread.mode
+porttag replace objects\vehicles\scorpion\garbage\rb_tread_cover\rb_tread_cover.mode
+porttag replace objects\vehicles\scorpion\garbage\rf_tread\rf_tread.mode
+porttag replace objects\vehicles\scorpion\garbage\r_tread_cover\r_tread_cover.mode
+porttag replace objects\vehicles\scorpion\garbage\tread_side_panel\tread_side_panel.mode
+porttag replace objects\vehicles\scorpion\garbage\water_can\water_can.mode
+porttag replace objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
+porttag replace objects\vehicles\scorpion\turrets\anti_infantry\garbage\anti_gun\anti_gun.mode
+exit
+edittag objects\vehicles\scorpion\scorpion.mode
+setfield regions[0].permutations[0].meshindex 0
+setfield regions[0].permutations[1].meshindex 25
+setfield regions[0].permutations[2].meshindex 11
+setfield regions[0].permutations[3].meshindex 18
+setfield regions[0].permutations[4].meshindex 32
+setfield regions[2].permutations[0].meshindex 2
+setfield regions[2].permutations[1].meshindex 26
+setfield regions[2].permutations[2].meshindex 12
+setfield regions[2].permutations[3].meshindex 19
+setfield regions[2].permutations[4].meshindex 33
+setfield regions[4].permutations[0].meshindex 4
+setfield regions[4].permutations[1].meshindex 13
+setfield regions[4].permutations[2].meshindex 4
+setfield regions[4].permutations[3].meshindex 34
+setfield regions[4].permutations[4].meshindex 27
+setfield regions[8].permutations[0].meshindex 16
+setfield regions[8].permutations[1].meshindex 23
+setfield regions[8].permutations[2].meshindex 8
+setfield regions[8].permutations[3].meshindex 30
+setfield regions[8].permutations[4].meshindex 36
+setfield regions[6].permutations[0].meshindex 6
+setfield regions[6].permutations[1].meshindex 29
+setfield regions[6].permutations[2].meshindex 15
+setfield regions[6].permutations[3].meshindex 22
+setfield regions[6].permutations[4].meshindex 35
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\turrets\cannon\shaders\turret_cannon.rmsh
+setfield shaderproperties[0].template 0x0000313B
+setfield shaderproperties[0].arguments[8].values 0.6609804 0.7117647 0.5490196 1
+savetagchanges
+exit
+
+echo Installing Warthog and friends
+opencachefile ..\PortHalo3Weapons\dlcmaps\shrine.map
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.jmad
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss.jmad
+porttag replace objects\vehicles\warthog\warthog.mode
+porttag replace objects\vehicles\warthog\garbage\hood\hood.mode
+porttag replace objects\vehicles\warthog\garbage\hubcap\hubcap.mode
+porttag replace objects\vehicles\warthog\garbage\lb_fender\lb_fender.mode
+porttag replace objects\vehicles\warthog\garbage\lf_fender\lf_fender.mode
+porttag replace objects\vehicles\warthog\garbage\rb_fender\rb_fender.mode
+porttag replace objects\vehicles\warthog\garbage\rf_fender\rf_fender.mode
+porttag replace objects\vehicles\warthog\garbage\sailpanel\sailpanel.mode
+porttag replace objects\vehicles\warthog\garbage\tire\tire.mode
+porttag replace objects\vehicles\warthog\garbage\winch\winch.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
+exit
+edittag objects\vehicles\warthog\warthog.mode
+setfield regions[0].permutations[0].meshindex 11
+setfield regions[0].permutations[1].meshindex 0
+setfield regions[1].permutations[0].meshindex 38
+setfield regions[1].permutations[1].meshindex 1
+setfield regions[1].permutations[2].meshindex 12
+setfield regions[1].permutations[3].meshindex 22
+setfield regions[1].permutations[4].meshindex 32
+savetagchanges
+exit
+
+echo Installing Snow Warthog and friends
+opencachefile ..\PortHalo3Weapons\dlcmaps\sidewinder.map
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun_snow.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun_snow.jmad
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss_snow.jmad
+porttag replace objects\vehicles\warthog\warthog_snow.mode
+porttag replace objects\vehicles\warthog\garbage\hood\hood_snow.mode
+porttag replace objects\vehicles\warthog\garbage\hubcap\hubcap_snow.mode
+porttag replace objects\vehicles\warthog\garbage\lb_fender\lb_fender_snow.mode
+porttag replace objects\vehicles\warthog\garbage\lf_fender\lf_fender_snow.mode
+porttag replace objects\vehicles\warthog\garbage\rb_fender\rb_fender_snow.mode
+porttag replace objects\vehicles\warthog\garbage\rf_fender\rf_fender_snow.mode
+porttag replace objects\vehicles\warthog\garbage\sailpanel\sailpanel_snow.mode
+porttag replace objects\vehicles\warthog\garbage\tire\tire_snow.mode
+porttag replace objects\vehicles\warthog\garbage\winch\winch_snow.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage_snow.mode
+exit
+edittag objects\vehicles\warthog\warthog_snow.mode
+setfield regions[0].permutations[0].meshindex 11
+setfield regions[0].permutations[1].meshindex 0
+setfield regions[1].permutations[0].meshindex 38
+setfield regions[1].permutations[1].meshindex 1
+setfield regions[1].permutations[2].meshindex 12
+setfield regions[1].permutations[3].meshindex 22
+setfield regions[1].permutations[4].meshindex 32
+savetagchanges
+exit
+edittag objects\vehicles\warthog\shaders\wheel_snow.rmsh
+setfield shaderproperties[0].template 0x00003520
+savetagchanges
+exit
+EditTag objects\vehicles\warthog\turrets\gauss\shaders\gauss_alpha.rmhg
+SetField ShaderProperties[0].Template 0x00000F91
+RemoveBlockElements ShaderProperties[0].Arguments * 3
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 0 0 0 1
+SetArgument self_illum_map 1 1 0.05 0.125
+SetArgument self_illum_color 0 0 0 1
+SetArgument self_illum_intensity 1.612745 1.612745 1.612745 1.612745
+SetArgument self_illum_heat_color 0 0 0 1
+SetArgument overlay_map 130 130 0 0
+SetArgument overlay_detail_map 1 1 0 0
+SetArgument overlay_tint 0.2509804 0.345098 0.08627451 1
+SetArgument overlay_intensity 1 1 1 1
+SaveTagChanges
+Exit 
+
+dumplog devlogs\Halo3Vehicles.txt
+
+echo All weapons installed
+
+
