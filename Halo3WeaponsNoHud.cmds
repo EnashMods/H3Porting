@@ -29,519 +29,168 @@ nametag * objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp
 echo Porting...
 opencachefile dlcmaps\sandbox.map
 echo Gravity Hammer
-porttag replace matchshaders objects\weapons\melee\gravity_hammer\gravity_hammer.mode
-porttag replace matchshaders objects\weapons\melee\gravity_hammer\fx\hammer_on.effe
-porttag replace matchshaders objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.mode
+porttag replace objects\weapons\melee\gravity_hammer\gravity_hammer.mode
+porttag replace objects\weapons\melee\gravity_hammer\fx\hammer_on.effe
+porttag replace objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.mode
 
 echo Energy Sword
-porttag replace matchshaders objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode
-porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_activate.effe
-porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.effe
-porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.ligh
-porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.lens
+porttag replace objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode
+porttag replace objects\weapons\melee\energy_blade\fx\blade_activate.effe
+porttag replace objects\weapons\melee\energy_blade\fx\blade_on.effe
+porttag replace objects\weapons\melee\energy_blade\fx\blade_on.ligh
+porttag replace objects\weapons\melee\energy_blade\fx\blade_on.lens
 
 echo Assault Bomb
-porttag replace matchshaders objects\weapons\multiplayer\assault_bomb\assault_bomb.mode
+porttag replace objects\weapons\multiplayer\assault_bomb\assault_bomb.mode
 
 echo Ball
-porttag replace matchshaders objects\weapons\multiplayer\ball\ball.mode
+porttag replace objects\weapons\multiplayer\ball\ball.mode
 
 echo Flag
-porttag replace matchshaders objects\weapons\multiplayer\flag\flag.mode
+porttag replace objects\weapons\multiplayer\flag\flag.mode
 
 echo Excavator
-porttag replace matchshaders objects\weapons\pistol\excavator\excavator.mode
-porttag replace matchshaders objects\weapons\pistol\excavator\fx\firing.ligh
-porttag replace matchshaders objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
-porttag replace matchshaders objects\weapons\pistol\excavator\fx\firing.effe
+porttag replace objects\weapons\pistol\excavator\excavator.mode
+porttag replace objects\weapons\pistol\excavator\fx\firing.ligh
+porttag replace objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
+porttag replace objects\weapons\pistol\excavator\fx\firing.effe
 
 echo Magnum
-porttag replace matchshaders objects\weapons\pistol\magnum\magnum.mode
-porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.ligh
-porttag replace matchshaders objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
-porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.effe
+porttag replace objects\weapons\pistol\magnum\magnum.mode
+porttag replace objects\weapons\pistol\magnum\fx\firing.ligh
+porttag replace objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
+porttag replace objects\weapons\pistol\magnum\fx\firing.effe
 
 echo Needler
-porttag replace matchshaders objects\weapons\pistol\needler\needler.mode
-porttag replace matchshaders objects\weapons\pistol\needler\fx\firing.ligh
-porttag replace matchshaders objects\weapons\pistol\needler\fp_needler\fp_needler.mode
-porttag replace matchshaders objects\weapons\pistol\needler\projectiles\needler_shard\needler_shard.proj
-porttag replace matchshaders objects\weapons\pistol\needler\fx\firing.effe
+porttag replace objects\weapons\pistol\needler\needler.mode
+porttag replace objects\weapons\pistol\needler\fx\firing.ligh
+porttag replace objects\weapons\pistol\needler\fp_needler\fp_needler.mode
+porttag replace objects\weapons\pistol\needler\projectiles\needler_shard\needler_shard.proj
+porttag replace objects\weapons\pistol\needler\fx\firing.effe
 
 echo Plasma Pistol
-porttag replace matchshaders objects\weapons\pistol\plasma_pistol\plasma_pistol.mode
-porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\charging.effe
-porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\charging.ligh
-porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\firing.ligh
-porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\overheated.effe
-porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
-porttag replace matchshaders objects\weapons\pistol\plasma_pistol\projectiles\plasma_pistol_bolt.proj
-porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\firing.effe
+porttag replace objects\weapons\pistol\plasma_pistol\plasma_pistol.mode
+porttag replace objects\weapons\pistol\plasma_pistol\fx\charging.effe
+porttag replace objects\weapons\pistol\plasma_pistol\fx\charging.ligh
+porttag replace objects\weapons\pistol\plasma_pistol\fx\firing.ligh
+porttag replace objects\weapons\pistol\plasma_pistol\fx\overheated.effe
+porttag replace objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
+porttag replace objects\weapons\pistol\plasma_pistol\projectiles\plasma_pistol_bolt.proj
+porttag replace objects\weapons\pistol\plasma_pistol\fx\firing.effe
 
 echo Assault Rifle
-porttag replace matchshaders objects\weapons\rifle\assault_rifle\assault_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\assault_rifle\fx\firing.ligh
-porttag replace matchshaders objects\weapons\rifle\assault_rifle\flashlight_ar.ligh
-porttag replace matchshaders objects\weapons\rifle\assault_rifle\fx\flashlight.effe
-porttag replace matchshaders objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\assault_rifle\fx\firing.effe
+porttag replace objects\weapons\rifle\assault_rifle\assault_rifle.mode
+porttag replace objects\weapons\rifle\assault_rifle\fx\firing.ligh
+porttag replace objects\weapons\rifle\assault_rifle\flashlight_ar.ligh
+porttag replace objects\weapons\rifle\assault_rifle\fx\flashlight.effe
+porttag replace objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
+porttag replace objects\weapons\rifle\assault_rifle\fx\firing.effe
 
 echo Battle Rifle
-porttag replace matchshaders objects\weapons\rifle\battle_rifle\battle_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\firing.ligh
-porttag replace matchshaders objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\firing.effe
-porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\empty.effe
+porttag replace objects\weapons\rifle\battle_rifle\battle_rifle.mode
+porttag replace objects\weapons\rifle\battle_rifle\fx\firing.ligh
+porttag replace objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+porttag replace objects\weapons\rifle\battle_rifle\fx\firing.effe
+porttag replace objects\weapons\rifle\battle_rifle\fx\empty.effe
 
 echo Beam Rifle
-porttag replace matchshaders objects\weapons\rifle\beam_rifle\beam_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\firing.ligh
-porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\overheated.effe
-porttag replace matchshaders objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\firing.effe
+porttag replace objects\weapons\rifle\beam_rifle\beam_rifle.mode
+porttag replace objects\weapons\rifle\beam_rifle\fx\firing.ligh
+porttag replace objects\weapons\rifle\beam_rifle\fx\overheated.effe
+porttag replace objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.mode
+porttag replace objects\weapons\rifle\beam_rifle\fx\firing.effe
 
 echo Carbine
-porttag replace matchshaders objects\weapons\rifle\covenant_carbine\covenant_carbine.mode
-porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\firing.ligh
-porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
-porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\firing.effe
-porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\carbine_misfire.effe
+porttag replace objects\weapons\rifle\covenant_carbine\covenant_carbine.mode
+porttag replace objects\weapons\rifle\covenant_carbine\fx\firing.ligh
+porttag replace objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
+porttag replace objects\weapons\rifle\covenant_carbine\fx\firing.effe
+porttag replace objects\weapons\rifle\covenant_carbine\fx\carbine_misfire.effe
 
 echo Plasma Rifle
-porttag replace matchshaders objects\weapons\rifle\plasma_rifle\plasma_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fx\firing.ligh
-porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\plasma_rifle\projectiles\plasma_rifle_bolt.proj
-porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fx\firing.effe
+porttag replace objects\weapons\rifle\plasma_rifle\plasma_rifle.mode
+porttag replace objects\weapons\rifle\plasma_rifle\fx\firing.ligh
+porttag replace objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
+porttag replace objects\weapons\rifle\plasma_rifle\projectiles\plasma_rifle_bolt.proj
+porttag replace objects\weapons\rifle\plasma_rifle\fx\firing.effe
 
 echo Shotgun
-porttag replace matchshaders objects\weapons\rifle\shotgun\shotgun.mode
-porttag replace matchshaders objects\weapons\rifle\shotgun\fx\firing.ligh
-porttag replace matchshaders objects\weapons\rifle\shotgun\flashlight_sg.ligh
-porttag replace matchshaders objects\weapons\rifle\shotgun\fx\flashlight.effe
-porttag replace matchshaders objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
-porttag replace matchshaders objects\weapons\rifle\shotgun\fx\firing.effe
-porttag replace matchshaders objects\weapons\rifle\shotgun\fx\misfire.effe
+porttag replace objects\weapons\rifle\shotgun\shotgun.mode
+porttag replace objects\weapons\rifle\shotgun\fx\firing.ligh
+porttag replace objects\weapons\rifle\shotgun\flashlight_sg.ligh
+porttag replace objects\weapons\rifle\shotgun\fx\flashlight.effe
+porttag replace objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
+porttag replace objects\weapons\rifle\shotgun\fx\firing.effe
+porttag replace objects\weapons\rifle\shotgun\fx\misfire.effe
 
 echo SMG
-porttag replace matchshaders objects\weapons\rifle\smg\smg.mode
-porttag replace matchshaders objects\weapons\rifle\smg\fx\firing.ligh
-porttag replace matchshaders sound\weapons\smg\smg_loop\smg_loop.lsnd
-porttag replace matchshaders sound\weapons\smg\smg_lod_far\smg_lod_far.lsnd
-porttag replace matchshaders sound\weapons\smg\smg_loop_left\smg_loop_left.lsnd
-porttag replace matchshaders sound\weapons\smg\smg_loop_right\smg_loop_right.lsnd
-porttag replace matchshaders objects\weapons\rifle\smg\fp_smg\fp_smg.mode
-porttag replace matchshaders objects\weapons\rifle\smg\fx\firing.effe
+porttag replace objects\weapons\rifle\smg\smg.mode
+porttag replace objects\weapons\rifle\smg\fx\firing.ligh
+porttag replace sound\weapons\smg\smg_loop\smg_loop.lsnd
+porttag replace sound\weapons\smg\smg_lod_far\smg_lod_far.lsnd
+porttag replace sound\weapons\smg\smg_loop_left\smg_loop_left.lsnd
+porttag replace sound\weapons\smg\smg_loop_right\smg_loop_right.lsnd
+porttag replace objects\weapons\rifle\smg\fp_smg\fp_smg.mode
+porttag replace objects\weapons\rifle\smg\fx\firing.effe
 
 echo Sniper Rifle
-porttag replace matchshaders objects\weapons\rifle\sniper_rifle\sniper_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fx\firing.ligh
-porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fx\firing.effe
+porttag replace objects\weapons\rifle\sniper_rifle\sniper_rifle.mode
+porttag replace objects\weapons\rifle\sniper_rifle\fx\firing.ligh
+porttag replace objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.mode
+porttag replace objects\weapons\rifle\sniper_rifle\fx\firing.effe
 
 echo Spiker
-porttag replace matchshaders objects\weapons\rifle\spike_rifle\spike_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\spike_rifle\fx\firing.ligh
-porttag replace matchshaders objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
-porttag replace matchshaders objects\weapons\rifle\spike_rifle\projectiles\spike_shard\spike_shard.proj
-porttag replace matchshaders objects\weapons\rifle\spike_rifle\fx\firing.effe
+porttag replace objects\weapons\rifle\spike_rifle\spike_rifle.mode
+porttag replace objects\weapons\rifle\spike_rifle\fx\firing.ligh
+porttag replace objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
+porttag replace objects\weapons\rifle\spike_rifle\projectiles\spike_shard\spike_shard.proj
+porttag replace objects\weapons\rifle\spike_rifle\fx\firing.effe
 
 echo Fuel Rod Cannon
 porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\flak_cannon.mode
-porttag replace matchshaders objects\weapons\support_high\flak_cannon\fx\firing.ligh
-porttag replace matchshaders objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.mode
-porttag replace matchshaders objects\weapons\support_high\flak_cannon\projectiles\flak_bolt\flak_bolt.proj
-porttag replace matchshaders objects\weapons\support_high\flak_cannon\fx\firing.effe
+porttag replace objects\weapons\support_high\flak_cannon\fx\firing.ligh
+porttag replace objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.mode
+porttag replace objects\weapons\support_high\flak_cannon\projectiles\flak_bolt\flak_bolt.proj
+porttag replace objects\weapons\support_high\flak_cannon\fx\firing.effe
 
 echo Rocket Launcher
-porttag replace matchshaders objects\weapons\support_high\rocket_launcher\rocket_launcher.mode
-porttag replace matchshaders fx\material_effects\objects\weapons\rocket_launcher.foot
-porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\firing.ligh
-porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
-porttag replace matchshaders objects\weapons\support_high\rocket_launcher\projectiles\rocket.proj
-porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\firing.effe
+porttag replace objects\weapons\support_high\rocket_launcher\rocket_launcher.mode
+porttag replace fx\material_effects\objects\weapons\rocket_launcher.foot
+porttag replace objects\weapons\support_high\rocket_launcher\fx\firing.ligh
+porttag replace objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
+porttag replace objects\weapons\support_high\rocket_launcher\projectiles\rocket.proj
+porttag replace objects\weapons\support_high\rocket_launcher\fx\firing.effe
 
 echo Spartan Laser
-porttag replace matchshaders objects\weapons\support_high\spartan_laser\spartan_laser.mode
-porttag replace matchshaders sound\weapons\spartan_laser\charging\charging.lsnd
-porttag replace matchshaders sound\weapons\spartan_laser\fire.snd!
-porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.ligh
-porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.effe
-porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.lens
-porttag replace matchshaders objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.mode
+porttag replace objects\weapons\support_high\spartan_laser\spartan_laser.mode
+porttag replace sound\weapons\spartan_laser\charging\charging.lsnd
+porttag replace sound\weapons\spartan_laser\fire.snd!
+porttag replace objects\weapons\support_high\spartan_laser\fx\charging.ligh
+porttag replace objects\weapons\support_high\spartan_laser\fx\charging.effe
+porttag replace objects\weapons\support_high\spartan_laser\fx\charging.lens
+porttag replace objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.mode
 
 echo Brute Shot
-porttag replace matchshaders objects\weapons\support_low\brute_shot\brute_shot.mode
-porttag replace matchshaders fx\material_effects\objects\weapons\brute_shot.foot
-porttag replace matchshaders objects\weapons\support_low\brute_shot\fx\firing.ligh
-porttag replace matchshaders objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
-porttag replace matchshaders objects\weapons\support_low\brute_shot\projectiles\grenade\grenade.proj
-porttag replace matchshaders objects\weapons\support_low\brute_shot\fx\firing.effe
+porttag replace objects\weapons\support_low\brute_shot\brute_shot.mode
+porttag replace fx\material_effects\objects\weapons\brute_shot.foot
+porttag replace objects\weapons\support_low\brute_shot\fx\firing.ligh
+porttag replace objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
+porttag replace objects\weapons\support_low\brute_shot\projectiles\grenade\grenade.proj
+porttag replace objects\weapons\support_low\brute_shot\fx\firing.effe
 
 echo Sentinel Beam
-porttag replace matchshaders objects\weapons\support_low\sentinel_gun\sentinel_gun.mode
-porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fx\overheated.effe
-porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fp_sentinel_gun\fp_sentinel_gun.mode
-porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fx\firing.effe
+porttag replace objects\weapons\support_low\sentinel_gun\sentinel_gun.mode
+porttag replace objects\weapons\support_low\sentinel_gun\fx\overheated.effe
+porttag replace objects\weapons\support_low\sentinel_gun\fp_sentinel_gun\fp_sentinel_gun.mode
+porttag replace objects\weapons\support_low\sentinel_gun\fx\firing.effe
 
 echo Machinegun Turret
-porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.mode
-porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.jmad
-porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.mode
-porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp.mode
-porttag replace matchshaders objects\weapons\turret\machinegun_turret\fx\firing.ligh
-porttag replace matchshaders objects\weapons\turret\machinegun_turret\fx\firing.effe
-exit
-
-echo Energy Sword Fixes
-DuplicateTag 0x00002305
-NameTag * objects\weapons\melee\energy_blade\shaders\energy_blade2
-EditTag objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
-SetField ShaderProperties[0].ShaderMaps[0].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_shield_mask.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].bitmap objects\weapons\melee\energy_blade\bitmaps\detail_mask.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_height.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].bitmap shaders\default_bitmaps\bitmaps\clouds_256.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].bitmap shaders\default_bitmaps\bitmaps\clouds_256.bitmap
-SetArgument base_map 1 1 0 0
-SetArgument detail_map 1 1 0 0
-SetArgument albedo_color 0 0 0 0
-SetArgument noise_map_a 1.5 0.75 0 0
-SetArgument noise_map_b 1.5 0.75 0.5 0.6
-SetArgument color_medium 0.02352941 0.01568628 0.01568628 1
-SetArgument color_wide 0.3529412 0.2705882 0.7686275 1
-SetArgument color_sharp 0.3215686 0.7529413 0.8000001 1
-SetArgument self_illum_intensity 0 0 0 0
-SetArgument alpha_mask_map 1 1 0 0
-SetArgument thinness_medium 16 16 16 16
-SetArgument thinness_wide 4 4 4 4
-SetArgument thinness_sharp 32 32 32 32
-SaveTagChanges
-Exit
-EditTag 0x00002300
-SetField Materials[2].RenderMethod objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
-SaveTagChanges
-Exit
-
-echo Fixing Excavator
-edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp.mode
-copyblockelements markergroups 1 1
-exit
-edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
-removeblockelements markergroups 1 1
-pasteblockelements markergroups 1
-savetagchanges
-exit
-deletetag objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp.mode
-
-echo Fixing Magnum
-edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp.mode
-copyblockelements markergroups 1 1
-exit
-edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
-removeblockelements markergroups 1 1
-pasteblockelements markergroups 1
-savetagchanges
-exit
-deletetag objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp.mode
-
-echo Fixing Needler
-edittag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode
-copyblockelements markergroups 2 1
-exit
-edittag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
-removeblockelements markergroups 2 1
-pasteblockelements markergroups 2
-savetagchanges
-exit
-EditTag objects\weapons\pistol\needler\shaders\needler_blue.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\pistol\needler\bitmaps\needler.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
-SaveTagChanges
-Exit
-EditTag objects\weapons\pistol\needler\shaders\needler_pink.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps 1
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\pistol\needler\bitmaps\needler.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
-SaveTagChanges
-Exit
-deletetag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode     
-
-echo Fixing Plasma Pistol
-edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp.mode
-copyblockelements markergroups 2 1
-exit
-edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
-removeblockelements markergroups 2 1
-pasteblockelements markergroups 2
-savetagchanges
-exit
-EditTag objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_metal.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\ghost\bitmaps\ghost_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
-setfield shaderproperties[0].shadermaps[4].unknown2 17
-setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_illum.bitm
-setfield shaderproperties[0].shadermaps[5].bitmapflags 4
-setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
-savetagchanges
-exit
-deletetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp.mode  
-
-echo Fixing Assault Rifle
-edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp.mode
-copyblockelements markergroups 0 5
-exit
-edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
-removeblockelements markergroups 0 5
-pasteblockelements markergroups 0
-savetagchanges
-exit
-deletetag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp.mode
-
-echo Fixing Battle Rifle
-edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp.mode
-copyblockelements markergroups 1 1
-exit
-edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-removeblockelements markergroups 1 1
-pasteblockelements markergroups 1
-savetagchanges
-exit
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
-setfield shaderproperties[0].template 0x00001F0D
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap shaders\default_bitmaps\bitmaps\default_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap shaders\default_bitmaps\bitmaps\default_vector.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap shaders\default_bitmaps\bitmaps\gray_50_percent.bitm
-savetagchanges
-exit
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal.shader
-setfield shaderproperties[0].template 0x56a7
-savetagchanges
-exit
-deletetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp.mode
-
-echo Fixing Beam Rifle
-EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\bitmaps\reflection_maps\mirror_surface.bitm
-setfield shaderproperties[0].shadermaps[4].unknown2 17
-setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitm
-setfield shaderproperties[0].shadermaps[5].bitmapflags 4
-setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
-savetagchanges
-exit   
-EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle2.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
-setfield shaderproperties[0].shadermaps[4].unknown2 17
-setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitm
-setfield shaderproperties[0].shadermaps[5].bitmapflags 4
-setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
-savetagchanges
-exit  
-
-echo Fixing Carbine
-edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
-copyblockelements markergroups 1 1
-exit
-edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
-removeblockelements markergroups 1 1
-pasteblockelements markergroups 1
-savetagchanges
-exit
-EditTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
-SaveTagChanges
-Exit
-EditTag objects\weapons\rifle\covenant_carbine\shaders\carbine_dull.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
-SaveTagChanges
-Exit
-edittag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
-setfield events[0].particlesystems[0].particle fx\particles\atmospheric\rolling_smoke\fireball_fuel_rod_large.prt3
-savetagchanges
-exit
-deletetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
-
-echo Fixing Plasma Rifle
-edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
-copyblockelements markergroups 3 1
-exit
-edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
-removeblockelements markergroups 3 1
-pasteblockelements markergroups 3
-savetagchanges
-exit
-EditTag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\bitmaps\reflection_maps\mirror_surface.bitm
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
-savetagchanges
-exit
-EditTag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_metal.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
-savetagchanges
-exit
-edittag objects\weapons\rifle\plasma_rifle\fx\overheated.effe
-setfield events[0].particlesystems[0].particle fx\particles\atmospheric\rolling_smoke\fireball_plasma_large.prt3
-savetagchanges
-exit
-deletetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
-
-echo Fixing Shotgun
-edittag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp.mode
-copyblockelements markergroups 1 1
-exit
-edittag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
-removeblockelements markergroups 1 1
-pasteblockelements markergroups 1
-savetagchanges
-exit
-deletetag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp.mode
-
-echo Fixing SMG
-
-echo Fixing Sniper Rifle
-EditTag objects\weapons\rifle\sniper_rifle\shaders\scope_alpha.shader_halogram
-SetField ShaderProperties[0].Template 0x00000F91
-RemoveBlockElements ShaderProperties[0].Arguments * 3
-SetArgument base_map 1 1 0 0
-SetArgument detail_map 1 1 0 0
-SetArgument albedo_color 1 1 1 1
-SetArgument self_illum_map 0.6 0.6 0.2 0.2
-SetArgument self_illum_color 0.01568628 0.7176471 0.02352941 1
-SetArgument self_illum_intensity 1.362745 1.362745 1.362745 1.362745
-SetArgument self_illum_heat_color 0.1372549 1 0.1372549 1
-SetArgument overlay_map 1 1 0 0
-SetArgument overlay_detail_map 1 1 0 0
-SetArgument overlay_tint 0 0 0 1
-SetArgument overlay_intensity 1 1 1 1
-SetField InputVariable ParticleRandom1
-SetField RangeVariable ParticleAge
-SetField OutputModifier Times
-SaveTagChanges
-Exit 
-edittag objects\weapons\rifle\sniper_rifle\shaders\sniper_rifle_glass.rmsh
-setfield shaderproperties[0].arguments[2].values 0.1 0.2 0.1 1
-savetagchanges
-exit
-
-echo Fixing Spiker
-edittag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp.mode
-copyblockelements markergroups 2 1
-exit
-edittag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
-removeblockelements markergroups 2 1
-pasteblockelements markergroups 2
-savetagchanges
-exit
-deletetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp.mode
-
-echo Fixing Fuel Rod Cannon
-EditTag objects\weapons\support_high\flak_cannon\shaders\flak_cannon.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_illum.bitmap
-setfield shaderproperties[0].arguments[11].values 0.03529412 0.0627451 0.03490196 1
-SaveTagChanges
-Exit  
-
-echo Fixing Rocket Launcher
-edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp.mode
-copyblockelements markergroups 1 1
-exit
-edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
-removeblockelements markergroups 1 1
-pasteblockelements markergroups 1
-setfield markergroups[1].markers[0].translation 0.2643063 0.003026339 -0.01561892
-savetagchanges
-exit
-deletetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp.mode
-
-echo Fixing Spartan Laser
-
-echo Fixing Brute Shot
-edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp.mode
-copyblockelements markergroups 0 1
-exit
-edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
-removeblockelements markergroups 0 1
-pasteblockelements markergroups 0
-savetagchanges
-exit
-deletetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp.mode
-
-echo Fixing Sentinel Beam
-
-echo Fixing Machinegun Turret
-nametag 0x0000288A objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp
-edittag objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.mode
-setfield regions[0].permutations[0].meshindex 1
-savetagchanges
-exit
-edittag objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.mode
-setfield regions[0].permutations[0].meshindex 1
-savetagchanges
+porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.mode
+porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.jmad
+porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.mode
+porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp.mode
+porttag replace objects\weapons\turret\machinegun_turret\fx\firing.ligh
+porttag replace objects\weapons\turret\machinegun_turret\fx\firing.effe
 exit
 
 savetagnames
