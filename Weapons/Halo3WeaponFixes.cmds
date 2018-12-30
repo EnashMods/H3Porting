@@ -1,3 +1,4 @@
+
 echo Fixing Energy Sword
 DuplicateTag 0x00002305
 NameTag * objects\weapons\melee\energy_blade\shaders\energy_blade2
@@ -408,10 +409,6 @@ SetField ShaderProperties[0].ShaderMaps[4].Bitmap levels\solo\030_outskirts\e3\s
 SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
 SaveTagChanges
 Exit
-edittag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
-setfield events[0].particlesystems[0].particle fx\particles\atmospheric\rolling_smoke\fireball_fuel_rod_large.prt3
-savetagchanges
-exit
 deletetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
 
 echo Fixing Plasma Rifle
@@ -468,10 +465,6 @@ setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rif
 setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
 addblockelements shaderproperties[0].shadermaps
 setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
-savetagchanges
-exit
-edittag objects\weapons\rifle\plasma_rifle\fx\overheated.effe
-setfield events[0].particlesystems[0].particle fx\particles\atmospheric\rolling_smoke\fireball_plasma_large.prt3
 savetagchanges
 exit
 deletetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
@@ -985,6 +978,43 @@ ExitTo tags
 
 EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
 ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\alpha_grey25.dds
+ExitTo tags
+
+EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Unknown7 9
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small_additive.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\beam_rifle\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\plasma_rifle\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_low\sentinel_gun\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
 ExitTo tags
 
 
