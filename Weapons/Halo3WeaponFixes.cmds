@@ -984,6 +984,7 @@ EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.particle
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
 SetField RenderMethod.ShaderProperties[0].Unknown7 9
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 9
 SaveTagChanges
 ExitTo tags
 
