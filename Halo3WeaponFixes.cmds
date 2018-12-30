@@ -1,0 +1,768 @@
+echo Fixing Energy Sword
+DuplicateTag 0x00002305
+NameTag * objects\weapons\melee\energy_blade\shaders\energy_blade2
+edittag objects\weapons\melee\energy_blade\bitmaps\blade_height.bitmap
+importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\blade_height.dds
+setfield images[0].format 38
+savetagchanges
+exit
+edittag objects\weapons\melee\energy_blade\bitmaps\blade_shield_mask.bitmap
+importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\blade_shield_mask.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\melee\energy_blade\bitmaps\blade_shield_offset.bitmap
+importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\blade_shield_offset.dds
+setfield images[0].format 39
+savetagchanges
+exit
+edittag objects\weapons\melee\energy_blade\bitmaps\detail_mask.bitmap
+importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\detail_mask.dds
+setfield images[0].format 38
+savetagchanges
+exit
+edittag objects\weapons\melee\energy_blade\bitmaps\energy_blade_handle.bitmap
+importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\energy_blade_handle.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\melee\energy_blade\bitmaps\energy_blade_handle_bump.bitmap
+importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\energy_blade_handle_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\melee\energy_blade\bitmaps\energy_blade_handle_illum.bitmap
+importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\energy_blade_handle_illum.dds
+setfield images[0].format 16
+savetagchanges
+exit
+EditTag objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
+SetField ShaderProperties[0].ShaderMaps[0].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_shield_mask.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].bitmap objects\weapons\melee\energy_blade\bitmaps\detail_mask.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_height.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].bitmap shaders\default_bitmaps\bitmaps\clouds_256.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].bitmap shaders\default_bitmaps\bitmaps\clouds_256.bitmap
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 0 0 0 0
+SetArgument noise_map_a 1.5 0.75 0 0
+SetArgument noise_map_b 1.5 0.75 0.5 0.6
+SetArgument color_medium 0.02352941 0.01568628 0.01568628 1
+SetArgument color_wide 0.3529412 0.2705882 0.7686275 1
+SetArgument color_sharp 0.3215686 0.7529413 0.8000001 1
+SetArgument self_illum_intensity 0 0 0 0
+SetArgument alpha_mask_map 1 1 0 0
+SetArgument thinness_medium 16 16 16 16
+SetArgument thinness_wide 4 4 4 4
+SetArgument thinness_sharp 32 32 32 32
+SaveTagChanges
+Exit
+EditTag 0x00002300
+SetField Materials[2].RenderMethod objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
+SaveTagChanges
+Exit
+
+echo Fixing Gravity Hammer
+edittag objects\weapons\melee\gravity_hammer\bitmaps\gravity_hammer.bitmap
+importbitmap 0 tags\objects\weapons\melee\gravity_hammer\bitmaps\gravity_hammer.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\melee\gravity_hammer\bitmaps\gravity_hammer_bump.bitmap
+importbitmap 0 tags\objects\weapons\melee\gravity_hammer\bitmaps\gravity_hammer_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\melee\gravity_hammer\bitmaps\gravity_hammer_illum.bitmap
+importbitmap 0 tags\objects\weapons\melee\gravity_hammer\bitmaps\gravity_hammer_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+
+echo Fixing Excavator
+edittag objects\weapons\pistol\excavator\bitmaps\excavator.bitmap
+importbitmap 0 tags\objects\weapons\pistol\excavator\bitmaps\excavator.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\pistol\excavator\bitmaps\excavator_bump.bitmap
+importbitmap 0 tags\objects\weapons\pistol\excavator\bitmaps\excavator_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\pistol\excavator\bitmaps\excavator_illum.bitmap
+importbitmap 0 tags\objects\weapons\pistol\excavator\bitmaps\excavator_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+deletetag objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp.mode
+
+echo Fixing Magnum
+edittag objects\weapons\pistol\magnum\bitmaps\magnum.bitmap
+importbitmap 0 tags\objects\weapons\pistol\magnum\bitmaps\mangum.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\pistol\magnum\bitmaps\magnum_bump.bitmap
+importbitmap 0 tags\objects\weapons\pistol\magnum\bitmaps\magnum_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\pistol\magnum\bitmaps\magnum_illum.bitmap
+importbitmap 0 tags\objects\weapons\pistol\magnum\bitmaps\magnum_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+deletetag objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp.mode
+
+echo Fixing Needler
+edittag objects\weapons\pistol\needler\bitmaps\needler.bitmap
+importbitmap 0 tags\objects\weapons\pistol\needler\bitmaps\needler.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
+importbitmap 0 tags\objects\weapons\pistol\needler\bitmaps\needler_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
+importbitmap 0 tags\objects\weapons\pistol\needler\bitmaps\needler_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode
+copyblockelements markergroups 2 1
+exit
+edittag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
+removeblockelements markergroups 2 1
+pasteblockelements markergroups 2
+savetagchanges
+exit
+EditTag objects\weapons\pistol\needler\shaders\needler_blue.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\pistol\needler\bitmaps\needler.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
+SaveTagChanges
+Exit
+EditTag objects\weapons\pistol\needler\shaders\needler_pink.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps 1
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\pistol\needler\bitmaps\needler.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
+SaveTagChanges
+Exit
+deletetag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode     
+
+echo Fixing Plasma Pistol
+edittag objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.bitm
+importbitmap 0 tags\objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.bitmap
+importbitmap 0 tags\objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_display.bitm
+importbitmap 0 tags\objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_display.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_illum.bitmap
+importbitmap 0 tags\objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_light.bitmap
+importbitmap 0 tags\objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_light.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp.mode
+copyblockelements markergroups 2 1
+exit
+edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
+removeblockelements markergroups 2 1
+pasteblockelements markergroups 2
+savetagchanges
+exit
+EditTag objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_metal.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\ghost\bitmaps\ghost_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
+setfield shaderproperties[0].shadermaps[4].unknown2 17
+setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_illum.bitm
+setfield shaderproperties[0].shadermaps[5].bitmapflags 4
+setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
+savetagchanges
+exit
+deletetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp.mode  
+
+echo Fixing Assault Rifle
+edittag objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle.bitmap
+importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp.mode
+copyblockelements markergroups 0 5
+exit
+edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
+removeblockelements markergroups 0 5
+pasteblockelements markergroups 0
+savetagchanges
+exit
+deletetag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp.mode
+
+echo Fixing Battle Rifle
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_ilum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitmap
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\battle_rifle\bitmaps\rubber_microbump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\rubber_microbump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
+setfield shaderproperties[0].template 0x00001F0D
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap shaders\default_bitmaps\bitmaps\default_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap shaders\default_bitmaps\bitmaps\default_vector.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap shaders\default_bitmaps\bitmaps\gray_50_percent.bitm
+savetagchanges
+exit
+deletetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp.mode
+
+echo Fixing Beam Rifle
+edittag objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitmap
+importbitmap 0 tags\objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\bitmaps\reflection_maps\mirror_surface.bitm
+setfield shaderproperties[0].shadermaps[4].unknown2 17
+setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitm
+setfield shaderproperties[0].shadermaps[5].bitmapflags 4
+setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
+savetagchanges
+exit   
+EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle2.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
+setfield shaderproperties[0].shadermaps[4].unknown2 17
+setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitm
+setfield shaderproperties[0].shadermaps[5].bitmapflags 4
+setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
+savetagchanges
+exit  
+
+echo Fixing Carbine
+edittag objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
+importbitmap 0 tags\objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_display_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_display_illum.dds
+setfield images[0].format 3
+savetagchanges
+exit
+edittag objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_switch_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_switch_illum.dds
+setfield images[0].format 6
+savetagchanges
+exit
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+EditTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
+SaveTagChanges
+Exit
+EditTag objects\weapons\rifle\covenant_carbine\shaders\carbine_dull.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+setfield events[0].particlesystems[0].particle fx\particles\atmospheric\rolling_smoke\fireball_fuel_rod_large.prt3
+savetagchanges
+exit
+deletetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
+
+echo Fixing Plasma Rifle
+edittag objects\weapons\rifle\plasma_rifle\bitmaps\plasma_current_noise_a.bitmap
+importbitmap 0 tags\objects\weapons\rifle\plasma_rifle\bitmaps\plasma_current_noise_a.dds
+setfield images[0].format 39
+savetagchanges
+exit
+edittag objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitmap
+importbitmap 0 tags\objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_gauge.bitmap
+importbitmap 0 tags\objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_gauge.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
+copyblockelements markergroups 3 1
+exit
+edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
+removeblockelements markergroups 3 1
+pasteblockelements markergroups 3
+savetagchanges
+exit
+EditTag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\bitmaps\reflection_maps\mirror_surface.bitm
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
+savetagchanges
+exit
+EditTag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_metal.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
+addblockelements shaderproperties[0].shadermaps
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
+savetagchanges
+exit
+edittag objects\weapons\rifle\plasma_rifle\fx\overheated.effe
+setfield events[0].particlesystems[0].particle fx\particles\atmospheric\rolling_smoke\fireball_plasma_large.prt3
+savetagchanges
+exit
+deletetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
+
+echo Fixing Shotgun
+edittag objects\weapons\rifle\shotgun\bitmaps\shell_eject.bitmap
+importbitmap 0 tags\objects\weapons\rifle\shotgun\bitmaps\shell_eject.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\shotgun\bitmaps\shell_eject_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\shotgun\bitmaps\shell_eject_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\shotgun\bitmaps\shotgun.bitmap
+importbitmap 0 tags\objects\weapons\rifle\shotgun\bitmaps\shotgun.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\shotgun\bitmaps\shotgun_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\shotgun\bitmaps\shotgun_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\shotgun\bitmaps\shotgun_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\shotgun\bitmaps\shotgun_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+savetagchanges
+exit
+deletetag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp.mode
+
+echo Fixing SMG
+edittag objects\weapons\rifle\smg\bitmaps\smg.bitmap
+importbitmap 0 tags\objects\weapons\rifle\smg\bitmaps\smg.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\smg\bitmaps\smg_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\smg\bitmaps\smg_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\smg\bitmaps\smg_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\smg\bitmaps\smg_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+
+echo Fixing Sniper Rifle
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle.bitmap
+importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scope_screen.bitmap
+importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scope_screen.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scope_screen_luminous.bitmap
+importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scope_screen_luminous.dds
+setfield images[0].format 14
+savetagchanges
+exit
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scope_screen_luminous2.bitmap
+importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scope_screen_luminous2.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scope_screen2.bitmap
+importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scope_screen2.dds
+setfield images[0].format 16
+savetagchanges
+exit
+EditTag objects\weapons\rifle\sniper_rifle\shaders\scope_alpha.shader_halogram
+SetField ShaderProperties[0].Template 0x00000F91
+RemoveBlockElements ShaderProperties[0].Arguments * 3
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 1 1 1 1
+SetArgument self_illum_map 0.6 0.6 0.2 0.2
+SetArgument self_illum_color 0.01568628 0.7176471 0.02352941 1
+SetArgument self_illum_intensity 1.362745 1.362745 1.362745 1.362745
+SetArgument self_illum_heat_color 0.1372549 1 0.1372549 1
+SetArgument overlay_map 1 1 0 0
+SetArgument overlay_detail_map 1 1 0 0
+SetArgument overlay_tint 0 0 0 1
+SetArgument overlay_intensity 1 1 1 1
+SetField InputVariable ParticleRandom1
+SetField RangeVariable ParticleAge
+SetField OutputModifier Times
+SaveTagChanges
+Exit 
+edittag objects\weapons\rifle\sniper_rifle\shaders\sniper_rifle_glass.rmsh
+setfield shaderproperties[0].arguments[2].values 0.1 0.2 0.1 1
+savetagchanges
+exit
+
+echo Fixing Spiker
+edittag objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter.bitmap
+importbitmap 0 tags\objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter_bump.bitmap
+importbitmap 0 tags\objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter_illum.bitmap
+importbitmap 0 tags\objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp.mode
+copyblockelements markergroups 2 1
+exit
+edittag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
+removeblockelements markergroups 2 1
+pasteblockelements markergroups 2
+savetagchanges
+exit
+deletetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp.mode
+
+echo Fixing Fuel Rod Cannon
+edittag objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon.bitmap
+importbitmap 0 tags\objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_bump.bitmap
+importbitmap 0 tags\objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_illum.bitmap
+importbitmap 0 tags\objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_illum.dds
+setfield images[0].format 36
+savetagchanges
+exit
+edittag objects\weapons\support_high\flak_cannon\bitmaps\flak_detail.bitmap
+importbitmap 0 tags\objects\weapons\support_high\flak_cannon\bitmaps\flak_detail.dds
+setfield images[0].format 16
+savetagchanges
+exit
+EditTag objects\weapons\support_high\flak_cannon\shaders\flak_cannon.shader
+SetField ShaderProperties[0].Template 0x00001AEF
+AddBlockElements ShaderProperties[0].ShaderMaps
+SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon.bitmap
+SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_detail.bitmap
+SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_bump.bitmap
+SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
+SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
+SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_illum.bitmap
+setfield shaderproperties[0].arguments[11].values 0.03529412 0.0627451 0.03490196 1
+SaveTagChanges
+Exit  
+
+echo Fixing Rocket Launcher
+edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher.bitm
+importbitmap 0 tags\objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher_bump.bitmap
+importbitmap 0 tags\objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher_decal.bitmap
+importbitmap 0 tags\objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher_decal.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher_illum.bitmap
+importbitmap 0 tags\objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher_illum.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp.mode
+copyblockelements markergroups 1 1
+exit
+edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
+removeblockelements markergroups 1 1
+pasteblockelements markergroups 1
+setfield markergroups[1].markers[0].translation 0.2643063 0.003026339 -0.01561892
+savetagchanges
+exit
+deletetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp.mode
+
+echo Fixing Spartan Laser
+edittag objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser.bitmap
+importbitmap 0 tags\objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser_bump.bitmap
+importbitmap 0 tags\objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser_decal.bitmap
+importbitmap 0 tags\objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser_decal.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser_decal2.bitmap
+importbitmap 0 tags\objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser_decal2.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser_light.bitmap
+importbitmap 0 tags\objects\weapons\support_high\spartan_laser\bitmaps\spartan_laser_light.dds
+setfield images[0].format 36
+savetagchanges
+exit
+
+echo Fixing Brute Shot
+edittag objects\weapons\support_low\brute_shot\bitmaps\brute_shot.bitmap
+importbitmap 0 tags\objects\weapons\support_low\brute_shot\bitmaps\brute_shot.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_low\brute_shot\bitmaps\brute_shot_bump.bitmap
+importbitmap 0 tags\objects\weapons\support_low\brute_shot\bitmaps\brute_shot_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\support_low\brute_shot\bitmaps\brute_shot_illum.bitmap
+importbitmap 0 tags\objects\weapons\support_low\brute_shot\bitmaps\brute_shot_illum.dds
+setfield images[0].format 39
+savetagchanges
+exit
+edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp.mode
+copyblockelements markergroups 0 1
+exit
+edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
+removeblockelements markergroups 0 1
+pasteblockelements markergroups 0
+savetagchanges
+exit
+deletetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp.mode
+
+echo Fixing Sentinel Beam
+edittag objects\weapons\support_low\sentinel_gun\bitmaps\sentinel_beam.bitmap
+importbitmap 0 tags\objects\weapons\support_low\sentinel_gun\bitmaps\sentinel_beam.dds
+setfield images[0].format 16
+savetagchanges
+exit
+edittag objects\weapons\support_low\sentinel_gun\bitmaps\sentinel_beam_bump.bitmap
+importbitmap 0 tags\objects\weapons\support_low\sentinel_gun\bitmaps\sentinel_beam_bump.dds
+setfield images[0].format 33
+savetagchanges
+exit
+edittag objects\weapons\support_low\sentinel_gun\bitmaps\sentinel_beam_illum.bitmap
+importbitmap 0 tags\objects\weapons\support_low\sentinel_gun\bitmaps\sentinel_beam_illum.dds
+setfield images[0].format 16
+savetagchanges
+exit
+
+echo Fixing Machinegun Turret
+nametag 0x0000288A objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp
+edittag objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.mode
+setfield regions[0].permutations[0].meshindex 1
+savetagchanges
+exit
+edittag objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.mode
+setfield regions[0].permutations[0].meshindex 1
+savetagchanges
+exit
+
+savetagnames
+dumplog Halo3WeaponFixes.txt
+
+echo All weapons fixed
