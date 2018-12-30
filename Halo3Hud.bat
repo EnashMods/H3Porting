@@ -21,4 +21,4 @@ GOTO End
 
 :Label1
 ECHO WARNING Mod is not in the correct location.
-ECHO Install at: /mods/tagMods/Halo3Weapons
+ECHO Install at: /mods/tagMods/PortHalo3Weapons

@@ -42,6 +42,18 @@ setfield hudwidgets[22].bitmapwidgets[2].placementdata[0].scale 0.6 0.6
 setfield hudwidgets[22].bitmapwidgets[2].placementdata[0].offset -90 -30
 savetagchanges
 exit
+edittag ui\chud\spartantemp.chdt
+removeblockelements hudwidgets 20 1
+removeblockelements hudwidgets 24 6
+copyblockelements hudwidgets 19 13
+exit
+edittag ui\chud\spartan.chdt
+pasteblockelements hudwidgets 23
+removeblockelements hudwidgets 27 1
+setfield hudwidgets[7].placementdata[0].offset 0 -120
+setfield hudwidgets[23].placementdata[0].offset 10 -40
+savetagchanges
+exit
 edittag ui\chud\globals.chgd
 setfield hudglobals[0].hudattributes[0].motionsensorradius 60
 setfield hudglobals[0].hudattributes[1].motionsensorradius 60
@@ -117,7 +129,6 @@ deletetag ui\chud\scoreboardtemp.chdt
 
 echo Installing Weapon HUDS
 opencachefile dlcmaps\sandbox.map
-porttag replace matchshaders ui\chud\unarmed.chdt
 porttag replace matchshaders ui\chud\hammer.chdt
 porttag replace matchshaders ui\chud\sword.chdt
 porttag replace matchshaders ui\chud\excavator.chdt
@@ -154,7 +165,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -228,7 +244,12 @@ SetField MirrorOffset 1 -1
 SetField Offset -25 45
 SetField Scale 1.5 1.5
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -413,7 +434,12 @@ SetField MirrorOffset 6.8 1
 SetField Offset -1 0
 SetField Scale -0.85 0.85
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[6].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -427,7 +453,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -531,7 +562,12 @@ SetField MirrorOffset -3.27 0
 SetField Offset 0 0
 SetField Scale 0.91 0.91
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -545,7 +581,13 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale -1.18 1.18
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -579,7 +621,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -623,7 +670,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -637,7 +689,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[2].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -651,7 +708,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1 1
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -675,7 +737,13 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1 1
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -739,7 +807,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -753,7 +826,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -767,7 +845,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1 1
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -791,7 +874,13 @@ SetField MirrorOffset 0 0
 SetField Offset 0 -2
 SetField Scale 0.8 0.8
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -805,12 +894,13 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-ExitTo Tags
-Echo =======================================
-
-Echo =======================================
-Echo Plasma Cannon
-
+Exit
+exit
+exit
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -864,7 +954,12 @@ SetField MirrorOffset 0 0
 SetField Offset -132 110
 SetField Scale 1 1
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 
 Echo =======================================
 
@@ -899,7 +994,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -913,7 +1013,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -927,7 +1032,13 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -1061,7 +1172,12 @@ SetField MirrorOffset -1 0
 SetField Offset -192 172
 SetField Scale 1.15 1.15
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -1105,7 +1221,12 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 0 0
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -1119,7 +1240,13 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 Echo =======================================
@@ -1133,34 +1260,23 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-ExitTo Tags
+Exit
+exit
+exit
+setfield hudwidgets[2].textwidgets[0].renderdata[0].shaderindex 5
+savetagchanges
+exit
 Echo =======================================
 
 echo Installing Variant HUDs
-extracttag ui\chud\unarmed.chdt            tags\ui\chud\unarmed.chud_definition
-extracttag ui\chud\hammer.chdt             tags\ui\chud\hammer.chud_definition
-extracttag ui\chud\sword.chdt              tags\ui\chud\sword.chud_definition
 extracttag ui\chud\excavator.chdt          tags\ui\chud\excavator.chud_definition
 extracttag ui\chud\magnum.chdt             tags\ui\chud\magnum.chud_definition
-extracttag ui\chud\needler.chdt            tags\ui\chud\needler.chud_definition
 extracttag ui\chud\plasma_pistol.chdt      tags\ui\chud\plasma_pistol.chud_definition
 extracttag ui\chud\assault_rifle.chdt      tags\ui\chud\assault_rifle.chud_definition
 extracttag ui\chud\battle_rifle.chdt       tags\ui\chud\battle_rifle.chud_definition
-extracttag ui\chud\beam_rifle.chdt         tags\ui\chud\beam_rifle.chud_definition
 extracttag ui\chud\carbine.chdt            tags\ui\chud\carbine.chud_definition
 extracttag ui\chud\plasma_rifle.chdt       tags\ui\chud\plasma_rifle.chud_definition
-extracttag ui\chud\shotgun.chdt            tags\ui\chud\shotgun.chud_definition
 extracttag ui\chud\smg.chdt                tags\ui\chud\smg.chud_definition
-extracttag ui\chud\sniper_rifle.chdt       tags\ui\chud\sniper_rifle.chud_definition
-extracttag ui\chud\spike_rifle.chdt        tags\ui\chud\spike_rifle.chud_definition
-extracttag ui\chud\fuel_rod_cannon.chdt    tags\ui\chud\fuel_rod_cannon.chud_definition
-extracttag ui\chud\rocket.chdt             tags\ui\chud\rocket.chud_definition
-extracttag ui\chud\spartan_laser.chdt      tags\ui\chud\spartan_laser.chud_definition
-extracttag ui\chud\brute_shot.chdt         tags\ui\chud\brute_shot.chud_definition
-extracttag ui\chud\sentinel_beam.chdt      tags\ui\chud\sentinel_beam.chud_definition
-extracttag ui\chud\machinegun_turret.chdt  tags\ui\chud\machinegun_turret.chud_definition
-extracttag ui\chud\plasma_turret.chdt      tags\ui\chud\plasma_turret.chud_definition
-extracttag ui\chud\missile.chdt            tags\ui\chud\missile.chud_definition
 edittag ui\chud\assault_rifle_v3.chdt
 copyblockelements hudwidgets 5 1
 exit
@@ -1182,6 +1298,26 @@ pasteblockelements hudwidgets 2
 setfield hudwidgets[3].bitmapwidgets[1].renderdata[0].outputcolora_ho 42
 setfield hudwidgets[4].bitmapwidgets[1].renderdata[0].outputcolora_ho 42
 savetagchanges
+exit
+edittag 0x1db1
+importbitmap textures 0 tags\00001db1.dds
+savetagchanges
+exit
+edittag ui\chud\battle_rifle_v1.chdt
+exit
+edittag ui\chud\battle_rifle_v2.chdt
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho 17
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho 20
+setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolora_ho 17
+setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho 20
+exit
+edittag ui\chud\battle_rifle_v3.chdt
+exit
+edittag ui\chud\battle_rifle_v4.chdt
+exit
+edittag ui\chud\battle_rifle_v5.chdt
+exit
+edittag ui\chud\battle_rifle_v6.chdt
 exit
 
 savetagnames

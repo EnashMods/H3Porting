@@ -762,6 +762,232 @@ setfield regions[0].permutations[0].meshindex 1
 savetagchanges
 exit
 
+echo Fixing Default Bitmaps
+EditTag 0x00004739
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x000002B8
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey50_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00004670
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey50_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000448A
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000037B
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00000EF6
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\bump_detail_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00005659
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_256_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00005520
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_a_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00005522
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_b_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00000EF7
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00004A6D
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_2_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00004486
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_red_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000037A
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_red_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x000002B9
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000446B
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00000377
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_alpha_test_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00000343
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000445C
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_2_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00004483
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_dynamic_cube_map_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00000379
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_dynamic_cube_map_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00000376
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00004471
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_2_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00000E97
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x000050D4
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x000002B7
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000445B
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000037D
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_linear_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00004493
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_linear_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000037C
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\monochrome_alpha_grid_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00004465
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_0.bitmap_texture_interop_resource"
+SetField Resources[1].Resource.Page.Index -1
+SetField Resources[1].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_1.bitmap_texture_interop_resource"
+SetField Resources[2].Resource.Page.Index -1
+SetField Resources[2].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_2.bitmap_texture_interop_resource"
+SetField Resources[3].Resource.Page.Index -1
+SetField Resources[3].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_3.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x00000375
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_0.bitmap_texture_interop_resource"
+SetField Resources[1].Resource.Page.Index -1
+SetField Resources[1].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_1.bitmap_texture_interop_resource"
+SetField Resources[2].Resource.Page.Index -1
+SetField Resources[2].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_2.bitmap_texture_interop_resource"
+SetField Resources[3].Resource.Page.Index -1
+SetField Resources[3].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_3.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x000027B0
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\vision_mode_mask_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
+ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.dds
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap
+ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\random4_warp.dds
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
+ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\color_black.dds
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
+ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\alpha_white.dds
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
+ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\alpha_grey25.dds
+ExitTo tags
+
+
 savetagnames
 dumplog Halo3WeaponFixes.txt
 
