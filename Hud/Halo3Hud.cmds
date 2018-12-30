@@ -114,8 +114,8 @@ setfield hudwidgets[5].bitmapwidgets[6].placementdata[0].offset -235 47
 setfield hudwidgets[5].bitmapwidgets[7].placementdata[0].offset -201 54
 setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -215 47
 setfield hudwidgets[5].bitmapwidgets[9].placementdata[0].offset -201 47
-setfield hudwidgets[6].placementdata[0].offset 6 -61
-setfield hudwidgets[7].placementdata[0].offset 6 -115
+setfield hudwidgets[6].placementdata[0].offset 0 -66
+setfield hudwidgets[7].placementdata[0].offset 0 -120
 setfield hudwidgets[1].textwidgets[0].renderdata[0].outputcolora_ho 17
 setfield hudwidgets[1].textwidgets[0].renderdata[0].outputcolorb_ho 17
 setfield hudwidgets[1].textwidgets[0].renderdata[0].outputcolorc_ho 17
