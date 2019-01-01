@@ -8,6 +8,7 @@ nametag * ui\chud\scoreboardtemp
 opencachefile dlcmaps\shrine.map
 porttag replace matchshaders ui\chud\spartan.chdt
 porttag replace matchshaders ui\chud\scoreboard.chdt
+porttag replace matchshaders ui\chud\bitmaps\sensor_blips.bitm
 exit
 edittag ui\chud\spartantemp.chdt
 copyblockelements hudwidgets 1 1
@@ -32,7 +33,7 @@ edittag ui\chud\spartan.chdt
 pasteblockelements hudwidgets 22
 setfield hudwidgets[2].placementdata[0].offset 0 50
 setfield hudwidgets[3].placementdata[0].offset 75 -54 
-setfield hudwidgets[3].placementdata[0].scale 0.8 0.8
+setfield hudwidgets[3].placementdata[0].scale 1.2 1.2
 setfield hudwidgets[22].placementdata[0].offset 115 -94
 setfield hudwidgets[22].bitmapwidgets[0].placementdata[0].scale 0.6 0.6
 setfield hudwidgets[22].bitmapwidgets[0].placementdata[0].offset -15 13
@@ -70,6 +71,9 @@ setfield hudglobals[0].hudattributes[4].motionsensoroffset 75 -296
 setfield hudglobals[0].hudattributes[5].motionsensoroffset 75 -470
 setfield hudglobals[0].hudattributes[6].motionsensoroffset 75 -296
 setfield hudglobals[0].hudattributes[7].motionsensoroffset 75 -296
+setfield mediumsensorblipscale 1
+setfield smallsensorblipscale 0.5
+setfield largesensorblipscale 3
 savetagchanges
 exit
 edittag ui\chud\scoreboardtemp.chdt
