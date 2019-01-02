@@ -1,5 +1,31 @@
 echo Installing Halo 3 Weapons
 
+echo Generating Temp Files
+duplicatetag objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
+nametag * objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp
+duplicatetag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
+nametag * objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp
+duplicatetag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
+nametag * objects\weapons\pistol\needler\fp_needler\fp_needlertemp
+duplicatetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
+nametag * objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp
+duplicatetag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
+nametag * objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp
+duplicatetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+nametag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp
+duplicatetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
+nametag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp
+duplicatetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
+nametag * objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp
+duplicatetag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
+nametag * objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp
+duplicatetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
+nametag * objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp
+duplicatetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
+nametag * objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp
+duplicatetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
+nametag * objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp
+
 echo Porting...
 opencachefile dlcmaps\sandbox.map
 echo Gravity Hammer
@@ -39,7 +65,7 @@ echo Needler
 porttag replace objects\weapons\pistol\needler\needler.mode
 porttag replace objects\weapons\pistol\needler\fx\firing.ligh
 porttag replace objects\weapons\pistol\needler\fp_needler\fp_needler.mode
-porttag replace objects\weapons\pistol\needler\projectiles\needler_shard\needler_shard.proj
+porttag replace objects\weapons\pistol\needler\projectiles\needler_shard\needler_shard.mode
 porttag replace objects\weapons\pistol\needler\fx\firing.effe
 
 echo Plasma Pistol
@@ -49,7 +75,6 @@ porttag replace objects\weapons\pistol\plasma_pistol\fx\charging.ligh
 porttag replace objects\weapons\pistol\plasma_pistol\fx\firing.ligh
 porttag replace objects\weapons\pistol\plasma_pistol\fx\overheated.effe
 porttag replace objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
-porttag replace objects\weapons\pistol\plasma_pistol\projectiles\plasma_pistol_bolt.proj
 porttag replace objects\weapons\pistol\plasma_pistol\fx\firing.effe
 
 echo Assault Rifle
@@ -85,7 +110,6 @@ echo Plasma Rifle
 porttag replace objects\weapons\rifle\plasma_rifle\plasma_rifle.mode
 porttag replace objects\weapons\rifle\plasma_rifle\fx\firing.ligh
 porttag replace objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
-porttag replace objects\weapons\rifle\plasma_rifle\projectiles\plasma_rifle_bolt.proj
 porttag replace objects\weapons\rifle\plasma_rifle\fx\firing.effe
 
 echo Shotgun
@@ -117,22 +141,22 @@ echo Spiker
 porttag replace objects\weapons\rifle\spike_rifle\spike_rifle.mode
 porttag replace objects\weapons\rifle\spike_rifle\fx\firing.ligh
 porttag replace objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
-porttag replace objects\weapons\rifle\spike_rifle\projectiles\spike_shard\spike_shard.proj
+porttag replace objects\weapons\rifle\spike_rifle\projectiles\spike_shard\spike_shard.mode
 porttag replace objects\weapons\rifle\spike_rifle\fx\firing.effe
 
 echo Fuel Rod Cannon
-porttag replace recursive audio scripts rmhg print objects\weapons\support_high\flak_cannon\flak_cannon.mode
+porttag replace objects\weapons\support_high\flak_cannon\flak_cannon.mode
 porttag replace objects\weapons\support_high\flak_cannon\fx\firing.ligh
 porttag replace objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.mode
-porttag replace objects\weapons\support_high\flak_cannon\projectiles\flak_bolt\flak_bolt.proj
+porttag replace objects\weapons\support_high\flak_cannon\projectiles\flak_bolt\flak_bolt.mode
 porttag replace objects\weapons\support_high\flak_cannon\fx\firing.effe
 
 echo Rocket Launcher
 porttag replace objects\weapons\support_high\rocket_launcher\rocket_launcher.mode
-porttag replace fx\material_effects\objects\weapons\rocket_launcher.foot
+porttag replace sound\weapons\rocket_launcher\rocket_expl.snd!
 porttag replace objects\weapons\support_high\rocket_launcher\fx\firing.ligh
 porttag replace objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
-porttag replace objects\weapons\support_high\rocket_launcher\projectiles\rocket.proj
+porttag replace objects\weapons\support_high\rocket_launcher\projectiles\rocket.mode
 porttag replace objects\weapons\support_high\rocket_launcher\fx\firing.effe
 
 echo Spartan Laser
@@ -146,10 +170,10 @@ porttag replace objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_s
 
 echo Brute Shot
 porttag replace objects\weapons\support_low\brute_shot\brute_shot.mode
-porttag replace fx\material_effects\objects\weapons\brute_shot.foot
+porttag replace sound\weapons\brute_shot\brute_round_explode.snd!
 porttag replace objects\weapons\support_low\brute_shot\fx\firing.ligh
 porttag replace objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
-porttag replace objects\weapons\support_low\brute_shot\projectiles\grenade\grenade.proj
+porttag replace objects\weapons\support_low\brute_shot\projectiles\grenade\grenade.mode
 porttag replace objects\weapons\support_low\brute_shot\fx\firing.effe
 
 echo Sentinel Beam
@@ -165,6 +189,7 @@ porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_vehic
 porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp.mode
 porttag replace objects\weapons\turret\machinegun_turret\fx\firing.ligh
 porttag replace objects\weapons\turret\machinegun_turret\fx\firing.effe
+savetagnames
 exit
 
 savetagnames
