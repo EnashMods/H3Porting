@@ -1,7 +1,5 @@
 
 echo Fixing Energy Sword
-DuplicateTag 0x00002305
-NameTag * objects\weapons\melee\energy_blade\shaders\energy_blade2
 edittag objects\weapons\melee\energy_blade\bitmaps\blade_height.bitmap
 importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\blade_height.dds
 setfield images[0].format 38
@@ -37,6 +35,8 @@ importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\energy_blade_hand
 setfield images[0].format 16
 savetagchanges
 exit
+DuplicateTag 0x00002305
+NameTag * objects\weapons\melee\energy_blade\shaders\energy_blade2
 EditTag objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
 SetField ShaderProperties[0].ShaderMaps[0].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_shield_mask.bitmap
 SetField ShaderProperties[0].ShaderMaps[1].bitmap objects\weapons\melee\energy_blade\bitmaps\detail_mask.bitmap
@@ -58,6 +58,7 @@ SetArgument thinness_wide 4 4 4 4
 SetArgument thinness_sharp 32 32 32 32
 SaveTagChanges
 Exit
+
 EditTag 0x00002300
 SetField Materials[2].RenderMethod objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
 SaveTagChanges
@@ -156,28 +157,6 @@ removeblockelements markergroups 2 1
 pasteblockelements markergroups 2
 savetagchanges
 exit
-EditTag objects\weapons\pistol\needler\shaders\needler_blue.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\pistol\needler\bitmaps\needler.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
-SaveTagChanges
-Exit
-EditTag objects\weapons\pistol\needler\shaders\needler_pink.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps 1
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\pistol\needler\bitmaps\needler.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\pistol\needler\bitmaps\needler_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\pistol\needler\bitmaps\needler_illum.bitmap
-SaveTagChanges
-Exit
 deletetag objects\weapons\pistol\needler\fp_needler\fp_needlertemp.mode     
 
 echo Fixing Plasma Pistol
@@ -212,21 +191,6 @@ exit
 edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
 removeblockelements markergroups 2 1
 pasteblockelements markergroups 2
-savetagchanges
-exit
-EditTag objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_metal.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\ghost\bitmaps\ghost_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
-setfield shaderproperties[0].shadermaps[4].unknown2 17
-setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_illum.bitm
-setfield shaderproperties[0].shadermaps[5].bitmapflags 4
-setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
 savetagchanges
 exit
 deletetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp.mode  
@@ -296,14 +260,6 @@ removeblockelements markergroups 1 1
 pasteblockelements markergroups 1
 savetagchanges
 exit
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
-setfield shaderproperties[0].template 0x00001F0D
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap shaders\default_bitmaps\bitmaps\default_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap shaders\default_bitmaps\bitmaps\default_vector.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap shaders\default_bitmaps\bitmaps\gray_50_percent.bitm
-savetagchanges
-exit
 deletetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp.mode
 
 echo Fixing Beam Rifle
@@ -322,36 +278,6 @@ importbitmap 0 tags\objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.dd
 setfield images[0].format 36
 savetagchanges
 exit
-EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\bitmaps\reflection_maps\mirror_surface.bitm
-setfield shaderproperties[0].shadermaps[4].unknown2 17
-setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitm
-setfield shaderproperties[0].shadermaps[5].bitmapflags 4
-setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
-savetagchanges
-exit   
-EditTag objects\weapons\rifle\beam_rifle\shaders\beam_rifle2.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
-setfield shaderproperties[0].shadermaps[4].unknown2 17
-setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\beam_rifle\bitmaps\beam_rifle_illum.bitm
-setfield shaderproperties[0].shadermaps[5].bitmapflags 4
-setfield shaderproperties[0].shadermaps[5].xformargumentindex 18
-savetagchanges
-exit  
 
 echo Fixing Carbine
 edittag objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
@@ -387,28 +313,6 @@ removeblockelements markergroups 1 1
 pasteblockelements markergroups 1
 savetagchanges
 exit
-EditTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
-SaveTagChanges
-Exit
-EditTag objects\weapons\rifle\covenant_carbine\shaders\carbine_dull.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\rifle\covenant_carbine\bitmaps\covenant_carbine_illum.bitmap
-SaveTagChanges
-Exit
 deletetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp.mode
 
 echo Fixing Plasma Rifle
@@ -443,28 +347,6 @@ exit
 edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
 removeblockelements markergroups 3 1
 pasteblockelements markergroups 3
-savetagchanges
-exit
-EditTag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\vehicles\wraith\bitmaps\wraith_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\bitmaps\reflection_maps\mirror_surface.bitm
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
-savetagchanges
-exit
-EditTag objects\weapons\rifle\plasma_rifle\shaders\plasma_rifle_metal.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\beam_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap levels\solo\030_outskirts\e3\sky\ark\bitmaps\ark_sky_cubemap.bitm
-addblockelements shaderproperties[0].shadermaps
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\plasma_rifle\bitmaps\plasma_rifle_illum.bitm
 savetagchanges
 exit
 deletetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp.mode
@@ -558,29 +440,6 @@ importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scop
 setfield images[0].format 16
 savetagchanges
 exit
-EditTag objects\weapons\rifle\sniper_rifle\shaders\scope_alpha.shader_halogram
-SetField ShaderProperties[0].Template 0x00000F91
-RemoveBlockElements ShaderProperties[0].Arguments * 3
-SetArgument base_map 1 1 0 0
-SetArgument detail_map 1 1 0 0
-SetArgument albedo_color 1 1 1 1
-SetArgument self_illum_map 0.6 0.6 0.2 0.2
-SetArgument self_illum_color 0.01568628 0.7176471 0.02352941 1
-SetArgument self_illum_intensity 1.362745 1.362745 1.362745 1.362745
-SetArgument self_illum_heat_color 0.1372549 1 0.1372549 1
-SetArgument overlay_map 1 1 0 0
-SetArgument overlay_detail_map 1 1 0 0
-SetArgument overlay_tint 0 0 0 1
-SetArgument overlay_intensity 1 1 1 1
-SetField InputVariable ParticleRandom1
-SetField RangeVariable ParticleAge
-SetField OutputModifier Times
-SaveTagChanges
-Exit 
-edittag objects\weapons\rifle\sniper_rifle\shaders\sniper_rifle_glass.rmsh
-setfield shaderproperties[0].arguments[2].values 0.1 0.2 0.1 1
-savetagchanges
-exit
 
 echo Fixing Spiker
 edittag objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter.bitmap
@@ -629,18 +488,10 @@ importbitmap 0 tags\objects\weapons\support_high\flak_cannon\bitmaps\flak_detail
 setfield images[0].format 16
 savetagchanges
 exit
-EditTag objects\weapons\support_high\flak_cannon\shaders\flak_cannon.shader
-SetField ShaderProperties[0].Template 0x00001AEF
-AddBlockElements ShaderProperties[0].ShaderMaps
-SetField ShaderProperties[0].ShaderMaps[0].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_detail.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_bump.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].Bitmap objects\bitmaps\reflection_maps\mirror_surface.bitmap
-SetField ShaderProperties[0].ShaderMaps[5].Bitmap objects\weapons\support_high\flak_cannon\bitmaps\flak_cannon_illum.bitmap
-setfield shaderproperties[0].arguments[11].values 0.03529412 0.0627451 0.03490196 1
-SaveTagChanges
-Exit  
+edittag objects\weapons\support_high\flak_cannon\shaders\flak_cannon.rmsh
+setfield shaderproperties[0].arguments[18].values 0.7725491 0.7333333 0.2313726 1
+savetagchanges
+exit
 
 echo Fixing Rocket Launcher
 edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher.bitm
@@ -755,231 +606,6 @@ setfield regions[0].permutations[0].meshindex 1
 savetagchanges
 exit
 
-echo Fixing Default Bitmaps
-EditTag 0x00004739
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x000002B8
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey50_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00004670
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey50_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x0000448A
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x0000037B
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00000EF6
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\bump_detail_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00005659
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_256_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00005520
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_a_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00005522
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_b_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00000EF7
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00004A6D
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_2_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00004486
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_red_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x0000037A
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_red_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x000002B9
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x0000446B
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00000377
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_alpha_test_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00000343
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x0000445C
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_2_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00004483
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_dynamic_cube_map_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00000379
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_dynamic_cube_map_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00000376
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00004471
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_2_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00000E97
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x000050D4
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x000002B7
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x0000445B
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x0000037D
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_linear_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00004493
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_linear_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x0000037C
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\monochrome_alpha_grid_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00004465
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_0.bitmap_texture_interop_resource"
-SetField Resources[1].Resource.Page.Index -1
-SetField Resources[1].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_1.bitmap_texture_interop_resource"
-SetField Resources[2].Resource.Page.Index -1
-SetField Resources[2].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_2.bitmap_texture_interop_resource"
-SetField Resources[3].Resource.Page.Index -1
-SetField Resources[3].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_3.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x00000375
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_0.bitmap_texture_interop_resource"
-SetField Resources[1].Resource.Page.Index -1
-SetField Resources[1].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_1.bitmap_texture_interop_resource"
-SetField Resources[2].Resource.Page.Index -1
-SetField Resources[2].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_2.bitmap_texture_interop_resource"
-SetField Resources[3].Resource.Page.Index -1
-SetField Resources[3].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\reference_grids_image_3.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag 0x000027B0
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\vision_mode_mask_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
-ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.dds
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap
-ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\random4_warp.dds
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
-ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\color_black.dds
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
-ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\alpha_white.dds
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
-ImportBitmap 0 tags\shaders\default_bitmaps\bitmaps\alpha_grey25.dds
-ExitTo tags
-
 EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.particle
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
@@ -1018,6 +644,49 @@ SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_b
 SaveTagChanges
 ExitTo tags
 
+EditTag 0x037B
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0EF7
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0376
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x02B7
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\random4_warp_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey25_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+SaveTagNames
 
 savetagnames
 dumplog Halo3WeaponFixes.txt
