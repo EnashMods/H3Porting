@@ -3,6 +3,10 @@ Here you can find cmds files for porting halo 3 content. Feel free to upload you
 
 Make sure you run the PrePorting Fixes script before any porting.
 
+Hud Install:
+1. Run Halo3Hud
+2. Be mildly impressed with the mostly complete hud
+
 Weapons Install:
 1. Run Halo3WeaponsNoHud
 2. Run Halo3WeaponFixes
