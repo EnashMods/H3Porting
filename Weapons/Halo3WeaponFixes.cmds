@@ -35,8 +35,6 @@ importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\energy_blade_hand
 setfield images[0].format 16
 savetagchanges
 exit
-DuplicateTag 0x00002305
-NameTag * objects\weapons\melee\energy_blade\shaders\energy_blade2
 EditTag objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
 SetField ShaderProperties[0].ShaderMaps[0].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_shield_mask.bitmap
 SetField ShaderProperties[0].ShaderMaps[1].bitmap objects\weapons\melee\energy_blade\bitmaps\detail_mask.bitmap
@@ -440,6 +438,23 @@ importbitmap 0 tags\objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_scop
 setfield images[0].format 16
 savetagchanges
 exit
+edittag objects\weapons\rifle\sniper_rifle\shaders\scope_alpha.rmhg
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 1 1 1 1
+SetArgument self_illum_map 0.6 0.6 0.2 0.2
+SetArgument self_illum_color 0.01568628 0.7176471 0.02352941 1
+SetArgument self_illum_intensity 1.362745 1.362745 1.362745 1.362745
+SetArgument self_illum_heat_color 0.1372549 1 0.1372549 1
+SetArgument overlay_map 1 1 0 0
+SetArgument overlay_detail_map 1 1 0 0
+SetArgument overlay_tint 0 0 0 1
+SetArgument overlay_intensity 1 1 1 1
+SetField InputVariable ParticleRandom1
+SetField RangeVariable ParticleAge
+SetField OutputModifier Times
+SaveTagChanges
+Exit
 
 echo Fixing Spiker
 edittag objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter.bitmap

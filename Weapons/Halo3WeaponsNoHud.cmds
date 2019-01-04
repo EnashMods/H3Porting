@@ -25,13 +25,33 @@ duplicatetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_
 nametag * objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp
 duplicatetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
 nametag * objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp
+duplicatetag objects\weapons\melee\energy_blade\shaders\energy_blade.rmsh
+nametag * objects\weapons\melee\energy_blade\shaders\energy_blade2
 
 echo Porting...
 opencachefile dlcmaps\sandbox.map
+
+echo Porting Frag Grenade
+porttag replace matchshaders objects\weapons\grenade\frag_grenade\frag_grenade.mode
+porttag replace matchshaders objects\weapons\lod\lod_frag_grenade\lod_frag_grenade.mode
+
+echo Porting Plasma Grenade
+porttag replace matchshaders objects\weapons\grenade\plasma_grenade\plasma_grenade.mode
+porttag replace matchshaders objects\weapons\lod\lod_plasma_grenade\lod_plasma_grenade.mode
+
+echo Porting Fire Bomb Grenade
+porttag replace matchshaders objects\weapons\grenade\firebomb_grenade\firebomb_grenade.mode
+porttag replace matchshaders objects\weapons\lod\lod_firebomb_grenade\lod_firebomb_grenade.mode
+
+echo Porting Spike Grenade
+porttag replace matchshaders objects\weapons\grenade\claymore_grenade\claymore_grenade.mode
+porttag replace matchshaders objects\weapons\lod\lod_brute_grenade\lod_brute_grenade.mode
+
 echo Gravity Hammer
 porttag replace matchshaders objects\weapons\melee\gravity_hammer\gravity_hammer.mode
 porttag replace matchshaders objects\weapons\melee\gravity_hammer\fx\hammer_on.effe
 porttag replace matchshaders objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.mode
+porttag replace matchshaders objects\weapons\lod\lod_gravity_hammer\lod_gravity_hammer.mode
 
 echo Energy Sword
 porttag replace matchshaders objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode
@@ -42,9 +62,11 @@ porttag replace matchshaders objects\weapons\melee\energy_blade\fx\blade_on.lens
 
 echo Assault Bomb
 porttag replace matchshaders objects\weapons\multiplayer\assault_bomb\assault_bomb.mode
+porttag replace matchshaders objects\weapons\lod\lod_assault_bomb\lod_assault_bomb.mode
 
 echo Ball
 porttag replace matchshaders objects\weapons\multiplayer\ball\ball.mode
+porttag replace matchshaders objects\weapons\lod\lod_ball\lod_ball.mode
 
 echo Flag
 porttag replace matchshaders objects\weapons\multiplayer\flag\flag.mode
@@ -54,12 +76,14 @@ porttag replace matchshaders objects\weapons\pistol\excavator\excavator.mode
 porttag replace matchshaders objects\weapons\pistol\excavator\fx\firing.ligh
 porttag replace matchshaders objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
 porttag replace matchshaders objects\weapons\pistol\excavator\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_excavator\lod_excavator.mode
 
 echo Magnum
 porttag replace matchshaders objects\weapons\pistol\magnum\magnum.mode
 porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.ligh
 porttag replace matchshaders objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
 porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_magnum\lod_magnum.mode
 
 echo Needler
 porttag replace matchshaders objects\weapons\pistol\needler\needler.mode
@@ -67,6 +91,7 @@ porttag replace matchshaders objects\weapons\pistol\needler\fx\firing.ligh
 porttag replace matchshaders objects\weapons\pistol\needler\fp_needler\fp_needler.mode
 porttag replace matchshaders objects\weapons\pistol\needler\projectiles\needler_shard\needler_shard.mode
 porttag replace matchshaders objects\weapons\pistol\needler\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_needler\lod_needler.mode
 
 echo Plasma Pistol
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\plasma_pistol.mode
@@ -76,6 +101,7 @@ porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\firing.ligh
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\overheated.effe
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
 porttag replace matchshaders objects\weapons\pistol\plasma_pistol\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_plasma_pistol\lod_plasma_pistol.mode
 
 echo Assault Rifle
 porttag replace matchshaders objects\weapons\rifle\assault_rifle\assault_rifle.mode
@@ -84,6 +110,7 @@ porttag replace matchshaders objects\weapons\rifle\assault_rifle\flashlight_ar.l
 porttag replace matchshaders objects\weapons\rifle\assault_rifle\fx\flashlight.effe
 porttag replace matchshaders objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\assault_rifle\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_assault_rifle\lod_assault_rifle.mode
 
 echo Battle Rifle
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\battle_rifle.mode
@@ -91,6 +118,7 @@ porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\firing.ligh
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\firing.effe
 porttag replace matchshaders objects\weapons\rifle\battle_rifle\fx\empty.effe
+porttag replace matchshaders objects\weapons\lod\lod_battle_rifle\lod_battle_rifle.mode
 
 echo Beam Rifle
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\beam_rifle.mode
@@ -98,6 +126,7 @@ porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\firing.ligh
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\overheated.effe
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\beam_rifle\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_beam_rifle\lod_beam_rifle.mode
 
 echo Carbine
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\covenant_carbine.mode
@@ -105,12 +134,14 @@ porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\firing.li
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\firing.effe
 porttag replace matchshaders objects\weapons\rifle\covenant_carbine\fx\carbine_misfire.effe
+porttag replace matchshaders objects\weapons\lod\lod_carbine\lod_carbine.mode
 
 echo Plasma Rifle
 porttag replace matchshaders objects\weapons\rifle\plasma_rifle\plasma_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fx\firing.ligh
 porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\plasma_rifle\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_plasma_rifle\lod_plasma_rifle.mode
 
 echo Shotgun
 porttag replace matchshaders objects\weapons\rifle\shotgun\shotgun.mode
@@ -120,6 +151,7 @@ porttag replace matchshaders objects\weapons\rifle\shotgun\fx\flashlight.effe
 porttag replace matchshaders objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
 porttag replace matchshaders objects\weapons\rifle\shotgun\fx\firing.effe
 porttag replace matchshaders objects\weapons\rifle\shotgun\fx\misfire.effe
+porttag replace matchshaders objects\weapons\lod\lod_shotgun\lod_shotgun.mode
 
 echo SMG
 porttag replace matchshaders objects\weapons\rifle\smg\smg.mode
@@ -130,12 +162,14 @@ porttag replace matchshaders sound\weapons\smg\smg_loop_left\smg_loop_left.lsnd
 porttag replace matchshaders sound\weapons\smg\smg_loop_right\smg_loop_right.lsnd
 porttag replace matchshaders objects\weapons\rifle\smg\fp_smg\fp_smg.mode
 porttag replace matchshaders objects\weapons\rifle\smg\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_smg\lod_smg.mode
 
 echo Sniper Rifle
 porttag replace matchshaders objects\weapons\rifle\sniper_rifle\sniper_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fx\firing.ligh
 porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\sniper_rifle\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_sniper_rifle\lod_sniper_rifle.mode
 
 echo Spiker
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\spike_rifle.mode
@@ -143,6 +177,7 @@ porttag replace matchshaders objects\weapons\rifle\spike_rifle\fx\firing.ligh
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\projectiles\spike_shard\spike_shard.mode
 porttag replace matchshaders objects\weapons\rifle\spike_rifle\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_spike_rifle\lod_spike_rifle.mode
 
 echo Fuel Rod Cannon
 porttag replace matchshaders objects\weapons\support_high\flak_cannon\flak_cannon.mode
@@ -150,6 +185,7 @@ porttag replace matchshaders objects\weapons\support_high\flak_cannon\fx\firing.
 porttag replace matchshaders objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.mode
 porttag replace matchshaders objects\weapons\support_high\flak_cannon\projectiles\flak_bolt\flak_bolt.mode
 porttag replace matchshaders objects\weapons\support_high\flak_cannon\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_flak_cannon\lod_flak_cannon.mode
 
 echo Rocket Launcher
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\rocket_launcher.mode
@@ -158,6 +194,7 @@ porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\fir
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\projectiles\rocket.mode
 porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_rocket_launcher\lod_rocket_launcher.mode
 
 echo Spartan Laser
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\spartan_laser.mode
@@ -167,6 +204,7 @@ porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charg
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.effe
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.lens
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.mode
+porttag replace matchshaders objects\weapons\lod\lod_spartan_laser\lod_spartan_laser.mode
 
 echo Brute Shot
 porttag replace matchshaders objects\weapons\support_low\brute_shot\brute_shot.mode
@@ -175,12 +213,15 @@ porttag replace matchshaders objects\weapons\support_low\brute_shot\fx\firing.li
 porttag replace matchshaders objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
 porttag replace matchshaders objects\weapons\support_low\brute_shot\projectiles\grenade\grenade.mode
 porttag replace matchshaders objects\weapons\support_low\brute_shot\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_brute_shot\lod_brute_shot.mode
+porttag replace matchshaders objects\weapons\lod\lod_brute_grenade\lod_brute_grenade.mode
 
 echo Sentinel Beam
 porttag replace matchshaders objects\weapons\support_low\sentinel_gun\sentinel_gun.mode
 porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fx\overheated.effe
 porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fp_sentinel_gun\fp_sentinel_gun.mode
 porttag replace matchshaders objects\weapons\support_low\sentinel_gun\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_sentinel_gun\lod_sentinel_gun.mode
 
 echo Machinegun Turret
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.mode
@@ -189,6 +230,7 @@ porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp.mode
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\fx\firing.ligh
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_machinegun_turret\lod_machinegun_turret.mode
 savetagnames
 exit
 
