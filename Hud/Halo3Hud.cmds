@@ -5,6 +5,8 @@ duplicatetag ui\chud\spartan.chdt
 nametag * ui\chud\spartantemp
 duplicatetag ui\chud\scoreboard.chdt
 nametag * ui\chud\scoreboardtemp
+duplicatetag ui\chud\flamethrower.chdt
+nametag * ui\chud\flamethrowertemp
 opencachefile dlcmaps\shrine.map
 porttag replace matchshaders ui\chud\spartan.chdt
 porttag replace matchshaders ui\chud\scoreboard.chdt
@@ -31,16 +33,18 @@ copyblockelements hudwidgets 24 1
 exit
 edittag ui\chud\spartan.chdt
 pasteblockelements hudwidgets 22
-setfield hudwidgets[2].placementdata[0].offset 0 50
-setfield hudwidgets[3].placementdata[0].offset 75 -54 
-setfield hudwidgets[3].placementdata[0].scale 1.2 1.2
-setfield hudwidgets[22].placementdata[0].offset 115 -94
+setfield hudwidgets[2].placementdata[0].offset 0 30
+setfield hudwidgets[3].placementdata[0].offset 75 -83
+setfield hudwidgets[3].placementdata[0].scale 1.5 1.5
+setfield hudwidgets[3].textwidgets[0].placementdata[0].offset 60 60
+setfield hudwidgets[22].placementdata[0].offset 25 -33
+setfield hudwidgets[22].placementdata[0].scale -1.45 -1.45
 setfield hudwidgets[22].bitmapwidgets[0].placementdata[0].scale 0.6 0.6
 setfield hudwidgets[22].bitmapwidgets[0].placementdata[0].offset -15 13
 setfield hudwidgets[22].bitmapwidgets[1].placementdata[0].scale 0.6 0.6
 setfield hudwidgets[22].bitmapwidgets[1].placementdata[0].offset -15 13
-setfield hudwidgets[22].bitmapwidgets[2].placementdata[0].scale 0.6 0.6
-setfield hudwidgets[22].bitmapwidgets[2].placementdata[0].offset -90 -30
+setfield hudwidgets[22].bitmapwidgets[2].placementdata[0].scale 0.6 -0.6
+setfield hudwidgets[22].bitmapwidgets[2].placementdata[0].offset 25 95
 savetagchanges
 exit
 edittag ui\chud\spartantemp.chdt
@@ -55,14 +59,14 @@ setfield hudwidgets[23].placementdata[0].offset 10 -40
 savetagchanges
 exit
 edittag ui\chud\globals.chgd
-setfield hudglobals[0].hudattributes[0].motionsensorradius 60
-setfield hudglobals[0].hudattributes[1].motionsensorradius 60
-setfield hudglobals[0].hudattributes[2].motionsensorradius 60
-setfield hudglobals[0].hudattributes[3].motionsensorradius 60
-setfield hudglobals[0].hudattributes[4].motionsensorradius 60
-setfield hudglobals[0].hudattributes[5].motionsensorradius 60
-setfield hudglobals[0].hudattributes[6].motionsensorradius 60
-setfield hudglobals[0].hudattributes[7].motionsensorradius 60
+setfield hudglobals[0].hudattributes[0].motionsensorradius 90
+setfield hudglobals[0].hudattributes[1].motionsensorradius 90
+setfield hudglobals[0].hudattributes[2].motionsensorradius 90
+setfield hudglobals[0].hudattributes[3].motionsensorradius 90
+setfield hudglobals[0].hudattributes[4].motionsensorradius 90
+setfield hudglobals[0].hudattributes[5].motionsensorradius 90
+setfield hudglobals[0].hudattributes[6].motionsensorradius 90
+setfield hudglobals[0].hudattributes[7].motionsensorradius 90
 setfield hudglobals[0].hudattributes[0].motionsensoroffset 75 -501
 setfield hudglobals[0].hudattributes[1].motionsensoroffset 75 -360
 setfield hudglobals[0].hudattributes[2].motionsensoroffset 75 -360
@@ -147,6 +151,7 @@ porttag replace matchshaders ui\chud\sentinel_beam.chdt
 porttag replace matchshaders ui\chud\machinegun_turret.chdt
 porttag replace matchshaders ui\chud\plasma_turret.chdt
 porttag replace matchshaders ui\chud\missile.chdt
+porttag replace matchshaders ui\chud\flamethrower.chdt
 exit
 
 Echo =======================================
@@ -541,40 +546,16 @@ Echo =======================================
 Echo =======================================
 Echo Flamethrower
 
-EditTag ui\chud\flamethrower.chud_definition
-EditBlock HUDWidgets[0]
-EditBlock BitmapWidgets[0]
-EditBlock PlacementData[0]
-SetField MirrorOffset 0 0
-SetField Offset 0 0
-SetField Scale 0 0
-SaveTagChanges
-ExitTo Tags
-
-EditTag ui\chud\flamethrower.chud_definition
-EditBlock HUDWidgets[0]
-EditBlock BitmapWidgets[1]
-EditBlock PlacementData[0]
-SetField MirrorOffset 0 0
-SetField Offset 0 0
-SetField Scale 0 0
-SaveTagChanges
-ExitTo Tags
-
-EditTag ui\chud\flamethrower.chud_definition
-EditBlock HUDWidgets[1]
-EditBlock BitmapWidgets[0]
-EditBlock PlacementData[0]
-SetField MirrorOffset 0 0
-SetField Offset 0 0
-SetField Scale 1.5 1.5
-SaveTagChanges
-Exit
+edittag ui\chud\flamethrowertemp.chdt
+copyblockelements hudwidgets 0 1
 exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+edittag ui\chud\flamethrower.chud_definition
+removeblockelements hudwidgets 1 1
+pasteblockelements hudwidgets 1
+setfield hudwidgets[2].placementdata[0].offset 18 12
 savetagchanges
 exit
+deletetag ui\chud\flamethrowertemp.chdt
 Echo =======================================
 
 Echo =======================================
@@ -660,6 +641,7 @@ Exit
 exit
 exit
 setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[0].placementdata[0].offset 18 12
 savetagchanges
 exit
 Echo =======================================
@@ -797,6 +779,7 @@ Exit
 exit
 exit
 setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[0].placementdata[0].offset 18 12
 savetagchanges
 exit
 Echo =======================================
