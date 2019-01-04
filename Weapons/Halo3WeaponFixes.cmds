@@ -455,6 +455,14 @@ SetField RangeVariable ParticleAge
 SetField OutputModifier Times
 SaveTagChanges
 Exit
+edittag objects\weapons\rifle\sniper_rifle\shaders\sniper_rifle_glass.rmsh
+setfield shaderproperties[0].arguments[2].values 0.1 0.3 0.1 0.1
+savetagchanges
+exit
+edittag objects\weapons\rifle\sniper_rifle\shaders\sniper_rifle_scope_screen.rmsh
+setfield shaderproperties[0].arguments[22].values 1 0.5 0 0
+savetagchanges
+exit
 
 echo Fixing Spiker
 edittag objects\weapons\rifle\spike_rifle\bitmaps\brute_bolter.bitmap
@@ -659,53 +667,62 @@ SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_b
 SaveTagChanges
 ExitTo tags
 
-EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
+ImportTag 0x4739 "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
+EditTag 0x4739
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
+ImportTag 0x037B "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
+EditTag 0x037B
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-EditTag shaders\default_bitmaps\bitmaps\clouds_256.bitmap
+ImportTag 0x5659 "tags\shaders\default_bitmaps\bitmaps\clouds_256.bitmap"
+EditTag 0x5659
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_256_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
+ImportTag 0x0EF7 "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
+EditTag 0x0EF7
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-EditTag shaders\default_bitmaps\bitmaps\default_detail.bitmap
+ImportTag 0x0343 "tags\shaders\default_bitmaps\bitmaps\default_detail.bitmap"
+EditTag 0x0343
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-EditTag shaders\default_bitmaps\bitmaps\default_vector.bitmap
+ImportTag 0x0376 "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
+EditTag 0x0376
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-EditTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap
+ImportTag 0x0E97 "tags\shaders\default_bitmaps\bitmaps\dither_pattern.bitmap"
+EditTag 0x0E97
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-EditTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+ImportTag 0x02B7 "tags\shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap"
+EditTag 0x02B7
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
+
 
 savetagnames
 dumplog Halo3WeaponFixes.txt
