@@ -16,6 +16,10 @@ duplicatetag objects\vehicles\banshee\garbage\wing_prong_garbage\wing_prong_garb
 nametag * objects\vehicles\banshee\garbage\wing_prong_garbage\wing_prong_garbageho
 
 opencachefile dlcmaps\sandbox.map
+
+echo Installing Prowler
+porttag replace matchshaders objects\vehicles\mauler\shaders\mauler.rmsh
+
 echo Installing Banshee
 porttag replace matchshaders objects\vehicles\banshee\banshee.hlmt
 porttag replace matchshaders objects\vehicles\banshee\garbage\cab_garbage\cab_garbage.mode
@@ -230,38 +234,37 @@ SetField OutputModifier Times
 SaveTagChanges
 Exit
 
-ImportBitmap shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\color_white.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportBitmap shaders\default_bitmaps\bitmaps\default_detail.bitmap "tags\shaders\default_bitmaps\bitmaps\default_detail.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\default_detail.bitmap "tags\shaders\default_bitmaps\bitmaps\default_detail.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\default_detail.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportBitmap shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\default_vector.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportBitmap shaders\default_bitmaps\bitmaps\dither_pattern.bitmap "tags\shaders\default_bitmaps\bitmaps\dither_pattern.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap "tags\shaders\default_bitmaps\bitmaps\dither_pattern.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportBitmap shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap "tags\shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap "tags\shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
-
