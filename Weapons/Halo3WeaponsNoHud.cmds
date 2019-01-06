@@ -31,21 +31,135 @@ nametag * objects\weapons\melee\energy_blade\shaders\energy_blade2
 echo Porting...
 opencachefile dlcmaps\sandbox.map
 
+echo Porting Bubble Shield
+porttag replace sound\weapons\equipment\bubble_shield\bubble_loop\bubble_loop.lsnd
+porttag replace objects\weapons\equipment\bubble_shield\bubble_activate.snd!
+porttag replace objects\weapons\equipment\bubble_shield\bubble_deactivate.snd!
+porttag replace objects\weapons\equipment\bubble_shield\bubble_loop\track1\in.snd!
+porttag replace objects\weapons\equipment\bubble_shield\bubble_loop\track1\loop.snd!
+porttag replace objects\weapons\equipment\bubble_shield\bubble_loop\track2\loop.snd!
+porttag replace objects\weapons\equipment\bubble_shield\bubble_pickup.snd!
+
+echo Porting Grav Lift
+porttag replace sound\weapons\equipment\gravlift\gravlift_loop\gravlift_loop.lsnd
+porttag replace sound\weapons\equipment\gravlift\gravlift_up\gravlift_up.lsnd
+porttag replace sound\weapons\equipment\gravlift\gravlift_death.snd!
+porttag replace sound\weapons\equipment\gravlift\gravlift_loop\gravlift_loop\in.snd!
+porttag replace sound\weapons\equipment\gravlift\gravlift_loop\gravlift_loop\loop.snd!
+porttag replace sound\weapons\equipment\gravlift\gravlift_up\up\in.snd!
+porttag replace sound\weapons\equipment\gravlift\gravlift_up\up\loop.snd!
+
+echo Instant Cover
+porttag replace sound\weapons\equipment\instantcover\instantcover_loop\instantcover_loop.lsnd
+porttag replace sound\weapons\equipment\instantcover\instantcover_loop\instantcover_loop\loop.snd!
+porttag replace sound\weapons\equipment\instantcover\instant_cover_deploy_delay.snd!
+porttag replace sound\weapons\equipment\instantcover\shield_redeploy.snd!
+
+echo Power Drain
+porttag replace sound\weapons\equipment\power_drain\power_drain_loop\power_drain_loop.lsnd
+porttag replace sound\weapons\equipment\power_drain\power_drain_flash.snd!
+porttag replace sound\weapons\equipment\power_drain\power_drain_loop\details\electric_arc.snd!
+porttag replace sound\weapons\equipment\power_drain\power_drain_loop\details\electric_sparks.snd!
+porttag replace sound\weapons\equipment\power_drain\power_drain_loop\track1\in.snd!
+porttag replace sound\weapons\equipment\power_drain\power_drain_loop\track1\loop.snd!
+porttag replace sound\weapons\equipment\power_drain\power_drain_loop\track1\out.snd!
+porttag replace sound\weapons\equipment\power_drain\power_drain_loop\track1\loop.snd!
+porttag replace sound\weapons\equipment\power_drain\power_drain_pickup.snd!
+
+echo Porting Regenerator
+porttag replace sound\weapons\equipment\regenerator\regenerator_looping\regenerator_looping.lsnd
+porttag replace sound\weapons\equipment\regenerator\regenerator_arm.snd!
+porttag replace sound\weapons\equipment\regenerator\regenerator_expl.snd!
+porttag replace sound\weapons\equipment\regenerator\regenerator_looping\regenerator_loop\in.snd!
+porttag replace sound\weapons\equipment\regenerator\regenerator_looping\regenerator_loop\loop.snd!
+
+echo Porting Flare
+porttag replace sound\weapons\equipment\superflare\superflare_loop\superflare_loop.lsnd
+porttag replace sound\weapons\equipment\superflare\superflare_arm.snd!
+porttag replace sound\weapons\equipment\superflare\superflare_expl.snd!
+porttag replace sound\weapons\equipment\superflare\superflare_loop\flare_loop\loop.snd!
+
+echo Porting Tripmine
+porttag replace sound\weapons\equipment\tripmine\tripmine_beep\tripmine_beep.lsnd
+porttag replace sound\weapons\equipment\tripmine\tripmine_loop\tripmine_loop.lsnd
+porttag replace sound\weapons\equipment\tripmine\tripmine_windup\tripmine_windup.lsnd
+porttag replace sound\weapons\equipment\tripmine\tripmine_ammo.snd!
+porttag replace sound\weapons\equipment\tripmine\tripmine_armed.snd!
+porttag replace sound\weapons\equipment\tripmine\tripmine_beep\tripmine_beep\in.snd!
+porttag replace sound\weapons\equipment\tripmine\tripmine_beep\tripmine_beep\loop.snd!
+porttag replace sound\weapons\equipment\tripmine\tripmine_drop.snd!
+porttag replace sound\weapons\equipment\tripmine\tripmine_explosion.snd!
+porttag replace sound\weapons\equipment\tripmine\tripmine_lod_far.snd!
+porttag replace sound\weapons\equipment\tripmine\tripmine_loop\tripmine_loop\loop.snd!
+porttag replace sound\weapons\equipment\tripmine\tripmine_windup\tripmine_windup\loop.snd!
+
 echo Porting Frag Grenade
 porttag replace matchshaders objects\weapons\grenade\frag_grenade\frag_grenade.mode
 porttag replace matchshaders objects\weapons\lod\lod_frag_grenade\lod_frag_grenade.mode
+porttag replace sound\weapons\frag_grenade\frag_projectile\frag_projectile.lsnd
+porttag replace sound\game_sfx\ui\switch_grenades\switch_to_frag_grenade.snd!
+porttag replace sound\weapons\frag_grenade\frag_ammo.snd!
+porttag replace sound\weapons\frag_grenade\frag_bnc_dirt.snd!
+porttag replace sound\weapons\frag_grenade\frag_bnc_metal.snd!
+porttag replace sound\weapons\frag_grenade\frag_bnc\stone.snd!
+porttag replace sound\weapons\frag_grenade\frag_drops\frag_drop.snd!
+porttag replace sound\weapons\frag_grenade\frag_drops\frag_drop_dirt.snd!
+porttag replace sound\weapons\frag_grenade\frag_expl.snd!
+porttag replace sound\weapons\frag_grenade\frag_expl_lod_far.snd!
+porttag replace sound\weapons\frag_grenade\frag_expl_water.snd!
+porttag replace sound\weapons\frag_grenade\frag_projectile\frag_proj\loop.snd!
+porttag replace sound\weapons\frag_grenade\frag_throw.snd!
+porttag replace sound\weapons\frag_grenade\shield_hits_frag_grenade.snd!
 
 echo Porting Plasma Grenade
 porttag replace matchshaders objects\weapons\grenade\plasma_grenade\plasma_grenade.mode
 porttag replace matchshaders objects\weapons\lod\lod_plasma_grenade\lod_plasma_grenade.mode
+porttag replace sound\weapons\plasma_grenade\plas_proj.lsnd
+porttag replace sound\game_sfx\ui\switch_grenades\switch_to_plasma_grenade.snd!
+porttag replace sound\weapons\plasma_grenade\grenade_plas_ammo.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_detonation_start.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_expl_h3.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_expl_lod_far.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_expl_water.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_grenade_armed.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_grenade_armed_no_beeps.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_grenade_bounce.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_grenade_drops\plasma_grenade_dropped.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_grenade_drops\plasma_grenade_dropped_dirt.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_grenade_drops\plasma_grenade_dropped_soft.snd!
+porttag replace sound\weapons\plasma_grenade\plasma_proj2.snd!
+porttag replace sound\weapons\plasma_grenade\plas_gren_overpen_water.snd!
+porttag replace sound\weapons\plasma_grenade\throwgren.snd!
 
 echo Porting Fire Bomb Grenade
 porttag replace matchshaders objects\weapons\grenade\firebomb_grenade\firebomb_grenade.mode
 porttag replace matchshaders objects\weapons\lod\lod_firebomb_grenade\lod_firebomb_grenade.mode
+porttag replace sound\weapons\firebomb\firebomb_loop\firebomb_loop.lsnd
+porttag replace sound\game_sfx\ui\switch_grenades\switch_to_fire_bomb.snd!
+porttag replace sound\weapons\firebomb\firebomb_expl.snd!
+porttag replace sound\weapons\firebomb\firebomb_loop\firebomb_loop\loop.snd!
+porttag replace sound\weapons\firebomb\firebomb_throw.snd!
+
 
 echo Porting Spike Grenade
 porttag replace matchshaders objects\weapons\grenade\claymore_grenade\claymore_grenade.mode
 porttag replace matchshaders objects\weapons\lod\lod_brute_grenade\lod_brute_grenade.mode
+porttag replace sound\weapons\claymore_grenade\claymore_proj\claymore_proj.lsnd
+porttag replace sound\game_sfx\ui\switch_grenades\switch_to_claymore_grenade.snd!
+porttag replace sound\weapons\claymore_grenade\brute_shot_projectile\brute_shot_proj\loop.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_ammo.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_drops\claymore_drop.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_drops\claymore_drop_dirt.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_drops\claymore_drop_soft.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_expl.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_expl_lod_far.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_expl_water.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_proj\track1\loop.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_stick.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_stick_biped.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_stick_dirt.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_stick_soft.snd!
+porttag replace sound\weapons\claymore_grenade\claymore_throw.snd!
 
 echo Gravity Hammer
 porttag replace matchshaders objects\weapons\melee\gravity_hammer\gravity_hammer.mode
@@ -231,6 +345,16 @@ porttag replace matchshaders objects\weapons\turret\machinegun_turret\machinegun
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\fx\firing.ligh
 porttag replace matchshaders objects\weapons\turret\machinegun_turret\fx\firing.effe
 porttag replace matchshaders objects\weapons\lod\lod_machinegun_turret\lod_machinegun_turret.mode
+
+echo Plasma Turret
+porttag replace matchshaders objects\weapons\turret\plasma_cannon\plasma_cannon_weapon\plasma_cannon_weapon.mode
+porttag replace matchshaders objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\plasma_cannon_vehicle.jmad
+porttag replace matchshaders objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\plasma_cannon_vehicle.mode
+porttag replace matchshaders objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\garbage\garbage_tripod_back\garbage_tripod_back.mode
+porttag replace matchshaders objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\garbage\garbage_tripod_front\garbage_tripod_front.mode
+porttag replace matchshaders objects\weapons\turret\plasma_cannon\fx\firing.ligh
+porttag replace matchshaders objects\weapons\turret\plasma_cannon\fx\firing.effe
+porttag replace matchshaders objects\weapons\lod\lod_plasma_turret\lod_plasma_turret.mode
 savetagnames
 exit
 
