@@ -35,25 +35,8 @@ importbitmap 0 tags\objects\weapons\melee\energy_blade\bitmaps\energy_blade_hand
 setfield images[0].format 16
 savetagchanges
 exit
-EditTag objects\weapons\melee\energy_blade\shaders\energy_blade2.shader
-SetField ShaderProperties[0].ShaderMaps[0].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_shield_mask.bitmap
-SetField ShaderProperties[0].ShaderMaps[1].bitmap objects\weapons\melee\energy_blade\bitmaps\detail_mask.bitmap
-SetField ShaderProperties[0].ShaderMaps[2].bitmap objects\weapons\melee\energy_blade\bitmaps\blade_height.bitmap
-SetField ShaderProperties[0].ShaderMaps[3].bitmap shaders\default_bitmaps\bitmaps\clouds_256.bitmap
-SetField ShaderProperties[0].ShaderMaps[4].bitmap shaders\default_bitmaps\bitmaps\clouds_256.bitmap
-SetArgument base_map 1 1 0 0
-SetArgument detail_map 1 1 0 0
-SetArgument albedo_color 0 0 0 0
-SetArgument noise_map_a 1.5 0.75 0 0
-SetArgument noise_map_b 1.5 0.75 0.5 0.6
-SetArgument color_medium 0.02352941 0.01568628 0.01568628 1
-SetArgument color_wide 0.3529412 0.2705882 0.7686275 1
-SetArgument color_sharp 0.3215686 0.7529413 0.8000001 1
-SetArgument self_illum_intensity 0 0 0 0
-SetArgument alpha_mask_map 1 1 0 0
-SetArgument thinness_medium 16 16 16 16
-SetArgument thinness_wide 4 4 4 4
-SetArgument thinness_sharp 32 32 32 32
+EditTag objects\weapons\melee\energy_blade\shaders\energy_blade.shader
+setfield shaderproperties[0].shadermaps[3].bitmap shaders\default_bitmaps\bitmaps\default_vector.bitm
 SaveTagChanges
 Exit
 
@@ -722,7 +705,6 @@ SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
-
 
 savetagnames
 dumplog Halo3WeaponFixes.txt

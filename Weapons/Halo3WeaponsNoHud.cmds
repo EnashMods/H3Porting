@@ -25,8 +25,6 @@ duplicatetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_
 nametag * objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp
 duplicatetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
 nametag * objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp
-duplicatetag objects\weapons\melee\energy_blade\shaders\energy_blade.rmsh
-nametag * objects\weapons\melee\energy_blade\shaders\energy_blade2
 
 echo Porting...
 opencachefile dlcmaps\sandbox.map
