@@ -103,16 +103,16 @@ setfield hudwidgets[0].placementdata[0].offset 0 -29
 setfield hudwidgets[1].placementdata[0].offset 0 50
 setfield hudwidgets[2].placementdata[0].offset 0 50
 setfield hudwidgets[3].placementdata[0].offset 0 -100
-setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset -235 47
-setfield hudwidgets[5].bitmapwidgets[1].placementdata[0].offset -201 54
-setfield hudwidgets[5].bitmapwidgets[2].placementdata[0].offset -235 47
-setfield hudwidgets[5].bitmapwidgets[3].placementdata[0].offset -201 54
-setfield hudwidgets[5].bitmapwidgets[4].placementdata[0].offset -235 47
-setfield hudwidgets[5].bitmapwidgets[5].placementdata[0].offset -201 54
-setfield hudwidgets[5].bitmapwidgets[6].placementdata[0].offset -235 47
-setfield hudwidgets[5].bitmapwidgets[7].placementdata[0].offset -201 54
-setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -215 47
-setfield hudwidgets[5].bitmapwidgets[9].placementdata[0].offset -201 47
+setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset -237 47
+setfield hudwidgets[5].bitmapwidgets[1].placementdata[0].offset -203 54
+setfield hudwidgets[5].bitmapwidgets[2].placementdata[0].offset -237 47
+setfield hudwidgets[5].bitmapwidgets[3].placementdata[0].offset -203 54
+setfield hudwidgets[5].bitmapwidgets[4].placementdata[0].offset -237 47
+setfield hudwidgets[5].bitmapwidgets[5].placementdata[0].offset -203 54
+setfield hudwidgets[5].bitmapwidgets[6].placementdata[0].offset -237 47
+setfield hudwidgets[5].bitmapwidgets[7].placementdata[0].offset -203 54
+setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -217 47
+setfield hudwidgets[5].bitmapwidgets[9].placementdata[0].offset -203 47
 setfield hudwidgets[6].placementdata[0].offset 0 -66
 setfield hudwidgets[7].placementdata[0].offset 0 -120
 setfield hudwidgets[1].textwidgets[0].renderdata[0].outputcolora_ho 17
