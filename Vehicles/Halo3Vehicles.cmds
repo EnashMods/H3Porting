@@ -73,48 +73,16 @@ porttag replace matchshaders objects\vehicles\scorpion\turrets\anti_infantry\ant
 porttag replace matchshaders objects\vehicles\scorpion\turrets\anti_infantry\garbage\anti_gun\anti_gun.mode
 
 echo Installing Warthog and friends
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun.jmad
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss.jmad
-porttag replace matchshaders objects\vehicles\warthog\warthog.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\hood\hood.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\hubcap\hubcap.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\lb_fender\lb_fender.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\lf_fender\lf_fender.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\rb_fender\rb_fender.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\rf_fender\rf_fender.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\sailpanel\sailpanel.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\tire\tire.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\winch\winch.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun.hlmt
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss.hlmt
+porttag replace matchshaders objects\vehicles\warthog\warthog.hlmt
 exit
 
 echo Installing Snow Warthog and friends
 opencachefile dlcmaps\sidewinder.map
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun_snow.jmad
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss_snow.jmad
-porttag replace matchshaders objects\vehicles\warthog\warthog_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\hood\hood_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\hubcap\hubcap_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\lb_fender\lb_fender_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\lf_fender\lf_fender_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\rb_fender\rb_fender_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\rf_fender\rf_fender_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\sailpanel\sailpanel_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\tire\tire_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\winch\winch_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun_snow.hlmt
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss_snow.hlmt
+porttag replace matchshaders objects\vehicles\warthog\warthog_snow.hlmt
 exit
 
 echo Fixing Wraith
@@ -190,26 +158,6 @@ savetagchanges
 exit
 edittag objects\vehicles\warthog\bitmaps\warthog_damage_bump.bitm
 importbitmap 0 tags\objects\vehicles\warthog\bitmaps\warthog_damage_bump.dds
-savetagchanges
-exit
-edittag objects\vehicles\warthog\warthog.mode
-setfield regions[0].permutations[0].meshindex 11
-setfield regions[0].permutations[1].meshindex 0
-setfield regions[1].permutations[0].meshindex 38
-setfield regions[1].permutations[1].meshindex 1
-setfield regions[1].permutations[2].meshindex 12
-setfield regions[1].permutations[3].meshindex 22
-setfield regions[1].permutations[4].meshindex 32
-savetagchanges
-exit
-edittag objects\vehicles\warthog\warthog_snow.mode
-setfield regions[0].permutations[0].meshindex 11
-setfield regions[0].permutations[1].meshindex 0
-setfield regions[1].permutations[0].meshindex 38
-setfield regions[1].permutations[1].meshindex 1
-setfield regions[1].permutations[2].meshindex 12
-setfield regions[1].permutations[3].meshindex 22
-setfield regions[1].permutations[4].meshindex 32
 savetagchanges
 exit
 EditTag objects\vehicles\warthog\turrets\gauss\shaders\gauss_alpha.rmhg
