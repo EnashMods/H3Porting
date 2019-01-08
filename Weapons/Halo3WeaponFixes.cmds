@@ -650,59 +650,87 @@ SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_b
 SaveTagChanges
 ExitTo tags
 
-ImportTag 0x4739 "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
-EditTag 0x4739
+ImportTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag 0x037B "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
-EditTag 0x037B
+ImportTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey25_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+ImportTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag 0x5659 "tags\shaders\default_bitmaps\bitmaps\clouds_256.bitmap"
-EditTag 0x5659
+ImportTag shaders\default_bitmaps\bitmaps\clouds_256.bitmap "tags\shaders\default_bitmaps\bitmaps\clouds_256.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\clouds_256.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_256_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag 0x0EF7 "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
-EditTag 0x0EF7
+ImportTag shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag 0x0343 "tags\shaders\default_bitmaps\bitmaps\default_detail.bitmap"
-EditTag 0x0343
+ImportTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+ImportTag shaders\default_bitmaps\bitmaps\default_detail.bitmap "tags\shaders\default_bitmaps\bitmaps\default_detail.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\default_detail.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag 0x0376 "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
-EditTag 0x0376
+ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\default_vector.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag 0x0E97 "tags\shaders\default_bitmaps\bitmaps\dither_pattern.bitmap"
-EditTag 0x0E97
+ImportTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap "tags\shaders\default_bitmaps\bitmaps\dither_pattern.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag 0x02B7 "tags\shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap"
-EditTag 0x02B7
+ImportTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap "tags\shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+ImportTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap "tags\shaders\default_bitmaps\bitmaps\random4_warp.bitmap"
+EditTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\random4_warp_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
