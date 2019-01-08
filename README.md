@@ -16,3 +16,6 @@ Weapons Install:
 Vehicles Install:
 1. Run Halo3Vehicles
 2. Be mildly impressed at the meager progress I've made
+
+TagTool versions these scripts are tested and working on:
+1.5.6916.25444 (latest commit as of 1/8/19)
