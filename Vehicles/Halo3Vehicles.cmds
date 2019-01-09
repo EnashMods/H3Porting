@@ -10,6 +10,9 @@ porttag replace matchshaders objects\vehicles\banshee\banshee.hlmt
 
 echo Installing Wraith
 porttag replace matchshaders objects\vehicles\wraith\wraith.hlmt
+porttag replace matchshaders objects\vehicles\wraith\turrets\anti_air\anti_air.hlmt
+porttag replace matchshaders objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.hlmt
+porttag replace matchshaders objects\vehicles\wraith\turrets\mortar\mortar.hlmt
 
 echo Installing Chopper
 porttag replace matchshaders objects\vehicles\brute_chopper\brute_chopper.mode
@@ -98,6 +101,7 @@ savetagchanges
 exit
 
 echo Fixing Scorpion
+importtag objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitm tags\objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitmap
 edittag objects\vehicles\scorpion\bitmaps\scorpion_guts_bump.bitm
 importbitmap 0 tags\objects\vehicles\scorpion\bitmaps\scorpion_guts_bump.dds
 savetagchanges
@@ -146,6 +150,10 @@ setfield regions[6].permutations[3].meshindex 22
 setfield regions[6].permutations[4].meshindex 35
 savetagchanges
 exit
+edittag objects\vehicles\scorpion\turrets\cannon\shaders\turret_cannon.rmsh
+setfield shaderproperties[0].arguments[7].values 0.1 0.05 0.05 0
+savetagchanges
+exit
 
 echo Fixing Warthog
 edittag objects\vehicles\warthog\bitmaps\tires_bump.bitm
@@ -158,6 +166,10 @@ savetagchanges
 exit
 edittag objects\vehicles\warthog\bitmaps\warthog_damage_bump.bitm
 importbitmap 0 tags\objects\vehicles\warthog\bitmaps\warthog_damage_bump.dds
+savetagchanges
+exit
+edittag objects\vehicles\warthog\bitmaps\hub_bump.bitm
+importbitmap 0 tags\objects\vehicles\warthog\bitmaps\hub_bump.dds
 savetagchanges
 exit
 EditTag objects\vehicles\warthog\turrets\gauss\shaders\gauss_alpha.rmhg
@@ -177,6 +189,10 @@ SetField RangeVariable ParticleAge
 SetField OutputModifier Times
 SaveTagChanges
 Exit
+edittag objects\vehicles\warthog\shaders\console.rmsh
+setfield shaderproperties[0].arguments[5].values 0 0 0 1
+savetagchanges
+exit
 
 ImportTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
