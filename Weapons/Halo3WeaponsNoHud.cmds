@@ -1,30 +1,4 @@
-echo Installing Halo 3 Weapons
-
-echo Generating Temp Files
-duplicatetag objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
-nametag * objects\weapons\pistol\excavator\fp_excavator\fp_excavatortemp
-duplicatetag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
-nametag * objects\weapons\pistol\magnum\fp_magnum\fp_magnumtemp
-duplicatetag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
-nametag * objects\weapons\pistol\needler\fp_needler\fp_needlertemp
-duplicatetag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
-nametag * objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistoltemp
-duplicatetag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
-nametag * objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifletemp
-duplicatetag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-nametag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifletemp
-duplicatetag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
-nametag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbinetemp
-duplicatetag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
-nametag * objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifletemp
-duplicatetag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
-nametag * objects\weapons\rifle\shotgun\fp_shotgun\fp_shotguntemp
-duplicatetag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
-nametag * objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifletemp
-duplicatetag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
-nametag * objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launchertemp
-duplicatetag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
-nametag * objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shottemp
+echo Porting Halo 3 Weapons
 
 echo Porting...
 opencachefile dlcmaps\sandbox.map
