@@ -59,14 +59,14 @@ setfield hudwidgets[23].placementdata[0].offset 10 -40
 savetagchanges
 exit
 edittag ui\chud\globals.chgd
-setfield hudglobals[0].hudattributes[0].motionsensorradius 90
-setfield hudglobals[0].hudattributes[1].motionsensorradius 90
-setfield hudglobals[0].hudattributes[2].motionsensorradius 90
-setfield hudglobals[0].hudattributes[3].motionsensorradius 90
-setfield hudglobals[0].hudattributes[4].motionsensorradius 90
-setfield hudglobals[0].hudattributes[5].motionsensorradius 90
-setfield hudglobals[0].hudattributes[6].motionsensorradius 90
-setfield hudglobals[0].hudattributes[7].motionsensorradius 90
+setfield hudglobals[0].hudattributes[0].motionsensorradius 67
+setfield hudglobals[0].hudattributes[1].motionsensorradius 67
+setfield hudglobals[0].hudattributes[2].motionsensorradius 67
+setfield hudglobals[0].hudattributes[3].motionsensorradius 67
+setfield hudglobals[0].hudattributes[4].motionsensorradius 67
+setfield hudglobals[0].hudattributes[5].motionsensorradius 67
+setfield hudglobals[0].hudattributes[6].motionsensorradius 67
+setfield hudglobals[0].hudattributes[7].motionsensorradius 67
 setfield hudglobals[0].hudattributes[0].motionsensoroffset 75 -501
 setfield hudglobals[0].hudattributes[1].motionsensoroffset 75 -360
 setfield hudglobals[0].hudattributes[2].motionsensoroffset 75 -360
