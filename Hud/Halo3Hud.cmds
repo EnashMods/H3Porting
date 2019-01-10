@@ -9,7 +9,7 @@ savetagchanges
 exit
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders ui\chud\spartan.chdt
-porttag replace matchshaders ui\chud\bitmaps\sensor_blips.bitm
+porttag replace ui\chud\globals.chgd
 exit
 edittag ui\chud\spartan.chdt
 setfield hudwidgets[4].placementdata[0].scale 1 1
@@ -24,12 +24,12 @@ savetagchanges
 exit
 edittag ui\chud\spartan.chdt
 pasteblockelements hudwidgets 22
-setfield hudwidgets[2].placementdata[0].offset 0 25
-setfield hudwidgets[3].placementdata[0].offset 8 -4
+setfield hudwidgets[2].placementdata[0].offset 0 46
+setfield hudwidgets[3].placementdata[0].offset 8 17
 setfield hudwidgets[3].placementdata[0].scale 1.35 1.35
 setfield hudwidgets[3].textwidgets[0].placementdata[0].offset 60 60
 setfield hudwidgets[22].placementdata[0].offset 14 -40
-setfield hudwidgets[26].placementdata[0].offset 25 -37
+setfield hudwidgets[26].placementdata[0].offset 25 -16
 setfield hudwidgets[26].placementdata[0].scale -1.45 -1.45
 setfield hudwidgets[26].bitmapwidgets[0].placementdata[0].scale 0.6 0.6
 setfield hudwidgets[26].bitmapwidgets[0].placementdata[0].offset -15 13
@@ -41,8 +41,13 @@ savetagchanges
 exit
 
 edittag ui\chud\globals.chgd
-foreach hudglobals[0].hudattributes setfield motionsensoroffset 76 0
-foreach hudglobals[0].hudattributes setfield motionsensorscale 2
+setfield hudglobals[0].hudattributes[0].motionsensoroffset 76 1018
+setfield hudglobals[0].hudattributes[0].motionsensorradius 72
+setfield hudglobals[0].hudattributes[0].motionsensorscale 3
+setfield hudglobals[0].grenadescematicsspacing 55
+setfield sprintfovmultiplier 1
+setfield sprintfovtransitionintime 0.5
+setfield sprintfovtransitionouttime 1
 savetagchanges
 exit
 
