@@ -171,6 +171,31 @@ SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_b
 SaveTagChanges
 ExitTo tags
 
+EditTag objects\weapons\melee\energy_blade\fx\particles\electric_bolts.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\particles\energy_blade_activate.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\particles\energy_pulse.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\particles\plasma_wispy.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
 ImportTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
