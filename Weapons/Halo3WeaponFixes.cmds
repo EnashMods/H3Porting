@@ -1,10 +1,68 @@
 echo Fixing Halo 3 Weapons...
 
 echo Fixing Energy Sword
-EditTag objects\weapons\melee\energy_blade\shaders\energy_blade.shader
-setfield shaderproperties[0].shadermaps[3].bitmap shaders\default_bitmaps\bitmaps\default_vector.bitm
+EditTag objects\weapons\melee\energy_blade\shaders\energy_blade.rmsh
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 0 0 0 0
+SetArgument bump_map 1 1 0 0
+SetArgument bump_detail_map 0 0 0 0
+SetArgument bump_detail_coefficient 0 0 0 0
+SetArgument height_map 1 1 1 0
+SetArgument height_scale 0.1 0.1 0.1 0.1
+SetArgument diffuse_coefficient 1 1 1 1
+SetArgument specular_coefficient 0 0 0 0
+SetArgument specular_tint 0 0 0 0
+SetArgument fresnel_color 0 0 0 0
+SetArgument fresnel_power 0 0 0 0
+SetArgument roughness 0 0 0 0
+SetArgument area_specular_contribution 0 0 0 0
+SetArgument analytical_specular_contribution 0 0 0 0
+SetArgument material_texture 0 0 0 0
+SetArgument albedo_blend_with_specular_tint 0 0 0 0
+SetArgument albedo_blend 0 0 0 0
+SetArgument analytical_anti_shadow_control 0 0 0 0
+SetArgument rim_fresnel_coefficient 0 0 0 0
+SetArgument rim_fresnel_color 0 0 0 0
+SetArgument rim_fresnel_power 0 0 0 0
+SetArgument rim_fresnel_albedo_blend 0 0 0 0
+SetArgument noise_map_a 5 2.5 0 0
+SetArgument noise_map_b 5 2.5 0.5 0.6
+SetArgument color_medium 0.02352941 0.01568628 0.01568628 1
+SetArgument color_wide 0.3529412 0.2705882 0.7686275 1
+SetArgument color_sharp 0.3215686 0.7529413 0.8000001 1
+SetArgument self_illum_intensity 0 0 0 0
+SetArgument alpha_mask_map 1 1 0 0
+SetArgument thinness_medium 16 16 16 16
+SetArgument thinness_wide 4 4 4 4
+SetArgument thinness_sharp 32 32 32 32
 SaveTagChanges
 Exit
+
+EditTag objects\weapons\melee\energy_blade\fx\particles\electric_bolts.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\particles\energy_blade_activate.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\particles\energy_pulse.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\particles\plasma_wispy.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
 
 echo Fixing Excavator
 edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
@@ -56,8 +114,12 @@ exit
 
 echo Fixing Plasma Rifle
 edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
-setfield markergroups[3].markers[0].translation 0.02655599 0.004300643 -0.0528338
-setfield markergroups[3].markers[0].rotation -0.6164548 0.1957098 -0.4600878 0.6082766
+setfield markergroups[3].markers[0].translation 0.06173344 -0.01272009 -0.05019573
+setfield markergroups[3].markers[0].rotation -0.5183288 0.3939989 -0.4947074 0.5756431
+setfield markergroups[4].markers[0].translation 0.02655599 0.004300643 -0.0528338
+setfield markergroups[4].markers[0].rotation -0.6164548 0.1957098 -0.4600878 0.6082766
+setfield markergroups[5].markers[0].translation 0.06173344 -0.0001386678 -0.05019573
+setfield markergroups[5].markers[0].rotation -0.5183288 0.3939989 -0.4947074 0.5756431
 savetagchanges
 exit 
 
@@ -171,112 +233,165 @@ SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_b
 SaveTagChanges
 ExitTo tags
 
-EditTag objects\weapons\melee\energy_blade\fx\particles\electric_bolts.prt3
+EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_large_zfade.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_large.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Unknown7 9
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\energy\electric_arcs.prt3
 SetField RenderMethod.ShaderProperties[0].Unknown7 1
 SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
 SaveTagChanges
 ExitTo tags
 
-EditTag objects\weapons\melee\energy_blade\fx\particles\energy_blade_activate.prt3
+EditTag fx\particles\energy\plasma_burst.prt3
 SetField RenderMethod.ShaderProperties[0].Unknown7 1
 SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
 SaveTagChanges
 ExitTo tags
 
-EditTag objects\weapons\melee\energy_blade\fx\particles\energy_pulse.prt3
+EditTag fx\particles\energy\plasma_noise.prt3
 SetField RenderMethod.ShaderProperties[0].Unknown7 1
 SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
 SaveTagChanges
 ExitTo tags
 
-EditTag objects\weapons\melee\energy_blade\fx\particles\plasma_wispy.prt3
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+EditTag fx\particles\energy\spark_ember.prt3
 SetField RenderMethod.ShaderProperties[0].Unknown7 1
 SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\energy\spark_long.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\flare\explosive_flash.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 8
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 8
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\flare\light_spike.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\fire\fire_large.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\fire\fire_large_vertical.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\fire\fire_small.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\fire\fire_small_vertical.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\flare\explosive_flash.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\flare\explosive_flash_small.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 1
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 1
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\atmospheric\fiery_smoke\smoke_fiery_small.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\atmospheric\soft_smoke\soft_smoke_large_lit.prt3
+SetField RenderMethod.ShaderProperties[0].Unknown7 9
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 9
 SaveTagChanges
 ExitTo tags
 
 ImportTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
+
 EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey25_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\clouds_256.bitmap "tags\shaders\default_bitmaps\bitmaps\clouds_256.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\clouds_256.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_256_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-ImportTag shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\color_white.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\default_detail.bitmap "tags\shaders\default_bitmaps\bitmaps\default_detail.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\default_detail.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\default_vector.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap "tags\shaders\default_bitmaps\bitmaps\dither_pattern.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap
+ImportTag 0x0013 "tags\objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitmap"
+EditTag 0x0013
 SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap "tags\shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+ImportTag 0x0018 "tags\objects\weapons\rifle\battle_rifle\bitmaps\rubber_microbump.bitmap"
+EditTag 0x0018
 SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-ImportTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap "tags\shaders\default_bitmaps\bitmaps\random4_warp.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\random4_warp_image.bitmap_texture_interop_resource"
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\rubber_microbump_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
