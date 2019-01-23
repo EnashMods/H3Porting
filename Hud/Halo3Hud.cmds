@@ -29,6 +29,8 @@ setfield hudwidgets[6].placementdata[0].scale 1.2 1.2
 setfield hudwidgets[6].placementdata[0].Offset -50 0
 setfield hudwidgets[7].placementdata[0].scale 1.2 1.2
 setfield hudwidgets[7].placementdata[0].Offset -50 0
+setfield hudwidgets[12].placementdata[0].offset 0 0
+setfield hudwidgets[13].placementdata[0].offset 0 0
 setfield hudwidgets[22].placementdata[0].offset -30 -30
 setfield hudwidgets[26].placementdata[0].offset 25 -16
 setfield hudwidgets[26].placementdata[0].scale -1.45 -1.45
@@ -70,6 +72,8 @@ pasteblockelements hudwidgets[1].textwidgets 0
 removeblockelements hudwidgets[2].textwidgets 0 1
 pasteblockelements hudwidgets[2].textwidgets 0
 setfield hudwidgets[0].placementdata[0].offset 15 -29
+setfield hudwidgets[1].textwidgets[0].name friendly_score
+setfield hudwidgets[1].textwidgets[0].renderdata[0].input_ho friendlyscore
 setfield hudwidgets[1].textwidgets[0].placementdata[0].offset -138 4
 setfield hudwidgets[1].textwidgets[0].font Conduit18
 setfield hudwidgets[1].placementdata[0].offset 15 50
@@ -590,7 +594,7 @@ EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
 SetField MirrorOffset 0 0
 SetField Offset 0 0
-SetField Scale 1.5 1.5
+SetField Scale 1 1
 SaveTagChanges
 ExitTo Tags
 Echo =======================================
@@ -679,7 +683,7 @@ EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
 SetField MirrorOffset 0 0
 SetField Offset 0 0
-SetField Scale 0.7 0.7
+SetField Scale 1 1
 SaveTagChanges
 ExitTo Tags
 Echo =======================================
@@ -878,7 +882,7 @@ EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
 SetField MirrorOffset 0 0
 SetField Offset 0 0
-SetField Scale 0.7 0.7
+SetField Scale 1 1
 SaveTagChanges
 ExitTo Tags
 Echo =======================================
