@@ -6,13 +6,36 @@ echo Installing Prowler
 porttag replace matchshaders objects\vehicles\mauler\shaders\mauler.rmsh
 
 echo Installing Banshee
-porttag replace matchshaders objects\vehicles\banshee\banshee.hlmt
+porttag replace matchshaders objects\vehicles\banshee\banshee.mode
+porttag replace matchshaders objects\vehicles\banshee\garbage\cab_garbage\cab_garbage.mode
+porttag replace matchshaders objects\vehicles\banshee\garbage\fin_top_garbage\fin_top_garbage.mode
+porttag replace matchshaders objects\vehicles\banshee\garbage\fin_bottom_garbage\fin_bottom_garbage.mode
+porttag replace matchshaders objects\vehicles\banshee\garbage\l_wing_garbage\l_wing_garbage.mode
+porttag replace matchshaders objects\vehicles\banshee\garbage\r_wing_garbage\r_wing_garbage.mode
+porttag replace matchshaders objects\vehicles\banshee\garbage\wing_prong_garbage\wing_prong_garbage.mode
+porttag replace !recursive matchshaders objects\vehicles\banshee\banshee.hlmt
 
 echo Installing Wraith
-porttag replace matchshaders objects\vehicles\wraith\wraith.hlmt
-porttag replace matchshaders objects\vehicles\wraith\turrets\anti_air\anti_air.hlmt
-porttag replace matchshaders objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.hlmt
-porttag replace matchshaders objects\vehicles\wraith\turrets\mortar\mortar.hlmt
+porttag replace matchshaders objects\vehicles\wraith\wraith.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\wing_left\wing_left.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\wing_right\wing_right.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\hatch\hatch.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\wing_boost_left\wing_boost_left.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\wing_boost\wing_boost.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\rudder_shell\rudder_shell.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\rudder_right\rudder_right.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\mortar_hatch\mortar_hatch.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\gear\gear.mode
+porttag replace matchshaders objects\vehicles\wraith\turrets\mortar\mortar.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\mortar_deflector_left\mortar_deflector_left.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\mortar_gun\mortar_gun.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\mortar_door\mortar_door.mode
+porttag replace matchshaders objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\anti_infantry_turret\anti_infantry_turret.mode
+porttag replace matchshaders objects\vehicles\wraith\turrets\anti_air\anti_air.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\anti_air_left_pods\anti_air_left_pods.mode
+porttag replace matchshaders objects\vehicles\wraith\garbage\anti_air_right_pods\anti_air_right_pods.mode
+porttag replace !recursive matchshaders objects\vehicles\wraith\turrets\mortar\mortar.hlmt
 
 echo Installing Chopper
 porttag replace matchshaders objects\vehicles\brute_chopper\brute_chopper.mode
@@ -76,21 +99,71 @@ porttag replace matchshaders objects\vehicles\scorpion\turrets\anti_infantry\ant
 porttag replace matchshaders objects\vehicles\scorpion\turrets\anti_infantry\garbage\anti_gun\anti_gun.mode
 
 echo Installing Warthog and friends
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun.hlmt
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss.hlmt
-porttag replace matchshaders objects\vehicles\warthog\warthog.hlmt
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun.jmad
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss.jmad
+porttag replace matchshaders objects\vehicles\warthog\warthog.mode
+porttag replace matchshaders objects\scenery\human\military\warthog_drop_palette\warthog_drop_palette.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\hood\hood.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\hubcap\hubcap.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\lb_fender\lb_fender.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\lf_fender\lf_fender.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\rb_fender\rb_fender.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\rf_fender\rf_fender.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\sailpanel\sailpanel.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\tire\tire.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\winch\winch.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
+porttag replace !recursive matchshaders objects\vehicles\warthog\warthog.hlmt
 exit
 
 echo Installing Snow Warthog and friends
 opencachefile dlcmaps\sidewinder.map
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun_snow.hlmt
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss_snow.hlmt
-porttag replace matchshaders objects\vehicles\warthog\warthog_snow.hlmt
+porttag replace matchshaders objects\vehicles\warthog\garbage\bumper\bumper_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\hood\hood_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\hubcap\hubcap_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\lb_fender\lb_fender_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\lf_fender\lf_fender_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\rb_fender\rb_fender_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\rf_fender\rf_fender_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\sailpanel\sailpanel_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\tire\tire_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\garbage\winch\winch_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss_snow.mode
+porttag replace matchshaders objects\vehicles\warthog\warthog_snow.mode
+porttag replace !recursive matchshaders objects\vehicles\warthog\warthog_snow.hlmt
+exit
+
+echo Fixing Prowler
+edittag objects\vehicles\mauler\bitmaps\mauler_bump.bitm
+importbitmap 0 tags\objects\vehicles\mauler\bitmaps\mauler_bump.dds
+savetagchanges
 exit
 
 echo Fixing Wraith
 edittag objects\vehicles\wraith\bitmaps\wraith_bump.bitm
 importbitmap 0 tags\objects\vehicles\wraith\bitmaps\wraith_bump.dds
+savetagchanges
+exit
+edittag objects\vehicles\wraith\wraith.mode
+setfield regions[1].permutations[0].meshindex 9
+setfield regions[1].permutations[1].meshindex 17
+setfield regions[1].permutations[2].meshindex 24
+setfield regions[1].permutations[3].meshindex 1
+setfield regions[7].permutations[0].meshindex 15
+setfield regions[7].permutations[1].meshindex 23
+setfield regions[7].permutations[2].meshindex 7
 savetagchanges
 exit
 
@@ -195,87 +268,92 @@ savetagchanges
 exit
 
 ImportTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
+
 EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey25_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\clouds_256.bitmap "tags\shaders\default_bitmaps\bitmaps\clouds_256.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\clouds_256.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\clouds_256_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-ImportTag shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\color_white.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\default_detail.bitmap "tags\shaders\default_bitmaps\bitmaps\default_detail.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\default_detail.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_detail_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
 EditTag shaders\default_bitmaps\bitmaps\default_vector.bitmap
 SetField Resources[0].Resource.Page.Index -1
 SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap "tags\shaders\default_bitmaps\bitmaps\dither_pattern.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\dither_pattern.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\dither_pattern_image.bitmap_texture_interop_resource"
+EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Unknown7 9
+SetField RenderMethod.ShaderProperties[0].BitmapTransparency 9
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap "tags\shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\gray_50_percent_image.bitmap_texture_interop_resource"
+EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small_additive.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
 SaveTagChanges
 ExitTo tags
 
-ImportTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap "tags\shaders\default_bitmaps\bitmaps\random4_warp.bitmap"
-EditTag shaders\default_bitmaps\bitmaps\random4_warp.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\random4_warp_image.bitmap_texture_interop_resource"
+EditTag objects\weapons\pistol\plasma_pistol\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
 SaveTagChanges
 ExitTo tags
+
+EditTag objects\weapons\rifle\beam_rifle\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\plasma_rifle\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_low\sentinel_gun\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
 
 savetagnames
