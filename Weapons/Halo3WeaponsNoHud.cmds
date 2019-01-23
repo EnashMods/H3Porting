@@ -173,6 +173,7 @@ echo Spartan Laser
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\spartan_laser.mode
 porttag replace matchshaders sound\weapons\spartan_laser\charging\charging.lsnd
 porttag replace matchshaders sound\weapons\spartan_laser\fire.snd!
+porttag replace matchshaders objects\weapons\support_high\rocket_launcher\fx\firing.effe
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.ligh
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.effe
 porttag replace matchshaders objects\weapons\support_high\spartan_laser\fx\charging.lens
