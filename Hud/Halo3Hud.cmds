@@ -9,26 +9,27 @@ savetagchanges
 exit
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders ui\chud\spartan.chdt
-porttag replace ui\chud\globals.chgd
-exit
-edittag ui\chud\spartan.chdt
-setfield hudwidgets[4].placementdata[0].scale 1 1
-setfield hudwidgets[4].placementdata[0].Offset 0 0
-setfield hudwidgets[5].placementdata[0].scale 1 1
-setfield hudwidgets[5].placementdata[0].Offset 0 0
-setfield hudwidgets[6].placementdata[0].scale 1 1
-setfield hudwidgets[6].placementdata[0].Offset 0 0
-setfield hudwidgets[7].placementdata[0].scale 1 1
-setfield hudwidgets[7].placementdata[0].Offset 0 0
-savetagchanges
+porttag replace ui\chud\bitmaps\waypoints.bitm
 exit
 edittag ui\chud\spartan.chdt
 pasteblockelements hudwidgets 22
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].outputcolorb_ho globaldynamic2
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].outputcolorc_ho globaldynamic2
 setfield hudwidgets[2].placementdata[0].offset 0 46
 setfield hudwidgets[3].placementdata[0].offset 8 17
 setfield hudwidgets[3].placementdata[0].scale 1.35 1.35
+setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic0
+setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolorc_ho globaldynamic0
 setfield hudwidgets[3].textwidgets[0].placementdata[0].offset 60 60
-setfield hudwidgets[22].placementdata[0].offset 14 -40
+setfield hudwidgets[4].placementdata[0].scale 1.2 1.2
+setfield hudwidgets[4].placementdata[0].Offset -50 0
+setfield hudwidgets[5].placementdata[0].scale 1.2 1.2
+setfield hudwidgets[5].placementdata[0].Offset -50 0
+setfield hudwidgets[6].placementdata[0].scale 1.2 1.2
+setfield hudwidgets[6].placementdata[0].Offset -50 0
+setfield hudwidgets[7].placementdata[0].scale 1.2 1.2
+setfield hudwidgets[7].placementdata[0].Offset -50 0
+setfield hudwidgets[22].placementdata[0].offset -30 -30
 setfield hudwidgets[26].placementdata[0].offset 25 -16
 setfield hudwidgets[26].placementdata[0].scale -1.45 -1.45
 setfield hudwidgets[26].bitmapwidgets[0].placementdata[0].scale 0.6 0.6
@@ -44,10 +45,16 @@ edittag ui\chud\globals.chgd
 setfield hudglobals[0].hudattributes[0].motionsensoroffset 76 1018
 setfield hudglobals[0].hudattributes[0].motionsensorradius 72
 setfield hudglobals[0].hudattributes[0].motionsensorscale 3
-setfield hudglobals[0].grenadescematicsspacing 55
+setfield hudglobals[0].grenadescematicsspacing 65
+setfield hudglobals[0].scoreboardleaderoffsety 45
 setfield sprintfovmultiplier 1
 setfield sprintfovtransitionintime 0.5
-setfield sprintfovtransitionouttime 1
+setfield sprintfoxtransitionouttime 1
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\sensor_blips.bitm
+importbitmap 0 tags\ui\chud\bitmaps\sensor_blips.dds
 savetagchanges
 exit
 
@@ -62,42 +69,39 @@ removeblockelements hudwidgets[1].textwidgets 0 1
 pasteblockelements hudwidgets[1].textwidgets 0
 removeblockelements hudwidgets[2].textwidgets 0 1
 pasteblockelements hudwidgets[2].textwidgets 0
-setfield hudwidgets[2].textwidgets[0].name enemy_score
-setfield hudwidgets[2].textwidgets[0].renderdata[0].input_ho 21
+setfield hudwidgets[0].placementdata[0].offset 15 -29
 setfield hudwidgets[1].textwidgets[0].placementdata[0].offset -138 4
 setfield hudwidgets[1].textwidgets[0].font Conduit18
-setfield hudwidgets[2].textwidgets[0].placementdata[0].offset -138 4
-setfield hudwidgets[2].textwidgets[0].font Conduit18
-setfield hudwidgets[3].textwidgets[0].placementdata[0].offset 0 22
-setfield hudwidgets[0].placementdata[0].offset 0 -29
-setfield hudwidgets[1].placementdata[0].offset 0 50
-setfield hudwidgets[2].placementdata[0].offset 0 50
-setfield hudwidgets[3].placementdata[0].offset 0 -100
-setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset -235 47
-setfield hudwidgets[5].bitmapwidgets[1].placementdata[0].offset -201 54
-setfield hudwidgets[5].bitmapwidgets[2].placementdata[0].offset -235 47
-setfield hudwidgets[5].bitmapwidgets[3].placementdata[0].offset -201 54
-setfield hudwidgets[5].bitmapwidgets[4].placementdata[0].offset -235 47
-setfield hudwidgets[5].bitmapwidgets[5].placementdata[0].offset -201 54
-setfield hudwidgets[5].bitmapwidgets[6].placementdata[0].offset -235 47
-setfield hudwidgets[5].bitmapwidgets[7].placementdata[0].offset -201 54
-setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -215 47
-setfield hudwidgets[5].bitmapwidgets[9].placementdata[0].offset -201 47
-setfield hudwidgets[6].placementdata[0].offset 0 -66
-setfield hudwidgets[7].placementdata[0].offset 0 -120
+setfield hudwidgets[1].placementdata[0].offset 15 50
 setfield hudwidgets[1].textwidgets[0].renderdata[0].outputcolora_ho 17
 setfield hudwidgets[1].textwidgets[0].renderdata[0].outputcolorb_ho 17
 setfield hudwidgets[1].textwidgets[0].renderdata[0].outputcolorc_ho 17
 setfield hudwidgets[2].textwidgets[0].renderdata[0].outputcolora_ho 17
 setfield hudwidgets[2].textwidgets[0].renderdata[0].outputcolorb_ho 17
 setfield hudwidgets[2].textwidgets[0].renderdata[0].outputcolorc_ho 17
+setfield hudwidgets[2].placementdata[0].offset 15 50
+setfield hudwidgets[2].textwidgets[0].name enemy_score
+setfield hudwidgets[2].textwidgets[0].renderdata[0].input_ho 21
+setfield hudwidgets[2].textwidgets[0].placementdata[0].offset -138 4
+setfield hudwidgets[2].textwidgets[0].font Conduit18
+setfield hudwidgets[3].textwidgets[0].placementdata[0].offset 0 22
+setfield hudwidgets[3].placementdata[0].offset 15 -100
+setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset -220 47
+setfield hudwidgets[5].bitmapwidgets[1].placementdata[0].offset -202 47
+setfield hudwidgets[5].bitmapwidgets[2].placementdata[0].offset -220 47
+setfield hudwidgets[5].bitmapwidgets[3].placementdata[0].offset -202 47
+setfield hudwidgets[5].bitmapwidgets[4].placementdata[0].offset -220 47
+setfield hudwidgets[5].bitmapwidgets[5].placementdata[0].offset -202 47
+setfield hudwidgets[5].bitmapwidgets[6].placementdata[0].offset -220 47
+setfield hudwidgets[5].bitmapwidgets[7].placementdata[0].offset -202 47
+setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -200 47
+setfield hudwidgets[5].bitmapwidgets[9].placementdata[0].offset -202 47
+setfield hudwidgets[6].placementdata[0].offset 15 -66
+setfield hudwidgets[7].placementdata[0].offset 15 -120
 savetagchanges
 exit
 
 echo Installing Weapon HUDS
-edittag ui\chud\flamethrower.chdt
-copyblockelements hudwidgets 0 1
-exit
 opencachefile dlcmaps\sandbox.map
 porttag replace matchshaders ui\chud\hammer.chdt
 porttag replace matchshaders ui\chud\sword.chdt
@@ -123,88 +127,229 @@ porttag replace matchshaders ui\chud\machinegun_turret.chdt
 porttag replace matchshaders ui\chud\plasma_turret.chdt
 porttag replace matchshaders ui\chud\missile.chdt
 porttag replace matchshaders ui\chud\flamethrower.chdt
+porttag replace matchshaders ui\chud\t_machinegun.chdt
+porttag replace matchshaders ui\chud\t_plasmaturret.chdt
+porttag replace matchshaders ui\chud\v_banshee.chdt
+porttag replace matchshaders ui\chud\v_chaingun.chdt
+porttag replace matchshaders ui\chud\v_chopper.chdt
+porttag replace matchshaders ui\chud\v_driver.chdt
+porttag replace matchshaders ui\chud\v_gaussturret.chdt
+porttag replace matchshaders ui\chud\v_ghost.chdt
+porttag replace matchshaders ui\chud\v_grinderdriver.chdt
+porttag replace matchshaders ui\chud\v_grinderturret.chdt
+porttag replace matchshaders ui\chud\v_hornet.chdt
+porttag replace matchshaders ui\chud\v_mongoose.chdt
+porttag replace matchshaders ui\chud\v_scorpion.chdt
+porttag replace matchshaders ui\chud\v_scorpionturret.chdt
+porttag replace matchshaders ui\chud\v_wraith.chdt
+porttag replace matchshaders ui\chud\v_wraithturret.chdt
+porttag replace matchshaders ui\chud\v_wraith_anti_air.chdt
 exit
+
+Echo Reticle Patch
 
 Echo =======================================
 Echo Assault Rifle
 
 EditTag ui\chud\assault_rifle.chud_definition
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].MirrorOffset 0 0
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].Offset 0 0
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].Scale 1.18 1.18
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex crosshair
+EditBlock HUDWidgets[2]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1.18 1.18
+SaveTagChanges
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Battle Rifle
 
 EditTag ui\chud\battle_rifle.chud_definition
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].MirrorOffset 0 0
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].Offset 0 0
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].Scale 1.18 1.18
-SetField hudwidgets[2].bitmapwidgets[2].placementdata[0].MirrorOffset 0 0
-SetField hudwidgets[2].bitmapwidgets[2].placementdata[0].Offset 0 0
-SetField hudwidgets[2].bitmapwidgets[2].placementdata[0].Scale 1 1
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].MirrorOffset -1 -1
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].Offset 0 0
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].Scale 1.5 1.5
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].MirrorOffset -1 -1
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].Offset 0 0
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].Scale 1.5 1.5
-SetField hudwidgets[3].bitmapwidgets[1].placementdata[0].MirrorOffset 1.6 0
-SetField hudwidgets[3].bitmapwidgets[1].placementdata[0].Offset 0 7
-SetField hudwidgets[3].bitmapwidgets[1].placementdata[0].Scale 1.5 1.5
-SetField hudwidgets[3].bitmapwidgets[2].placementdata[0].MirrorOffset 0 1.6
-SetField hudwidgets[3].bitmapwidgets[2].placementdata[0].Offset 0 0
-SetField hudwidgets[3].bitmapwidgets[2].placementdata[0].Scale 1.5 1.5
-SetField hudwidgets[3].bitmapwidgets[3].placementdata[0].MirrorOffset 1 -1
-SetField hudwidgets[3].bitmapwidgets[3].placementdata[0].Offset -25 45
-SetField hudwidgets[3].bitmapwidgets[3].placementdata[0].Scale 1.5 1.5
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
+EditBlock HUDWidgets[2]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1.18 1.18
 SaveTagChanges
 ExitTo Tags
 
+EditTag ui\chud\battle_rifle.chud_definition
+EditBlock HUDWidgets[2]
+EditBlock BitmapWidgets[1]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\battle_rifle.chud_definition
+EditBlock HUDWidgets[3]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset -1 -1
+SetField Offset 0 0
+SetField Scale 1.5 1.5
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\battle_rifle.chud_definition
+EditBlock HUDWidgets[3]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset -1 -1
+SetField Offset 0 0
+SetField Scale 1.5 1.5
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\battle_rifle.chud_definition
+EditBlock HUDWidgets[3]
+EditBlock BitmapWidgets[1]
+EditBlock PlacementData[0]
+SetField MirrorOffset 1.6 0
+SetField Offset 0 7
+SetField Scale 1.5 1.5
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\battle_rifle.chud_definition
+EditBlock HUDWidgets[3]
+EditBlock BitmapWidgets[2]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 1.6
+SetField Offset 0 0
+SetField Scale 1.5 1.5
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\battle_rifle.chud_definition
+EditBlock HUDWidgets[3]
+EditBlock BitmapWidgets[3]
+EditBlock PlacementData[0]
+SetField MirrorOffset 1 -1
+SetField Offset -25 45
+SetField Scale 1.5 1.5
+SaveTagChanges
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Beam Rifle
 
 EditTag ui\chud\beam_rifle.chud_definition
-SetField hudwidgets[0].bitmapwidgets[2].placementdata[0].MirrorOffset 2.3 1.05
-SetField hudwidgets[0].bitmapwidgets[2].placementdata[0].Offset -42 0
-SetField hudwidgets[0].bitmapwidgets[2].placementdata[0].Scale -2.5 2.3
-SetField hudwidgets[0].bitmapwidgets[3].placementdata[0].MirrorOffset 2.3 1.05
-SetField hudwidgets[0].bitmapwidgets[3].placementdata[0].Offset -1.5 0
-SetField hudwidgets[0].bitmapwidgets[3].placementdata[0].Scale 2.3 2.3
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].MirrorOffset 0 0
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].Offset 0 0
-SetField hudwidgets[2].bitmapwidgets[0].placementdata[0].Scale 1.5 1.5
-SetField hudwidgets[2].bitmapwidgets[1].placementdata[0].MirrorOffset 0 0
-SetField hudwidgets[2].bitmapwidgets[1].placementdata[0].Offset 0 0
-SetField hudwidgets[2].bitmapwidgets[1].placementdata[0].Scale 1 1
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].MirrorOffset -1 -1
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].Offset 0 0
-SetField hudwidgets[3].bitmapwidgets[0].placementdata[0].Scale 2.4 2.4
-SetField hudwidgets[3].bitmapwidgets[1].placementdata[0].MirrorOffset -1 -1
-SetField hudwidgets[3].bitmapwidgets[1].placementdata[0].Offset 0 0
-SetField hudwidgets[3].bitmapwidgets[1].placementdata[0].Scale 1.2 1.2
-SetField hudwidgets[5].bitmapwidgets[1].placementdata[0].MirrorOffset 0 0
-SetField hudwidgets[5].bitmapwidgets[1].placementdata[0].Offset 290.5 0
-SetField hudwidgets[5].bitmapwidgets[1].placementdata[0].Scale 0.8 0.8
-SetField hudwidgets[5].bitmapwidgets[1].placementdata[0].MirrorOffset 6.8 1
-SetField hudwidgets[5].bitmapwidgets[1].placementdata[0].Offset 0 0
-SetField hudwidgets[5].bitmapwidgets[1].placementdata[0].Scale 0.8 0.8
-SetField hudwidgets[5].bitmapwidgets[2].placementdata[0].MirrorOffset 0 0
-SetField hudwidgets[5].bitmapwidgets[2].placementdata[0].Offset -290.5 0
-SetField hudwidgets[5].bitmapwidgets[2].placementdata[0].Scale 0.8 0.8
-SetField hudwidgets[5].bitmapwidgets[3].placementdata[0].MirrorOffset 6.8 1
-SetField hudwidgets[5].bitmapwidgets[3].placementdata[0].Offset 1 0
-SetField hudwidgets[5].bitmapwidgets[3].placementdata[0].Scale 0.8 0.8
-SetField hudwidgets[5].bitmapwidgets[4].placementdata[0].MirrorOffset 6.8 1
-SetField hudwidgets[5].bitmapwidgets[4].placementdata[0].Offset -1 0
-SetField hudwidgets[5].bitmapwidgets[4].placementdata[0].Scale 0.8 -0.8
+setfield hudwidgets[6].textwidgets[0].renderdata[0].shaderindex crosshair
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[2]
+EditBlock PlacementData[0]
+SetField MirrorOffset 2.3 1.05
+SetField Offset -42 0
+SetField Scale -2.5 2.3
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[3]
+EditBlock PlacementData[0]
+SetField MirrorOffset 2.3 1.05
+SetField Offset -1.5 0
+SetField Scale 2.3 2.3
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[2]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1.5 1.5
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[2]
+EditBlock BitmapWidgets[1]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[3]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset -1 -1
+SetField Offset 0 0
+SetField Scale 2.4 2.4
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[3]
+EditBlock BitmapWidgets[1]
+EditBlock PlacementData[0]
+SetField MirrorOffset -1 -1
+SetField Offset 0 0
+SetField Scale 1.2 1.2
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[5]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 290.5 0
+SetField Scale 0.8 0.8
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[5]
+EditBlock BitmapWidgets[1]
+EditBlock PlacementData[0]
+SetField MirrorOffset 6.8 1
+SetField Offset 0 0
+SetField Scale 0.8 0.8
+SaveTagChanges
+ExitTo Tags
+
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[5]
+EditBlock BitmapWidgets[2]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset -290.5 0
+SetField Scale 0.8 0.8
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[5]
+EditBlock BitmapWidgets[3]
+EditBlock PlacementData[0]
+SetField MirrorOffset 6.8 1
+SetField Offset 1 0
+SetField Scale 0.8 0.8
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\beam_rifle.chud_definition
+EditBlock HUDWidgets[5]
+EditBlock BitmapWidgets[4]
+EditBlock PlacementData[0]
+SetField MirrorOffset 6.8 1
+SetField Offset -1 0
+SetField Scale 0.8 -0.8
 SaveTagChanges
 ExitTo Tags
 
@@ -276,18 +421,14 @@ SetField MirrorOffset 6.8 1
 SetField Offset -1 0
 SetField Scale -0.85 0.85
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[6].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Brute Shot
 
 EditTag ui\chud\brute_shot.chud_definition
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -295,18 +436,14 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Carbine
 
 EditTag ui\chud\carbine.chud_definition
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -404,18 +541,15 @@ SetField MirrorOffset -3.27 0
 SetField Offset 0 0
 SetField Scale 0.91 0.91
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Excavator
 
 EditTag ui\chud\excavator.chud_definition
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex crosshair
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -423,30 +557,49 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale -1.18 1.18
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Flamethrower
 
-edittag ui\chud\flamethrower.chud_definition
-removeblockelements hudwidgets 1 1
-pasteblockelements hudwidgets 1
-setfield hudwidgets[2].placementdata[0].offset 18 12
-savetagchanges
-exit
+EditTag ui\chud\flamethrower.chud_definition
+setfield hudwidgets[2].textwidgets[0].renderdata[0].shaderindex crosshair
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 0 0
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\flamethrower.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[1]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 0 0
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\flamethrower.chud_definition
+EditBlock HUDWidgets[1]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1.5 1.5
+SaveTagChanges
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Fuel Rod Gun
 
 EditTag ui\chud\fuel_rod_cannon.chud_definition
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -484,18 +637,14 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Gravity Hammer
 
 EditTag ui\chud\hammer.chud_definition
+setfield hudwidgets[2].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[3]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -503,18 +652,14 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[2].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Machine Gun Turret
 
 EditTag ui\chud\machinegun_turret.chud_definition
+setfield hudwidgets[0].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[1]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -522,19 +667,29 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1 1
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-setfield hudwidgets[0].placementdata[0].offset 18 12
-savetagchanges
-exit
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Mounted Machine Gun Turret
+
+EditTag ui\chud\t_machinegun.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 0.7 0.7
+SaveTagChanges
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Magnum
 
 EditTag ui\chud\magnum.chud_definition
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex crosshair
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -552,19 +707,14 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1 1
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Missile Pod
 
 EditTag ui\chud\missile.chud_definition
+setfield hudwidgets[2].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[1]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -622,18 +772,78 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Mounted Missle Pod
+
+EditTag ui\chud\t_missile.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1.18 1.18
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\t_missile.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[1]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\t_missile.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[2]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\t_missile.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[3]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1.18 1.18
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\t_missile.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[4]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1.18 1.18
+SaveTagChanges
+ExitTo Tags
+
+EditTag ui\chud\t_missile.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[5]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1.18 1.18
+SaveTagChanges
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Needler
 
 EditTag ui\chud\needler.chud_definition
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -641,18 +851,14 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Plasma Cannon
 
 EditTag ui\chud\plasma_turret.chud_definition
+setfield hudwidgets[0].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[1]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -660,19 +866,29 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1 1
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-setfield hudwidgets[0].placementdata[0].offset 18 12
-savetagchanges
-exit
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Mounted Plasma Cannon
+
+EditTag ui\chud\t_plasmaturret.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 0.7 0.7
+SaveTagChanges
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Plasma Pistol
 
 EditTag ui\chud\plasma_pistol.chud_definition
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex crosshair
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -690,19 +906,15 @@ SetField MirrorOffset 0 0
 SetField Offset 0 -2
 SetField Scale 0.8 0.8
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Plasma Rifle
 
 EditTag ui\chud\plasma_rifle.chud_definition
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex crosshair
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -710,19 +922,19 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Plasma Cannon
+
 Echo =======================================
 
 Echo =======================================
 Echo Rocket Launcher
 
 EditTag ui\chud\rocket.chud_definition
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -770,12 +982,7 @@ SetField MirrorOffset 0 0
 SetField Offset -132 110
 SetField Scale 1 1
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 
 Echo =======================================
 
@@ -783,6 +990,7 @@ Echo =======================================
 Echo Sentinel Beam
 
 EditTag ui\chud\sentinel_beam.chud_definition
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[0]
 EditBlock BitmapWidgets[2]
 EditBlock PlacementData[0]
@@ -810,18 +1018,14 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo Shotgun
 
 EditTag ui\chud\shotgun.chud_definition
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -829,18 +1033,15 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Echo SMG
 
 EditTag ui\chud\smg.chud_definition
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex crosshair
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -848,19 +1049,14 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Sniper Rifle
 
 EditTag ui\chud\sniper_rifle.chud_definition
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -988,18 +1184,14 @@ SetField MirrorOffset -1 0
 SetField Offset -192 172
 SetField Scale 1.15 1.15
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Spartan Laser
 
 EditTag ui\chud\spartan_laser.chud_definition
+setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -1037,18 +1229,15 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 0 0
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[4].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Spiker
 
 EditTag ui\chud\spike_rifle.chud_definition
+setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex crosshair
+setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[2]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -1056,19 +1245,14 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.18 1.18
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[3].textwidgets[0].renderdata[0].shaderindex 5
-setfield hudwidgets[5].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
 Echo =======================================
 
 Echo =======================================
 Energy Sword
 
 EditTag ui\chud\sword.chud_definition
+setfield hudwidgets[2].textwidgets[0].renderdata[0].shaderindex crosshair
 EditBlock HUDWidgets[3]
 EditBlock BitmapWidgets[0]
 EditBlock PlacementData[0]
@@ -1076,12 +1260,203 @@ SetField MirrorOffset 0 0
 SetField Offset 0 0
 SetField Scale 1.5 1.5
 SaveTagChanges
-Exit
-exit
-exit
-setfield hudwidgets[2].textwidgets[0].renderdata[0].shaderindex 5
-savetagchanges
-exit
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Banshee
+
+EditTag ui\chud\v_banshee.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Warthog Turret
+
+EditTag ui\chud\v_chaingun.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Chopper
+
+EditTag ui\chud\v_chopper.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Driver
+
+EditTag ui\chud\v_driver.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Gauss Turret
+
+EditTag ui\chud\v_gaussturret.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Ghost
+
+EditTag ui\chud\v_ghost.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Hornet
+
+EditTag ui\chud\v_hornet.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Mongoose
+
+EditTag ui\chud\v_mongoose.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 -40
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Scorpion
+
+EditTag ui\chud\v_scorpion.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Scorpion Turret
+
+EditTag ui\chud\v_scorpionturret.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Shade
+
+EditTag ui\chud\v_shade.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Wraith
+
+EditTag ui\chud\v_wraith.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 13
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Wraith Turret
+
+EditTag ui\chud\v_wraithturret.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 0
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
+Echo =======================================
+
+Echo =======================================
+Echo Anti-Air Wraith
+
+EditTag ui\chud\v_wraith_anti_air.chud_definition
+EditBlock HUDWidgets[0]
+EditBlock BitmapWidgets[0]
+EditBlock PlacementData[0]
+SetField MirrorOffset 0 0
+SetField Offset 0 13
+SetField Scale 1 1
+SaveTagChanges
+ExitTo Tags
 Echo =======================================
 
 savetagnames
