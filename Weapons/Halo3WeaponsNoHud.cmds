@@ -220,4 +220,4 @@ exit
 savetagnames
 dumplog Halo3WeaponsNoHud.txt
 
-echo All weapons installed
+echo All weapons ported
