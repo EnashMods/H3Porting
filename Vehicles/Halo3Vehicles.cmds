@@ -3,146 +3,140 @@ echo Installing Halo 3 Vehicles
 opencachefile dlcmaps\sandbox.map
 
 echo Installing Prowler
-porttag replace matchshaders objects\vehicles\mauler\shaders\mauler.rmsh
+porttag replace objects\vehicles\mauler\shaders\mauler.rmsh
 
 echo Installing Banshee
-porttag replace matchshaders objects\vehicles\banshee\banshee.mode
-porttag replace matchshaders objects\vehicles\banshee\garbage\cab_garbage\cab_garbage.mode
-porttag replace matchshaders objects\vehicles\banshee\garbage\fin_top_garbage\fin_top_garbage.mode
-porttag replace matchshaders objects\vehicles\banshee\garbage\fin_bottom_garbage\fin_bottom_garbage.mode
-porttag replace matchshaders objects\vehicles\banshee\garbage\l_wing_garbage\l_wing_garbage.mode
-porttag replace matchshaders objects\vehicles\banshee\garbage\r_wing_garbage\r_wing_garbage.mode
-porttag replace matchshaders objects\vehicles\banshee\garbage\wing_prong_garbage\wing_prong_garbage.mode
-porttag replace !recursive matchshaders objects\vehicles\banshee\banshee.hlmt
+porttag replace objects\vehicles\banshee\banshee.mode
+porttag replace objects\vehicles\banshee\garbage\cab_garbage\cab_garbage.mode
+porttag replace objects\vehicles\banshee\garbage\fin_top_garbage\fin_top_garbage.mode
+porttag replace objects\vehicles\banshee\garbage\fin_bottom_garbage\fin_bottom_garbage.mode
+porttag replace objects\vehicles\banshee\garbage\l_wing_garbage\l_wing_garbage.mode
+porttag replace objects\vehicles\banshee\garbage\r_wing_garbage\r_wing_garbage.mode
+porttag replace objects\vehicles\banshee\garbage\wing_prong_garbage\wing_prong_garbage.mode
+porttag replace single objects\vehicles\banshee\banshee.hlmt
 
 echo Installing Wraith
-porttag replace matchshaders objects\vehicles\wraith\wraith.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\wing_left\wing_left.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\wing_right\wing_right.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\hatch\hatch.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\wing_boost_left\wing_boost_left.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\wing_boost\wing_boost.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\rudder_shell\rudder_shell.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\rudder_right\rudder_right.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\mortar_hatch\mortar_hatch.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\gear\gear.mode
-porttag replace matchshaders objects\vehicles\wraith\turrets\mortar\mortar.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\mortar_deflector_left\mortar_deflector_left.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\mortar_gun\mortar_gun.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\mortar_door\mortar_door.mode
-porttag replace matchshaders objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\anti_infantry_turret\anti_infantry_turret.mode
-porttag replace matchshaders objects\vehicles\wraith\turrets\anti_air\anti_air.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\anti_air_left_pods\anti_air_left_pods.mode
-porttag replace matchshaders objects\vehicles\wraith\garbage\anti_air_right_pods\anti_air_right_pods.mode
-porttag replace !recursive matchshaders objects\vehicles\wraith\turrets\mortar\mortar.hlmt
+porttag replace objects\vehicles\wraith\wraith.mode
+porttag replace objects\vehicles\wraith\garbage\wing_left\wing_left.mode
+porttag replace objects\vehicles\wraith\garbage\wing_right\wing_right.mode
+porttag replace objects\vehicles\wraith\garbage\hatch\hatch.mode
+porttag replace objects\vehicles\wraith\garbage\wing_boost_left\wing_boost_left.mode
+porttag replace objects\vehicles\wraith\garbage\wing_boost\wing_boost.mode
+porttag replace objects\vehicles\wraith\garbage\rudder_shell\rudder_shell.mode
+porttag replace objects\vehicles\wraith\garbage\rudder_right\rudder_right.mode
+porttag replace objects\vehicles\wraith\garbage\mortar_hatch\mortar_hatch.mode
+porttag replace objects\vehicles\wraith\garbage\gear\gear.mode
+porttag replace objects\vehicles\wraith\turrets\mortar\mortar.mode
+porttag replace objects\vehicles\wraith\garbage\mortar_deflector_left\mortar_deflector_left.mode
+porttag replace objects\vehicles\wraith\garbage\mortar_gun\mortar_gun.mode
+porttag replace objects\vehicles\wraith\garbage\mortar_door\mortar_door.mode
+porttag replace objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.mode
+porttag replace objects\vehicles\wraith\garbage\anti_infantry_turret\anti_infantry_turret.mode
+porttag replace objects\vehicles\wraith\turrets\anti_air\anti_air.mode
+porttag replace objects\vehicles\wraith\garbage\anti_air_left_pods\anti_air_left_pods.mode
+porttag replace objects\vehicles\wraith\garbage\anti_air_right_pods\anti_air_right_pods.mode
+porttag replace single objects\vehicles\wraith\wraith.hlmt
 
 echo Installing Chopper
-porttag replace matchshaders objects\vehicles\brute_chopper\brute_chopper.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\garbage\bit_b\bit_b.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\garbage\bit_l\bit_l.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\garbage\bit_r\bit_r.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\garbage\blade_l\blade_l.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\garbage\blade_r\blade_r.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\garbage\rotor_l\rotor_l.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\garbage\rotor_r\rotor_r.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\garbage\seat\seat.mode
-porttag replace matchshaders objects\vehicles\brute_chopper\brute_chopper.jmad
-porttag replace matchshaders fx\material_effects\objects\vehicles\brute_chopper.foot
+porttag replace objects\vehicles\brute_chopper\brute_chopper.mode
+porttag replace objects\vehicles\brute_chopper\garbage\bit_b\bit_b.mode
+porttag replace objects\vehicles\brute_chopper\garbage\bit_l\bit_l.mode
+porttag replace objects\vehicles\brute_chopper\garbage\bit_r\bit_r.mode
+porttag replace objects\vehicles\brute_chopper\garbage\blade_l\blade_l.mode
+porttag replace objects\vehicles\brute_chopper\garbage\blade_r\blade_r.mode
+porttag replace objects\vehicles\brute_chopper\garbage\rotor_l\rotor_l.mode
+porttag replace objects\vehicles\brute_chopper\garbage\rotor_r\rotor_r.mode
+porttag replace objects\vehicles\brute_chopper\garbage\seat\seat.mode
+porttag replace objects\vehicles\brute_chopper\brute_chopper.jmad
 
 echo Installing Ghost
-porttag replace matchshaders fx\material_effects\objects\vehicles\ghost.foot
-porttag replace matchshaders objects\vehicles\ghost\garbage\anti_grav\anti_grav.mode
-porttag replace matchshaders objects\vehicles\ghost\garbage\hull_shell\hull_shell.mode
-porttag replace matchshaders objects\vehicles\ghost\garbage\l_gun\l_gun.mode
-porttag replace matchshaders objects\vehicles\ghost\garbage\l_wing_shell\l_wing_shell.mode
-porttag replace matchshaders objects\vehicles\ghost\garbage\seat\seat.mode
-porttag replace matchshaders objects\vehicles\ghost\ghost.mode
-porttag replace matchshaders objects\vehicles\ghost\ghost.jmad
-porttag replace matchshaders !recursive objects\vehicles\ghost\ghost.hlmt
+porttag replace objects\vehicles\ghost\garbage\anti_grav\anti_grav.mode
+porttag replace objects\vehicles\ghost\garbage\hull_shell\hull_shell.mode
+porttag replace objects\vehicles\ghost\garbage\l_gun\l_gun.mode
+porttag replace objects\vehicles\ghost\garbage\l_wing_shell\l_wing_shell.mode
+porttag replace objects\vehicles\ghost\garbage\seat\seat.mode
+porttag replace objects\vehicles\ghost\ghost.mode
+porttag replace single objects\vehicles\ghost\ghost.hlmt
 
 echo Installing Mongoose
-porttag replace matchshaders objects\vehicles\mongoose\mongoose.mode
-porttag replace matchshaders objects\vehicles\mongoose\mongoose.jmad
-porttag replace matchshaders fx\material_effects\objects\vehicles\mongoose.foot
-porttag replace matchshaders objects\vehicles\mongoose\garbage\cargo_shelf\cargo_shelf.mode
-porttag replace matchshaders objects\vehicles\mongoose\garbage\cowl_left\cowl_left.mode
-porttag replace matchshaders objects\vehicles\mongoose\garbage\cowl_right\cowl_right.mode
-porttag replace matchshaders objects\vehicles\mongoose\garbage\lb_fender\lb_fender.mode
-porttag replace matchshaders objects\vehicles\mongoose\garbage\ramp\ramp.mode
-porttag replace matchshaders objects\vehicles\mongoose\garbage\rb_fender\rb_fender.mode
-porttag replace matchshaders objects\vehicles\mongoose\garbage\wheel\wheel.mode
+porttag replace objects\vehicles\mongoose\mongoose.mode
+porttag replace objects\vehicles\mongoose\garbage\cargo_shelf\cargo_shelf.mode
+porttag replace objects\vehicles\mongoose\garbage\cowl_left\cowl_left.mode
+porttag replace objects\vehicles\mongoose\garbage\cowl_right\cowl_right.mode
+porttag replace objects\vehicles\mongoose\garbage\lb_fender\lb_fender.mode
+porttag replace objects\vehicles\mongoose\garbage\ramp\ramp.mode
+porttag replace objects\vehicles\mongoose\garbage\rb_fender\rb_fender.mode
+porttag replace objects\vehicles\mongoose\garbage\wheel\wheel.mode
 
 echo Installing Scorpion
-porttag replace matchshaders objects\vehicles\scorpion\scorpion.mode
+porttag replace objects\vehicles\scorpion\scorpion.mode
 porttag replace objects\vehicles\scorpion\scorpion.jmad
-porttag replace matchshaders fx\material_effects\objects\vehicles\scorpion.foot
-porttag replace matchshaders objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
-porttag replace matchshaders objects\vehicles\scorpion\turrets\cannon\cannon.mode
-porttag replace matchshaders objects\vehicles\scorpion\turrets\cannon\cannon.jmad
-porttag replace matchshaders !recursive objects\vehicles\scorpion\turrets\cannon\cannon.hlmt
-porttag replace matchshaders objects\vehicles\scorpion\garbage\driver_hatch\driver_hatch.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\engine_panel\engine_panel.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\lb_tread\lb_tread.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\lb_tread_cover\lb_tread_cover.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\lf_tread\lf_tread.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\l_big_panel\l_big_panel.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\l_tread_cover\l_tread_cover.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\rb_tread\rb_tread.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\rb_tread_cover\rb_tread_cover.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\rf_tread\rf_tread.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\r_tread_cover\r_tread_cover.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\tread_side_panel\tread_side_panel.mode
-porttag replace matchshaders objects\vehicles\scorpion\garbage\water_can\water_can.mode
-porttag replace matchshaders objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
-porttag replace matchshaders objects\vehicles\scorpion\turrets\anti_infantry\garbage\anti_gun\anti_gun.mode
+porttag replace objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
+porttag replace objects\vehicles\scorpion\turrets\cannon\cannon.mode
+porttag replace objects\vehicles\scorpion\turrets\cannon\cannon.jmad
+porttag replace single objects\vehicles\scorpion\turrets\cannon\cannon.hlmt
+porttag replace objects\vehicles\scorpion\garbage\driver_hatch\driver_hatch.mode
+porttag replace objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.mode
+porttag replace objects\vehicles\scorpion\garbage\engine_panel\engine_panel.mode
+porttag replace objects\vehicles\scorpion\garbage\lb_tread\lb_tread.mode
+porttag replace objects\vehicles\scorpion\garbage\lb_tread_cover\lb_tread_cover.mode
+porttag replace objects\vehicles\scorpion\garbage\lf_tread\lf_tread.mode
+porttag replace objects\vehicles\scorpion\garbage\l_big_panel\l_big_panel.mode
+porttag replace objects\vehicles\scorpion\garbage\l_tread_cover\l_tread_cover.mode
+porttag replace objects\vehicles\scorpion\garbage\rb_tread\rb_tread.mode
+porttag replace objects\vehicles\scorpion\garbage\rb_tread_cover\rb_tread_cover.mode
+porttag replace objects\vehicles\scorpion\garbage\rf_tread\rf_tread.mode
+porttag replace objects\vehicles\scorpion\garbage\r_tread_cover\r_tread_cover.mode
+porttag replace objects\vehicles\scorpion\garbage\tread_side_panel\tread_side_panel.mode
+porttag replace objects\vehicles\scorpion\garbage\water_can\water_can.mode
+porttag replace objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
+porttag replace objects\vehicles\scorpion\turrets\anti_infantry\garbage\anti_gun\anti_gun.mode
 
 echo Installing Warthog and friends
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun.jmad
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss.jmad
-porttag replace matchshaders objects\vehicles\warthog\warthog.mode
-porttag replace matchshaders objects\scenery\human\military\warthog_drop_palette\warthog_drop_palette.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\hood\hood.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\hubcap\hubcap.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\lb_fender\lb_fender.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\lf_fender\lf_fender.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\rb_fender\rb_fender.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\rf_fender\rf_fender.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\sailpanel\sailpanel.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\tire\tire.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\winch\winch.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
-porttag replace !recursive matchshaders objects\vehicles\warthog\warthog.hlmt
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.jmad
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss.jmad
+porttag replace objects\vehicles\warthog\warthog.mode
+porttag replace objects\scenery\human\military\warthog_drop_palette\warthog_drop_palette.mode
+porttag replace objects\vehicles\warthog\garbage\hood\hood.mode
+porttag replace objects\vehicles\warthog\garbage\hubcap\hubcap.mode
+porttag replace objects\vehicles\warthog\garbage\lb_fender\lb_fender.mode
+porttag replace objects\vehicles\warthog\garbage\lf_fender\lf_fender.mode
+porttag replace objects\vehicles\warthog\garbage\rb_fender\rb_fender.mode
+porttag replace objects\vehicles\warthog\garbage\rf_fender\rf_fender.mode
+porttag replace objects\vehicles\warthog\garbage\sailpanel\sailpanel.mode
+porttag replace objects\vehicles\warthog\garbage\tire\tire.mode
+porttag replace objects\vehicles\warthog\garbage\winch\winch.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
+porttag replace single objects\vehicles\warthog\warthog.hlmt
 exit
 
 echo Installing Snow Warthog and friends
 opencachefile dlcmaps\sidewinder.map
-porttag replace matchshaders objects\vehicles\warthog\garbage\bumper\bumper_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\hood\hood_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\hubcap\hubcap_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\lb_fender\lb_fender_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\lf_fender\lf_fender_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\rb_fender\rb_fender_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\rf_fender\rf_fender_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\sailpanel\sailpanel_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\tire\tire_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\garbage\winch\winch_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\chaingun_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\turrets\gauss\gauss_snow.mode
-porttag replace matchshaders objects\vehicles\warthog\warthog_snow.mode
-porttag replace !recursive matchshaders objects\vehicles\warthog\warthog_snow.hlmt
+porttag replace objects\vehicles\warthog\garbage\bumper\bumper_snow.mode
+porttag replace objects\vehicles\warthog\garbage\hood\hood_snow.mode
+porttag replace objects\vehicles\warthog\garbage\hubcap\hubcap_snow.mode
+porttag replace objects\vehicles\warthog\garbage\lb_fender\lb_fender_snow.mode
+porttag replace objects\vehicles\warthog\garbage\lf_fender\lf_fender_snow.mode
+porttag replace objects\vehicles\warthog\garbage\rb_fender\rb_fender_snow.mode
+porttag replace objects\vehicles\warthog\garbage\rf_fender\rf_fender_snow.mode
+porttag replace objects\vehicles\warthog\garbage\sailpanel\sailpanel_snow.mode
+porttag replace objects\vehicles\warthog\garbage\tire\tire_snow.mode
+porttag replace objects\vehicles\warthog\garbage\winch\winch_snow.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun_snow.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss_snow.mode
+porttag replace objects\vehicles\warthog\warthog_snow.mode
+porttag replace single objects\vehicles\warthog\warthog_snow.hlmt
 exit
 
 echo Fixing Prowler
@@ -156,16 +150,6 @@ edittag objects\vehicles\wraith\bitmaps\wraith_bump.bitm
 importbitmap 0 tags\objects\vehicles\wraith\bitmaps\wraith_bump.dds
 savetagchanges
 exit
-edittag objects\vehicles\wraith\wraith.mode
-setfield regions[1].permutations[0].meshindex 9
-setfield regions[1].permutations[1].meshindex 17
-setfield regions[1].permutations[2].meshindex 24
-setfield regions[1].permutations[3].meshindex 1
-setfield regions[7].permutations[0].meshindex 15
-setfield regions[7].permutations[1].meshindex 23
-setfield regions[7].permutations[2].meshindex 7
-savetagchanges
-exit
 
 echo Fixing Ghost
 edittag objects\vehicles\ghost\bitmaps\ghost_bump.bitm
@@ -174,7 +158,7 @@ savetagchanges
 exit
 
 echo Fixing Scorpion
-importtag objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitm tags\objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitmap
+importtag replace objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitm tags\objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitmap
 edittag objects\vehicles\scorpion\bitmaps\scorpion_guts_bump.bitm
 importbitmap 0 tags\objects\vehicles\scorpion\bitmaps\scorpion_guts_bump.dds
 savetagchanges
@@ -266,14 +250,22 @@ edittag objects\vehicles\warthog\shaders\console.rmsh
 setfield shaderproperties[0].arguments[5].values 0 0 0 1
 savetagchanges
 exit
+edittag objects\vehicles\warthog\shaders\tail_lights.rmsh
+setfield shaderproperties[0].bitmaptransparency 0
+savetagchanges
+exit
+edittag objects\vehicles\warthog\shaders\tail_lights_snow.rmsh
+setfield shaderproperties[0].bitmaptransparency 0
+savetagchanges
+exit
 
-ImportTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
+Importtag replace shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
+Importtag replace shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
+Importtag replace shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
+Importtag replace shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
+Importtag replace shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap"
+Importtag replace shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
+Importtag replace shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
 
 EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
 SetField Resources[0].Resource.Page.Index -1
