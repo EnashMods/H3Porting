@@ -51,7 +51,7 @@ setfield hudwidgets[19].parallaxdata 0x00000c31
 setfield hudwidgets[20].parallaxdata 0x00000c31
 setfield hudwidgets[21].parallaxdata 0x00000c31
 setfield hudwidgets[22].parallaxdata 0x00000c31
-setfield hudwidgets[22].placementdata[0].offset -15 -35
+setfield hudwidgets[22].placementdata[0].offset -12 -35
 setfield hudwidgets[26].placementdata[0].offset 25 -17
 setfield hudwidgets[26].placementdata[0].scale -1.45 -1.45
 setfield hudwidgets[26].bitmapwidgets[0].placementdata[0].scale 0.6 0.6
@@ -76,6 +76,11 @@ setfield parallaxdata 0x00000c31.cprl
 savetagchanges
 exit
 
+edittag 0x12BC
+importbitmap 0 tags\000012BC.dds
+savetagchanges
+exit
+
 edittag ui\chud\bitmaps\sensor_blips.bitm
 importbitmap 0 tags\ui\chud\bitmaps\sensor_blips.dds
 savetagchanges
@@ -89,8 +94,12 @@ setfield hudwidgets[0].parallaxdata 0x00000c31
 setfield hudwidgets[0].placementdata[0].offset 15 -29
 setfield hudwidgets[1].parallaxdata 0x00000c31
 setfield hudwidgets[1].placementdata[0].offset 15 50
+setfield hudwidgets[1].placementdata[0].scale 1.45 1.45
+setfield hudwidgets[1].textwidgets[0].placementdata[0].offset -140 3
 setfield hudwidgets[2].parallaxdata 0x00000c31
 setfield hudwidgets[2].placementdata[0].offset 15 50
+setfield hudwidgets[2].placementdata[0].scale 1.45 1.45
+setfield hudwidgets[2].textwidgets[0].placementdata[0].offset -140 3
 setfield hudwidgets[3].parallaxdata 0x00000c31
 setfield hudwidgets[3].textwidgets[0].placementdata[0].offset 0 22
 setfield hudwidgets[3].placementdata[0].offset 15 -100
@@ -104,7 +113,7 @@ setfield hudwidgets[5].bitmapwidgets[4].placementdata[0].offset -220 47
 setfield hudwidgets[5].bitmapwidgets[5].placementdata[0].offset -202 47
 setfield hudwidgets[5].bitmapwidgets[6].placementdata[0].offset -220 47
 setfield hudwidgets[5].bitmapwidgets[7].placementdata[0].offset -202 47
-setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -200 47
+setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -210 47
 setfield hudwidgets[5].bitmapwidgets[9].placementdata[0].offset -202 47
 setfield hudwidgets[6].parallaxdata 0x00000c31
 setfield hudwidgets[6].placementdata[0].offset 15 -66
@@ -1542,14 +1551,14 @@ pasteblockelements hudwidgets 0
 setfield hudwidgets[2].bitmapwidgets[0].placementdata[0].offset -5 109
 setfield hudwidgets[2].bitmapwidgets[0].placementdata[0].scale 1 1
 setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
+setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[2].bitmapwidgets[0].widgetindex 5
 setfield hudwidgets[2].bitmapwidgets[0].flags none
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[4].placementdata[0].offset 30 0
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset -10 8
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[4].bitmapwidgets[0].widgetindex 5
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -1605,14 +1614,14 @@ pasteblockelements hudwidgets 0
 setfield hudwidgets[2].bitmapwidgets[0].placementdata[0].offset -5 109
 setfield hudwidgets[2].bitmapwidgets[0].placementdata[0].scale 1 1
 setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
+setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
 setfield hudwidgets[2].bitmapwidgets[0].widgetindex 5
 setfield hudwidgets[2].bitmapwidgets[0].flags none
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[4].placementdata[0].offset 30 0
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset -10 8
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
 setfield hudwidgets[4].bitmapwidgets[0].widgetindex 5
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -1659,16 +1668,14 @@ removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset 18 110
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 0.8 0.8
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[4].bitmapwidgets[0].bitmap 0x1db1
 setfield hudwidgets[5].placementdata[0].offset 30 0
 setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset -2 10
 setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].scale 0.8 0.8
-setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
 setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
+setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[5].bitmapwidgets[0].bitmap 0x1db1
 savetagchanges
 exit
@@ -1755,7 +1762,7 @@ pasteblockelements hudwidgets 0
 setfield hudwidgets[5].placementdata[0].offset 30 0
 setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset -10 8
 setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
+setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
 setfield hudwidgets[5].bitmapwidgets[0].widgetindex 8
 setfield hudwidgets[5].bitmapwidgets[0].flags none
 setfield hudwidgets[5].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -1763,7 +1770,7 @@ setfield hudwidgets[5].bitmapwidgets[0].bitmapspriteindex 1
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset 0 109
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
 setfield hudwidgets[6].bitmapwidgets[0].widgetindex 8
 setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -1855,8 +1862,9 @@ removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset 10 107
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 1.2 1.2
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].localcolorb 0 107 85 47
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic34
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
 setfield hudwidgets[4].bitmapwidgets[0].widgetindex 14
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -1864,8 +1872,9 @@ setfield hudwidgets[4].bitmapwidgets[0].bitmapspriteindex 3
 setfield hudwidgets[6].placementdata[0].offset 30 0
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset -14 3
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 1.2 1.2
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].localcolorb 0 107 85 47
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic34
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
 setfield hudwidgets[6].bitmapwidgets[0].widgetindex 14
 setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -1972,12 +1981,12 @@ pasteblockelements hudwidgets 0
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset 40 103
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic33
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[6].placementdata[0].offset 30 0
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset 20 4
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic33
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 savetagchanges
 exit
 edittag ui\chud\battle_rifle.chdt
@@ -2027,12 +2036,12 @@ pasteblockelements hudwidgets 0
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset 33 97
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
 setfield hudwidgets[6].placementdata[0].offset 30 0
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset 23 0
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
 savetagchanges
 exit
 echo ===========================================================
@@ -2090,30 +2099,22 @@ exit
 edittag ui\chud\magnum_v2.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
-setfield hudwidgets[3].placementdata[0].offset 0 0
-setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].offset 15 5
-setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].scale -1 1
-setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
+setfield hudwidgets[3].placementdata[0].offset 20 5
+setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].offset 18 5
 setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
 setfield hudwidgets[3].bitmapwidgets[0].widgetindex 16
 setfield hudwidgets[3].bitmapwidgets[0].flags none
-setfield hudwidgets[3].bitmapwidgets[0].bitmapspriteindex 1
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
+setfield hudwidgets[3].bitmapwidgets[0].bitmapspriteindex 3
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
 setfield hudwidgets[4].bitmapwidgets[0].widgetindex 16
 setfield hudwidgets[4].bitmapwidgets[0].flags none
-setfield hudwidgets[4].bitmapwidgets[0].bitmapspriteindex 1
+setfield hudwidgets[4].bitmapwidgets[0].bitmapspriteindex 3
 setfield hudwidgets[6].placementdata[0].offset 30 0
-setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset -35 5
-setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 1 1
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
+setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset -40 5
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
 setfield hudwidgets[6].bitmapwidgets[0].widgetindex 16
 setfield hudwidgets[6].bitmapwidgets[0].flags none
-setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 1
+setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 3
 savetagchanges
 exit
 edittag ui\chud\magnum.chdt
@@ -2122,12 +2123,21 @@ exit
 edittag ui\chud\magnum_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
-setfield hudwidgets[3].placementdata[0].offset 20 5
-setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].offset 18 5
+setfield hudwidgets[3].placementdata[0].offset 0 0
+setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].offset 15 5
+setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].scale -1 1
 setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
+setfield hudwidgets[3].bitmapwidgets[0].flags none
+setfield hudwidgets[3].bitmapwidgets[0].bitmapspriteindex 1
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
+setfield hudwidgets[4].bitmapwidgets[0].flags none
+setfield hudwidgets[4].bitmapwidgets[0].bitmapspriteindex 1
 setfield hudwidgets[7].placementdata[0].offset 30 0
-setfield hudwidgets[7].bitmapwidgets[0].placementdata[0].offset -40 5
+setfield hudwidgets[7].bitmapwidgets[0].placementdata[0].offset -35 5
+setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 1 1
 setfield hudwidgets[7].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
+setfield hudwidgets[7].bitmapwidgets[0].flags none
+setfield hudwidgets[7].bitmapwidgets[0].bitmapspriteindex 1
 savetagchanges
 exit
 echo ===========================================================
@@ -2227,17 +2237,15 @@ pasteblockelements hudwidgets 0
 setfield hudwidgets[3].placementdata[0].offset 0 0
 setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].offset -20 0
 setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].scale -1.2 1.2
-setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
 setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
+setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[3].bitmapwidgets[0].widgetindex 6
 setfield hudwidgets[3].bitmapwidgets[0].flags none
 setfield hudwidgets[3].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[3].bitmapwidgets[0].bitmapspriteindex 12
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 1.2 1.2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[4].bitmapwidgets[0].widgetindex 6
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -2245,9 +2253,8 @@ setfield hudwidgets[4].bitmapwidgets[0].bitmapspriteindex 12
 setfield hudwidgets[6].placementdata[0].offset 30 0
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset 0 0
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 1.2 1.2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[6].bitmapwidgets[0].widgetindex 6
 setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -2429,7 +2436,6 @@ setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.b
 savetagchanges
 exit
 edittag ui\chud\machinegun_turret.chdt
-setfield hudwidgets[1].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
 exit
 edittag ui\chud\plasma_turret.chdt
