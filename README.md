@@ -1,23 +1,20 @@
 # H3Porting
 Here you can find cmds files for porting halo 3 content. Feel free to upload your own cmds files for other content or apply fixes to currently existing cmds files.
 
-### Make sure you run the PrePorting Fixes script before any porting.
-#### If you are running a build with ported maps, or plan to use the standard halo online weapon variants, don't run fixes3.cmds
+#### If you are running a build with ported maps, I can't guarantee compatibility
 
 Hud Install:
 1. Run Halo3Hud
-2. Be mildly impressed with the mostly complete hud
+2. it be good
 
 Weapons Install:
 1. Run Halo3WeaponsNoHud
 2. Run Halo3WeaponFixes
-3. Weep at the beauty of ported weapons
+3. Run Halo3WeaponVariants
+4. it also be good
 
 Vehicles Install:
 1. Run Halo3Vehicles
-2. Be mildly impressed at the meager progress I've made
+2. good, be it
 
-TagTool versions these scripts are tested and working on:
-* 1.5.6916.25444 
-* 1.5.6939.17463 (latest commit as of 1/7/19)
-* 1.5.6947.33263 (latest commit as of 1/8/19) **use this or later commits for weapons**
+#### Use the provided TagTool
