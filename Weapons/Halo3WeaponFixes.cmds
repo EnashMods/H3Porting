@@ -173,10 +173,20 @@ setfield lodmodel objects\weapons\rifle\battle_rifle\battle_rifle.mode
 savetagchanges
 exit
 
+echo Fixing Beam Rifle
+edittag objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.mode
+setfield nodes[0].inverseposition -0.2107326 -2.98E-10 -0.0035
+setfield nodes[1].inverseposition -0.07657 0.00120375 0.04
+setfield nodes[2].inverseposition -0.3528911 0.00033812 2.4288E-05
+setfield nodes[3].inverseposition -0.07657 0.00120375 0.03125
+savetagchanges
+exit
+
 echo Fixing Carbine
 edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
 setfield markergroups[1].markers[0].translation 0.01435027 -0.002966242 -0.03943556
 setfield markergroups[1].markers[0].rotation -0.5890878 0.1469777 -0.4838951 0.630253
+setfield markergroups[3].markers[0].translation -0.06 0.015 0.04760161
 savetagchanges
 exit
 edittag objects\weapons\rifle\covenant_carbine\covenant_carbine.hlmt
@@ -201,6 +211,7 @@ exit
 
 echo Fixing SMG
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg.mode
+setfield nodes[3].inverseposition 0.0265 4.97E-09 -0.01569122
 savetagchanges
 exit
 
@@ -252,8 +263,8 @@ exit
 
 echo Fixing Rocket Launcher
 edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
-setfield markergroups[1].markers[0].translation 0.2643063 0.003026339 -0.01561892
-setfield markergroups[1].markers[0].rotation 0.388786 -0.1373109 -0.01908897 0.9108385
+setfield markergroups[1].markers[0].translation 0.235 0.022 -0.028
+setfield markergroups[1].markers[0].rotation -0.22 0.12 0.01 -0.5
 savetagchanges
 exit
 edittag objects\weapons\support_high\rocket_launcher\rocket_launcher.hlmt
