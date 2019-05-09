@@ -1,41 +1,19 @@
 echo Installing Halo 3 Vehicles
 
-opencachefile dlcmaps\sandbox.map
-
-echo Installing Prowler
-porttag replace objects\vehicles\mauler\shaders\mauler.rmsh
+opencachefile D:\Halo3Retail\maps\sandbox.map
 
 echo Installing Banshee
 porttag replace objects\vehicles\banshee\banshee.mode
+porttag replace objects\vehicles\banshee\banshee.jmad
 porttag replace objects\vehicles\banshee\garbage\cab_garbage\cab_garbage.mode
-porttag replace objects\vehicles\banshee\garbage\fin_top_garbage\fin_top_garbage.mode
 porttag replace objects\vehicles\banshee\garbage\fin_bottom_garbage\fin_bottom_garbage.mode
+porttag replace objects\vehicles\banshee\garbage\fin_top_garbage\fin_top_garbage.mode
 porttag replace objects\vehicles\banshee\garbage\l_wing_garbage\l_wing_garbage.mode
 porttag replace objects\vehicles\banshee\garbage\r_wing_garbage\r_wing_garbage.mode
 porttag replace objects\vehicles\banshee\garbage\wing_prong_garbage\wing_prong_garbage.mode
-porttag replace single objects\vehicles\banshee\banshee.hlmt
 
-echo Installing Wraith
-porttag replace objects\vehicles\wraith\wraith.mode
-porttag replace objects\vehicles\wraith\garbage\wing_left\wing_left.mode
-porttag replace objects\vehicles\wraith\garbage\wing_right\wing_right.mode
-porttag replace objects\vehicles\wraith\garbage\hatch\hatch.mode
-porttag replace objects\vehicles\wraith\garbage\wing_boost_left\wing_boost_left.mode
-porttag replace objects\vehicles\wraith\garbage\wing_boost\wing_boost.mode
-porttag replace objects\vehicles\wraith\garbage\rudder_shell\rudder_shell.mode
-porttag replace objects\vehicles\wraith\garbage\rudder_right\rudder_right.mode
-porttag replace objects\vehicles\wraith\garbage\mortar_hatch\mortar_hatch.mode
-porttag replace objects\vehicles\wraith\garbage\gear\gear.mode
-porttag replace objects\vehicles\wraith\turrets\mortar\mortar.mode
-porttag replace objects\vehicles\wraith\garbage\mortar_deflector_left\mortar_deflector_left.mode
-porttag replace objects\vehicles\wraith\garbage\mortar_gun\mortar_gun.mode
-porttag replace objects\vehicles\wraith\garbage\mortar_door\mortar_door.mode
-porttag replace objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.mode
-porttag replace objects\vehicles\wraith\garbage\anti_infantry_turret\anti_infantry_turret.mode
-porttag replace objects\vehicles\wraith\turrets\anti_air\anti_air.mode
-porttag replace objects\vehicles\wraith\garbage\anti_air_left_pods\anti_air_left_pods.mode
-porttag replace objects\vehicles\wraith\garbage\anti_air_right_pods\anti_air_right_pods.mode
-porttag replace single objects\vehicles\wraith\wraith.hlmt
+echo Installing Prowler
+porttag replace objects\vehicles\mauler\shaders\mauler.rmsh
 
 echo Installing Chopper
 porttag replace objects\vehicles\brute_chopper\brute_chopper.mode
@@ -47,7 +25,6 @@ porttag replace objects\vehicles\brute_chopper\garbage\blade_r\blade_r.mode
 porttag replace objects\vehicles\brute_chopper\garbage\rotor_l\rotor_l.mode
 porttag replace objects\vehicles\brute_chopper\garbage\rotor_r\rotor_r.mode
 porttag replace objects\vehicles\brute_chopper\garbage\seat\seat.mode
-porttag replace objects\vehicles\brute_chopper\brute_chopper.jmad
 
 echo Installing Ghost
 porttag replace objects\vehicles\ghost\garbage\anti_grav\anti_grav.mode
@@ -56,7 +33,7 @@ porttag replace objects\vehicles\ghost\garbage\l_gun\l_gun.mode
 porttag replace objects\vehicles\ghost\garbage\l_wing_shell\l_wing_shell.mode
 porttag replace objects\vehicles\ghost\garbage\seat\seat.mode
 porttag replace objects\vehicles\ghost\ghost.mode
-porttag replace single objects\vehicles\ghost\ghost.hlmt
+porttag single replace objects\vehicles\ghost\ghost.hlmt
 
 echo Installing Mongoose
 porttag replace objects\vehicles\mongoose\mongoose.mode
@@ -74,7 +51,6 @@ porttag replace objects\vehicles\scorpion\scorpion.jmad
 porttag replace objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
 porttag replace objects\vehicles\scorpion\turrets\cannon\cannon.mode
 porttag replace objects\vehicles\scorpion\turrets\cannon\cannon.jmad
-porttag replace single objects\vehicles\scorpion\turrets\cannon\cannon.hlmt
 porttag replace objects\vehicles\scorpion\garbage\driver_hatch\driver_hatch.mode
 porttag replace objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.mode
 porttag replace objects\vehicles\scorpion\garbage\engine_panel\engine_panel.mode
@@ -113,11 +89,16 @@ porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
-porttag replace single objects\vehicles\warthog\warthog.hlmt
+
+echo Installing Wraith and friends
+porttag replace objects\vehicles\wraith\wraith.mode
+porttag replace objects\vehicles\wraith\turrets\mortar\mortar.mode
+porttag replace objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.mode
+porttag replace objects\vehicles\wraith\turrets\anti_air\anti_air.mode
 exit
 
 echo Installing Snow Warthog and friends
-opencachefile dlcmaps\sidewinder.map
+opencachefile D:\Halo3Retail\maps\sidewinder.map
 porttag replace objects\vehicles\warthog\garbage\bumper\bumper_snow.mode
 porttag replace objects\vehicles\warthog\garbage\hood\hood_snow.mode
 porttag replace objects\vehicles\warthog\garbage\hubcap\hubcap_snow.mode
@@ -136,8 +117,28 @@ porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\d
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage_snow.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\gauss_snow.mode
 porttag replace objects\vehicles\warthog\warthog_snow.mode
-porttag replace single objects\vehicles\warthog\warthog_snow.hlmt
 exit
+
+echo Fixing Banshee
+edittag objects\vehicles\banshee\banshee.mode
+setfield regions[0].permutations[0].meshindex 9
+setfield regions[0].permutations[1].meshindex 18
+setfield regions[0].permutations[2].meshindex 0
+setfield regions[2].permutations[0].meshindex 11
+setfield regions[2].permutations[1].meshindex 20
+setfield regions[2].permutations[2].meshindex 27
+setfield regions[2].permutations[3].meshindex 2
+setfield regions[4].permutations[0].meshindex 13
+setfield regions[4].permutations[1].meshindex 22
+setfield regions[4].permutations[2].meshindex 29
+setfield regions[4].permutations[3].meshindex 4
+setfield regions[7].permutations[0].meshindex 16
+setfield regions[7].permutations[1].meshindex 25
+setfield regions[7].permutations[2].meshindex 32
+setfield regions[7].permutations[3].meshindex 7
+savetagchanges
+exit
+importtag objects\vehicles\banshee\banshee.hlmt tags\objects\vehicles\banshee\banshee.hlmt
 
 echo Fixing Prowler
 edittag objects\vehicles\mauler\bitmaps\mauler_bump.bitm
@@ -145,9 +146,9 @@ importbitmap 0 tags\objects\vehicles\mauler\bitmaps\mauler_bump.dds
 savetagchanges
 exit
 
-echo Fixing Wraith
-edittag objects\vehicles\wraith\bitmaps\wraith_bump.bitm
-importbitmap 0 tags\objects\vehicles\wraith\bitmaps\wraith_bump.dds
+echo Fixing Snow Hornet
+edittag objects\vehicles\hornet\garbage\thrust_bell\thrust_bell_snow\shaders\[00]_rmsh.rmsh
+setfield shaderproperties[0].shadermaps[2].bitmap objects\vehicles\hornet\garbage\landing_gear\landing_gear\bitmaps\[00]_rmsh\bump.bitm
 savetagchanges
 exit
 
@@ -156,9 +157,19 @@ edittag objects\vehicles\ghost\bitmaps\ghost_bump.bitm
 importbitmap 0 tags\objects\vehicles\ghost\bitmaps\ghost_bump.dds
 savetagchanges
 exit
+edittag objects\vehicles\ghost\shaders\ghost_dash_zcam.rmhg
+setfield shaderproperties[0].arguments[3].values 0.9 1.6 0 -0.3
+savetagchanges
+exit
+
+echo Fixing Mongoose
+edittag objects\vehicles\mongoose\bitmaps\mongoose_bump.bitm
+importbitmap 0 tags\objects\vehicles\mongoose\bitmaps\mongoose_bump.dds
+savetagchanges
+exit
 
 echo Fixing Scorpion
-importtag replace objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitm tags\objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitmap
+importtag objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitm tags\objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitmap
 edittag objects\vehicles\scorpion\bitmaps\scorpion_guts_bump.bitm
 importbitmap 0 tags\objects\vehicles\scorpion\bitmaps\scorpion_guts_bump.dds
 savetagchanges
@@ -207,8 +218,27 @@ setfield regions[6].permutations[3].meshindex 22
 setfield regions[6].permutations[4].meshindex 35
 savetagchanges
 exit
-edittag objects\vehicles\scorpion\turrets\cannon\shaders\turret_cannon.rmsh
-setfield shaderproperties[0].arguments[7].values 0.1 0.05 0.05 0
+edittag objects\vehicles\scorpion\turrets\cannon\cannon.mode
+setfield regions[1].permutations[0].meshindex 5
+setfield regions[1].permutations[1].meshindex 1
+setfield regions[1].permutations[2].meshindex 3
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\turrets\cannon\cannon.hlmt
+removeblockelements nodes 1 2
+editblock nodes 0
+setfield defaultrotation 0 0 8.74E-08 -1
+exit
+editblock nodes 1
+setfield firstchildnode 2
+exit
+editblock nodes 2
+setfield parentnode 1
+setfield nextsiblingnode 3
+exit
+editblock nodes 3
+setfield parentnode 1
+exit
 savetagchanges
 exit
 
@@ -229,91 +259,67 @@ edittag objects\vehicles\warthog\bitmaps\hub_bump.bitm
 importbitmap 0 tags\objects\vehicles\warthog\bitmaps\hub_bump.dds
 savetagchanges
 exit
+edittag objects\vehicles\warthog\warthog.mode
+setfield regions[0].permutations[0].meshindex 11
+setfield regions[0].permutations[1].meshindex 0
+setfield regions[1].permutations[0].meshindex 38
+setfield regions[1].permutations[1].meshindex 1
+setfield regions[1].permutations[2].meshindex 12
+setfield regions[1].permutations[3].meshindex 22
+setfield regions[1].permutations[4].meshindex 32
+savetagchanges
+exit
+edittag objects\vehicles\warthog\warthog_snow.mode
+setfield regions[0].permutations[0].meshindex 11
+setfield regions[0].permutations[1].meshindex 0
+setfield regions[1].permutations[0].meshindex 38
+setfield regions[1].permutations[1].meshindex 1
+setfield regions[1].permutations[2].meshindex 12
+setfield regions[1].permutations[3].meshindex 22
+setfield regions[1].permutations[4].meshindex 32
+savetagchanges
+exit
 EditTag objects\vehicles\warthog\turrets\gauss\shaders\gauss_alpha.rmhg
-SetArgument base_map 1 1 0 0
-SetArgument detail_map 1 1 0 0
-SetArgument albedo_color 0 0 0 1
-SetArgument self_illum_map 1 1 0.05 0.125
-SetArgument self_illum_color 0 0 0 1
-SetArgument self_illum_intensity 1.612745 1.612745 1.612745 1.612745
-SetArgument self_illum_heat_color 0 0 0 1
-SetArgument overlay_map 130 130 0 0
-SetArgument overlay_detail_map 1 1 0 0
-SetArgument overlay_tint 0.2509804 0.345098 0.08627451 1
-SetArgument overlay_intensity 1 1 1 1
-SetField InputVariable ParticleRandom1
-SetField RangeVariable ParticleAge
-SetField OutputModifier Times
+SetArgument self_illum_map 0.9 0.87 0.05 0.125
 SaveTagChanges
 Exit
 edittag objects\vehicles\warthog\shaders\console.rmsh
 setfield shaderproperties[0].arguments[5].values 0 0 0 1
 savetagchanges
 exit
+edittag objects\vehicles\warthog\shaders\wheel_snow.rmsh
+setfield shaderproperties[0].template shaders\shader_templates\_7_2_0_1_1_2_0_0_0_0_0.rmt2
+savetagchanges
+exit
 edittag objects\vehicles\warthog\shaders\tail_lights.rmsh
-setfield shaderproperties[0].bitmaptransparency 0
+setfield shaderproperties[0].Transparency 0
 savetagchanges
 exit
 edittag objects\vehicles\warthog\shaders\tail_lights_snow.rmsh
-setfield shaderproperties[0].bitmaptransparency 0
+setfield shaderproperties[0].Transparency 0
 savetagchanges
 exit
 
-Importtag replace shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
-Importtag replace shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
-Importtag replace shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
-Importtag replace shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
-Importtag replace shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap"
-Importtag replace shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
-Importtag replace shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
-
-EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey25_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\color_white.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\default_vector.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
+echo Fixing Wraith
+edittag objects\vehicles\wraith\bitmaps\wraith_bump.bitm
+importbitmap 0 tags\objects\vehicles\wraith\bitmaps\wraith_bump.dds
+savetagchanges
+exit
+edittag objects\vehicles\wraith\wraith.mode
+setfield regions[1].permutations[0].meshindex 9
+setfield regions[1].permutations[1].meshindex 17
+setfield regions[1].permutations[2].meshindex 24
+setfield regions[1].permutations[3].meshindex 1
+setfield regions[7].permutations[0].meshindex 15
+setfield regions[7].permutations[1].meshindex 23
+setfield regions[7].permutations[2].meshindex 7
+savetagchanges
+exit
 
 EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.particle
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
-SetField RenderMethod.ShaderProperties[0].Unknown7 9
-SetField RenderMethod.ShaderProperties[0].BitmapTransparency 9
+SetField RenderMethod.ShaderProperties[0].Transparency 9
 SaveTagChanges
 ExitTo tags
 
