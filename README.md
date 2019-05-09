@@ -3,7 +3,7 @@ Here you can find cmds files for porting halo 3 content. Feel free to upload you
 
 #### If you are running a build with ported maps, I can't guarantee compatibility
 
-Your Halo 3 maps will either have to be in D:\Halo3Retail\maps or you will need to change that line to your maps directory in each script
+Your Halo 3 maps will have to be in D:\Halo3Retail\maps or you will need to change that line to your maps directory in each script
 
 Hud Install:
 1. Run Halo3Hud
