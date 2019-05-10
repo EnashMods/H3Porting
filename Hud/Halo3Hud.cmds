@@ -11,11 +11,13 @@ exit
 edittag ui\chud\spartan.chdt
 pasteblockelements hudwidgets 22
 setfield hudwidgets[0].parallaxdata 0x00000c31
+setfield hudwidgets[0].bitmapwidgets[0].placementdata[0].mirroroffset 3.93 -1
 setfield hudwidgets[1].parallaxdata 0x00000c31
 setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].outputcolorc_ho globaldynamic2
 setfield hudwidgets[2].parallaxdata 0x00000c31
 setfield hudwidgets[2].placementdata[0].offset 0 46
+setfield hudwidgets[2].bitmapwidgets[0].placementdata[0].mirroroffset 1.8985 1
 setfield hudwidgets[3].parallaxdata 0x00000c31
 setfield hudwidgets[3].placementdata[0].offset 8 17
 setfield hudwidgets[3].placementdata[0].scale 1.35 1.35
@@ -2159,6 +2161,7 @@ setfield hudwidgets[3].bitmapwidgets[0].widgetindex 19
 setfield hudwidgets[3].bitmapwidgets[0].flags none
 setfield hudwidgets[3].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[3].bitmapwidgets[0].bitmapspriteindex 7
+setfield hudwidgets[3].textwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset 30 120
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 1.4 1.4
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
@@ -2178,6 +2181,7 @@ setfield hudwidgets[5].bitmapwidgets[0].widgetindex 19
 setfield hudwidgets[5].bitmapwidgets[0].flags none
 setfield hudwidgets[5].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[5].bitmapwidgets[0].bitmapspriteindex 7
+setfield hudwidgets[5].textwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
 exit
 echo ===========================================================
@@ -2199,6 +2203,7 @@ setfield hudwidgets[3].bitmapwidgets[0].widgetindex 18
 setfield hudwidgets[3].bitmapwidgets[0].flags none
 setfield hudwidgets[3].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[3].bitmapwidgets[0].bitmapspriteindex 8
+setfield hudwidgets[3].textwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset 30 120
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 1.4 1.4
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
@@ -2218,6 +2223,7 @@ setfield hudwidgets[5].bitmapwidgets[0].widgetindex 18
 setfield hudwidgets[5].bitmapwidgets[0].flags none
 setfield hudwidgets[5].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[5].bitmapwidgets[0].bitmapspriteindex 8
+setfield hudwidgets[5].textwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
 exit
 echo ===========================================================
