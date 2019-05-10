@@ -1,5 +1,21 @@
 echo Installing Halo 3 Vehicles
 
+createtag rmt2
+nametag * shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0
+importtag * tags\shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.render_method_template
+createtag vtsh
+nametag * shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0
+importtag * tags\shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.vertex_shader
+createtag pixl
+nametag * shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0
+importtag * tags\shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.pixel_shader
+
+edittag shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.rmt2
+setfield vertexshader shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.vtsh
+setfield pixelshader shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.pixl
+savetagchanges
+exit
+
 opencachefile D:\Halo3Retail\maps\sandbox.map
 
 echo Installing Banshee
