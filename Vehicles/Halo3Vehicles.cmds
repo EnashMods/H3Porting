@@ -14,6 +14,12 @@ edittag shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.rmt2
 setfield vertexshader shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.vtsh
 setfield pixelshader shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.pixl
 savetagchanges
+exitto tags
+
+opencachefile D:\Halo3Retail\maps\shrine.map
+
+echo Installing Elephant
+porttag replace !ms30 objects\levels\multi\shrine\behemoth\behemoth.mode
 exit
 
 opencachefile D:\Halo3Retail\maps\sandbox.map
@@ -135,6 +141,28 @@ porttag replace objects\vehicles\warthog\turrets\gauss\gauss_snow.mode
 porttag replace objects\vehicles\warthog\warthog_snow.mode
 exit
 
+echo Fixing Elephant
+edittag objects\levels\multi\shrine\shaders\beh_parts.rmsh
+setargument specular_tint 0.23 0.2 0.18 1
+savetagchanges
+exitto tags
+edittag objects\levels\multi\shrine\shaders\beh_metal.rmsh
+setargument specular_tint 0.23 0.2 0.18 1
+savetagchanges
+exitto tags
+edittag objects\levels\multi\shrine\shaders\beh_tiling_panels.rmsh
+setargument specular_tint 0.23 0.2 0.18 1
+savetagchanges
+exitto tags
+edittag objects\levels\multi\shrine\shaders\beh_panels.rmsh
+setargument specular_tint 0.23 0.2 0.18 1
+savetagchanges
+exitto tags
+edittag objects\levels\multi\shrine\shaders\beh_panels2.rmsh
+setargument specular_tint 0.23 0.2 0.18 1
+savetagchanges
+exitto tags
+
 echo Fixing Banshee
 edittag objects\vehicles\banshee\banshee.mode
 setfield regions[0].permutations[0].meshindex 9
@@ -153,59 +181,59 @@ setfield regions[7].permutations[1].meshindex 25
 setfield regions[7].permutations[2].meshindex 32
 setfield regions[7].permutations[3].meshindex 7
 savetagchanges
-exit
+exitto tags
 importtag objects\vehicles\banshee\banshee.hlmt tags\objects\vehicles\banshee\banshee.hlmt
 
 echo Fixing Prowler
 edittag objects\vehicles\mauler\bitmaps\mauler_bump.bitm
 importbitmap 0 tags\objects\vehicles\mauler\bitmaps\mauler_bump.dds
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Snow Hornet
 edittag objects\vehicles\hornet\garbage\thrust_bell\thrust_bell_snow\shaders\[00]_rmsh.rmsh
 setfield shaderproperties[0].shadermaps[2].bitmap objects\vehicles\hornet\garbage\landing_gear\landing_gear\bitmaps\[00]_rmsh\bump.bitm
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Ghost
 edittag objects\vehicles\ghost\bitmaps\ghost_bump.bitm
 importbitmap 0 tags\objects\vehicles\ghost\bitmaps\ghost_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\ghost\shaders\ghost_dash_zcam.rmhg
 setfield shaderproperties[0].arguments[3].values 0.9 1.6 0 -0.3
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Mongoose
 edittag objects\vehicles\mongoose\bitmaps\mongoose_bump.bitm
 importbitmap 0 tags\objects\vehicles\mongoose\bitmaps\mongoose_bump.dds
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Scorpion
 importtag objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitm tags\objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_camo_cc.bitmap
 edittag objects\vehicles\scorpion\bitmaps\scorpion_guts_bump.bitm
 importbitmap 0 tags\objects\vehicles\scorpion\bitmaps\scorpion_guts_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\scorpion\bitmaps\scorpion_hull_bump.bitm
 importbitmap 0 tags\objects\vehicles\scorpion\bitmaps\scorpion_hull_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\scorpion\bitmaps\scorpion_treads_bump.bitm
 importbitmap 0 tags\objects\vehicles\scorpion\bitmaps\scorpion_treads_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\scorpion\turrets\anti_infantry\bitmaps\anti_infantry_bump.bitm
 importbitmap 0 tags\objects\vehicles\scorpion\turrets\anti_infantry\bitmaps\anti_infantry_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_bump.bitm
 importbitmap 0 tags\objects\vehicles\scorpion\turrets\cannon\bitmaps\turret_cannon_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\scorpion\scorpion.mode
 setfield regions[0].permutations[0].meshindex 0
 setfield regions[0].permutations[1].meshindex 25
@@ -233,48 +261,48 @@ setfield regions[6].permutations[2].meshindex 15
 setfield regions[6].permutations[3].meshindex 22
 setfield regions[6].permutations[4].meshindex 35
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\scorpion\turrets\cannon\cannon.mode
 setfield regions[1].permutations[0].meshindex 5
 setfield regions[1].permutations[1].meshindex 1
 setfield regions[1].permutations[2].meshindex 3
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\scorpion\turrets\cannon\cannon.hlmt
 removeblockelements nodes 1 2
 editblock nodes 0
 setfield defaultrotation 0 0 8.74E-08 -1
-exit
+exitto tags
 editblock nodes 1
 setfield firstchildnode 2
-exit
+exitto tags
 editblock nodes 2
 setfield parentnode 1
 setfield nextsiblingnode 3
-exit
+exitto tags
 editblock nodes 3
 setfield parentnode 1
-exit
+exitto tags
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Warthog
 edittag objects\vehicles\warthog\bitmaps\tires_bump.bitm
 importbitmap 0 tags\objects\vehicles\warthog\bitmaps\tires_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\warthog\bitmaps\warthog_bump.bitm
 importbitmap 0 tags\objects\vehicles\warthog\bitmaps\warthog_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\warthog\bitmaps\warthog_damage_bump.bitm
 importbitmap 0 tags\objects\vehicles\warthog\bitmaps\warthog_damage_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\warthog\bitmaps\hub_bump.bitm
 importbitmap 0 tags\objects\vehicles\warthog\bitmaps\hub_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\warthog\warthog.mode
 setfield regions[0].permutations[0].meshindex 11
 setfield regions[0].permutations[1].meshindex 0
@@ -284,7 +312,7 @@ setfield regions[1].permutations[2].meshindex 12
 setfield regions[1].permutations[3].meshindex 22
 setfield regions[1].permutations[4].meshindex 32
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\warthog\warthog_snow.mode
 setfield regions[0].permutations[0].meshindex 11
 setfield regions[0].permutations[1].meshindex 0
@@ -294,33 +322,33 @@ setfield regions[1].permutations[2].meshindex 12
 setfield regions[1].permutations[3].meshindex 22
 setfield regions[1].permutations[4].meshindex 32
 savetagchanges
-exit
+exitto tags
 EditTag objects\vehicles\warthog\turrets\gauss\shaders\gauss_alpha.rmhg
 SetArgument self_illum_map 0.9 0.87 0.05 0.125
 SaveTagChanges
-Exit
+exitto tags
 edittag objects\vehicles\warthog\shaders\console.rmsh
 setfield shaderproperties[0].arguments[5].values 0 0 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\warthog\shaders\wheel_snow.rmsh
 setfield shaderproperties[0].template shaders\shader_templates\_7_2_0_1_1_2_0_0_0_0_0.rmt2
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\warthog\shaders\tail_lights.rmsh
 setfield shaderproperties[0].Transparency 0
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\warthog\shaders\tail_lights_snow.rmsh
 setfield shaderproperties[0].Transparency 0
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Wraith
 edittag objects\vehicles\wraith\bitmaps\wraith_bump.bitm
 importbitmap 0 tags\objects\vehicles\wraith\bitmaps\wraith_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\vehicles\wraith\wraith.mode
 setfield regions[1].permutations[0].meshindex 9
 setfield regions[1].permutations[1].meshindex 17
@@ -330,7 +358,7 @@ setfield regions[7].permutations[0].meshindex 15
 setfield regions[7].permutations[1].meshindex 23
 setfield regions[7].permutations[2].meshindex 7
 savetagchanges
-exit
+exitto tags
 
 EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.particle
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
@@ -369,5 +397,54 @@ SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_b
 SaveTagChanges
 ExitTo tags
 
+ImportTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
+ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
+
+EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey25_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+
+EditTag shaders\default_bitmaps\bitmaps\default_vector.bitmap
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
 
 savetagnames
