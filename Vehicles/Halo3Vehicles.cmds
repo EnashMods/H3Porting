@@ -16,6 +16,12 @@ setfield pixelshader shaders\shader_templates\_0_1_1_1_1_2_0_0_0_0_0_0.pixl
 savetagchanges
 exitto tags
 
+deletetag objects\levels\multi\shrine\shaders\beh_parts.rmsh
+deletetag objects\levels\multi\shrine\shaders\beh_metal.rmsh
+deletetag objects\levels\multi\shrine\shaders\beh_tiling_panels.rmsh
+deletetag objects\levels\multi\shrine\shaders\beh_panels.rmsh
+deletetag objects\levels\multi\shrine\shaders\beh_panels2.rmsh
+
 opencachefile D:\Halo3Retail\maps\shrine.map
 
 echo Installing Elephant
@@ -143,23 +149,28 @@ exit
 
 echo Fixing Elephant
 edittag objects\levels\multi\shrine\shaders\beh_parts.rmsh
-setargument specular_tint 0.23 0.2 0.18 1
+setargument albedo_color 0.65 0.55 0.3 0.3
 savetagchanges
 exitto tags
 edittag objects\levels\multi\shrine\shaders\beh_metal.rmsh
-setargument specular_tint 0.23 0.2 0.18 1
+setargument albedo_color 0.65 0.55 0.3 0.3
 savetagchanges
 exitto tags
 edittag objects\levels\multi\shrine\shaders\beh_tiling_panels.rmsh
-setargument specular_tint 0.23 0.2 0.18 1
+setargument albedo_color 0.65 0.55 0.3 0.1
 savetagchanges
 exitto tags
 edittag objects\levels\multi\shrine\shaders\beh_panels.rmsh
-setargument specular_tint 0.23 0.2 0.18 1
+setargument albedo_color 0.65 0.55 0.3 0.3
 savetagchanges
 exitto tags
 edittag objects\levels\multi\shrine\shaders\beh_panels2.rmsh
-setargument specular_tint 0.23 0.2 0.18 1
+setargument albedo_color 0.65 0.55 0.3 0.3
+savetagchanges
+exitto tags
+edittag objects\levels\multi\shrine\shaders\xtra_decals.shader_decal
+setargument intensity 10 10 10 10
+setfield shaderproperties[0].shadermaps[1].bitmap shaders\default_bitmaps\bitmaps\default_alpha_test.bitm
 savetagchanges
 exitto tags
 
@@ -270,19 +281,11 @@ savetagchanges
 exitto tags
 edittag objects\vehicles\scorpion\turrets\cannon\cannon.hlmt
 removeblockelements nodes 1 2
-editblock nodes 0
-setfield defaultrotation 0 0 8.74E-08 -1
-exitto tags
-editblock nodes 1
-setfield firstchildnode 2
-exitto tags
-editblock nodes 2
-setfield parentnode 1
-setfield nextsiblingnode 3
-exitto tags
-editblock nodes 3
-setfield parentnode 1
-exitto tags
+setfield nodes[0].defaultrotation 0 0 8.74E-08 -1
+setfield nodes[1].firstchildnode 2
+setfield nodes[2].parentnode 1
+setfield nodes[2].nextsiblingnode 3
+setfield nodes[3].parentnode 1
 savetagchanges
 exitto tags
 
@@ -448,3 +451,4 @@ SaveTagChanges
 ExitTo tags
 
 savetagnames
+dumplog Halo3Vehicles.log
