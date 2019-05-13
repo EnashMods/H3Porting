@@ -54,7 +54,7 @@ porttag replace matchshaders objects\weapons\pistol\magnum\magnum.mode
 porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.ligh
 porttag replace matchshaders objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
 porttag replace matchshaders objects\weapons\pistol\magnum\fx\firing.effe
-porttag merge objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum
+porttag merge objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.jmad
 
 echo Needler
 porttag replace matchshaders objects\weapons\pistol\needler\needler.mode
