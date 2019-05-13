@@ -7,7 +7,7 @@ edittag objects\weapons\melee\energy_blade\unarmed.weap
 setfield defaultmodelvariant noblade
 setfield firstperson[0].firstpersonmodel objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode
 savetagchanges
-exit
+exitto tags
 
 echo Installing Excavator Variants
 extracttag objects\weapons\pistol\excavator\excavator.mode tags\objects\weapons\pistol\excavator\excavator.mode
@@ -19,21 +19,21 @@ setfield shaderproperties[0].arguments[7].values 0.5 0 0 1
 setfield shaderproperties[0].arguments[8].values 1 0 0 1
 setfield shaderproperties[0].arguments[28].values 1 0 0 1
 savetagchanges
-exit
+exitto tags
 importtag 0x240e tags\objects\weapons\pistol\excavator\excavator.mode
 edittag 0x240e
 setfield materials[1].rendermethod objects\weapons\pistol\excavator\shaders\excavator_power.rmsh
 savetagchanges
-exit
+exitto tags
 importtag objects\weapons\pistol\excavator\fp_excavator\fp_excavator_v3.mode tags\objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
 edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavator_v3.mode
 setfield materials[1].rendermethod objects\weapons\pistol\excavator\shaders\excavator_power.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\excavator\excavator_power.weap
 setfield specialhudversion damage32
 savetagchanges
-exit
+exitto tags
 
 echo Installing Magnum Variants
 duplicatetag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
@@ -53,40 +53,40 @@ nametag * objects\weapons\pistol\magnum\shaders\magnum_power_luminous
 edittag objects\weapons\pistol\magnum\bitmaps\magnum_diffuse.bitm
 importbitmap 0 tags\objects\weapons\pistol\magnum\bitmaps\magnum_diffuse.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\bitmaps\magnum_zbump.bitm
 importbitmap 0 tags\objects\weapons\pistol\magnum\bitmaps\magnum_zbump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\bitmaps\magnum_luminous.bitm
 importbitmap 0 tags\objects\weapons\pistol\magnum\bitmaps\magnum_illum.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\shaders\magnum_power.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\magnum\bitmaps\magnum_diffuse.bitm
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\magnum\bitmaps\magnum_zbump.bitm
 setfield shaderproperties[0].shadermaps[5].bitmap null
 setargument self_illum_color 0 0 0 0
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\shaders\magnum_power_dull.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\magnum\bitmaps\magnum_diffuse.bitm
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\magnum\bitmaps\magnum_zbump.bitm
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\shaders\magnum_power_luminous.rmsh
 setargument albedo_color 8 0 0 1
 setargument env_tint_color 8 0 0 1
 setargument self_illum_color 8 0 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\magnum.mode
 copyblockelements markergroups 5 1
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\magnum_v6.hlmt
 setfield rendermodel objects\weapons\pistol\magnum\fp_magnum\fp_magnum_v3.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum_v3.mode
 pasteblockelements markergroups 5
 replacerendergeometry tags\objects\weapons\pistol\magnum\reach_magnum.dae
@@ -98,19 +98,19 @@ setfield materials[4].rendermethod objects\weapons\pistol\magnum\shaders\magnum_
 setfield nodes[2].defaulttranslation -0.0001079554 -0.0032 -7.660128E-06
 setfield nodes[2].inverseposition 0.005 0 -0.01065557
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\magnum_v2.model
 setfield rendermodel objects\weapons\pistol\automag\automag.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\automag\automag.mode
 setfield nodes[3].inverseposition 0.002823418 -3.6E-11 0.0025
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\automag\fp_automag\fp_automag.mode
 replacerendergeometry tags\objects\weapons\pistol\magnum\fp_magnum\fp_automag.dae
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\automag\fp_automag\fp_automag.mode
 setfield nodes[2].defaulttranslation -0.0001079554 -0.0032 -7.660128E-06
 setfield nodes[2].inverseposition 0.002823418 0.0036 0.0025
@@ -121,22 +121,22 @@ setfield materials[1].rendermethod objects\weapons\pistol\automag\shaders\automa
 setfield materials[2].rendermethod objects\weapons\pistol\automag\shaders\automag_dull.rmsh
 setfield materials[3].rendermethod objects\weapons\pistol\automag\shaders\automag_luminous.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\magnum_damage.weap
 setfield model objects\weapons\pistol\magnum\magnum_v6.hlmt
 setfield specialhudversion power36
 setfield firstperson[0].firstpersonmodel objects\weapons\pistol\magnum\fp_magnum\fp_magnum_v3.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\magnum_power.weap
 setfield model objects\weapons\pistol\magnum\magnum_v2.hlmt
 setfield specialhudversion damage32
 setfield firstperson[0].firstpersonmodel objects\weapons\pistol\automag\fp_automag\fp_automag.mode
 savetagchanges
-exit
+exitto tags
 opencachefile D:\Halo3Retail\maps\sandbox.map
 porttag replace objects\weapons\pistol\magnum\bitmaps\magnum_bump.bitm
-exit
+exitto tags
 
 echo Installing Plasma Pistol Variants
 extracttag objects\weapons\pistol\plasma_pistol\plasma_pistol.mode tags\objects\weapons\pistol\plasma_pistol\plasma_pistol.render_model
@@ -155,27 +155,27 @@ setfield shaderproperties[0].shadermaps[4].unknown2 17
 setfield shaderproperties[0].shadermaps[4].bitmapflags 36
 setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_main_power.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.bitm
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.bitm
 setfield shaderproperties[0].shadermaps[4].bitmapflags 32
 savetagchanges
-exit
+exitto tags
 edittag 0x242c
 setfield materials[1].rendermethod objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_main_power.rmsh
 setfield materials[3].rendermethod objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_metal_power.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol_v3.mode
 setfield materials[1].rendermethod objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_metal_power.rmsh
 setfield materials[3].rendermethod objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_main_power.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_power.weap
 setfield specialhudversion damage32
 savetagchanges
-exit
+exitto tags
 
 echo Installing Assault Rifle Variants
 extracttag objects\weapons\rifle\assault_rifle\assault_rifle.mode tags\objects\weapons\rifle\assault_rifle\assault_rifle.render_model
@@ -211,11 +211,11 @@ nametag * objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_normal
 edittag objects\weapons\rifle\assault_rifle\shaders\bullet_plate.bitm.bitm
 importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\bullet_plate.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v1\bitmaps\[00]_rmsh\color_mask.bitm
 importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_color_mask.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\bitmaps\compass_accuracy.bitm
 importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\compass.dds
 importbitmap 1 tags\objects\weapons\rifle\assault_rifle\bitmaps\compass[1].dds
@@ -226,11 +226,11 @@ importbitmap 5 tags\objects\weapons\rifle\assault_rifle\bitmaps\compass[5].dds
 importbitmap 6 tags\objects\weapons\rifle\assault_rifle\bitmaps\compass[6].dds
 importbitmap 7 tags\objects\weapons\rifle\assault_rifle\bitmaps\compass[7].dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\bitmaps\display_accuracy.bitm
 importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\display_plate.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.dds
 importbitmap 1 tags\objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate[1].dds
@@ -243,15 +243,15 @@ importbitmap 7 tags\objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate[7]
 importbitmap 8 tags\objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate[8].dds
 importbitmap 9 tags\objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate[9].dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_diffuse.bitm
 importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_diffuse.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_normal.bitm
 importbitmap 0 tags\objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_normal.dds
 savetagchanges
-exit
+exitto tags
 importtag 0x2329 tags\objects\weapons\rifle\assault_rifle\assault_rifle.render_model
 importtag 0x233a tags\objects\weapons\rifle\assault_rifle\assault_rifle.render_model
 importtag 0x2358 tags\objects\weapons\rifle\assault_rifle\assault_rifle.render_model
@@ -266,7 +266,7 @@ setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_normal.bitm
 setargument specular_tint 1 1 1 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\shaders\assault_rifle_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_diffuse.bitm
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_normal.bitm
@@ -274,32 +274,32 @@ setargument specular_tint 1 1 1 1
 setargument diffuse_coefficient 0.5 0.5 0.5 0.5
 setargument self_illum_color 0 0 0 0
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\shaders\compass.rmsh
 copyblockelements shaderproperties[0].animationproperties
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\shaders\compass_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\compass_accuracy.bitm
 removeblockelements shaderproperties[0].animationproperties
 pasteblockelements shaderproperties[0].animationproperties
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\shaders\display_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\display_accuracy.bitm
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\shaders\ones_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\shaders\tens_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\shaders\item.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\shaders\bullet_plate.bitm
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2\shaders\[00]_rmsh.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -340,7 +340,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 1 0 0 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v3\shaders\[00]_rmsh.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -381,7 +381,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 0.112 0.168 0.072 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\shaders\[00]_rmsh.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -422,7 +422,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 0.112 0.168 0.072 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag 0x2347
 replacerendergeometry tags\objects\weapons\rifle\assault_rifle\reach_assault_rifle.dae
 setfield markergroups[1].markers[0].translation 0.1 -0.003 0.015
@@ -438,32 +438,32 @@ setfield materials[7].rendermethod objects\weapons\rifle\assault_rifle\shaders\o
 setfield materials[8].rendermethod objects\weapons\rifle\assault_rifle\shaders\tens_accuracy.rmsh
 setfield materials[9].rendermethod null
 savetagchanges
-exit
+exitto tags
 edittag 0x2329
 setfield materials[3].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2\shaders\[00]_rmsh.rmsh
 setfield materials[5].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2\shaders\[00]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 edittag 0x233a
 setfield materials[3].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v3\shaders\[00]_rmsh.rmsh
 setfield materials[5].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v3\shaders\[00]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 edittag 0x2358
 setfield materials[3].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\shaders\[00]_rmsh.rmsh
 setfield materials[5].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\shaders\[00]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2.mode
 setfield materials[0].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2\shaders\[00]_rmsh.rmsh
 setfield materials[2].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2\shaders\[00]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v3.mode
 setfield materials[0].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v3\shaders\[00]_rmsh.rmsh
 setfield materials[2].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v3\shaders\[00]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v5.mode
 replacerendergeometry tags\objects\weapons\rifle\assault_rifle\reach_assault_rifle.dae
 setfield markergroups[1].markers[0].translation 0.1 -0.003 0.015
@@ -479,31 +479,31 @@ setfield materials[7].rendermethod objects\weapons\rifle\assault_rifle\shaders\o
 setfield materials[8].rendermethod objects\weapons\rifle\assault_rifle\shaders\tens_accuracy.rmsh
 setfield materials[9].rendermethod null
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6.mode
 setfield materials[0].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\shaders\[00]_rmsh.rmsh
 setfield materials[2].rendermethod objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6\shaders\[00]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 opencachefile D:\Halo3Retail\maps\sandbox.map
 porttag replace objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle.bitm
 porttag replace objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_bump.bitm
 porttag replace objects\weapons\rifle\assault_rifle\bitmaps\compass.bitm
 porttag replace objects\weapons\rifle\assault_rifle\bitmaps\display.bitm
 porttag replace objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate.bitm
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\assault_rifle_power.weap
 setfield model objects\weapons\rifle\assault_rifle\assault_rifle_v2.hlmt
 setfield specialhudversion damage32
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v2.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\assault_rifle_damage.weap
 setfield model objects\weapons\rifle\assault_rifle\assault_rifle_v6.hlmt
 setfield specialhudversion power36
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6.mode
 savetagchanges
-exit
+exitto tags
 
 echo Instaling Battle Rifle Variants
 extracttag objects\weapons\rifle\battle_rifle\battle_rifle.mode tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
@@ -561,11 +561,11 @@ nametag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material
 edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
 importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
 importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -606,7 +606,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 0 1 0 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -647,7 +647,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 0 0 1 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -688,7 +688,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 1 0 0 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -729,7 +729,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 1 0.44 0 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -770,7 +770,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 1 0 1 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -811,80 +811,80 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 0.112 0.168 0.072 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_accuracy.rmsh
 setfield shaderproperties[0].arguments[7].values 0 1 0 1
 setfield shaderproperties[0].arguments[23].values 0.1607843 0.254902 0.1803922 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
 setfield shaderproperties[0].arguments[7].values 0 0 1 1
 setfield shaderproperties[0].arguments[23].values 0.1607843 0.1803922 0.254902 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage.rmsh
 setfield shaderproperties[0].arguments[7].values 1 0 0 1
 setfield shaderproperties[0].arguments[23].values 0.254902 0.1607843 0.1803922 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range.rmsh
 setfield shaderproperties[0].arguments[7].values 1 0 1 1
 setfield shaderproperties[0].arguments[23].values 0.1803922 0.1607843 0.254902 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
 setfield shaderproperties[0].arguments[7].values 0.112 0.168 0.072 1
 setfield shaderproperties[0].arguments[23].values 0.254902 0.1803922 0.1607843 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\ones_accuracy.rmsh
 setfield shaderproperties[0].arguments[2].values 0 1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
 setfield shaderproperties[0].arguments[2].values 0 0 1 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
 setfield shaderproperties[0].arguments[2].values 10 0 0 10
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
 setfield shaderproperties[0].arguments[2].values 4.5 1.1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
 setfield shaderproperties[0].arguments[2].values 1 0 1 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
 setfield shaderproperties[0].arguments[2].values 1.12 1.68 0.72 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\tens_accuracy.rmsh
 setfield shaderproperties[0].arguments[2].values 0 1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
 setfield shaderproperties[0].arguments[2].values 0 0 1 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
 setfield shaderproperties[0].arguments[2].values 10 0 0 10
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
 setfield shaderproperties[0].arguments[2].values 4.5 1.1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
 setfield shaderproperties[0].arguments[2].values 1 0 1 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
 setfield shaderproperties[0].arguments[2].values 1.12 1.68 0.72 1
 savetagchanges
-exit
+exitto tags
 importtag 0x2591 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
 edittag 0x2591
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_accuracy.rmsh
@@ -892,7 +892,7 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_accuracy.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_accuracy.rmsh
 savetagchanges
-exit
+exitto tags
 importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v2.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v2.mode
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_accuracy.rmsh
@@ -900,7 +900,7 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_accuracy.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_accuracy.rmsh
 savetagchanges
-exit
+exitto tags
 importtag 0x2368 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
 edittag 0x2368
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
@@ -908,7 +908,7 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
 savetagchanges
-exit
+exitto tags
 importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v3.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v3.mode
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
@@ -916,10 +916,10 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 copyblockelements materials *
-exit
+exitto tags
 ImportTag 0x2375 "tags\objects\weapons\rifle\battle_rifle\0x2375.render_model"
 EditTag 0x2375
 SetField Geometry.Resource.Page.Index -1
@@ -931,7 +931,7 @@ setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
 savetagchanges
-exit
+exitto tags
 ImportTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.mode "tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.render_model"
 EditTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.mode
 SetField Geometry.Resource.Page.Index -1
@@ -943,7 +943,7 @@ setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
 savetagchanges
-exit
+exitto tags
 importtag 0x2386 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
 edittag 0x2386
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
@@ -951,7 +951,7 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
 savetagchanges
-exit
+exitto tags
 importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v6.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v6.mode
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
@@ -959,7 +959,7 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
 savetagchanges
-exit
+exitto tags
 importtag 0x259a tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
 edittag 0x259a
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
@@ -967,7 +967,7 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
 savetagchanges
-exit
+exitto tags
 importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v5.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v5.mode
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
@@ -975,7 +975,7 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
 savetagchanges
-exit
+exitto tags
 importtag 0x2587 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
 edittag 0x2587
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
@@ -983,7 +983,7 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
 savetagchanges
-exit
+exitto tags
 importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v1.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v1.mode
 setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
@@ -991,15 +991,15 @@ setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ba
 setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\battle_rifle_power.weap
 setfield specialhudversion damage32
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\battle_rifle_damage.weap
 setfield specialhudversion power36
 savetagchanges
-exit
+exitto tags
 
 echo Installing Carbine Variants
 extracttag objects\weapons\rifle\covenant_carbine\covenant_carbine.mode tags\objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
@@ -1031,58 +1031,58 @@ setfield shaderproperties[0].arguments[2].values 0 1 0 1
 setfield shaderproperties[0].arguments[11].values 0 0.4 0 1
 setfield shaderproperties[0].arguments[21].values 0 1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_ammo.rmsh
 setfield shaderproperties[0].arguments[2].values 0.06 0.05411765 0.9568628 1
 setfield shaderproperties[0].arguments[11].values 0.04313726 0.01411765 0.5450981 1
 setfield shaderproperties[0].arguments[21].values 0 0 1 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_damage.rmsh
 setfield shaderproperties[0].arguments[2].values 1 0.05411765 0.09568628 1
 setfield shaderproperties[0].arguments[9].values 1 0.4313726 0.07843138 1
 setfield shaderproperties[0].arguments[11].values 1 0.01411765 0.05450981 1
 setfield shaderproperties[0].arguments[21].values 1 0 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_power.rmsh
 setfield shaderproperties[0].arguments[2].values 1 0.44 0 1
 setfield shaderproperties[0].arguments[11].values 1 0.44 0 1
 setfield shaderproperties[0].arguments[21].values 1 0.44 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_range.rmsh
 setfield shaderproperties[0].arguments[2].values 0.6 0.05411765 0.9568628 1
 setfield shaderproperties[0].arguments[11].values 0.4313726 0.01411765 0.5450981 1
 setfield shaderproperties[0].arguments[21].values 1 1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_rof.rmsh
 setfield shaderproperties[0].arguments[2].values 0.33 0.42 0.18 1
 setfield shaderproperties[0].arguments[11].values 0.07 0.2 0.02 1
 setfield shaderproperties[0].arguments[21].values 0.112 0.168 0.072 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_display_accuracy.rmsh
 setfield shaderproperties[0].arguments[3].values 0 1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_display_damage.rmsh
 setfield shaderproperties[0].arguments[3].values 1 1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_display_power.rmsh
 setfield shaderproperties[0].arguments[3].values 1 0.44 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_display_range.rmsh
 setfield shaderproperties[0].arguments[3].values 1 0 1 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_display_rof.rmsh
 setfield shaderproperties[0].arguments[3].values 0.112 0.168 0.072 1
 savetagchanges
-exit
+exitto tags
 importtag 0x25da tags\objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
 importtag 0x25bf tags\objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
 importtag 0x25d1 tags\objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
@@ -1098,75 +1098,75 @@ importtag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant
 edittag 0x25da
 setfield materials[0].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_accuracy.rmsh
 savetagchanges
-exit
+exitto tags
 edittag 0x25bf
 setfield materials[0].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_ammo.rmsh
 savetagchanges
-exit
+exitto tags
 edittag 0x25d1
 setfield materials[0].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_damage.rmsh
 savetagchanges
-exit
+exitto tags
 edittag 0x2403
 setfield materials[0].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_power.rmsh
 savetagchanges
-exit
+exitto tags
 edittag 0x25c8
 setfield materials[0].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_range.rmsh
 savetagchanges
-exit
+exitto tags
 edittag 0x25b6
 setfield materials[0].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_rof.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_v5.mode
 setfield materials[1].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_display_accuracy.rmsh
 setfield materials[3].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_accuracy.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_v2.mode
 setfield materials[1].rendermethod null
 setfield materials[3].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_ammo.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_v4.mode
 setfield materials[1].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_display_damage.rmsh
 setfield materials[3].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_damage.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_v6.mode
 setfield materials[1].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_display_power.rmsh
 setfield materials[3].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_power.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_v3.mode
 setfield materials[1].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_display_range.rmsh
 setfield materials[3].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_range.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_v1.mode
 setfield materials[1].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_display_rof.rmsh
 setfield materials[3].rendermethod objects\weapons\rifle\covenant_carbine\shaders\carbine_rof.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_power.weap
 setfield model objects\weapons\rifle\covenant_carbine\covenant_carbine_v2.hlmt
 setfield specialhudversion damage32
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_v4.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_damage.weap
 setfield model objects\weapons\rifle\covenant_carbine\covenant_carbine_v6.hlmt
 setfield specialhudversion power36
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_v6.mode
 savetagchanges
-exit
+exitto tags
 
 echo Installing Plasma Rifle Variant
 edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_v6.hlmt
 setfield rendermodel objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\plasma_rifle_red\fp_plasma_rifle_red\fp_plasma_rifle_red.mode
 setfield markergroups[3].markers[0].translation 0.06173344 -0.01272009 -0.05019573
 setfield markergroups[3].markers[0].rotation -0.5183288 0.3939989 -0.4947074 0.5756431
@@ -1175,12 +1175,12 @@ setfield markergroups[4].markers[0].rotation -0.6164548 0.1957098 -0.4600878 0.6
 setfield markergroups[5].markers[0].translation 0.06173344 -0.0001386678 -0.05019573
 setfield markergroups[5].markers[0].rotation -0.5183288 0.3939989 -0.4947074 0.5756431
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_power.weap
 setfield specialhudversion damage32
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\plasma_rifle_red\fp_plasma_rifle_red\fp_plasma_rifle_red.mode
 savetagchanges
-exit
+exitto tags
 
 echo Installing SMG Variants
 extracttag objects\weapons\rifle\smg\smg.mode tags\objects\weapons\rifle\smg\smg.render_model
@@ -1188,7 +1188,7 @@ extracttag objects\weapons\rifle\smg\fp_smg\fp_smg.mode tags\objects\weapons\rif
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_v1\bitmaps\[01]_rmsh\color_mask.bitm
 importbitmap 0 tags\objects\weapons\rifle\smg\bitmaps\smg_color_mask.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\smg\bitmaps\smg.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -1229,7 +1229,7 @@ setargument self_illum_map 1 1 0 0
 setargument self_illum_color 0.35 0.3 0.1 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_v1\shaders\[01]_rmsh.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\smg\bitmaps\smg.bitm
 setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
@@ -1272,14 +1272,14 @@ setargument self_illum_intensity 3 3 3 3
 setargument albedo_color 0.0165 0.021 0.009 1
 setargument self_illum_color 0.112 0.168 0.072 1
 savetagchanges
-exit
+exitto tags
 edittag 0x23dd
 replacerendergeometry tags\objects\weapons\rifle\smg\smg_accuracy.dae
 setfield materials[0].rendermethod objects\weapons\rifle\smg_silenced\shaders\smg_addon.rmsh
 setfield materials[1].rendermethod objects\weapons\rifle\smg_silenced\shaders\smg_metal.rmsh
 setfield materials[2].rendermethod objects\weapons\rifle\smg_silenced\shaders\smg_rubber.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_v2.mode
 replacerendergeometry tags\objects\weapons\rifle\smg\fp_smg\fp_smg_accuracy.dae
 setfield nodes[3].inverseposition 0.0265 4.97E-09 -0.01569122
@@ -1287,51 +1287,48 @@ setfield materials[0].rendermethod objects\weapons\rifle\smg_silenced\shaders\sm
 setfield materials[1].rendermethod objects\weapons\rifle\smg_silenced\shaders\smg_metal.rmsh
 setfield materials[2].rendermethod objects\weapons\rifle\smg_silenced\shaders\smg_rubber.rmsh
 savetagchanges
-exit
+exitto tags
 importtag 0x23e6 tags\objects\weapons\rifle\smg\smg.render_model
 edittag 0x23e6
 setfield materials[0].rendermethod objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 importtag objects\weapons\rifle\smg\fp_smg\fp_smg_v4.mode tags\objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_v4.mode
 setfield nodes[3].inverseposition 0.0265 4.97E-09 -0.01569122
 setfield materials[0].rendermethod objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\smg\smg_v6.hlmt
 setfield rendermodel objects\weapons\rifle\smg_silenced\smg_silenced.mode
 savetagchanges
-exit
-edittag objects\weapons\rifle\smg\smg_power.weap
-setfield firstperson[0].firstpersonmodel objects\weapons\rifle\smg_silenced\fp_smg_silenced\fp_smg_silenced.mode
-savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\smg_silenced\fp_smg_silenced\fp_smg_silenced.mode
 setfield nodes[3].inverseposition 0.0265 4.97E-09 -0.01569122
 savetagchanges
-exit
+exitto tags
 importtag 0x23d1 tags\objects\weapons\rifle\smg\smg.render_model
 edittag 0x23d1
 setfield materials[0].rendermethod objects\weapons\rifle\smg\fp_smg\fp_smg_v1\shaders\[01]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 importtag objects\weapons\rifle\smg\fp_smg\fp_smg_v1.mode tags\objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_v1.mode
 setfield nodes[3].inverseposition 0.0265 4.97E-09 -0.01569122
 setfield materials[0].rendermethod objects\weapons\rifle\smg\fp_smg\fp_smg_v1\shaders\[01]_rmsh.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\smg\smg_power.weap
+setfield firstperson[0].firstpersonmodel objects\weapons\rifle\smg_silenced\fp_smg_silenced\fp_smg_silenced.mode
 setfield specialhudversion damage32
 setfield model objects\weapons\rifle\smg_silenced\smg_silenced.hlmt
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\smg\smg_damage.weap
 setfield specialhudversion power36
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\smg\fp_smg\fp_smg_v4.mode
 savetagchanges
-exit
+exitto tags
 
 echo Installing DMR and Variants
 nametag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v6\shaders\[01]_rmsh.rmsh objects\weapons\rifle\dmr\shaders\dmr_power
@@ -1374,73 +1371,73 @@ nametag * objects\weapons\rifle\dmr\bitmaps\dmr_color_mask
 edittag objects\weapons\rifle\dmr\shaders\ones.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\ones_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 0 10 0 10
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\ones_ammo.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 0 0 15 15
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\ones_damage.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 25 1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\ones_power.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 15 0 0 15
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\ones_rof.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 1.62 2.18 1.22 10
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\tens.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\tens_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 0 10 0 10
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\tens_ammo.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 0 0 15 15
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\tens_damage.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 25 1 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\tens_power.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 15 0 0 15
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\tens_rof.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 1.62 2.18 1.22 10
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\bump.bitm
 importbitmap 0 tags\objects\weapons\rifle\dmr\bitmaps\dmr_normal.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\base.bitm
 importbitmap 0 tags\objects\weapons\rifle\dmr\bitmaps\dmr_diffuse.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\bitmaps\dmr_color_mask.bitm
 importbitmap 0 tags\objects\weapons\rifle\dmr\bitmaps\dmr_color_mask.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\dmr.rmsh
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\dmr\bitmaps\dmr_color_mask.bitm
 setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\base.bitm
@@ -1448,7 +1445,7 @@ setfield shaderproperties[0].shadermaps[7].bitmap objects\weapons\rifle\dmr\fp_d
 setargument albedo_color2 1 1 1 1
 setargument diffuse_coefficient 0.75 0.75 0.75 0.75
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\dmr_accuracy.rmsh
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\dmr\bitmaps\dmr_color_mask.bitm
 setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\base.bitm
@@ -1456,7 +1453,7 @@ setfield shaderproperties[0].shadermaps[7].bitmap objects\weapons\rifle\dmr\fp_d
 setargument albedo_color2 0 1 0 1
 setargument diffuse_coefficient 0.75 0.75 0.75 0.75
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\dmr_ammo.rmsh
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\dmr\bitmaps\dmr_color_mask.bitm
 setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\base.bitm
@@ -1464,7 +1461,7 @@ setfield shaderproperties[0].shadermaps[7].bitmap objects\weapons\rifle\dmr\fp_d
 setargument albedo_color2 0 0 1 1
 setargument diffuse_coefficient 0.75 0.75 0.75 0.75
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\dmr_damage.rmsh
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\dmr\bitmaps\dmr_color_mask.bitm
 setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\base.bitm
@@ -1472,7 +1469,7 @@ setfield shaderproperties[0].shadermaps[7].bitmap objects\weapons\rifle\dmr\fp_d
 setargument albedo_color2 1.34 1.14 0.352 1
 setargument diffuse_coefficient 0.75 0.75 0.75 0.75
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\dmr_rof.rmsh
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\dmr\bitmaps\dmr_color_mask.bitm
 setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\base.bitm
@@ -1480,7 +1477,7 @@ setfield shaderproperties[0].shadermaps[7].bitmap objects\weapons\rifle\dmr\fp_d
 setargument albedo_color2 0.33 0.42 0.18 1
 setargument diffuse_coefficient 0.75 0.75 0.75 0.75
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\shaders\dmr_power.rmsh
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\dmr\bitmaps\dmr_color_mask.bitm
 setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\base.bitm
@@ -1488,11 +1485,11 @@ setfield shaderproperties[0].shadermaps[7].bitmap objects\weapons\rifle\dmr\fp_d
 setargument albedo_color2 1 0 0 1
 setargument diffuse_coefficient 0.75 0.75 0.75 0.75
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1.mode
 replacerendergeometry tags\objects\weapons\rifle\dmr\dmr.dae
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1.mode
 setfield nodes[2].defaulttranslation 0.0036 0.003885493 0.05554584
 setfield nodes[2].inverseposition -0.004 0.05082826 -0.02273599
@@ -1506,11 +1503,11 @@ setfield materials[6].rendermethod objects\weapons\rifle\dmr\shaders\ones.rmsh
 setfield materials[7].rendermethod objects\weapons\rifle\dmr\shaders\tens.rmsh
 setfield materials[8].rendermethod null
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_v1.hlmt
 setfield rendermodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1.mode
 savetagchanges
-exit
+exitto tags
 deletetag objects\weapons\rifle\dmr\fp_dmr\fp_dmr.mode
 duplicatetag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1.mode
 nametag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr
@@ -1520,7 +1517,7 @@ nametag * objects\weapons\rifle\dmr\dmr
 edittag objects\weapons\rifle\dmr\dmr.hlmt
 setfield rendermodel objects\weapons\rifle\dmr\dmr.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1.mode
 setfield materials[0].rendermethod objects\weapons\rifle\dmr\shaders\dmr_ammo.rmsh
 setfield materials[1].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
@@ -1530,7 +1527,7 @@ setfield materials[5].rendermethod objects\weapons\rifle\dmr\shaders\dmr_ammo.rm
 setfield materials[6].rendermethod objects\weapons\rifle\dmr\shaders\ones_ammo.rmsh
 setfield materials[7].rendermethod objects\weapons\rifle\dmr\shaders\tens_ammo.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v2.mode
 replacerendergeometry tags\objects\weapons\rifle\dmr\dmr.dae
 setfield nodes[2].defaulttranslation 0.0036 0.003885493 0.05554584
@@ -1545,17 +1542,17 @@ setfield materials[6].rendermethod objects\weapons\rifle\dmr\shaders\ones_accura
 setfield materials[7].rendermethod objects\weapons\rifle\dmr\shaders\tens_accuracy.rmsh
 setfield materials[8].rendermethod null
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_v2.hlmt
 setfield rendermodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v2.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v3.mode
 replacerendergeometry tags\objects\weapons\rifle\dmr\dmr.dae
 setfield nodes[2].defaulttranslation 0.0036 0.003885493 0.05554584
 setfield nodes[2].inverseposition -0.004 0.05082826 -0.02273599
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v3.mode
 setfield materials[0].rendermethod objects\weapons\rifle\dmr\shaders\dmr_rof.rmsh
 setfield materials[1].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
@@ -1567,11 +1564,11 @@ setfield materials[6].rendermethod objects\weapons\rifle\dmr\shaders\ones_rof.rm
 setfield materials[7].rendermethod objects\weapons\rifle\dmr\shaders\tens_rof.rmsh
 setfield materials[8].rendermethod null
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_v4.hlmt
 setfield rendermodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v3.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v4.mode
 replacerendergeometry tags\objects\weapons\rifle\dmr\dmr_dmg.dae
 setfield nodes[2].defaulttranslation 0.0036 0.003885493 0.05554584
@@ -1585,11 +1582,11 @@ setfield materials[5].rendermethod objects\weapons\rifle\dmr\shaders\ones_damage
 setfield materials[6].rendermethod objects\weapons\rifle\dmr\shaders\tens_damage.rmsh
 setfield materials[7].rendermethod null
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_v3.hlmt
 setfield rendermodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v4.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v6.mode
 replacerendergeometry tags\objects\weapons\rifle\dmr\dmr.dae
 setfield nodes[2].defaulttranslation 0.0036 0.003885493 0.05554584
@@ -1604,37 +1601,37 @@ setfield materials[6].rendermethod objects\weapons\rifle\dmr\shaders\ones_power.
 setfield materials[7].rendermethod objects\weapons\rifle\dmr\shaders\tens_power.rmsh
 setfield materials[8].rendermethod null
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_v6.hlmt
 setfield rendermodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v6.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr.weap
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_ammo.weap
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_accuracy.weap
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v2.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_rof.weap
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v3.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_damage.weap
 setfield specialhudversion power36
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v4.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\dmr\dmr_power.weap
 setfield specialhudversion damage32
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v6.mode
 savetagchanges
-exit
+exitto tags
 
 savetagnames
 

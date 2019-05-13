@@ -4,43 +4,43 @@ echo Fixing Frag Grenade
 edittag objects\weapons\grenade\frag_grenade\frag_grenade.hlmt
 setfield lodmodel objects\weapons\grenade\frag_grenade\frag_grenade.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\grenade\frag_grenade\shaders\frag_metal.rmsh
 setfield shaderproperties[0].arguments[8].values 0.448 0.672 0.288 1
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Plasma Grenade
 edittag objects\weapons\grenade\plasma_grenade\plasma_grenade.hlmt
 setfield lodmodel objects\weapons\grenade\plasma_grenade\plasma_grenade.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Firebomb Grenade
 edittag objects\weapons\grenade\firebomb_grenade\firebomb_grenade.mode
 setfield materials[1].rendermethod objects\weapons\pistol\needler\shaders\needler_glass.rmsh
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\grenade\firebomb_grenade\firebomb_grenade.hlmt
 setfield lodmodel objects\weapons\grenade\firebomb_grenade\firebomb_grenade.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Spike Grenade
 edittag objects\weapons\grenade\claymore_grenade\claymore_grenade.hlmt
 setfield lodmodel objects\weapons\grenade\claymore_grenade\claymore_grenade.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Gravity Hammer
 edittag objects\weapons\melee\gravity_hammer\gravity_hammer.hlmt
 setfield lodmodel objects\weapons\melee\gravity_hammer\gravity_hammer.mode
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.mode
 setfield nodes[1].defaulttranslation -0.00152551 0.005073894 0.01
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Energy Sword
 EditTag objects\weapons\melee\energy_blade\shaders\energy_blade.rmsh
@@ -100,17 +100,17 @@ ExitTo tags
 edittag objects\weapons\melee\energy_blade\energy_blade.hlmt
 setfield lodmodel objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Excavator
 edittag objects\weapons\pistol\excavator\fp_excavator\fp_excavator.mode
 setfield markergroups[1].markers[0].rotation 0 0 0 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\excavator\excavator.hlmt
 setfield lodmodel objects\weapons\pistol\excavator\excavator.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Magnum
 edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.mode
@@ -119,59 +119,59 @@ setfield nodes[2].inverseposition 0.005 0.0032 -0.01065625
 setfield markergroups[1].markers[0].translation 0.003737968 -0.002770302 -0.03149237
 setfield markergroups[1].markers[0].rotation -0.4730325 -0.02672034 -0.3264062 0.8179152
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\magnum\magnum.hlmt
 setfield lodmodel objects\weapons\pistol\magnum\magnum.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Needler
 edittag objects\weapons\pistol\needler\fp_needler\fp_needler.mode
 setfield markergroups[2].markers[0].translation 0.006987934 0.000949643 -0.05353097
 setfield markergroups[2].markers[0].rotation -0.4737895 0.2369957 -0.236659 0.8144625
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\needler\needler.hlmt
 setfield lodmodel objects\weapons\pistol\needler\needler.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Plasma Pistol
 edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.mode
 setfield markergroups[2].markers[0].translation -0.001243122 -0.001241086 -0.04597815
 setfield markergroups[2].markers[0].rotation -0.4714611 0.07865639 -0.515889 0.7109122
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\pistol\plasma_pistol\plasma_pistol.hlmt
 setfield lodmodel objects\weapons\pistol\plasma_pistol\plasma_pistol.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Assault Rifle
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.mode
 setfield markergroups[1].markers[0].translation 0.1010085 -0.002260342 0.01560136
 setfield markergroups[1].markers[0].rotation -0.6241202 0.1670771 -0.45504 0.6127788
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\assault_rifle\assault_rifle.hlmt
 setfield lodmodel objects\weapons\rifle\assault_rifle\assault_rifle.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Battle Rifle
 edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
 setfield markergroups[1].markers[0].translation 0.1009767 -0.003126469 0.01598142
 setfield markergroups[1].markers[0].rotation -0.6101443 0.1782749 -0.4519773 0.6258264
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
 importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.dds
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\battle_rifle\battle_rifle.hlmt
 setfield lodmodel objects\weapons\rifle\battle_rifle\battle_rifle.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Beam Rifle
 edittag objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.mode
@@ -180,7 +180,7 @@ setfield nodes[1].inverseposition -0.07657 0.00120375 0.04
 setfield nodes[2].inverseposition -0.3528911 0.00033812 2.4288E-05
 setfield nodes[3].inverseposition -0.07657 0.00120375 0.03125
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Carbine
 edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode
@@ -188,11 +188,11 @@ setfield markergroups[1].markers[0].translation 0.01435027 -0.002966242 -0.03943
 setfield markergroups[1].markers[0].rotation -0.5890878 0.1469777 -0.4838951 0.630253
 setfield markergroups[3].markers[0].translation -0.06 0.015 0.04760161
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\covenant_carbine\covenant_carbine.hlmt
 setfield lodmodel objects\weapons\rifle\covenant_carbine\covenant_carbine.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Plasma Rifle
 edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.mode
@@ -203,118 +203,118 @@ setfield markergroups[4].markers[0].rotation -0.6164548 0.1957098 -0.4600878 0.6
 setfield markergroups[5].markers[0].translation 0.06173344 -0.0001386678 -0.05019573
 setfield markergroups[5].markers[0].rotation -0.5183288 0.3939989 -0.4947074 0.5756431
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\plasma_rifle\plasma_rifle.hlmt
 setfield lodmodel objects\weapons\rifle\plasma_rifle\plasma_rifle.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing SMG
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg.mode
 setfield nodes[3].inverseposition 0.0265 4.97E-09 -0.01569122
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Shotgun
 edittag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.mode
 setfield markergroups[1].markers[0].translation -0.009387273 0.00139097 -0.01766691
 setfield markergroups[1].markers[0].rotation -0.6016486 0.09437592 -0.3454929 0.7139655
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\shotgun\shotgun.hlmt
 setfield lodmodel objects\weapons\rifle\shotgun\shotgun.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Sniper Rifle
 edittag objects\weapons\rifle\sniper_rifle\shaders\scope_alpha.rmhg
 setargument self_illum_map 0.6 0.6 0.2 0.2
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\sniper_rifle\shaders\sniper_rifle_glass.rmsh
 setargument albedo_color 0.1 0.1 0.1 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\sniper_rifle\sniper_rifle.hlmt
 setfield lodmodel objects\weapons\rifle\sniper_rifle\sniper_rifle.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Spiker
 edittag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.mode
 setfield markergroups[2].markers[0].translation 0.02284988 -0.02398125 0.002580142
 setfield markergroups[2].markers[0].rotation -0.4233879 0.1495626 0.8858865 0.116529
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\rifle\spike_rifle\spike_rifle.hlmt
 setfield lodmodel objects\weapons\rifle\spike_rifle\spike_rifle.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Fuel Rod Cannon
 edittag objects\weapons\support_high\flak_cannon\shaders\flak_cannon.rmsh
 setfield shaderproperties[0].arguments[18].values 0.7725491 0.7333333 0.2313726 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\support_high\flak_cannon\flak_cannon.hlmt
 setfield lodmodel objects\weapons\support_high\flak_cannon\flak_cannon.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Rocket Launcher
 edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.mode
 setfield markergroups[1].markers[0].translation 0.235 0.022 -0.028
 setfield markergroups[1].markers[0].rotation -0.22 0.12 0.01 -0.5
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\support_high\rocket_launcher\rocket_launcher.hlmt
 setfield lodmodel objects\weapons\support_high\rocket_launcher\rocket_launcher.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Brute Shot
 edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.mode
 setfield markergroups[0].markers[0].translation 0.0322919 0.01706448 0.0525696
 setfield markergroups[0].markers[0].rotation 0.4885519 -0.002291647 -0.2378302 0.8394931
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\support_low\brute_shot\brute_shot.hlmt
 setfield lodmodel objects\weapons\support_low\brute_shot\brute_shot.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Sentinel Beam
 edittag objects\weapons\support_low\sentinel_gun\sentinel_gun.hlmt
 setfield lodmodel objects\weapons\support_low\sentinel_gun\sentinel_gun.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Machinegun Turret
 nametag 0x0000288A objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp
 edittag objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.mode
 setfield regions[0].permutations[0].meshindex 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.mode
 setfield regions[0].permutations[0].meshindex 1
 savetagchanges
-exit
+exitto tags
 edittag objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.hlmt
 setfield lodmodel objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Plasma Turret
 edittag objects\weapons\turret\plasma_cannon\plasma_cannon_weapon\plasma_cannon_weapon.hlmt
 setfield lodmodel objects\weapons\turret\plasma_cannon\plasma_cannon_weapon\plasma_cannon_weapon.mode
 savetagchanges
-exit
+exitto tags
 
 echo Fixing Missile Pod
 edittag objects\weapons\turret\missile_pod\missile_pod_weapon\missile_pod_weapon.hlmt
 setfield lodmodel objects\weapons\turret\missile_pod\missile_pod_weapon\missile_pod_weapon.mode
 savetagchanges
-exit
+exitto tags
 
 EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.particle
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
