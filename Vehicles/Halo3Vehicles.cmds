@@ -201,6 +201,12 @@ importbitmap 0 tags\objects\vehicles\mauler\bitmaps\mauler_bump.dds
 savetagchanges
 exitto tags
 
+echo Fixing Chopper
+edittag objects\vehicles\brute_chopper\bitmaps\brute_chopper_bump.bitm
+importbitmap 0 tags\objects\vehicles\brute_chopper\bitmaps\brute_chopper_bump.dds
+savetagchanges
+exitto tags
+
 echo Fixing Snow Hornet
 edittag objects\vehicles\hornet\garbage\thrust_bell\thrust_bell_snow\shaders\[00]_rmsh.rmsh
 setfield shaderproperties[0].shadermaps[2].bitmap objects\vehicles\hornet\garbage\landing_gear\landing_gear\bitmaps\[00]_rmsh\bump.bitm
