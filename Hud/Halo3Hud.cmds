@@ -4,7 +4,7 @@ removeblockelements hudwidgets 20 1
 removeblockelements hudwidgets 24 5
 copyblockelements hudwidgets 19 14
 savetagchanges
-exit
+exitto tags
 opencachefile D:\Halo3Retail\maps\sandbox.map
 porttag replace matchshaders ui\chud\spartan.chdt
 exit
@@ -63,7 +63,7 @@ setfield hudwidgets[26].bitmapwidgets[1].placementdata[0].offset -15 13
 setfield hudwidgets[26].bitmapwidgets[2].placementdata[0].scale 0.6 -0.6
 setfield hudwidgets[26].bitmapwidgets[2].placementdata[0].offset 25 95
 savetagchanges
-exit
+exitto tags
 
 edittag ui\chud\globals.chgd
 setfield hudglobals[0].hudattributes[0].motionsensoroffset 76 1018
@@ -76,17 +76,17 @@ setfield sprintfovtransitionintime 0.5
 setfield sprintfoxtransitionouttime 1
 setfield parallaxdata 0x00000c31.cprl
 savetagchanges
-exit
+exitto tags
 
 edittag 0x12BC
 importbitmap 0 tags\000012BC.dds
 savetagchanges
-exit
+exitto tags
 
 edittag ui\chud\bitmaps\sensor_blips.bitm
 importbitmap 0 tags\ui\chud\bitmaps\sensor_blips.dds
 savetagchanges
-exit
+exitto tags
 
 opencachefile D:\Halo3Retail\maps\sandbox.map
 porttag replace ui\chud\scoreboard.chdt
@@ -123,7 +123,7 @@ setfield hudwidgets[7].parallaxdata 0x00000c31
 setfield hudwidgets[7].placementdata[0].offset 15 -120
 setfield hudwidgets[8].parallaxdata 0x00000c31
 savetagchanges
-exit
+exitto tags
 
 echo Installing Weapon\Vehicle HUDS
 opencachefile D:\Halo3Retail\maps\sandbox.map
@@ -192,7 +192,7 @@ Echo Battle Rifle
 edittag ui\chud\bitmaps\ballistic_meters.bitm
 setfield sequences[7].sprites[0].top 0.276
 savetagchanges
-exit
+exitto tags
 
 EditTag ui\chud\battle_rifle.chud_definition
 setfield hudwidgets[2].parallaxdata 0x00000c48
@@ -1534,7 +1534,7 @@ importbitmap 0 tags\ui\chud\bitmaps\weapon_scematics_ho.dds
 setfield images[0].width 512
 setfield images[0].height 256
 savetagchanges
-exit
+exitto tags
 
 Echo =======================================
 echo Installing AR Variant HUDS
@@ -1542,11 +1542,11 @@ echo =======================================
 edittag 0x1c8b
 importbitmap 0 tags\00001c8b.dds
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\assault_rifle.chdt
 copyblockelements hudwidgets 0 2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\assault_rifle_v2.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1565,10 +1565,10 @@ setfield hudwidgets[4].bitmapwidgets[0].widgetindex 5
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\assault_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\assault_rifle_v3.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1582,10 +1582,10 @@ setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 1 1
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
 setfield hudwidgets[4].bitmapwidgets[0].bitmap 0x1c8b
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\assault_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\assault_rifle_v4.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1606,10 +1606,10 @@ setfield hudwidgets[4].bitmapwidgets[0].widgetindex 5
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\assault_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\assault_rifle_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1628,7 +1628,7 @@ setfield hudwidgets[4].bitmapwidgets[0].widgetindex 5
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 savetagchanges
-exit
+exitto tags
 Echo =======================================
 echo Installing BR Variant HUDS
 echo =======================================
@@ -1637,10 +1637,10 @@ importbitmap 0 tags\00001db1.dds
 setfield images[0].width 512
 setfield images[0].height 256
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\battle_rifle_v1.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1661,10 +1661,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 1
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\battle_rifle_v2.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1680,10 +1680,10 @@ setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldyna
 setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[5].bitmapwidgets[0].bitmap 0x1db1
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\battle_rifle_v3.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1704,10 +1704,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 1
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\battle_rifle_v4.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1730,10 +1730,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 1
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\battle_rifle_v5.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1754,10 +1754,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 1
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\battle_rifle_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1778,13 +1778,13 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 1
 savetagchanges
-exit
+exitto tags
 echo =======================================================
 echo Installing Carbine Variant Huds
 echo =======================================================
 edittag ui\chud\plasma_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\carbine_v1.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1805,10 +1805,10 @@ setfield hudwidgets[5].bitmapwidgets[0].flags none
 setfield hudwidgets[5].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[5].bitmapwidgets[0].bitmapspriteindex 3
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\carbine.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\carbine_v2.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1830,10 +1830,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 3
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\carbine.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\carbine_v3.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1855,10 +1855,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 3
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\carbine.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\carbine_v4.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1882,10 +1882,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 3
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\carbine.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\carbine_v5.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1907,17 +1907,17 @@ setfield hudwidgets[7].bitmapwidgets[0].flags none
 setfield hudwidgets[7].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[7].bitmapwidgets[0].bitmapspriteindex 3
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\carbine.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\carbine_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset 10 107
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 1.2 1.2
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic32
 setfield hudwidgets[4].bitmapwidgets[0].widgetindex 14
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -1926,23 +1926,23 @@ setfield hudwidgets[6].placementdata[0].offset 30 0
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset -14 3
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 1.2 1.2
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic32
 setfield hudwidgets[6].bitmapwidgets[0].widgetindex 14
 setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 3
 savetagchanges
-exit
+exitto tags
 echo ============================================================
 echo Installing DMR Variant Huds
 echo ============================================================
 edittag 0x1e40
 importbitmap 0 tags\objects\weapons\rifle\dmr\bitmaps\dmr_scematics.dds
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\dmr.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1956,10 +1956,10 @@ setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\dmr_v1.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1973,10 +1973,10 @@ setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic31
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\dmr_v2.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -1990,10 +1990,10 @@ setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\dmr_v3.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2009,10 +2009,10 @@ setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
 setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
 setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\dmr_v4.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2028,10 +2028,10 @@ setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].localcolorb 0 107 85 47
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\dmr_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2045,13 +2045,13 @@ setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic22
 savetagchanges
-exit
+exitto tags
 echo ===========================================================
 echo Installing Excavator Variant Huds
 echo ===========================================================
 edittag ui\chud\excavator.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\excavator_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2087,17 +2087,19 @@ setfield hudwidgets[7].bitmapwidgets[0].flags none
 setfield hudwidgets[7].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[7].bitmapwidgets[0].bitmapspriteindex 18
 savetagchanges
-exit
+exitto tags
 echo ===========================================================
 echo Installing Mangnum Hud Variants
 echo ===========================================================
 edittag 0x20e5
 importbitmap 0 tags\000020e5.dds
+setfield images[0].width 256
+setfield images[0].height 128
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\magnum.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\magnum_v2.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2118,10 +2120,10 @@ setfield hudwidgets[6].bitmapwidgets[0].widgetindex 16
 setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 3
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\magnum.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\magnum_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2141,13 +2143,13 @@ setfield hudwidgets[7].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldyna
 setfield hudwidgets[7].bitmapwidgets[0].flags none
 setfield hudwidgets[7].bitmapwidgets[0].bitmapspriteindex 1
 savetagchanges
-exit
+exitto tags
 echo ===========================================================
 echo Installing Plasma Pistol Variant Huds
 echo ===========================================================
 edittag ui\chud\plasma_pistol.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\plasma_pistol_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2183,13 +2185,13 @@ setfield hudwidgets[5].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.
 setfield hudwidgets[5].bitmapwidgets[0].bitmapspriteindex 7
 setfield hudwidgets[5].textwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 echo ===========================================================
 echo Installing Plasma Rifle Variant Hud
 echo ===========================================================
 edittag ui\chud\plasma_rifle.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\plasma_rifle_v6.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2225,18 +2227,18 @@ setfield hudwidgets[5].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.
 setfield hudwidgets[5].bitmapwidgets[0].bitmapspriteindex 8
 setfield hudwidgets[5].textwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 echo ===========================================================
 echo Installing SMG Variant Huds
 echo ===========================================================
 edittag 0x1f87
 importbitmap 0 tags\00001f87.dds
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\smg.chdt
 copyblockelements hudwidgets 0 2
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 0.8 0.8
-exit
+exitto tags
 edittag ui\chud\smg_v2.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2266,10 +2268,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 12
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\smg.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\smg_v3.chdt
 removeblockelements hudwidgets 6 2
 pasteblockelements hudwidgets 6
@@ -2279,10 +2281,10 @@ setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldyna
 setfield hudwidgets[5].placementdata[0].offset 30 0
 setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\smg.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\smg_v4.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
@@ -2315,10 +2317,10 @@ setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 12
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\smg.chdt
 copyblockelements hudwidgets 0 2
-exit
+exitto tags
 edittag ui\chud\smg_v6.chdt
 removeblockelements hudwidgets 6 2
 pasteblockelements hudwidgets 6
@@ -2337,7 +2339,7 @@ setfield hudwidgets[5].bitmapwidgets[0].widgetindex 23
 setfield hudwidgets[5].bitmapwidgets[0].flags none
 setfield hudwidgets[5].bitmapwidgets[0].bitmapspriteindex 5
 savetagchanges
-exit
+exitto tags
 
 echo ===========================================================
 echo Installing Fixes
@@ -2345,117 +2347,117 @@ echo ===========================================================
 edittag ui\chud\hammer.chdt
 setfield hudwidgets[3].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\sword.chdt
 setfield hudwidgets[3].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\excavator.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 setfield hudwidgets[3].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[5].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\magnum.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\needler.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\plasma_pistol.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 setfield hudwidgets[3].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[5].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\assault_rifle.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[4].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\battle_rifle.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[5].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\beam_rifle.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\carbine.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 0.8 0.8
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[5].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\plasma_rifle.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 setfield hudwidgets[3].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[5].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\shotgun.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\smg.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 setfield hudwidgets[3].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
 setfield hudwidgets[5].bitmapwidgets[1].renderdata[0].outputcolorb_ho globaldynamic2
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\sniper_rifle.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\spike_rifle.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\fuel_rod_cannon.chdt
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\rocket.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\spartan_laser.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\brute_shot.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\sentinel_beam.chdt
 setfield hudwidgets[2].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\machinegun_turret.chdt
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\plasma_turret.chdt
 setfield hudwidgets[1].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_vehicle_reticles.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\flamethrower.chdt
 setfield hudwidgets[1].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 edittag ui\chud\missile.chdt
 setfield hudwidgets[1].bitmapwidgets[0].bitmap ui\chud\bitmaps\hud_reticles_h3.bitm
 savetagchanges
-exit
+exitto tags
 
 savetagnames
 dumplog Halo3HUD.log

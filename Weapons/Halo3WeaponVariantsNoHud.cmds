@@ -136,7 +136,7 @@ savetagchanges
 exitto tags
 opencachefile D:\Halo3Retail\maps\sandbox.map
 porttag replace objects\weapons\pistol\magnum\bitmaps\magnum_bump.bitm
-exitto tags
+exit
 
 echo Installing Plasma Pistol Variants
 extracttag objects\weapons\pistol\plasma_pistol\plasma_pistol.mode tags\objects\weapons\pistol\plasma_pistol\plasma_pistol.render_model
@@ -491,7 +491,7 @@ porttag replace objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_bump.b
 porttag replace objects\weapons\rifle\assault_rifle\bitmaps\compass.bitm
 porttag replace objects\weapons\rifle\assault_rifle\bitmaps\display.bitm
 porttag replace objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate.bitm
-exitto tags
+exit
 edittag objects\weapons\rifle\assault_rifle\assault_rifle_power.weap
 setfield model objects\weapons\rifle\assault_rifle\assault_rifle_v2.hlmt
 setfield specialhudversion damage32
