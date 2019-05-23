@@ -1543,6 +1543,11 @@ edittag 0x1c8b
 importbitmap 0 tags\00001c8b.dds
 savetagchanges
 exitto tags
+edittag 0x1c8b
+setfield images[0].width 512
+setfield images[0].height 256
+savetagchanges
+exitto tags
 edittag ui\chud\assault_rifle.chdt
 copyblockelements hudwidgets 0 2
 savetagchanges
