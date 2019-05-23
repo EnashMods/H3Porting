@@ -210,7 +210,7 @@ porttag merge objects\characters\masterchief\fp\weapons\support_low\fp_sentinel_
 
 echo Machinegun Turret
 porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.mode
-porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.jmad
+porttag merge objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.jmad
 porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.mode
 porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\garbage\machinegun_turret_tripod_mp\machinegun_turret_tripod_mp.mode
 porttag replace objects\weapons\turret\machinegun_turret\fx\firing.ligh
@@ -218,7 +218,7 @@ porttag replace objects\weapons\turret\machinegun_turret\fx\firing.effe
 
 echo Plasma Turret
 porttag replace objects\weapons\turret\plasma_cannon\plasma_cannon_weapon\plasma_cannon_weapon.mode
-porttag replace objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\plasma_cannon_vehicle.jmad
+porttag merge objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\plasma_cannon_vehicle.jmad
 porttag replace objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\plasma_cannon_vehicle.mode
 porttag replace objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\garbage\garbage_tripod_back\garbage_tripod_back.mode
 porttag replace objects\weapons\turret\plasma_cannon\plasma_cannon_vehicle\garbage\garbage_tripod_front\garbage_tripod_front.mode
@@ -227,12 +227,16 @@ porttag replace objects\weapons\turret\plasma_cannon\fx\firing.effe
 
 echo Missile Pod
 porttag replace objects\weapons\turret\missile_pod\missile_pod_weapon\missile_pod_weapon.mode
-porttag replace objects\weapons\turret\missile_pod\missile_pod_vehicle\missile_pod_vehicle.jmad
+porttag merge objects\weapons\turret\missile_pod\missile_pod_vehicle\missile_pod_vehicle.jmad
 porttag replace objects\weapons\turret\missile_pod\missile_pod_vehicle\missile_pod_vehicle.mode
 porttag replace objects\weapons\turret\missile_pod\garbage\garbage_tripod\garbage_tripod.mode
 porttag replace objects\weapons\turret\missile_pod\fx\firing.ligh
 porttag replace objects\weapons\turret\missile_pod\fx\firing.effe
 savetagnames
+
+echo Flamethrower
+porttag replace objects\weapons\turret\flamethrower\flamethrower_weapon\flamethrower_weapon.mode
+porttag merge objects\weapons\turret\flamethrower\flamethrower_weapon\flamethrower_weapon.jmad
 exit
 
 opencachefile D:\Halo3ODSTRetail\maps\h100.map
