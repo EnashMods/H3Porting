@@ -115,7 +115,7 @@ setfield hudwidgets[5].bitmapwidgets[4].placementdata[0].offset -220 47
 setfield hudwidgets[5].bitmapwidgets[5].placementdata[0].offset -202 47
 setfield hudwidgets[5].bitmapwidgets[6].placementdata[0].offset -220 47
 setfield hudwidgets[5].bitmapwidgets[7].placementdata[0].offset -202 47
-setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -210 47
+setfield hudwidgets[5].bitmapwidgets[8].placementdata[0].offset -200 47
 setfield hudwidgets[5].bitmapwidgets[9].placementdata[0].offset -202 47
 setfield hudwidgets[6].parallaxdata 0x00000c31
 setfield hudwidgets[6].placementdata[0].offset 15 -66
@@ -1543,11 +1543,6 @@ edittag 0x1c8b
 importbitmap 0 tags\00001c8b.dds
 savetagchanges
 exitto tags
-edittag 0x1c8b
-setfield images[0].width 512
-setfield images[0].height 256
-savetagchanges
-exitto tags
 edittag ui\chud\assault_rifle.chdt
 copyblockelements hudwidgets 0 2
 savetagchanges
@@ -1942,7 +1937,7 @@ echo ============================================================
 echo Installing DMR Variant Huds
 echo ============================================================
 edittag 0x1e40
-importbitmap 0 tags\objects\weapons\rifle\dmr\bitmaps\dmr_scematics.dds
+importbitmap 0 tags\dmr_scematics.dds
 savetagchanges
 exitto tags
 edittag ui\chud\battle_rifle.chdt
@@ -2098,8 +2093,6 @@ echo Installing Mangnum Hud Variants
 echo ===========================================================
 edittag 0x20e5
 importbitmap 0 tags\000020e5.dds
-setfield images[0].width 256
-setfield images[0].height 128
 savetagchanges
 exitto tags
 edittag ui\chud\magnum.chdt
