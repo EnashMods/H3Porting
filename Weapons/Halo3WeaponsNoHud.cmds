@@ -36,11 +36,13 @@ echo Assault Bomb
 porttag replace objects\weapons\multiplayer\assault_bomb\assault_bomb.mode
 porttag replace objects\weapons\multiplayer\assault_bomb\fp_assault_bomb\fp_assault_bomb.mode
 porttag merge objects\characters\masterchief\fp\weapons\multiplayer\fp_assault_bomb\fp_assault_bomb.jmad
+porttag replace fx\material_effects\objects\weapons\assault_bomb.foot
 
 echo Ball
 porttag replace objects\weapons\multiplayer\ball\ball.mode
 porttag replace objects\weapons\multiplayer\ball\fp_ball\fp_ball.mode
 porttag merge objects\characters\masterchief\fp\weapons\multiplayer\fp_ball\fp_ball.jmad
+porttag replace fx\material_effects\objects\weapons\ball.foot
 
 echo Flag
 porttag replace objects\weapons\multiplayer\flag\flag.mode
