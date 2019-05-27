@@ -21,8 +21,12 @@ deletetag objects\levels\multi\shrine\shaders\beh_metal.rmsh
 deletetag objects\levels\multi\shrine\shaders\beh_tiling_panels.rmsh
 deletetag objects\levels\multi\shrine\shaders\beh_panels.rmsh
 deletetag objects\levels\multi\shrine\shaders\beh_panels2.rmsh
+deletetag objects\levels\multi\shrine\shaders\beh_treads_left.rmsh
+deletetag objects\levels\multi\shrine\shaders\beh_treads_right.rmsh
 
 opencachefile D:\Halo3Retail\maps\shrine.map
+
+porttag replace fx\material_effects\objects\vehicles\vehicle.foot
 
 echo Installing Elephant
 porttag replace !ms30 objects\levels\multi\shrine\behemoth\behemoth.mode
@@ -39,9 +43,22 @@ porttag replace objects\vehicles\banshee\garbage\fin_top_garbage\fin_top_garbage
 porttag replace objects\vehicles\banshee\garbage\l_wing_garbage\l_wing_garbage.mode
 porttag replace objects\vehicles\banshee\garbage\r_wing_garbage\r_wing_garbage.mode
 porttag replace objects\vehicles\banshee\garbage\wing_prong_garbage\wing_prong_garbage.mode
+porttag replace fx\material_effects\objects\vehicles\banshee.foot
+porttag replace fx\material_effects\objects\vehicles\banshee_garbage.foot
+porttag replace fx\material_effects\objects\weapons\banshee_bolt.foot
+porttag replace fx\material_effects\objects\weapons\banshee_bomb.foot
+porttag replace sound\vehicles\banshee\banshee_boost_left\banshee_boost_left.lsnd
+porttag replace sound\vehicles\banshee\banshee_boost_right\banshee_boost_right.lsnd
+porttag replace sound\vehicles\banshee\banshee_contrail_left\banshee_contrail_left.lsnd
+porttag replace sound\vehicles\banshee\banshee_contrail_right\banshee_contrail_right.lsnd
+porttag replace sound\vehicles\banshee\banshee_engine_lod\banshee_engine_lod.lsnd
+porttag replace sound\vehicles\banshee\banshee_multi_eng_left\banshee_multi_eng_left.lsnd
+porttag replace sound\vehicles\banshee\banshee_multi_eng_right\banshee_multi_eng_right.lsnd
+porttag replace sound\vehicles\banshee\flak_projectile_loop2_h3\flak_projectile_loop2_h3.lsnd
 
 echo Installing Prowler
 porttag replace objects\vehicles\mauler\shaders\mauler.rmsh
+porttag replace fx\material_effects\objects\vehicles\mauler.foot
 
 echo Installing Chopper
 porttag replace objects\vehicles\brute_chopper\brute_chopper.mode
@@ -53,6 +70,7 @@ porttag replace objects\vehicles\brute_chopper\garbage\blade_r\blade_r.mode
 porttag replace objects\vehicles\brute_chopper\garbage\rotor_l\rotor_l.mode
 porttag replace objects\vehicles\brute_chopper\garbage\rotor_r\rotor_r.mode
 porttag replace objects\vehicles\brute_chopper\garbage\seat\seat.mode
+porttag replace fx\material_effects\objects\vehicles\brute_chopper.foot
 
 echo Installing Ghost
 porttag replace objects\vehicles\ghost\garbage\anti_grav\anti_grav.mode
@@ -62,6 +80,7 @@ porttag replace objects\vehicles\ghost\garbage\l_wing_shell\l_wing_shell.mode
 porttag replace objects\vehicles\ghost\garbage\seat\seat.mode
 porttag replace objects\vehicles\ghost\ghost.mode
 porttag single replace objects\vehicles\ghost\ghost.hlmt
+porttag replace fx\material_effects\objects\vehicles\ghost.foot
 
 echo Installing Mongoose
 porttag replace objects\vehicles\mongoose\mongoose.mode
@@ -72,6 +91,7 @@ porttag replace objects\vehicles\mongoose\garbage\lb_fender\lb_fender.mode
 porttag replace objects\vehicles\mongoose\garbage\ramp\ramp.mode
 porttag replace objects\vehicles\mongoose\garbage\rb_fender\rb_fender.mode
 porttag replace objects\vehicles\mongoose\garbage\wheel\wheel.mode
+porttag replace fx\material_effects\objects\vehicles\mongoose.foot
 
 echo Installing Scorpion
 porttag replace objects\vehicles\scorpion\scorpion.mode
@@ -95,12 +115,12 @@ porttag replace objects\vehicles\scorpion\garbage\tread_side_panel\tread_side_pa
 porttag replace objects\vehicles\scorpion\garbage\water_can\water_can.mode
 porttag replace objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
 porttag replace objects\vehicles\scorpion\turrets\anti_infantry\garbage\anti_gun\anti_gun.mode
+porttag replace fx\material_effects\objects\vehicles\scorpion.foot
+porttag replace fx\material_effects\objects\vehicles\scorpion_turret.foot
 
 echo Installing Warthog and friends
-porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.mode
-porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.jmad
-porttag replace objects\vehicles\warthog\turrets\gauss\gauss.mode
-porttag replace objects\vehicles\warthog\turrets\gauss\gauss.jmad
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.hlmt
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss.hlmt
 porttag replace objects\vehicles\warthog\warthog.mode
 porttag replace objects\scenery\human\military\warthog_drop_palette\warthog_drop_palette.mode
 porttag replace objects\vehicles\warthog\garbage\hood\hood.mode
@@ -117,12 +137,28 @@ porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
+porttag replace fx\material_effects\objects\vehicles\warthog.foot
+porttag replace objects\vehicles\warthog\fx\running\headlights.effe
+porttag replace objects\vehicles\warthog\fx\running\headlight_beam.ligh
+porttag replace objects\vehicles\warthog\fx\running\tail_lights.lens
+porttag replace sound\vehcles\warthog\new_warthog_left\new_warthog_left.lsnd
+porttag replace sound\vehcles\warthog\new_warthog_right\new_warthog_right.lsnd
 
 echo Installing Wraith and friends
 porttag replace objects\vehicles\wraith\wraith.mode
 porttag replace objects\vehicles\wraith\turrets\mortar\mortar.mode
 porttag replace objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.mode
 porttag replace objects\vehicles\wraith\turrets\anti_air\anti_air.mode
+porttag replace fx\material_effects\objects\vehicles\wraith.foot
+porttag replace sound\vehicles\wraith\wraith_engine_lod\wraith_engine_lod.lsnd
+porttag replace sound\vehicles\wraith\wraith_projectile\wraith_projectile.lsnd
+porttag replace sound\vehicles\wraith\w_boost_left\w_boost_left.lsnd
+porttag replace sound\vehicles\wraith\w_boost_right\w_boost_right.lsnd
+
+echo Hornet
+porttag replace objects\vehicles\hornet\hornet.mode
+porttag replace objects\vehicles\hornet\hornet_snow.mode
+porttag replace objects\vehicles\hornet\weapon\hornet_missile.proj
 exit
 
 echo Installing Snow Warthog and friends
@@ -137,17 +173,21 @@ porttag replace objects\vehicles\warthog\garbage\rf_fender\rf_fender_snow.mode
 porttag replace objects\vehicles\warthog\garbage\sailpanel\sailpanel_snow.mode
 porttag replace objects\vehicles\warthog\garbage\tire\tire_snow.mode
 porttag replace objects\vehicles\warthog\garbage\winch\winch_snow.mode
-porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun_snow.mode
+porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun_snow.hlmt
 porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage_snow.mode
 porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage_snow.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage_snow.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage_snow.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage_snow.mode
-porttag replace objects\vehicles\warthog\turrets\gauss\gauss_snow.mode
+porttag replace objects\vehicles\warthog\turrets\gauss\gauss_snow.hlmt
 porttag replace objects\vehicles\warthog\warthog_snow.mode
 exit
 
 echo Fixing Elephant
+opencachefile D:\Halo3Retail\maps\shrine.map
+porttag replace objects\levels\multi\shrine\shaders\beh_treads_left.rmsh
+porttag replace objects\levels\multi\shrine\shaders\beh_treads_right.rmsh
+exit
 edittag objects\levels\multi\shrine\shaders\beh_parts.rmsh
 setargument albedo_color 0.65 0.55 0.3 0.3
 savetagchanges
@@ -175,25 +215,10 @@ savetagchanges
 exitto tags
 
 echo Fixing Banshee
-edittag objects\vehicles\banshee\banshee.mode
-setfield regions[0].permutations[0].meshindex 9
-setfield regions[0].permutations[1].meshindex 18
-setfield regions[0].permutations[2].meshindex 0
-setfield regions[2].permutations[0].meshindex 11
-setfield regions[2].permutations[1].meshindex 20
-setfield regions[2].permutations[2].meshindex 27
-setfield regions[2].permutations[3].meshindex 2
-setfield regions[4].permutations[0].meshindex 13
-setfield regions[4].permutations[1].meshindex 22
-setfield regions[4].permutations[2].meshindex 29
-setfield regions[4].permutations[3].meshindex 4
-setfield regions[7].permutations[0].meshindex 16
-setfield regions[7].permutations[1].meshindex 25
-setfield regions[7].permutations[2].meshindex 32
-setfield regions[7].permutations[3].meshindex 7
-savetagchanges
-exitto tags
 importtag objects\vehicles\banshee\banshee.hlmt tags\objects\vehicles\banshee\banshee.hlmt
+opencachefile D:\Halo3Retail\maps\sandbox.map
+porttag single replace objects\vehicles\banshee\banshee.hlmt
+exit
 
 echo Fixing Prowler
 edittag objects\vehicles\mauler\bitmaps\mauler_bump.bitm
@@ -208,8 +233,8 @@ savetagchanges
 exitto tags
 
 echo Fixing Snow Hornet
-edittag objects\vehicles\hornet\garbage\thrust_bell\thrust_bell_snow\shaders\[00]_rmsh.rmsh
-setfield shaderproperties[0].shadermaps[2].bitmap objects\vehicles\hornet\garbage\landing_gear\landing_gear\bitmaps\[00]_rmsh\bump.bitm
+edittag objects\vehicles\hornet\bitmaps\hornet_bump_snow.bitm
+importbitmap 0 tags\objects\vehicles\hornet\bitmaps\hornet_bump_snow.dds
 savetagchanges
 exitto tags
 
