@@ -393,7 +393,7 @@ setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\assault_
 setargument base_map 1 1 0 0
 setargument detail_map 5 5 0 0
 setargument color_mask_map 1 1 1 1
-setargument albedo_color 0.168 0.138 0.044 1
+setargument albedo_color 0.089 0.069 0.022 1
 setargument bump_map 1 1 0 0
 setargument bump_detail_map 15 15 0 0
 setargument bump_detail_coefficient 1 1 1 1
