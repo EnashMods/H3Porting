@@ -26,7 +26,6 @@ deletetag objects\levels\multi\shrine\shaders\beh_treads_right.rmsh
 
 opencachefile D:\Halo3Retail\maps\shrine.map
 
-porttag replace fx\material_effects\objects\vehicles\vehicle.foot
 
 echo Installing Elephant
 porttag replace !ms30 objects\levels\multi\shrine\behemoth\behemoth.mode
@@ -43,10 +42,6 @@ porttag replace objects\vehicles\banshee\garbage\fin_top_garbage\fin_top_garbage
 porttag replace objects\vehicles\banshee\garbage\l_wing_garbage\l_wing_garbage.mode
 porttag replace objects\vehicles\banshee\garbage\r_wing_garbage\r_wing_garbage.mode
 porttag replace objects\vehicles\banshee\garbage\wing_prong_garbage\wing_prong_garbage.mode
-porttag replace fx\material_effects\objects\vehicles\banshee.foot
-porttag replace fx\material_effects\objects\vehicles\banshee_garbage.foot
-porttag replace fx\material_effects\objects\weapons\banshee_bolt.foot
-porttag replace fx\material_effects\objects\weapons\banshee_bomb.foot
 porttag replace sound\vehicles\banshee\banshee_boost_left\banshee_boost_left.lsnd
 porttag replace sound\vehicles\banshee\banshee_boost_right\banshee_boost_right.lsnd
 porttag replace sound\vehicles\banshee\banshee_contrail_left\banshee_contrail_left.lsnd
@@ -58,7 +53,6 @@ porttag replace sound\vehicles\banshee\flak_projectile_loop2_h3\flak_projectile_
 
 echo Installing Prowler
 porttag replace objects\vehicles\mauler\shaders\mauler.rmsh
-porttag replace fx\material_effects\objects\vehicles\mauler.foot
 
 echo Installing Chopper
 porttag replace objects\vehicles\brute_chopper\brute_chopper.mode
@@ -70,7 +64,6 @@ porttag replace objects\vehicles\brute_chopper\garbage\blade_r\blade_r.mode
 porttag replace objects\vehicles\brute_chopper\garbage\rotor_l\rotor_l.mode
 porttag replace objects\vehicles\brute_chopper\garbage\rotor_r\rotor_r.mode
 porttag replace objects\vehicles\brute_chopper\garbage\seat\seat.mode
-porttag replace fx\material_effects\objects\vehicles\brute_chopper.foot
 
 echo Installing Ghost
 porttag replace objects\vehicles\ghost\garbage\anti_grav\anti_grav.mode
@@ -80,7 +73,6 @@ porttag replace objects\vehicles\ghost\garbage\l_wing_shell\l_wing_shell.mode
 porttag replace objects\vehicles\ghost\garbage\seat\seat.mode
 porttag replace objects\vehicles\ghost\ghost.mode
 porttag single replace objects\vehicles\ghost\ghost.hlmt
-porttag replace fx\material_effects\objects\vehicles\ghost.foot
 
 echo Installing Mongoose
 porttag replace objects\vehicles\mongoose\mongoose.mode
@@ -91,7 +83,6 @@ porttag replace objects\vehicles\mongoose\garbage\lb_fender\lb_fender.mode
 porttag replace objects\vehicles\mongoose\garbage\ramp\ramp.mode
 porttag replace objects\vehicles\mongoose\garbage\rb_fender\rb_fender.mode
 porttag replace objects\vehicles\mongoose\garbage\wheel\wheel.mode
-porttag replace fx\material_effects\objects\vehicles\mongoose.foot
 
 echo Installing Scorpion
 porttag replace objects\vehicles\scorpion\scorpion.mode
@@ -115,8 +106,6 @@ porttag replace objects\vehicles\scorpion\garbage\tread_side_panel\tread_side_pa
 porttag replace objects\vehicles\scorpion\garbage\water_can\water_can.mode
 porttag replace objects\vehicles\scorpion\turrets\anti_infantry\anti_infantry.mode
 porttag replace objects\vehicles\scorpion\turrets\anti_infantry\garbage\anti_gun\anti_gun.mode
-porttag replace fx\material_effects\objects\vehicles\scorpion.foot
-porttag replace fx\material_effects\objects\vehicles\scorpion_turret.foot
 
 echo Installing Warthog and friends
 porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.hlmt
@@ -137,7 +126,6 @@ porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
-porttag replace fx\material_effects\objects\vehicles\warthog.foot
 porttag replace objects\vehicles\warthog\fx\running\headlights.effe
 porttag replace objects\vehicles\warthog\fx\running\headlight_beam.ligh
 porttag replace objects\vehicles\warthog\fx\running\tail_lights.lens
@@ -149,7 +137,6 @@ porttag replace objects\vehicles\wraith\wraith.mode
 porttag replace objects\vehicles\wraith\turrets\mortar\mortar.mode
 porttag replace objects\vehicles\wraith\turrets\anti_infantry\anti_infantry.mode
 porttag replace objects\vehicles\wraith\turrets\anti_air\anti_air.mode
-porttag replace fx\material_effects\objects\vehicles\wraith.foot
 porttag replace sound\vehicles\wraith\wraith_engine_lod\wraith_engine_lod.lsnd
 porttag replace sound\vehicles\wraith\wraith_projectile\wraith_projectile.lsnd
 porttag replace sound\vehicles\wraith\w_boost_left\w_boost_left.lsnd
