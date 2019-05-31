@@ -1,0 +1,534 @@
+
+echo Carbine Accuracy
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.cntl
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_accuracy
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_accuracy
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.decs
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_accuracy
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_accuracy
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\reloading_accuracy
+duplicatetag fx\material_effects\objects\weapons\covenant_carbine.foot
+nametag * fx\material_effects\objects\weapons\covenant_carbine_accuracy
+
+edittag objects\weapons\rifle\covenant_carbine\fx\reloading_accuracy.effe
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0 0.8 0 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0.06666667 0.1 0.07058824 0
+savetagchanges
+exitto tags
+edittag 0x25D7
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data -1 1 -1 0
+setfield events[0].particlesystems[1].emitters[0].runtimemgpu.colors[1].data -1 1 -1 0
+setfield events[0].particlesystems[2].emitters[0].runtimemgpu.colors[0].data 0 1 0 1
+setfield events[0].particlesystems[3].emitters[0].runtimemgpu.colors[2].data 0.5 1 0 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 0 1 0 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0 1 0 0
+setfield events[1].particlesystems[1].emitters[0].runtimemgpu.colors[0].data 0 1 0 1
+setfield events[1].particlesystems[2].emitters[0].runtimemgpu.colors[2].data 0.5 1 0 0
+setfield events[1].particlesystems[3].emitters[0].runtimemgpu.colors[1].data 0 1 0 0
+setfield events[1].particlesystems[4].emitters[0].runtimemgpu.colors[1].data 0 1 0 0
+setfield events[1].particlesystems[5].emitters[0].runtimemgpu.colors[1].data -1 1 -1 0
+setfield events[1].particlesystems[6].emitters[0].runtimemgpu.colors[1].data -1 1 -1 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_accuracy.cntl
+setfield contrail[0].compiledcolorfunctions[4].red 0
+setfield contrail[0].compiledcolorfunctions[4].green 1
+setfield contrail[0].compiledcolorfunctions[4].blue 0
+setfield contrail[1].compiledcolorfunctions[4].red 0
+setfield contrail[1].compiledcolorfunctions[4].green 1
+setfield contrail[1].compiledcolorfunctions[4].blue 0
+setfield contrail[1].compiledcolorfunctions[5].red 0
+setfield contrail[1].compiledcolorfunctions[5].green 1
+setfield contrail[1].compiledcolorfunctions[5].blue 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_accuracy.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_accuracy.cntl
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_accuracy.decs
+setfield decal[0].rendermethod.shaderproperties[0].arguments[0].values 0 1 0 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_accuracy.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\impact_accuracy.decs
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0 1 0 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 0 1 0 0
+setfield events[0].particlesystems[5].emitters[0].runtimemgpu.colors[0].data 0 1 0 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\projectiles\carbine_slug\carbine_slug_v3.proj
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_accuracy.foot
+setfield attachments[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_accuracy.effe
+savetagchanges
+exitto tags
+edittag fx\material_effects\objects\weapons\covenant_carbine_accuracy.foot
+foreach effects foreach effects setfield sound objects\weapons\rifle\covenant_carbine\fx\impact_accuracy.effe
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_accuracy.weap
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_accuracy.foot
+setfield magazines[0].reloadingeffect objects\weapons\rifle\covenant_carbine\fx\reloading_accuracy.effe
+savetagchanges
+exitto tags
+
+echo Carbine Ammo
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.cntl
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_ammo
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_ammo
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.decs
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_ammo
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_ammo
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\reloading_ammo
+duplicatetag fx\material_effects\objects\weapons\covenant_carbine.foot
+nametag * fx\material_effects\objects\weapons\covenant_carbine_ammo
+
+edittag objects\weapons\rifle\covenant_carbine\fx\reloading_ammo.effe
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0 0 0.8 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0.06666667 0.07058824 0.1 0
+savetagchanges
+exitto tags
+edittag 0x25BC
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data -1 -1 1 0
+setfield events[0].particlesystems[1].emitters[0].runtimemgpu.colors[1].data -1 -1 1 0
+setfield events[0].particlesystems[2].emitters[0].runtimemgpu.colors[0].data 0 0 1 1
+setfield events[0].particlesystems[3].emitters[0].runtimemgpu.colors[2].data 0.5 0 1 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 0 0 1 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0 0 1 0
+setfield events[1].particlesystems[1].emitters[0].runtimemgpu.colors[0].data 0 0 1 1
+setfield events[1].particlesystems[2].emitters[0].runtimemgpu.colors[2].data 0.5 0 1 0
+setfield events[1].particlesystems[3].emitters[0].runtimemgpu.colors[1].data 0 0 1 0
+setfield events[1].particlesystems[4].emitters[0].runtimemgpu.colors[1].data 0 0 1 0
+setfield events[1].particlesystems[5].emitters[0].runtimemgpu.colors[1].data -1 -1 1 0
+setfield events[1].particlesystems[6].emitters[0].runtimemgpu.colors[1].data -1 -1 1 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_ammo.cntl
+setfield contrail[0].compiledcolorfunctions[4].red 0
+setfield contrail[0].compiledcolorfunctions[4].green 0
+setfield contrail[0].compiledcolorfunctions[4].blue 1
+setfield contrail[1].compiledcolorfunctions[4].red 0
+setfield contrail[1].compiledcolorfunctions[4].green 0
+setfield contrail[1].compiledcolorfunctions[4].blue 1
+setfield contrail[1].compiledcolorfunctions[5].red 0
+setfield contrail[1].compiledcolorfunctions[5].green 0
+setfield contrail[1].compiledcolorfunctions[5].blue 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_ammo.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_ammo.cntl
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_ammo.decs
+setfield decal[0].rendermethod.shaderproperties[0].arguments[0].values 0 0 1 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_ammo.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\impact_ammo.decs
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0 0 1 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 0 0 1 0
+setfield events[0].particlesystems[5].emitters[0].runtimemgpu.colors[0].data 0 0 1 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\projectiles\carbine_slug\carbine_slug_v1.proj
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_ammo.foot
+setfield attachments[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_ammo.effe
+savetagchanges
+exitto tags
+edittag fx\material_effects\objects\weapons\covenant_carbine_ammo.foot
+foreach effects foreach effects setfield sound objects\weapons\rifle\covenant_carbine\fx\impact_ammo.effe
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_ammo.weap
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_ammo.foot
+savetagchanges
+exitto tags
+
+echo Carbine Damage
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.cntl
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_damage
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_damage
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.decs
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_damage
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_damage
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\reloading_damage
+duplicatetag fx\material_effects\objects\weapons\covenant_carbine.foot
+nametag * fx\material_effects\objects\weapons\covenant_carbine_damage
+
+edittag objects\weapons\rifle\covenant_carbine\fx\reloading_damage.effe
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0.8 0.8 0 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0.1 0.1 0.06666667 0
+savetagchanges
+exitto tags
+edittag 0x25CE
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 1 1 -1 0
+setfield events[0].particlesystems[1].emitters[0].runtimemgpu.colors[1].data 1 1 -1 0
+setfield events[0].particlesystems[2].emitters[0].runtimemgpu.colors[0].data 1 1 0 1
+setfield events[0].particlesystems[3].emitters[0].runtimemgpu.colors[2].data 1 1 0 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 1 1 0 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 1 1 0 0
+setfield events[1].particlesystems[1].emitters[0].runtimemgpu.colors[0].data 1 1 0 1
+setfield events[1].particlesystems[2].emitters[0].runtimemgpu.colors[2].data 1 1 0 0
+setfield events[1].particlesystems[3].emitters[0].runtimemgpu.colors[1].data 1 1 0 0
+setfield events[1].particlesystems[4].emitters[0].runtimemgpu.colors[1].data 1 1 0 0
+setfield events[1].particlesystems[5].emitters[0].runtimemgpu.colors[1].data 1 1 -1 0
+setfield events[1].particlesystems[6].emitters[0].runtimemgpu.colors[1].data 1 1 -1 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_damage.cntl
+setfield contrail[0].compiledcolorfunctions[4].red 1
+setfield contrail[0].compiledcolorfunctions[4].green 1
+setfield contrail[0].compiledcolorfunctions[4].blue 0
+setfield contrail[1].compiledcolorfunctions[4].red 1
+setfield contrail[1].compiledcolorfunctions[4].green 1
+setfield contrail[1].compiledcolorfunctions[4].blue 0
+setfield contrail[1].compiledcolorfunctions[5].red 1
+setfield contrail[1].compiledcolorfunctions[5].green 1
+setfield contrail[1].compiledcolorfunctions[5].blue 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_damage.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_damage.cntl
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_damage.decs
+setfield decal[0].rendermethod.shaderproperties[0].arguments[0].values 1 1 0 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_damage.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\impact_damage.decs
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 1 1 0 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 1 1 0 0
+setfield events[0].particlesystems[5].emitters[0].runtimemgpu.colors[0].data 1 1 0 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\projectiles\carbine_slug\carbine_slug_v2.proj
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_damage.foot
+setfield attachments[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_damage.effe
+savetagchanges
+exitto tags
+edittag fx\material_effects\objects\weapons\covenant_carbine_damage.foot
+foreach effects foreach effects setfield sound objects\weapons\rifle\covenant_carbine\fx\impact_damage.effe
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_damage.weap
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_damage.foot
+setfield magazines[0].reloadingeffect objects\weapons\rifle\covenant_carbine\fx\reloading_damage.effe
+savetagchanges
+exitto tags
+
+echo Carbine Power
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.cntl
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_power
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_power
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.decs
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_power
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_power
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\reloading_power
+duplicatetag fx\material_effects\objects\weapons\covenant_carbine.foot
+nametag * fx\material_effects\objects\weapons\covenant_carbine_power
+
+edittag objects\weapons\rifle\covenant_carbine\fx\reloading_power.effe
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0.8 0 0 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0.1 0.07058824 0.06666667 0
+savetagchanges
+exitto tags
+edittag 0x2400
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 1 -1 -1 0
+setfield events[0].particlesystems[1].emitters[0].runtimemgpu.colors[1].data 1 -1 -1 0
+setfield events[0].particlesystems[2].emitters[0].runtimemgpu.colors[0].data 1 0 0 1
+setfield events[0].particlesystems[3].emitters[0].runtimemgpu.colors[2].data 1 0.5 0 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 1 0 0 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 1 0 0 0
+setfield events[1].particlesystems[1].emitters[0].runtimemgpu.colors[0].data 1 0 0 1
+setfield events[1].particlesystems[2].emitters[0].runtimemgpu.colors[2].data 1 0.5 0 0
+setfield events[1].particlesystems[3].emitters[0].runtimemgpu.colors[1].data 1 0 0 0
+setfield events[1].particlesystems[4].emitters[0].runtimemgpu.colors[1].data 1 0 0 0
+setfield events[1].particlesystems[5].emitters[0].runtimemgpu.colors[1].data 1 -1 -1 0
+setfield events[1].particlesystems[6].emitters[0].runtimemgpu.colors[1].data 1 -1 -1 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_power.cntl
+setfield contrail[0].compiledcolorfunctions[4].red 1
+setfield contrail[0].compiledcolorfunctions[4].green 0
+setfield contrail[0].compiledcolorfunctions[4].blue 0
+setfield contrail[1].compiledcolorfunctions[4].red 1
+setfield contrail[1].compiledcolorfunctions[4].green 0
+setfield contrail[1].compiledcolorfunctions[4].blue 0
+setfield contrail[1].compiledcolorfunctions[5].red 1
+setfield contrail[1].compiledcolorfunctions[5].green 0
+setfield contrail[1].compiledcolorfunctions[5].blue 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_power.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_power.cntl
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_power.decs
+setfield decal[0].rendermethod.shaderproperties[0].arguments[0].values 2 0 0 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_power.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\impact_power.decs
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 1 0 0 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 1 0 0 0
+setfield events[0].particlesystems[5].emitters[0].runtimemgpu.colors[0].data 1 0 0 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\projectiles\carbine_slug\carbine_slug_v6.proj
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_power.foot
+setfield attachments[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_power.effe
+savetagchanges
+exitto tags
+edittag fx\material_effects\objects\weapons\covenant_carbine_power.foot
+foreach effects foreach effects setfield sound objects\weapons\rifle\covenant_carbine\fx\impact_power.effe
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_power.weap
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_power.foot
+setfield magazines[0].reloadingeffect objects\weapons\rifle\covenant_carbine\fx\reloading_power.effe
+savetagchanges
+exitto tags
+
+echo Carbine Range
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.cntl
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_range
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_range
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.decs
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_range
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_range
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\reloading_range
+duplicatetag fx\material_effects\objects\weapons\covenant_carbine.foot
+nametag * fx\material_effects\objects\weapons\covenant_carbine_range
+
+edittag objects\weapons\rifle\covenant_carbine\fx\reloading_range.effe
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0.8 0 0.8 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0.1 0.06666667 0.1 0
+savetagchanges
+exitto tags
+edittag 0x25C5
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 1 -1 1 0
+setfield events[0].particlesystems[1].emitters[0].runtimemgpu.colors[1].data 1 -1 1 0
+setfield events[0].particlesystems[2].emitters[0].runtimemgpu.colors[0].data 1 0 1 1
+setfield events[0].particlesystems[3].emitters[0].runtimemgpu.colors[2].data 1 0.5 1 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 1 0 1 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 1 0 1 0
+setfield events[1].particlesystems[1].emitters[0].runtimemgpu.colors[0].data 1 0 1 1
+setfield events[1].particlesystems[2].emitters[0].runtimemgpu.colors[2].data 1 0.5 1 0
+setfield events[1].particlesystems[3].emitters[0].runtimemgpu.colors[1].data 1 0 1 0
+setfield events[1].particlesystems[4].emitters[0].runtimemgpu.colors[1].data 1 0 1 0
+setfield events[1].particlesystems[5].emitters[0].runtimemgpu.colors[1].data 1 -1 1 0
+setfield events[1].particlesystems[6].emitters[0].runtimemgpu.colors[1].data 1 -1 1 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_range.cntl
+setfield contrail[0].compiledcolorfunctions[4].red 1
+setfield contrail[0].compiledcolorfunctions[4].green 0
+setfield contrail[0].compiledcolorfunctions[4].blue 1
+setfield contrail[1].compiledcolorfunctions[4].red 1
+setfield contrail[1].compiledcolorfunctions[4].green 0
+setfield contrail[1].compiledcolorfunctions[4].blue 1
+setfield contrail[1].compiledcolorfunctions[5].red 1
+setfield contrail[1].compiledcolorfunctions[5].green 0
+setfield contrail[1].compiledcolorfunctions[5].blue 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_range.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_range.cntl
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_range.decs
+setfield decal[0].rendermethod.shaderproperties[0].arguments[0].values 1 0 1 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_range.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\impact_range.decs
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 1 0 1 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 1 0 1 0
+setfield events[0].particlesystems[5].emitters[0].runtimemgpu.colors[0].data 1 0 1 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\projectiles\carbine_slug\carbine_slug_v5.proj
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_range.foot
+setfield attachments[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_range.effe
+savetagchanges
+exitto tags
+edittag fx\material_effects\objects\weapons\covenant_carbine_range.foot
+foreach effects foreach effects setfield sound objects\weapons\rifle\covenant_carbine\fx\impact_range.effe
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_range.weap
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_range.foot
+setfield magazines[0].reloadingeffect objects\weapons\rifle\covenant_carbine\fx\reloading_range.effe
+savetagchanges
+exitto tags
+
+echo Carbine ROF
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.cntl
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_rof
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\projectile.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\projectile_rof
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.decs
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_rof
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\impact.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\impact_rof
+duplicatetag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+nametag * objects\weapons\rifle\covenant_carbine\fx\reloading_rof
+duplicatetag fx\material_effects\objects\weapons\covenant_carbine.foot
+nametag * fx\material_effects\objects\weapons\covenant_carbine_rof
+
+edittag objects\weapons\rifle\covenant_carbine\fx\reloading_rof.effe
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0.448 0.672 0.288 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0.06666667 0.1 0.07058824 0
+savetagchanges
+exitto tags
+edittag 0x25D7
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data -0.448 0.672 -0.288 0
+setfield events[0].particlesystems[1].emitters[0].runtimemgpu.colors[1].data -0.448 0.672 -0.288 0
+setfield events[0].particlesystems[2].emitters[0].runtimemgpu.colors[0].data 0.448 0.672 0.288 0
+setfield events[0].particlesystems[3].emitters[0].runtimemgpu.colors[2].data 0.224 0.672 0.288 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 0.448 0.672 0.288 0
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 0.448 0.672 0.288 0
+setfield events[1].particlesystems[1].emitters[0].runtimemgpu.colors[0].data 0.448 0.672 0.288 1
+setfield events[1].particlesystems[2].emitters[0].runtimemgpu.colors[2].data 0.224 0.672 0.288 0
+setfield events[1].particlesystems[3].emitters[0].runtimemgpu.colors[1].data 0.448 0.672 0.288 0
+setfield events[1].particlesystems[4].emitters[0].runtimemgpu.colors[1].data 0.448 0.672 0.288 0
+setfield events[1].particlesystems[5].emitters[0].runtimemgpu.colors[1].data -0.448 0.672 -0.288 0
+setfield events[1].particlesystems[6].emitters[0].runtimemgpu.colors[1].data -0.448 0.672 -0.288 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_rof.cntl
+setfield contrail[0].compiledcolorfunctions[4].red 0.448
+setfield contrail[0].compiledcolorfunctions[4].green 0.672
+setfield contrail[0].compiledcolorfunctions[4].blue 0.288
+setfield contrail[1].compiledcolorfunctions[4].red 0.448
+setfield contrail[1].compiledcolorfunctions[4].green 0.672
+setfield contrail[1].compiledcolorfunctions[4].blue 0.288
+setfield contrail[1].compiledcolorfunctions[5].red 0.448
+setfield contrail[1].compiledcolorfunctions[5].green 0.672
+setfield contrail[1].compiledcolorfunctions[5].blue 0.288
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\projectile_rof.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_rof.cntl
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_rof.decs
+setfield decal[0].rendermethod.shaderproperties[0].arguments[0].values 0.448 0.672 0.288 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\fx\impact_rof.effe
+setfield events[0].parts[0].type objects\weapons\rifle\covenant_carbine\fx\impact_rof.decs
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[1].data 0.448 0.672 0.288 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 0.448 0.672 0.288 0
+setfield events[0].particlesystems[5].emitters[0].runtimemgpu.colors[0].data 0.448 0.672 0.288 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\covenant_carbine\projectiles\carbine_slug\carbine_slug_v4.proj
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_rof.foot
+setfield attachments[0].type objects\weapons\rifle\covenant_carbine\fx\projectile_rof.effe
+savetagchanges
+exitto tags
+edittag fx\material_effects\objects\weapons\covenant_carbine_rof.foot
+foreach effects foreach effects setfield sound objects\weapons\rifle\covenant_carbine\fx\impact_rof.effe
+savetagchanges
+exitto tags
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_rof.weap
+setfield materialeffects fx\material_effects\objects\weapons\covenant_carbine_rof.foot
+setfield magazines[0].reloadingeffect objects\weapons\rifle\covenant_carbine\fx\reloading_rof.effe
+savetagchanges
+exitto tags
+
+echo Plasma Rifle
+opencachefile D:\halo3odstretail\maps\h100.map
+nameblamtag objects\weapons\rifle\plasma_rifle_red\projectiles\plasma_rifle_red.projectile objects\weapons\rifle\plasma_rifle\projectiles\plasma_rifle_bolt_v6
+porttag replace objects\weapons\rifle\plasma_rifle\projectiles\plasma_rifle_bolt_v6.proj
+porttag objects\weapons\rifle\plasma_rifle_red\fx\firing.effect
+porttag objects\weapons\rifle\plasma_rifle_red\fx\firing.ligh
+porttag objects\weapons\rifle\plasma_rifle_red\fx\overheated.effect
+exit
+
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_power.weap
+setfield materialeffects fx\material_effects\objects\weapons\plasma_rifle_red.foot
+setfield attachments[0].type objects\weapons\rifle\plasma_rifle_red\fx\firing.ligh
+setfield barrels[0].firingeffects[0].firingeffect2 objects\weapons\rifle\plasma_rifle_red\fx\firing.effect
+setfield overheated objects\weapons\rifle\plasma_rifle_red\fx\overheated.effect
+savetagchanges
+exitto tags
+
+echo Plasma Pistol
+duplicatetag objects\weapons\pistol\plasma_pistol\fx\charged\projectile.effe
+nametag * objects\weapons\pistol\plasma_pistol\fx\charged\projectile_power
+duplicatetag objects\weapons\pistol\plasma_pistol\fx\charged\impact.decs
+nametag * objects\weapons\pistol\plasma_pistol\fx\charged\impact_power
+duplicatetag objects\weapons\pistol\plasma_pistol\fx\charged\impact.effe
+nametag * objects\weapons\pistol\plasma_pistol\fx\charged\impact_power
+duplicatetag fx\material_effects\objects\weapons\plasma_pistol_charged_bolt.foot
+nametag * fx\material_effects\objects\weapons\plasma_pistol_charged_bolt_power
+
+edittag objects\weapons\pistol\plasma_pistol\fx\charged\projectile_power.effe
+setfield events[0].parts[0].type objects\weapons\rifle\plasma_rifle_red\fx\projectile.ltvl
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 1 0 0.5 0
+setfield events[0].particlesystems[1].emitters[0].runtimemgpu.colors[0].data 1 0.07058824 0.07450981 0
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\fx\charged\impact_power.decs
+setfield decal[0].rendermethod.shaderproperties[0].arguments[0].values 0.9568628 0.0509804 0.145098 1
+setfield decal[1].rendermethod.shaderproperties[0].arguments[0].values 0.9568628 0.0509804 0.145098 1
+savetagchanges
+exitto tags
+edittag objects\weapons\pistol\plasma_pistol\fx\charged\impact_power.effe
+setfield events[0].parts[0].type objects\weapons\pistol\plasma_pistol\fx\charged\impact_power.decs
+setfield events[0].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 1 0.7450981 0.7960784 0
+setfield events[0].particlesystems[1].emitters[0].runtimemgpu.colors[1].data 0.6235294 0.08235294 0.09019608 0
+setfield events[0].particlesystems[2].emitters[0].runtimemgpu.colors[1].data 0.9254902 0.05490196 0.1882353
+setfield events[0].particlesystems[3].emitters[0].runtimemgpu.colors[0].data 1 0.01568628 0.1215686 0
+setfield events[0].particlesystems[4].emitters[0].runtimemgpu.colors[0].data 1 0.07843138 0.2392157 0
+setfield events[0].particlesystems[5].emitters[0].runtimemgpu.colors[1].data 1 0.1764706 0.3176471 0
+setfield events[1].particlesystems[0].emitters[0].runtimemgpu.colors[0].data 1 0 0.5 0
+savetagchanges
+exitto tags
+edittag fx\material_effects\objects\weapons\plasma_pistol_charged_bolt_power.foot
+foreach effects foreach effects setfield sound objects\weapons\pistol\plasma_pistol\fx\charged\impact_power.effe
+savetagchanges
+exitto tags
+edittag objects\weapons\pistol\plasma_pistol\projectiles\plasma_pistol_charged_bolt_v6.proj
+setfield materialeffects fx\material_effects\objects\weapons\plasma_pistol_charged_bolt_power.foot
+setfield attachments[0].type objects\weapons\rifle\plasma_rifle_red\fx\firing.ligh
+setfield attachments[2].type objects\weapons\pistol\plasma_pistol\fx\charged\projectile_power.effe
+savetagchanges
+exitto tags
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_power.weap
+setfield materialeffects fx\material_effects\objects\weapons\plasma_rifle_red.foot
+setfield attachments[3].type objects\weapons\rifle\plasma_rifle_red\fx\firing.ligh
+setfield barrels[0].initialprojectile objects\weapons\rifle\plasma_rifle\projectiles\plasma_rifle_bolt_v6.proj
+setfield barrels[0].firingeffects[0].firingeffect2 objects\weapons\rifle\plasma_rifle_red\fx\firing.effect
+setfield overheated objects\weapons\rifle\plasma_rifle_red\fx\overheated.effect
+savetagchanges
+exitto tags
+
+savetagnames
+dumplog Projectiles.log
