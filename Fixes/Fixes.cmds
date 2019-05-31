@@ -31,6 +31,12 @@ SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_b
 SaveTagChanges
 ExitTo tags
 
+EditTag objects\weapons\rifle\plasma_rifle_red\fx\particles\overheated_gas.particle
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
 EditTag objects\weapons\support_low\sentinel_gun\fx\particles\overheated_gas.particle
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
@@ -41,6 +47,12 @@ EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_large_zfade.prt3
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_large.bitmap
 SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
 SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\particles\overheated_steam
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_large.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
 SaveTagChanges
 ExitTo tags
 
