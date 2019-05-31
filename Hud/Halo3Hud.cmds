@@ -1815,7 +1815,7 @@ pasteblockelements hudwidgets 0
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].offset 10 107
 setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].scale 1.2 1.2
 setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic32
+setfield hudwidgets[4].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[4].bitmapwidgets[0].widgetindex 14
 setfield hudwidgets[4].bitmapwidgets[0].flags none
 setfield hudwidgets[4].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
@@ -1824,7 +1824,7 @@ setfield hudwidgets[6].placementdata[0].offset 30 0
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset -14 3
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 1.2 1.2
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic32
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic36
 setfield hudwidgets[6].bitmapwidgets[0].widgetindex 14
 setfield hudwidgets[6].bitmapwidgets[0].flags none
 setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
