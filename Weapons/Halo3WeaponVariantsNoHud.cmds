@@ -513,8 +513,6 @@ nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo
 duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage
 duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_accuracy
-duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof
 duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range
@@ -525,8 +523,6 @@ nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_accuracy
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range
@@ -534,8 +530,6 @@ duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\ones_ammo
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\ones_damage
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\ones_accuracy
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\ones_rof
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
@@ -546,8 +540,6 @@ duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\tens_ammo
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\tens_damage
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\tens_accuracy
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
 nametag * objects\weapons\rifle\battle_rifle\shaders\tens_rof
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
@@ -564,47 +556,6 @@ savetagchanges
 exitto tags
 edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
 importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.dds
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_accuracy.rmsh
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
-setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
-setargument base_map 1 1 0 0
-setargument detail_map 10 10 0 0
-setargument color_mask_map 1 1 1 1
-setargument albedo_color 0 0.05 0 0
-setargument bump_map 1 1 0 0
-setargument bump_detail_map 15 15 0 0
-setargument bump_detail_coefficient 1 1 1 1
-setargument diffuse_coefficient 2 2 2 2
-setargument specular_coefficient 1 1 1 1
-setargument specular_tint 0.5372549 0.5411765 0.4941177 1
-setargument fresnel_color 0.5450981 0.5960785 0.7411765 1
-setargument use_fresnel_color_environment 0 0 0 0
-setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
-setargument fresnel_power 1 1 1 1
-setargument roughness 0.2 0.2 0.2 0.2
-setargument area_specular_contribution 0.2 0.2 0.2 0.2
-setargument analytical_specular_contribution 1 1 1 1
-setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
-setargument material_texture 1 1 0 0
-setargument albedo_blend_with_specular_tint 0 0 0 0
-setargument albedo_blend 0.75 0.75 0.75 0.75
-setargument analytical_anti_shadow_control 0 0 0 0
-setargument rim_fresnel_coefficient 0 0 0 0
-setargument rim_fresnel_color 1 1 1 1
-setargument rim_fresnel_power 3 3 3 3
-setargument rim_fresnel_albedo_blend 0 0 0 0
-setargument env_tint_color 0.3137255 0.3490196 0.454902 1
-setargument env_roughness_scale 2 2 2 2
-setargument self_illum_map 1 1 0 0
-setargument self_illum_color 0 1 0 1
-setargument self_illum_intensity 3 3 3 3
 savetagchanges
 exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
@@ -812,11 +763,6 @@ setargument self_illum_color 0.112 0.168 0.072 1
 setargument self_illum_intensity 3 3 3 3
 savetagchanges
 exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_accuracy.rmsh
-setfield shaderproperties[0].arguments[7].values 0 1 0 1
-setfield shaderproperties[0].arguments[23].values 0.1607843 0.254902 0.1803922 1
-savetagchanges
-exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
 setfield shaderproperties[0].arguments[7].values 0 0 1 1
 setfield shaderproperties[0].arguments[23].values 0.1607843 0.1803922 0.254902 1
@@ -835,10 +781,6 @@ exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
 setfield shaderproperties[0].arguments[7].values 0.112 0.168 0.072 1
 setfield shaderproperties[0].arguments[23].values 0.254902 0.1803922 0.1607843 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\ones_accuracy.rmsh
-setfield shaderproperties[0].arguments[2].values 0 1 0 1
 savetagchanges
 exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
@@ -861,10 +803,6 @@ edittag objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
 setfield shaderproperties[0].arguments[2].values 1.12 1.68 0.72 1
 savetagchanges
 exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\tens_accuracy.rmsh
-setfield shaderproperties[0].arguments[2].values 0 1 0 1
-savetagchanges
-exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
 setfield shaderproperties[0].arguments[2].values 0 0 1 1
 savetagchanges
@@ -883,22 +821,6 @@ savetagchanges
 exitto tags
 edittag objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
 setfield shaderproperties[0].arguments[2].values 1.12 1.68 0.72 1
-savetagchanges
-exitto tags
-importtag 0x2591 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
-edittag 0x2591
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_accuracy.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_accuracy.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_accuracy.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_accuracy.rmsh
-savetagchanges
-exitto tags
-importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v2.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v2.mode
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_accuracy.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_accuracy.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_accuracy.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_accuracy.rmsh
 savetagchanges
 exitto tags
 importtag 0x2368 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
@@ -998,6 +920,441 @@ savetagchanges
 exitto tags
 edittag objects\weapons\rifle\battle_rifle\battle_rifle_damage.weap
 setfield specialhudversion power36
+savetagchanges
+exitto tags
+
+echo Installing Anniversary Battle Rifle
+CreateTag "mode" 0x0FAE
+NameTag 0x0FAE objects\weapons\rifle\battle_rifle\fp_anniversary_battle_rifle\fp_anniversary_battle_rifle
+ImportTag 0x0FAE "tags\objects\weapons\rifle\battle_rifle\fp_anniversary_battle_rifle\fp_anniversary_battle_rifle.render_model"
+CreateTag "rmsh" 0x0006
+NameTag 0x0006 objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_metal
+ImportTag 0x0006 "tags\objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_metal.shader"
+CreateTag "rmsh" 0x030B
+NameTag 0x030B objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens_glass
+ImportTag 0x030B "tags\objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens_glass.shader"
+CreateTag "rmsh" 0x0311
+NameTag 0x0311 objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens
+ImportTag 0x0311 "tags\objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens.shader"
+CreateTag "rmsh" 0x0317
+NameTag 0x0317 objects\weapons\rifle\battle_rifle\shaders\anniversary_tens
+ImportTag 0x0317 "tags\objects\weapons\rifle\battle_rifle\shaders\anniversary_tens.shader"
+CreateTag "rmsh" 0x031C
+NameTag 0x031C objects\weapons\rifle\battle_rifle\shaders\anniversary_ones
+ImportTag 0x031C "tags\objects\weapons\rifle\battle_rifle\shaders\anniversary_ones.shader"
+CreateTag "rmsh" 0x031D
+NameTag 0x031D objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens_glass2
+ImportTag 0x031D "tags\objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens_glass2.shader"
+CreateTag "rmsh" 0x0322
+NameTag 0x0322 objects\weapons\rifle\battle_rifle\shaders\anniversary_display
+ImportTag 0x0322 "tags\objects\weapons\rifle\battle_rifle\shaders\anniversary_display.shader"
+CreateTag "rmdf" 0x0007
+NameTag 0x0007 shaders\shaderms30
+ImportTag 0x0007 "tags\shaders\shaderms30.render_method_definition"
+CreateTag "bitm" 0x0302
+NameTag 0x0302 objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_base_map
+ImportTag 0x0302 "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_base_map.bitmap"
+CreateTag "bitm" 0x0303
+NameTag 0x0303 objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_bump_map
+ImportTag 0x0303 "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_bump_map.bitmap"
+CreateTag "bitm" 0x0304
+ImportTag 0x0304 "tags\0x0304.bitmap"
+CreateTag "bitm" 0x0305
+NameTag 0x0305 objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_self_illum_map
+ImportTag 0x0305 "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_self_illum_map.bitmap"
+CreateTag "bitm" 0x0306
+NameTag 0x0306 objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_specular_mask_texture
+ImportTag 0x0306 "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_specular_mask_texture.bitmap"
+CreateTag "bitm" 0x0307
+NameTag 0x0307 objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_material_texture
+ImportTag 0x0307 "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_material_texture.bitmap"
+CreateTag "rmt2" 0x0308
+NameTag 0x0308 shaders\shader_templates\_0_1_1_3_1_2_1_0_0_1_0_0
+ImportTag 0x0308 "tags\shaders\shader_templates\_0_1_1_3_1_2_1_0_0_1_0_0.render_method_template"
+CreateTag "bitm" 0x030C
+ImportTag 0x030C "tags\0x030C.bitmap"
+CreateTag "bitm" 0x030D
+ImportTag 0x030D "tags\0x030D.bitmap"
+CreateTag "bitm" 0x000B
+ImportTag 0x000B "tags\0x000B.bitmap"
+CreateTag "rmt2" 0x030E
+NameTag 0x030E shaders\shader_templates\_0_1_0_0_1_4_1_1_1_1_0_0
+ImportTag 0x030E "tags\shaders\shader_templates\_0_1_0_0_1_4_1_1_1_1_0_0.render_method_template"
+CreateTag "bitm" 0x000C
+ImportTag 0x000C "tags\0x000C.bitmap"
+CreateTag "bitm" 0x02EC
+ImportTag 0x02EC "tags\0x02EC.bitmap"
+CreateTag "bitm" 0x0312
+ImportTag 0x0312 "tags\0x0312.bitmap"
+CreateTag "bitm" 0x0313
+ImportTag 0x0313 "tags\0x0313.bitmap"
+CreateTag "rmt2" 0x0314
+NameTag 0x0314 shaders\shader_templates\_0_1_0_0_1_0_1_0_1_1_0_0
+ImportTag 0x0314 "tags\shaders\shader_templates\_0_1_0_0_1_0_1_0_1_1_0_0.render_method_template"
+CreateTag "bitm" 0x0318
+NameTag 0x0318 objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate
+ImportTag 0x0318 "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate.bitmap"
+CreateTag "rmt2" 0x0319
+NameTag 0x0319 shaders\shader_templates\_2_0_0_0_0_0_1_1_0_1_0_0
+ImportTag 0x0319 "tags\shaders\shader_templates\_2_0_0_0_0_0_1_1_0_1_0_0.render_method_template"
+CreateTag "bitm" 0x031E
+ImportTag 0x031E "tags\0x031E.bitmap"
+CreateTag "rmt2" 0x031F
+NameTag 0x031F shaders\shader_templates\_0_0_0_0_0_0_0_4_0_1_0_0
+ImportTag 0x031F "tags\shaders\shader_templates\_0_0_0_0_0_0_0_4_0_1_0_0.render_method_template"
+CreateTag "bitm" 0x0323
+NameTag 0x0323 objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_display_plate
+ImportTag 0x0323 "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_display_plate.bitmap"
+CreateTag "rmop" 0x0008
+ImportTag 0x0008 "tags\0x0008.render_method_option"
+CreateTag "rmop" 0x0009
+ImportTag 0x0009 "tags\0x0009.render_method_option"
+CreateTag "rmop" 0x000E
+ImportTag 0x000E "tags\0x000E.render_method_option"
+CreateTag "rmop" 0x000F
+ImportTag 0x000F "tags\0x000F.render_method_option"
+CreateTag "rmop" 0x0010
+ImportTag 0x0010 "tags\0x0010.render_method_option"
+CreateTag "rmop" 0x005D
+ImportTag 0x005D "tags\0x005D.render_method_option"
+CreateTag "rmop" 0x0177
+ImportTag 0x0177 "tags\0x0177.render_method_option"
+CreateTag "rmop" 0x0195
+ImportTag 0x0195 "tags\0x0195.render_method_option"
+CreateTag "rmop" 0x0196
+ImportTag 0x0196 "tags\0x0196.render_method_option"
+CreateTag "rmop" 0x0197
+ImportTag 0x0197 "tags\0x0197.render_method_option"
+CreateTag "rmop" 0x0199
+ImportTag 0x0199 "tags\0x0199.render_method_option"
+CreateTag "rmop" 0x019A
+ImportTag 0x019A "tags\0x019A.render_method_option"
+CreateTag "rmop" 0x019B
+ImportTag 0x019B "tags\0x019B.render_method_option"
+CreateTag "rmop" 0x019C
+ImportTag 0x019C "tags\0x019C.render_method_option"
+CreateTag "rmop" 0x019D
+ImportTag 0x019D "tags\0x019D.render_method_option"
+CreateTag "rmop" 0x01DB
+ImportTag 0x01DB "tags\0x01DB.render_method_option"
+CreateTag "rmop" 0x01DC
+ImportTag 0x01DC "tags\0x01DC.render_method_option"
+CreateTag "rmop" 0x01E0
+ImportTag 0x01E0 "tags\0x01E0.render_method_option"
+CreateTag "rmop" 0x01E1
+ImportTag 0x01E1 "tags\0x01E1.render_method_option"
+CreateTag "rmop" 0x01E2
+ImportTag 0x01E2 "tags\0x01E2.render_method_option"
+CreateTag "rmop" 0x01E4
+ImportTag 0x01E4 "tags\0x01E4.render_method_option"
+CreateTag "rmop" 0x01E5
+ImportTag 0x01E5 "tags\0x01E5.render_method_option"
+CreateTag "rmop" 0x01E6
+ImportTag 0x01E6 "tags\0x01E6.render_method_option"
+CreateTag "rmop" 0x01E7
+ImportTag 0x01E7 "tags\0x01E7.render_method_option"
+CreateTag "rmop" 0x01E8
+ImportTag 0x01E8 "tags\0x01E8.render_method_option"
+CreateTag "rmop" 0x02E1
+ImportTag 0x02E1 "tags\0x02E1.render_method_option"
+CreateTag "rmop" 0x02E2
+ImportTag 0x02E2 "tags\0x02E2.render_method_option"
+CreateTag "rmop" 0x02E3
+ImportTag 0x02E3 "tags\0x02E3.render_method_option"
+CreateTag "rmop" 0x02E4
+ImportTag 0x02E4 "tags\0x02E4.render_method_option"
+CreateTag "rmop" 0x02E5
+ImportTag 0x02E5 "tags\0x02E5.render_method_option"
+CreateTag "rmop" 0x02E6
+ImportTag 0x02E6 "tags\0x02E6.render_method_option"
+CreateTag "rmop" 0x02E7
+ImportTag 0x02E7 "tags\0x02E7.render_method_option"
+CreateTag "rmop" 0x02E8
+ImportTag 0x02E8 "tags\0x02E8.render_method_option"
+CreateTag "rmop" 0x02E9
+ImportTag 0x02E9 "tags\0x02E9.render_method_option"
+CreateTag "rmop" 0x02EB
+ImportTag 0x02EB "tags\0x02EB.render_method_option"
+CreateTag "rmop" 0x02ED
+ImportTag 0x02ED "tags\0x02ED.render_method_option"
+CreateTag "rmop" 0x02EE
+ImportTag 0x02EE "tags\0x02EE.render_method_option"
+CreateTag "rmop" 0x02F0
+ImportTag 0x02F0 "tags\0x02F0.render_method_option"
+CreateTag "rmop" 0x02F1
+ImportTag 0x02F1 "tags\0x02F1.render_method_option"
+CreateTag "rmop" 0x02F2
+ImportTag 0x02F2 "tags\0x02F2.render_method_option"
+CreateTag "rmop" 0x02F4
+ImportTag 0x02F4 "tags\0x02F4.render_method_option"
+CreateTag "rmop" 0x02F5
+ImportTag 0x02F5 "tags\0x02F5.render_method_option"
+CreateTag "rmop" 0x02F6
+ImportTag 0x02F6 "tags\0x02F6.render_method_option"
+CreateTag "rmop" 0x02F8
+ImportTag 0x02F8 "tags\0x02F8.render_method_option"
+CreateTag "rmop" 0x02F9
+ImportTag 0x02F9 "tags\0x02F9.render_method_option"
+CreateTag "rmop" 0x02FA
+ImportTag 0x02FA "tags\0x02FA.render_method_option"
+CreateTag "rmop" 0x02FB
+ImportTag 0x02FB "tags\0x02FB.render_method_option"
+CreateTag "rmop" 0x02FD
+ImportTag 0x02FD "tags\0x02FD.render_method_option"
+CreateTag "rmop" 0x02FE
+ImportTag 0x02FE "tags\0x02FE.render_method_option"
+CreateTag "rmop" 0x02FF
+ImportTag 0x02FF "tags\0x02FF.render_method_option"
+CreateTag "glps" 0x0300
+ImportTag 0x0300 "tags\0x0300.global_pixel_shader"
+CreateTag "glvs" 0x0301
+ImportTag 0x0301 "tags\0x0301.global_vertex_shader"
+CreateTag "vtsh" 0x0309
+NameTag 0x0309 shaders\shader_templates\_0_1_1_3_1_2_1_0_0_1_0_0
+ImportTag 0x0309 "tags\shaders\shader_templates\_0_1_1_3_1_2_1_0_0_1_0_0.vertex_shader"
+CreateTag "pixl" 0x030A
+NameTag 0x030A shaders\shader_templates\_0_1_1_3_1_2_1_0_0_1_0_0
+ImportTag 0x030A "tags\shaders\shader_templates\_0_1_1_3_1_2_1_0_0_1_0_0.pixel_shader"
+CreateTag "vtsh" 0x030F
+NameTag 0x030F shaders\shader_templates\_0_1_0_0_1_4_1_1_1_1_0_0
+ImportTag 0x030F "tags\shaders\shader_templates\_0_1_0_0_1_4_1_1_1_1_0_0.vertex_shader"
+CreateTag "pixl" 0x0310
+NameTag 0x0310 shaders\shader_templates\_0_1_0_0_1_4_1_1_1_1_0_0
+ImportTag 0x0310 "tags\shaders\shader_templates\_0_1_0_0_1_4_1_1_1_1_0_0.pixel_shader"
+CreateTag "vtsh" 0x0315
+NameTag 0x0315 shaders\shader_templates\_0_1_0_0_1_0_1_0_1_1_0_0
+ImportTag 0x0315 "tags\shaders\shader_templates\_0_1_0_0_1_0_1_0_1_1_0_0.vertex_shader"
+CreateTag "pixl" 0x0316
+NameTag 0x0316 shaders\shader_templates\_0_1_0_0_1_0_1_0_1_1_0_0
+ImportTag 0x0316 "tags\shaders\shader_templates\_0_1_0_0_1_0_1_0_1_1_0_0.pixel_shader"
+CreateTag "vtsh" 0x031A
+NameTag 0x031A shaders\shader_templates\_2_0_0_0_0_0_1_1_0_1_0_0
+ImportTag 0x031A "tags\shaders\shader_templates\_2_0_0_0_0_0_1_1_0_1_0_0.vertex_shader"
+CreateTag "pixl" 0x031B
+NameTag 0x031B shaders\shader_templates\_2_0_0_0_0_0_1_1_0_1_0_0
+ImportTag 0x031B "tags\shaders\shader_templates\_2_0_0_0_0_0_1_1_0_1_0_0.pixel_shader"
+CreateTag "vtsh" 0x0320
+NameTag 0x0320 shaders\shader_templates\_0_0_0_0_0_0_0_4_0_1_0_0
+ImportTag 0x0320 "tags\shaders\shader_templates\_0_0_0_0_0_0_0_4_0_1_0_0.vertex_shader"
+CreateTag "pixl" 0x0321
+NameTag 0x0321 shaders\shader_templates\_0_0_0_0_0_0_0_4_0_1_0_0
+ImportTag 0x0321 "tags\shaders\shader_templates\_0_0_0_0_0_0_0_4_0_1_0_0.pixel_shader"
+CreateTag "bitm" 0x0198
+ImportTag 0x0198 "tags\0x0198.bitmap"
+CreateTag "bitm" 0x01A4
+ImportTag 0x01A4 "tags\0x01A4.bitmap"
+CreateTag "bitm" 0x01E3
+ImportTag 0x01E3 "tags\0x01E3.bitmap"
+CreateTag "bitm" 0x0293
+ImportTag 0x0293 "tags\0x0293.bitmap"
+CreateTag "bitm" 0x02EA
+ImportTag 0x02EA "tags\0x02EA.bitmap"
+CreateTag "bitm" 0x02EF
+ImportTag 0x02EF "tags\0x02EF.bitmap"
+CreateTag "bitm" 0x02F3
+ImportTag 0x02F3 "tags\0x02F3.bitmap"
+CreateTag "bitm" 0x02F7
+ImportTag 0x02F7 "tags\0x02F7.bitmap"
+CreateTag "bitm" 0x02FC
+ImportTag 0x02FC "tags\0x02FC.bitmap"
+EditTag 0x0FAE
+SetField Geometry.Resource.Page.Index -1
+SetField Geometry.Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\fp_anniversary_battle_rifle\fp_anniversary_battle_rifle_geometry.render_geometry_api_resource_definition"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0302
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_base_map_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0303
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_bump_map_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0304
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x0304_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0305
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_self_illum_map_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0306
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_specular_mask_texture_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0307
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_material_texture_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x030C
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x030C_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x030D
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x030D_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x000B
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x000B_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x000C
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x000C_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x02EC
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x02EC_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0312
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x0312_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0313
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x0313_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0318
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_0.bitmap_texture_interop_resource"
+SetField Resources[1].Resource.Page.Index -1
+SetField Resources[1].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_1.bitmap_texture_interop_resource"
+SetField Resources[2].Resource.Page.Index -1
+SetField Resources[2].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_2.bitmap_texture_interop_resource"
+SetField Resources[3].Resource.Page.Index -1
+SetField Resources[3].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_3.bitmap_texture_interop_resource"
+SetField Resources[4].Resource.Page.Index -1
+SetField Resources[4].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_4.bitmap_texture_interop_resource"
+SetField Resources[5].Resource.Page.Index -1
+SetField Resources[5].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_5.bitmap_texture_interop_resource"
+SetField Resources[6].Resource.Page.Index -1
+SetField Resources[6].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_6.bitmap_texture_interop_resource"
+SetField Resources[7].Resource.Page.Index -1
+SetField Resources[7].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_7.bitmap_texture_interop_resource"
+SetField Resources[8].Resource.Page.Index -1
+SetField Resources[8].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_8.bitmap_texture_interop_resource"
+SetField Resources[9].Resource.Page.Index -1
+SetField Resources[9].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_numbers_plate_image_9.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x031E
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x031E_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0323
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_display_plate_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0198
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x0198_image_0.bitmap_texture_interop_resource"
+SetField Resources[1].Resource.Page.Index -1
+SetField Resources[1].Resource ResourcesB "tags\0x0198_image_1.bitmap_texture_interop_resource"
+SetField Resources[2].Resource.Page.Index -1
+SetField Resources[2].Resource ResourcesB "tags\0x0198_image_2.bitmap_texture_interop_resource"
+SetField Resources[3].Resource.Page.Index -1
+SetField Resources[3].Resource ResourcesB "tags\0x0198_image_3.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x01A4
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x01A4_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x01E3
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x01E3_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x0293
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x0293_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x02EA
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x02EA_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x02EF
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x02EF_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x02F3
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x02F3_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x02F7
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x02F7_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+EditTag 0x02FC
+SetField Resources[0].Resource.Page.Index -1
+SetField Resources[0].Resource ResourcesB "tags\0x02FC_image.bitmap_texture_interop_resource"
+SaveTagChanges
+ExitTo tags
+edittag objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_metal.rmsh
+setargument diffuse_coefficient 0 0 0 0
+setargument specular_coefficient 0.4 0.4 0.4 0.4
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens_glass.rmsh
+setargument self_illum_map 0.1 1.45 1.45 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens.rmsh
+setargument roughness 0.6 0.6 0.6 0.6
+setargument self_illum_map 0.1 0.1 1.45 1.45
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\anniversary_battle_rifle_lens_glass2.rmsh
+setargument albedo_color 0.05 0.1 0.05 0
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\anniversary_tens.rmsh
+setargument self_illum_color 1.055686 3.8784314 3.9568628 3
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\anniversary_ones.rmsh
+setargument self_illum_color 1.055686 3.8784314 3.9568628 3
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_base_map.bitm
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_base_map.dds
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_bump_map.bitm
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_bump_map.dds
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_material_texture.bitm
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_material_texture.dds
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_self_illum_map.bitm
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\anniversary_battle_rifle_self_illum_map.dds
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_v3.hlmt
+setfield rendermodel objects\weapons\rifle\battle_rifle\fp_anniversary_battle_rifle\fp_anniversary_battle_rifle.mode
 savetagchanges
 exitto tags
 
@@ -1321,7 +1678,6 @@ exitto tags
 edittag objects\weapons\rifle\smg\smg_power.weap
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\smg_silenced\fp_smg_silenced\fp_smg_silenced.mode
 setfield specialhudversion damage32
-setfield model objects\weapons\rifle\smg_silenced\smg_silenced.hlmt
 savetagchanges
 exitto tags
 edittag objects\weapons\rifle\smg\smg_damage.weap
@@ -1344,7 +1700,7 @@ duplicatetag objects\weapons\rifle\dmr\shaders\dmr_power.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\dmr_rof
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\ones
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones_accuracy.rmsh
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\ones_accuracy
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\ones_ammo
@@ -1356,7 +1712,7 @@ duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\ones_rof
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\tens
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens_accuracy.rmsh
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\tens_accuracy   
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\tens_ammo       
@@ -1366,6 +1722,8 @@ duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\tens_power      
 duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
 nametag * objects\weapons\rifle\dmr\shaders\tens_rof
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
+nametag * objects\weapons\rifle\dmr\shaders\dmr_lens_accuracy
 createtag bitm
 nametag * objects\weapons\rifle\dmr\bitmaps\dmr_color_mask
 edittag objects\weapons\rifle\dmr\shaders\ones.rmsh
@@ -1424,6 +1782,11 @@ exitto tags
 edittag objects\weapons\rifle\dmr\shaders\tens_rof.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\assault_rifle\bitmaps\numbers_plate.bitm
 setargument self_illum_color 1.62 2.18 1.22 10
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\dmr\shaders\dmr_lens_accuracy.rmsh
+setfield shaderproperties[0].arguments[7].values 0 1 0 1
+setfield shaderproperties[0].arguments[23].values 0.1607843 0.254902 0.1803922 1
 savetagchanges
 exitto tags
 edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_v1\bitmaps\[01]_rmsh\bump.bitm
@@ -1533,7 +1896,7 @@ replacerendergeometry tags\objects\weapons\rifle\dmr\dmr.dae
 setfield nodes[2].defaulttranslation 0.0036 0.003885493 0.05554584
 setfield nodes[2].inverseposition -0.004 0.05082826 -0.02273599
 setfield materials[0].rendermethod objects\weapons\rifle\dmr\shaders\dmr_accuracy.rmsh
-setfield materials[1].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_accuracy.rmsh
+setfield materials[1].rendermethod objects\weapons\rifle\dmr\shaders\dmr_lens_accuracy.rmsh
 setfield materials[2].rendermethod objects\weapons\rifle\sniper_rifle\shaders\sniper_rifle_glass.rmsh
 setfield materials[3].rendermethod objects\weapons\rifle\dmr\shaders\dmr_accuracy.rmsh
 setfield materials[4].rendermethod objects\weapons\rifle\dmr\shaders\dmr_accuracy.rmsh
