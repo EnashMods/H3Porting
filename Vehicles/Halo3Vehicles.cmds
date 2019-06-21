@@ -66,13 +66,8 @@ porttag replace objects\vehicles\brute_chopper\garbage\rotor_r\rotor_r.mode
 porttag replace objects\vehicles\brute_chopper\garbage\seat\seat.mode
 
 echo Installing Ghost
-porttag replace objects\vehicles\ghost\garbage\anti_grav\anti_grav.mode
-porttag replace objects\vehicles\ghost\garbage\hull_shell\hull_shell.mode
-porttag replace objects\vehicles\ghost\garbage\l_gun\l_gun.mode
-porttag replace objects\vehicles\ghost\garbage\l_wing_shell\l_wing_shell.mode
-porttag replace objects\vehicles\ghost\garbage\seat\seat.mode
-porttag replace objects\vehicles\ghost\ghost.mode
-porttag single replace objects\vehicles\ghost\ghost.hlmt
+nameblamtag objects\vehicles\ghost\ghost.coll objects\vehicles\ghost\ghost_h3
+porttag replace objects\vehicles\ghost\ghost.hlmt
 
 echo Installing Mongoose
 porttag replace objects\vehicles\mongoose\mongoose.mode
@@ -110,27 +105,10 @@ porttag replace objects\vehicles\scorpion\turrets\anti_infantry\garbage\anti_gun
 echo Installing Warthog and friends
 porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun.hlmt
 porttag replace objects\vehicles\warthog\turrets\gauss\gauss.hlmt
-porttag replace objects\vehicles\warthog\warthog.mode
-porttag replace objects\scenery\human\military\warthog_drop_palette\warthog_drop_palette.mode
-porttag replace objects\vehicles\warthog\garbage\hood\hood.mode
-porttag replace objects\vehicles\warthog\garbage\hubcap\hubcap.mode
-porttag replace objects\vehicles\warthog\garbage\lb_fender\lb_fender.mode
-porttag replace objects\vehicles\warthog\garbage\lf_fender\lf_fender.mode
-porttag replace objects\vehicles\warthog\garbage\rb_fender\rb_fender.mode
-porttag replace objects\vehicles\warthog\garbage\rf_fender\rf_fender.mode
-porttag replace objects\vehicles\warthog\garbage\sailpanel\sailpanel.mode
-porttag replace objects\vehicles\warthog\garbage\tire\tire.mode
-porttag replace objects\vehicles\warthog\garbage\winch\winch.mode
-porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage.mode
-porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage.mode
-porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage.mode
-porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage.mode
-porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage.mode
+porttag replace objects\vehicles\warthog\warthog.hlmt
 porttag replace objects\vehicles\warthog\fx\running\headlights.effe
 porttag replace objects\vehicles\warthog\fx\running\headlight_beam.ligh
 porttag replace objects\vehicles\warthog\fx\running\tail_lights.lens
-porttag replace sound\vehcles\warthog\new_warthog_left\new_warthog_left.lsnd
-porttag replace sound\vehcles\warthog\new_warthog_right\new_warthog_right.lsnd
 
 echo Installing Wraith and friends
 porttag replace objects\vehicles\wraith\wraith.mode
@@ -145,29 +123,14 @@ porttag replace sound\vehicles\wraith\w_boost_right\w_boost_right.lsnd
 echo Hornet
 porttag replace objects\vehicles\hornet\hornet.mode
 porttag replace objects\vehicles\hornet\hornet_snow.mode
-porttag replace objects\vehicles\hornet\weapon\hornet_missile.proj
+porttag replace objects\vehicles\hornet\weapon\hornet_missile.hlmt
 exit
 
 echo Installing Snow Warthog and friends
 opencachefile D:\Halo3Retail\maps\sidewinder.map
-porttag replace objects\vehicles\warthog\garbage\bumper\bumper_snow.mode
-porttag replace objects\vehicles\warthog\garbage\hood\hood_snow.mode
-porttag replace objects\vehicles\warthog\garbage\hubcap\hubcap_snow.mode
-porttag replace objects\vehicles\warthog\garbage\lb_fender\lb_fender_snow.mode
-porttag replace objects\vehicles\warthog\garbage\lf_fender\lf_fender_snow.mode
-porttag replace objects\vehicles\warthog\garbage\rb_fender\rb_fender_snow.mode
-porttag replace objects\vehicles\warthog\garbage\rf_fender\rf_fender_snow.mode
-porttag replace objects\vehicles\warthog\garbage\sailpanel\sailpanel_snow.mode
-porttag replace objects\vehicles\warthog\garbage\tire\tire_snow.mode
-porttag replace objects\vehicles\warthog\garbage\winch\winch_snow.mode
 porttag replace objects\vehicles\warthog\turrets\chaingun\chaingun_snow.hlmt
-porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage_snow.mode
-porttag replace objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage_snow.mode
-porttag replace objects\vehicles\warthog\turrets\gauss\garbage\barrel_garbage\barrel_garbage_snow.mode
-porttag replace objects\vehicles\warthog\turrets\gauss\garbage\display_garbage\display_garbage_snow.mode
-porttag replace objects\vehicles\warthog\turrets\gauss\garbage\shield_garbage\shield_garbage_snow.mode
 porttag replace objects\vehicles\warthog\turrets\gauss\gauss_snow.hlmt
-porttag replace objects\vehicles\warthog\warthog_snow.mode
+porttag replace objects\vehicles\warthog\warthog_snow.hlmt
 exit
 
 echo Fixing Elephant
@@ -202,10 +165,29 @@ savetagchanges
 exitto tags
 
 echo Fixing Banshee
-importtag objects\vehicles\banshee\banshee.hlmt tags\objects\vehicles\banshee\banshee.hlmt
+duplicatetag objects\vehicles\banshee\banshee.hlmt
+nametag * objects\vehicles\banshee\banshee_ho
+edittag objects\vehicles\banshee\banshee_ho.hlmt
+copyblockelements newdamageinfo
+exit
 opencachefile D:\Halo3Retail\maps\sandbox.map
 porttag single replace objects\vehicles\banshee\banshee.hlmt
 exit
+edittag objects\vehicles\banshee\banshee.hlmt
+removeblockelements newdamageinfo 0 1
+pasteblockelements newdamageinfo
+savetagchanges
+exitto tags
+edittag objects\vehicles\banshee\banshee_ho.hlmt
+copyblockelements collisionregions
+exit
+edittag objects\vehicles\banshee\banshee.hlmt
+setfield lodmodel null
+removeblockelements collisionregions 0 9
+pasteblockelements collisionregions
+savetagchanges
+exitto tags
+deletetag objects\vehicles\banshee\banshee_ho.hlmt
 
 echo Fixing Prowler
 edittag objects\vehicles\mauler\bitmaps\mauler_bump.bitm
@@ -226,6 +208,10 @@ savetagchanges
 exitto tags
 
 echo Fixing Ghost
+edittag objects\vehicles\ghost\ghost.hlmt
+setfield collisionmodel objects\vehicles\ghost\ghost.coll
+savetagchanges
+exitto tags
 edittag objects\vehicles\ghost\bitmaps\ghost_bump.bitm
 importbitmap 0 tags\objects\vehicles\ghost\bitmaps\ghost_bump.dds
 savetagchanges
@@ -234,6 +220,7 @@ edittag objects\vehicles\ghost\shaders\ghost_dash_zcam.rmhg
 setfield shaderproperties[0].arguments[3].values 0.9 1.6 0 -0.3
 savetagchanges
 exitto tags
+deletetag objects\vehicles\ghost\ghost_h3.coll
 
 echo Fixing Mongoose
 edittag objects\vehicles\mongoose\bitmaps\mongoose_bump.bitm
@@ -380,93 +367,6 @@ setfield regions[7].permutations[1].meshindex 23
 setfield regions[7].permutations[2].meshindex 7
 savetagchanges
 exitto tags
-
-EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.particle
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
-SetField RenderMethod.ShaderProperties[0].Transparency 9
-SaveTagChanges
-ExitTo tags
-
-EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small_additive.particle
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
-SaveTagChanges
-ExitTo tags
-
-EditTag objects\weapons\pistol\plasma_pistol\fx\particles\overheated_gas.particle
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
-SaveTagChanges
-ExitTo tags
-
-EditTag objects\weapons\rifle\beam_rifle\fx\particles\overheated_gas.particle
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
-SaveTagChanges
-ExitTo tags
-
-EditTag objects\weapons\rifle\plasma_rifle\fx\particles\overheated_gas.particle
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
-SaveTagChanges
-ExitTo tags
-
-EditTag objects\weapons\support_low\sentinel_gun\fx\particles\overheated_gas.particle
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
-SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
-SaveTagChanges
-ExitTo tags
-
-ImportTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_black.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap "tags\shaders\default_bitmaps\bitmaps\alpha_white.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\color_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\color_white.bitmap "tags\shaders\default_bitmaps\bitmaps\color_white.bitmap"
-ImportTag shaders\default_bitmaps\bitmaps\default_vector.bitmap "tags\shaders\default_bitmaps\bitmaps\default_vector.bitmap"
-
-EditTag shaders\default_bitmaps\bitmaps\alpha_black.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_black_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\alpha_grey25.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_grey25_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\alpha_white.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\alpha_white_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\color_black.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\color_black_alpha_black.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_black_alpha_black_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\color_white.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\color_white_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
-
-EditTag shaders\default_bitmaps\bitmaps\default_vector.bitmap
-SetField Resources[0].Resource.Page.Index -1
-SetField Resources[0].Resource ResourcesB "tags\shaders\default_bitmaps\bitmaps\default_vector_image.bitmap_texture_interop_resource"
-SaveTagChanges
-ExitTo tags
 
 savetagnames
 dumplog Halo3Vehicles.log
