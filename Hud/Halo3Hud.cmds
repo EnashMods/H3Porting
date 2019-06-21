@@ -80,6 +80,8 @@ exitto tags
 
 edittag 0x12BC
 importbitmap 0 tags\000012BC.dds
+setfield sequences[0].sprites[0].top 0.50625
+setfield sequences[0].sprites[0].bottom 0.9085938
 savetagchanges
 exitto tags
 
