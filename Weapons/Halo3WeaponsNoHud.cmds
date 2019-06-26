@@ -226,12 +226,14 @@ porttag replace objects\weapons\turret\plasma_cannon\fx\firing.ligh
 porttag replace objects\weapons\turret\plasma_cannon\fx\firing.effe
 
 echo Missile Pod
+nameblamtag objects\weapons\turret\missile_pod\projectiles\missile\missile.hlmt objects\weapons\turret\missile_pod\projectiles\missile_pod_missile
 porttag replace objects\weapons\turret\missile_pod\missile_pod_weapon\missile_pod_weapon.mode
 porttag merge objects\weapons\turret\missile_pod\missile_pod_vehicle\missile_pod_vehicle.jmad
 porttag replace objects\weapons\turret\missile_pod\missile_pod_vehicle\missile_pod_vehicle.mode
 porttag replace objects\weapons\turret\missile_pod\garbage\garbage_tripod\garbage_tripod.mode
 porttag replace objects\weapons\turret\missile_pod\fx\firing.ligh
 porttag replace objects\weapons\turret\missile_pod\fx\firing.effe
+porttag replace objects\weapons\turret\missile_pod\projectiles\missile_pod_missile.hlmt
 savetagnames
 
 echo Flamethrower
