@@ -147,6 +147,8 @@ duplicatetag objects\weapons\rifle\plasma_rifle_red\shaders\plasma_rifle_metal_r
 nametag * objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_metal_power
 duplicatetag objects\weapons\rifle\plasma_rifle_red\shaders\plasma_rifle_red.rmsh
 nametag * objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_main_power
+duplicatetag objects\weapons\rifle\plasma_rifle_red\fx\firing.effe
+nametag * objects\weapons\rifle\plasma_pistol_red\fx\firing
 edittag objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_metal_power.rmsh
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.bitm
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.bitm
@@ -157,6 +159,8 @@ setfield shaderproperties[0].shadermaps[4].xformargumentindex -1
 savetagchanges
 exitto tags
 edittag objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_main_power.rmsh
+setargument diffuse_coefficient 0.6 0.6 0.4 0.6
+setargument specular_coefficient 0.6 0.6 0.4 0.6
 setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol.bitm
 setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\pistol\plasma_pistol\bitmaps\plasma_pistol_bump.bitm
 setfield shaderproperties[0].shadermaps[4].bitmapflags 32
@@ -172,8 +176,15 @@ setfield materials[1].rendermethod objects\weapons\pistol\plasma_pistol\shaders\
 setfield materials[3].rendermethod objects\weapons\pistol\plasma_pistol\shaders\plasma_pistol_main_power.rmsh
 savetagchanges
 exitto tags
+edittag objects\weapons\rifle\plasma_pistol_red\fx\firing.effe
+removeblockelements events[0].parts 2 2
+setfield events[0].parts[0].type sound\weapons\plasma_pistol\fire.snd!
+setfield events[0].parts[1].type sound\weapons\plasma_pistol\plasma_pistol_lod_far.snd!
+savetagchanges
+exitto tags
 edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_power.weap
 setfield specialhudversion damage32
+setfield barrels[0].firingeffects[0].firingeffect2 objects\weapons\rifle\plasma_pistol_red\fx\firing.effe
 savetagchanges
 exitto tags
 
@@ -502,424 +513,6 @@ edittag objects\weapons\rifle\assault_rifle\assault_rifle_damage.weap
 setfield model objects\weapons\rifle\assault_rifle\assault_rifle_v6.hlmt
 setfield specialhudversion power36
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_v6.mode
-savetagchanges
-exitto tags
-
-echo Instaling Battle Rifle Variants
-extracttag objects\weapons\rifle\battle_rifle\battle_rifle.mode tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
-extracttag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo
-duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage
-duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof
-duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range
-duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\ones_ammo
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\ones_damage
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\ones_rof
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\ones_range
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\ones_power
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\tens_ammo
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\tens_damage
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\tens_rof
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\tens_range
-duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
-nametag * objects\weapons\rifle\battle_rifle\shaders\tens_power
-createtag bitm
-nametag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask
-createtag bitm
-nametag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material
-edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
-importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.dds
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
-importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.dds
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
-setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
-setargument base_map 1 1 0 0
-setargument detail_map 10 10 0 0
-setargument color_mask_map 1 1 1 1
-setargument albedo_color 0 0 0.05 0
-setargument bump_map 1 1 0 0
-setargument bump_detail_map 15 15 0 0
-setargument bump_detail_coefficient 1 1 1 1
-setargument diffuse_coefficient 2 2 2 2
-setargument specular_coefficient 1 1 1 1
-setargument specular_tint 0.5372549 0.5411765 0.4941177 1
-setargument fresnel_color 0.5450981 0.5960785 0.7411765 1
-setargument use_fresnel_color_environment 0 0 0 0
-setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
-setargument fresnel_power 1 1 1 1
-setargument roughness 0.2 0.2 0.2 0.2
-setargument area_specular_contribution 0.2 0.2 0.2 0.2
-setargument analytical_specular_contribution 1 1 1 1
-setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
-setargument material_texture 1 1 0 0
-setargument albedo_blend_with_specular_tint 0 0 0 0
-setargument albedo_blend 0.75 0.75 0.75 0.75
-setargument analytical_anti_shadow_control 0 0 0 0
-setargument rim_fresnel_coefficient 0 0 0 0
-setargument rim_fresnel_color 1 1 1 1
-setargument rim_fresnel_power 3 3 3 3
-setargument rim_fresnel_albedo_blend 0 0 0 0
-setargument env_tint_color 0.3137255 0.3490196 0.454902 1
-setargument env_roughness_scale 2 2 2 2
-setargument self_illum_map 1 1 0 0
-setargument self_illum_color 0 0 1 1
-setargument self_illum_intensity 3 3 3 3
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
-setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
-setargument base_map 1 1 0 0
-setargument detail_map 10 10 0 0
-setargument color_mask_map 1 1 1 1
-setargument albedo_color 0.05 0 0 1
-setargument bump_map 1 1 0 0
-setargument bump_detail_map 15 15 0 0
-setargument bump_detail_coefficient 1 1 1 1
-setargument diffuse_coefficient 2 2 2 2
-setargument specular_coefficient 1 1 1 1
-setargument specular_tint 0.5372549 0.5411765 0.4941177 1
-setargument fresnel_color 0.5450981 0.6 0.7411765 1
-setargument use_fresnel_color_environment 0 0 0 0
-setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
-setargument fresnel_power 1 1 1 1
-setargument roughness 0.3 0.3 0.3 0.3
-setargument area_specular_contribution 0.2 0.2 0.2 0.2
-setargument analytical_specular_contribution 0.6 0.6 0.6 0.6
-setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
-setargument material_texture 1 1 0 0
-setargument albedo_blend_with_specular_tint 0 0 0 0
-setargument albedo_blend 0.75 0.75 0.75 0.75
-setargument analytical_anti_shadow_control 0 0 0 0
-setargument rim_fresnel_coefficient 0 0 0 0
-setargument rim_fresnel_color 1 1 1 1
-setargument rim_fresnel_power 3 3 3 3
-setargument rim_fresnel_albedo_blend 0 0 0 0
-setargument env_tint_color 0.3137255 0.3490196 0.454902 1
-setargument env_roughness_scale 2 2 2 2
-setargument self_illum_map 1 1 0 0
-setargument self_illum_color 1 0 0 1
-setargument self_illum_intensity 3 3 3 3
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power.rmsh
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
-setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
-setargument base_map 1 1 0 0
-setargument detail_map 10 10 0 0
-setargument color_mask_map 1 1 1 1
-setargument albedo_color 0.168 0.138 0.044 1
-setargument bump_map 1 1 0 0
-setargument bump_detail_map 15 15 0 0
-setargument bump_detail_coefficient 1 1 1 1
-setargument diffuse_coefficient 2 2 2 2
-setargument specular_coefficient 1 1 1 1
-setargument specular_tint 0.5372549 0.5411765 0.4941177 1
-setargument fresnel_color 0.5450981 0.6 0.7411765 1
-setargument use_fresnel_color_environment 0 0 0 0
-setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
-setargument fresnel_power 1 1 1 1
-setargument roughness 0.3 0.3 0.3 0.3
-setargument area_specular_contribution 0.2 0.2 0.2 0.2
-setargument analytical_specular_contribution 0.6 0.6 0.6 0.6
-setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
-setargument material_texture 1 1 0 0
-setargument albedo_blend_with_specular_tint 0 0 0 0
-setargument albedo_blend 0.75 0.75 0.75 0.75
-setargument analytical_anti_shadow_control 0 0 0 0
-setargument rim_fresnel_coefficient 0 0 0 0
-setargument rim_fresnel_color 1 1 1 1
-setargument rim_fresnel_power 3 3 3 3
-setargument rim_fresnel_albedo_blend 0 0 0 0
-setargument env_tint_color 0.3137255 0.3490196 0.454902 1
-setargument env_roughness_scale 2 2 2 2
-setargument self_illum_map 1 1 0 0
-setargument self_illum_color 1 0.44 0 1
-setargument self_illum_intensity 3 3 3 3
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
-setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
-setargument base_map 1 1 0 0
-setargument detail_map 10 10 0 0
-setargument color_mask_map 1 1 1 1
-setargument albedo_color 0.02 0 0.02 0
-setargument bump_map 1 1 0 0
-setargument bump_detail_map 15 15 0 0
-setargument bump_detail_coefficient 1 1 1 1
-setargument diffuse_coefficient 2 2 2 2
-setargument specular_coefficient 1 1 1 1
-setargument specular_tint 0.5372549 0.5411765 0.4941177 1
-setargument fresnel_color 0.5450981 0.5960785 0.7411765 1
-setargument use_fresnel_color_environment 0 0 0 0
-setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
-setargument fresnel_power 1 1 1 1
-setargument roughness 0.2 0.2 0.2 0.2
-setargument area_specular_contribution 0.2 0.2 0.2 0.2
-setargument analytical_specular_contribution 1 1 1 1
-setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
-setargument material_texture 1 1 0 0
-setargument albedo_blend_with_specular_tint 0 0 0 0
-setargument albedo_blend 0.75 0.75 0.75 0.75
-setargument analytical_anti_shadow_control 0 0 0 0
-setargument rim_fresnel_coefficient 0 0 0 0
-setargument rim_fresnel_color 1 1 1 1
-setargument rim_fresnel_power 3 3 3 3
-setargument rim_fresnel_albedo_blend 0 0 0 0
-setargument env_tint_color 0.3137255 0.3490196 0.454902 1
-setargument env_roughness_scale 2 2 2 2
-setargument self_illum_map 1 1 0 0
-setargument self_illum_color 1 0 1 1
-setargument self_illum_intensity 3 3 3 3
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
-setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
-setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
-setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
-setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
-setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
-setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
-setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
-setargument base_map 1 1 0 0
-setargument detail_map 5 5 0 0
-setargument color_mask_map 1 1 1 1
-setargument albedo_color 0.033 0.042 0.018 1
-setargument bump_map 1 1 0 0
-setargument bump_detail_map 15 15 0 0
-setargument bump_detail_coefficient 1 1 1 1
-setargument diffuse_coefficient 2 2 2 2
-setargument specular_coefficient 1 1 1 1
-setargument specular_tint 0.5372549 0.5411765 0.4941177 1
-setargument fresnel_color 0.5450981 0.6 0.7411765 1
-setargument use_fresnel_color_environment 0 0 0 0
-setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
-setargument fresnel_power 1 1 1 1
-setargument roughness 0.3 0.3 0.3 0.3
-setargument area_specular_contribution 0.2 0.2 0.2 0.2
-setargument analytical_specular_contribution 0.6 0.6 0.6 0.6
-setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
-setargument material_texture 1 1 0 0
-setargument albedo_blend_with_specular_tint 0 0 0 0
-setargument albedo_blend 0.75 0.75 0.75 0.75
-setargument analytical_anti_shadow_control 0 0 0 0
-setargument rim_fresnel_coefficient 0 0 0 0
-setargument rim_fresnel_color 1 1 1 1
-setargument rim_fresnel_power 3 3 3 3
-setargument rim_fresnel_albedo_blend 0 0 0 0
-setargument env_tint_color 0.3137255 0.3490196 0.454902 1
-setargument env_roughness_scale 2 2 2 2
-setargument self_illum_map 1 1 0 0
-setargument self_illum_color 0.112 0.168 0.072 1
-setargument self_illum_intensity 3 3 3 3
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
-setfield shaderproperties[0].arguments[7].values 0 0 1 1
-setfield shaderproperties[0].arguments[23].values 0.1607843 0.1803922 0.254902 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage.rmsh
-setfield shaderproperties[0].arguments[7].values 1 0 0 1
-setfield shaderproperties[0].arguments[23].values 0.254902 0.1607843 0.1803922 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range.rmsh
-setfield shaderproperties[0].arguments[7].values 1 0 1 1
-setfield shaderproperties[0].arguments[23].values 0.1803922 0.1607843 0.254902 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
-setfield shaderproperties[0].arguments[7].values 0.112 0.168 0.072 1
-setfield shaderproperties[0].arguments[23].values 0.254902 0.1803922 0.1607843 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
-setfield shaderproperties[0].arguments[2].values 0 0 1 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
-setfield shaderproperties[0].arguments[2].values 10 0 0 10
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
-setfield shaderproperties[0].arguments[2].values 4.5 1.1 0 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
-setfield shaderproperties[0].arguments[2].values 1 0 1 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
-setfield shaderproperties[0].arguments[2].values 1.12 1.68 0.72 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
-setfield shaderproperties[0].arguments[2].values 0 0 1 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
-setfield shaderproperties[0].arguments[2].values 10 0 0 10
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
-setfield shaderproperties[0].arguments[2].values 4.5 1.1 0 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
-setfield shaderproperties[0].arguments[2].values 1 0 1 1
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
-setfield shaderproperties[0].arguments[2].values 1.12 1.68 0.72 1
-savetagchanges
-exitto tags
-importtag 0x2368 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
-edittag 0x2368
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
-savetagchanges
-exitto tags
-importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v3.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v3.mode
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-copyblockelements materials *
-exitto tags
-ImportTag 0x2375 "tags\objects\weapons\rifle\battle_rifle\0x2375.render_model"
-EditTag 0x2375
-SetField Geometry.Resource.Page.Index -1
-SetField Geometry.Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\0x2375_geometry.render_geometry_api_resource_definition"
-removeblockelements materials 0 4
-pasteblockelements materials *
-removeblockelements materials 2 1
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
-savetagchanges
-exitto tags
-ImportTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.mode "tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.render_model"
-EditTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.mode
-SetField Geometry.Resource.Page.Index -1
-SetField Geometry.Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4_geometry.render_geometry_api_resource_definition"
-removeblockelements materials 0 4
-pasteblockelements materials *
-removeblockelements materials 2 1
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
-savetagchanges
-exitto tags
-importtag 0x2386 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
-edittag 0x2386
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
-savetagchanges
-exitto tags
-importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v6.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v6.mode
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
-savetagchanges
-exitto tags
-importtag 0x259a tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
-edittag 0x259a
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
-savetagchanges
-exitto tags
-importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v5.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v5.mode
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
-savetagchanges
-exitto tags
-importtag 0x2587 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
-edittag 0x2587
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
-savetagchanges
-exitto tags
-importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v1.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
-edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v1.mode
-setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
-setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
-setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
-setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\battle_rifle_power.weap
-setfield specialhudversion damage32
-savetagchanges
-exitto tags
-edittag objects\weapons\rifle\battle_rifle\battle_rifle_damage.weap
-setfield specialhudversion power36
 savetagchanges
 exitto tags
 
@@ -1358,6 +951,424 @@ setfield rendermodel objects\weapons\rifle\battle_rifle\fp_anniversary_battle_ri
 savetagchanges
 exitto tags
 
+echo Instaling Battle Rifle Variants
+extracttag objects\weapons\rifle\battle_rifle\battle_rifle.mode tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
+extracttag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo
+duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage
+duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof
+duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range
+duplicatetag objects\weapons\rifle\smg\fp_smg\fp_smg_v4\shaders\[01]_rmsh.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\ones_ammo
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\ones_damage
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\ones_rof
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\ones_range
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\ones.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\ones_power
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\tens_ammo
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\tens_damage
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\tens_rof
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\tens_range
+duplicatetag objects\weapons\rifle\battle_rifle\shaders\tens.rmsh
+nametag * objects\weapons\rifle\battle_rifle\shaders\tens_power
+createtag bitm
+nametag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask
+createtag bitm
+nametag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.dds
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
+importbitmap 0 tags\objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.dds
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
+setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
+setargument base_map 1 1 0 0
+setargument detail_map 10 10 0 0
+setargument color_mask_map 1 1 1 1
+setargument albedo_color 0 0 0.05 0
+setargument bump_map 1 1 0 0
+setargument bump_detail_map 15 15 0 0
+setargument bump_detail_coefficient 1 1 1 1
+setargument diffuse_coefficient 2 2 2 2
+setargument specular_coefficient 1 1 1 1
+setargument specular_tint 0.5372549 0.5411765 0.4941177 1
+setargument fresnel_color 0.5450981 0.5960785 0.7411765 1
+setargument use_fresnel_color_environment 0 0 0 0
+setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
+setargument fresnel_power 1 1 1 1
+setargument roughness 0.2 0.2 0.2 0.2
+setargument area_specular_contribution 0.2 0.2 0.2 0.2
+setargument analytical_specular_contribution 1 1 1 1
+setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
+setargument material_texture 1 1 0 0
+setargument albedo_blend_with_specular_tint 0 0 0 0
+setargument albedo_blend 0.75 0.75 0.75 0.75
+setargument analytical_anti_shadow_control 0 0 0 0
+setargument rim_fresnel_coefficient 0 0 0 0
+setargument rim_fresnel_color 1 1 1 1
+setargument rim_fresnel_power 3 3 3 3
+setargument rim_fresnel_albedo_blend 0 0 0 0
+setargument env_tint_color 0.3137255 0.3490196 0.454902 1
+setargument env_roughness_scale 2 2 2 2
+setargument self_illum_map 1 1 0 0
+setargument self_illum_color 0 0 1 1
+setargument self_illum_intensity 3 3 3 3
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
+setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
+setargument base_map 1 1 0 0
+setargument detail_map 10 10 0 0
+setargument color_mask_map 1 1 1 1
+setargument albedo_color 0.05 0 0 1
+setargument bump_map 1 1 0 0
+setargument bump_detail_map 15 15 0 0
+setargument bump_detail_coefficient 1 1 1 1
+setargument diffuse_coefficient 2 2 2 2
+setargument specular_coefficient 1 1 1 1
+setargument specular_tint 0.5372549 0.5411765 0.4941177 1
+setargument fresnel_color 0.5450981 0.6 0.7411765 1
+setargument use_fresnel_color_environment 0 0 0 0
+setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
+setargument fresnel_power 1 1 1 1
+setargument roughness 0.3 0.3 0.3 0.3
+setargument area_specular_contribution 0.2 0.2 0.2 0.2
+setargument analytical_specular_contribution 0.6 0.6 0.6 0.6
+setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
+setargument material_texture 1 1 0 0
+setargument albedo_blend_with_specular_tint 0 0 0 0
+setargument albedo_blend 0.75 0.75 0.75 0.75
+setargument analytical_anti_shadow_control 0 0 0 0
+setargument rim_fresnel_coefficient 0 0 0 0
+setargument rim_fresnel_color 1 1 1 1
+setargument rim_fresnel_power 3 3 3 3
+setargument rim_fresnel_albedo_blend 0 0 0 0
+setargument env_tint_color 0.3137255 0.3490196 0.454902 1
+setargument env_roughness_scale 2 2 2 2
+setargument self_illum_map 1 1 0 0
+setargument self_illum_color 1 0 0 1
+setargument self_illum_intensity 3 3 3 3
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power.rmsh
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
+setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
+setargument base_map 1 1 0 0
+setargument detail_map 10 10 0 0
+setargument color_mask_map 1 1 1 1
+setargument albedo_color 0.168 0.138 0.044 1
+setargument bump_map 1 1 0 0
+setargument bump_detail_map 15 15 0 0
+setargument bump_detail_coefficient 1 1 1 1
+setargument diffuse_coefficient 2 2 2 2
+setargument specular_coefficient 1 1 1 1
+setargument specular_tint 0.5372549 0.5411765 0.4941177 1
+setargument fresnel_color 0.5450981 0.6 0.7411765 1
+setargument use_fresnel_color_environment 0 0 0 0
+setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
+setargument fresnel_power 1 1 1 1
+setargument roughness 0.3 0.3 0.3 0.3
+setargument area_specular_contribution 0.2 0.2 0.2 0.2
+setargument analytical_specular_contribution 0.6 0.6 0.6 0.6
+setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
+setargument material_texture 1 1 0 0
+setargument albedo_blend_with_specular_tint 0 0 0 0
+setargument albedo_blend 0.75 0.75 0.75 0.75
+setargument analytical_anti_shadow_control 0 0 0 0
+setargument rim_fresnel_coefficient 0 0 0 0
+setargument rim_fresnel_color 1 1 1 1
+setargument rim_fresnel_power 3 3 3 3
+setargument rim_fresnel_albedo_blend 0 0 0 0
+setargument env_tint_color 0.3137255 0.3490196 0.454902 1
+setargument env_roughness_scale 2 2 2 2
+setargument self_illum_map 1 1 0 0
+setargument self_illum_color 1 0.44 0 1
+setargument self_illum_intensity 3 3 3 3
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
+setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
+setargument base_map 1 1 0 0
+setargument detail_map 10 10 0 0
+setargument color_mask_map 1 1 1 1
+setargument albedo_color 0.02 0 0.02 0
+setargument bump_map 1 1 0 0
+setargument bump_detail_map 15 15 0 0
+setargument bump_detail_coefficient 1 1 1 1
+setargument diffuse_coefficient 2 2 2 2
+setargument specular_coefficient 1 1 1 1
+setargument specular_tint 0.5372549 0.5411765 0.4941177 1
+setargument fresnel_color 0.5450981 0.5960785 0.7411765 1
+setargument use_fresnel_color_environment 0 0 0 0
+setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
+setargument fresnel_power 1 1 1 1
+setargument roughness 0.2 0.2 0.2 0.2
+setargument area_specular_contribution 0.2 0.2 0.2 0.2
+setargument analytical_specular_contribution 1 1 1 1
+setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
+setargument material_texture 1 1 0 0
+setargument albedo_blend_with_specular_tint 0 0 0 0
+setargument albedo_blend 0.75 0.75 0.75 0.75
+setargument analytical_anti_shadow_control 0 0 0 0
+setargument rim_fresnel_coefficient 0 0 0 0
+setargument rim_fresnel_color 1 1 1 1
+setargument rim_fresnel_power 3 3 3 3
+setargument rim_fresnel_albedo_blend 0 0 0 0
+setargument env_tint_color 0.3137255 0.3490196 0.454902 1
+setargument env_roughness_scale 2 2 2 2
+setargument self_illum_map 1 1 0 0
+setargument self_illum_color 1 0 1 1
+setargument self_illum_intensity 3 3 3 3
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
+setfield shaderproperties[0].shadermaps[0].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitm
+setfield shaderproperties[0].shadermaps[1].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitm
+setfield shaderproperties[0].shadermaps[2].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_color_mask.bitm
+setfield shaderproperties[0].shadermaps[3].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitm
+setfield shaderproperties[0].shadermaps[4].bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_microbump.bitm
+setfield shaderproperties[0].shadermaps[5].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_material.bitm
+setfield shaderproperties[0].shadermaps[6].bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_illum.bitm
+setargument base_map 1 1 0 0
+setargument detail_map 5 5 0 0
+setargument color_mask_map 1 1 1 1
+setargument albedo_color 0.033 0.042 0.018 1
+setargument bump_map 1 1 0 0
+setargument bump_detail_map 15 15 0 0
+setargument bump_detail_coefficient 1 1 1 1
+setargument diffuse_coefficient 2 2 2 2
+setargument specular_coefficient 1 1 1 1
+setargument specular_tint 0.5372549 0.5411765 0.4941177 1
+setargument fresnel_color 0.5450981 0.6 0.7411765 1
+setargument use_fresnel_color_environment 0 0 0 0
+setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 1
+setargument fresnel_power 1 1 1 1
+setargument roughness 0.3 0.3 0.3 0.3
+setargument area_specular_contribution 0.2 0.2 0.2 0.2
+setargument analytical_specular_contribution 0.6 0.6 0.6 0.6
+setargument environment_map_specular_contribution 0.25 0.25 0.25 0.25
+setargument material_texture 1 1 0 0
+setargument albedo_blend_with_specular_tint 0 0 0 0
+setargument albedo_blend 0.75 0.75 0.75 0.75
+setargument analytical_anti_shadow_control 0 0 0 0
+setargument rim_fresnel_coefficient 0 0 0 0
+setargument rim_fresnel_color 1 1 1 1
+setargument rim_fresnel_power 3 3 3 3
+setargument rim_fresnel_albedo_blend 0 0 0 0
+setargument env_tint_color 0.3137255 0.3490196 0.454902 1
+setargument env_roughness_scale 2 2 2 2
+setargument self_illum_map 1 1 0 0
+setargument self_illum_color 0.112 0.168 0.072 1
+setargument self_illum_intensity 3 3 3 3
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
+setfield shaderproperties[0].arguments[7].values 0 0 1 1
+setfield shaderproperties[0].arguments[23].values 0.1607843 0.1803922 0.254902 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage.rmsh
+setfield shaderproperties[0].arguments[7].values 1 0 0 1
+setfield shaderproperties[0].arguments[23].values 0.254902 0.1607843 0.1803922 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range.rmsh
+setfield shaderproperties[0].arguments[7].values 1 0 1 1
+setfield shaderproperties[0].arguments[23].values 0.1803922 0.1607843 0.254902 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
+setfield shaderproperties[0].arguments[7].values 0.112 0.168 0.072 1
+setfield shaderproperties[0].arguments[23].values 0.254902 0.1803922 0.1607843 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
+setfield shaderproperties[0].arguments[2].values 0 0 1 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
+setfield shaderproperties[0].arguments[2].values 10 0 0 10
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
+setfield shaderproperties[0].arguments[2].values 4.5 1.1 0 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
+setfield shaderproperties[0].arguments[2].values 1 0 1 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
+setfield shaderproperties[0].arguments[2].values 1.12 1.68 0.72 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
+setfield shaderproperties[0].arguments[2].values 0 0 1 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
+setfield shaderproperties[0].arguments[2].values 10 0 0 10
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
+setfield shaderproperties[0].arguments[2].values 4.5 1.1 0 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
+setfield shaderproperties[0].arguments[2].values 1 0 1 1
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
+setfield shaderproperties[0].arguments[2].values 1.12 1.68 0.72 1
+savetagchanges
+exitto tags
+importtag 0x2368 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
+edittag 0x2368
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
+setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
+savetagchanges
+exitto tags
+importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v3.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v3.mode
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_ammo.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_ammo.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_ammo.rmsh
+setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_ammo.rmsh
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+copyblockelements materials *
+exitto tags
+ImportTag 0x2375 "tags\objects\weapons\rifle\battle_rifle\0x2375.render_model"
+EditTag 0x2375
+SetField Geometry.Resource.Page.Index -1
+SetField Geometry.Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\0x2375_geometry.render_geometry_api_resource_definition"
+removeblockelements materials 0 4
+pasteblockelements materials *
+removeblockelements materials 2 1
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
+savetagchanges
+exitto tags
+ImportTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.mode "tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.render_model"
+EditTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4.mode
+SetField Geometry.Resource.Page.Index -1
+SetField Geometry.Resource ResourcesB "tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v4_geometry.render_geometry_api_resource_definition"
+removeblockelements materials 0 4
+pasteblockelements materials *
+removeblockelements materials 2 1
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_power.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_power.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_power.rmsh
+savetagchanges
+exitto tags
+importtag 0x2386 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
+edittag 0x2386
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
+setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
+savetagchanges
+exitto tags
+importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v6.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v6.mode
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_damage.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_damage.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_damage.rmsh
+setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_damage.rmsh
+savetagchanges
+exitto tags
+importtag 0x259a tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
+edittag 0x259a
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
+setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
+savetagchanges
+exitto tags
+importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v5.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v5.mode
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_range.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_range.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_range.rmsh
+setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_range.rmsh
+savetagchanges
+exitto tags
+importtag 0x2587 tags\objects\weapons\rifle\battle_rifle\battle_rifle.mode
+edittag 0x2587
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
+setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
+savetagchanges
+exitto tags
+importtag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v1.mode tags\objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.mode
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_v1.mode
+setfield materials[0].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_rof.rmsh
+setfield materials[2].rendermethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_rof.rmsh
+setfield materials[3].rendermethod objects\weapons\rifle\battle_rifle\shaders\ones_rof.rmsh
+setfield materials[4].rendermethod objects\weapons\rifle\battle_rifle\shaders\tens_rof.rmsh
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_power.weap
+setfield specialhudversion damage32
+savetagchanges
+exitto tags
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_damage.weap
+setfield specialhudversion power36
+savetagchanges
+exitto tags
+
 echo Installing Carbine Variants
 extracttag objects\weapons\rifle\covenant_carbine\covenant_carbine.mode tags\objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
 extracttag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.mode tags\objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.render_model
@@ -1533,6 +1544,9 @@ setfield markergroups[5].markers[0].translation 0.06173344 -0.0001386678 -0.0501
 setfield markergroups[5].markers[0].rotation -0.5183288 0.3939989 -0.4947074 0.5756431
 savetagchanges
 exitto tags
+edittag objects\weapons\rifle\plasma_rifle_red\shaders\plasma_rifle_red.rmsh
+setargument diffuse_coefficient 0.6 0.6 0.4 0.6
+setargument specular_coefficient 0.6 0.6 0.4 0.6
 edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_power.weap
 setfield specialhudversion damage32
 setfield firstperson[0].firstpersonmodel objects\weapons\rifle\plasma_rifle_red\fp_plasma_rifle_red\fp_plasma_rifle_red.mode
