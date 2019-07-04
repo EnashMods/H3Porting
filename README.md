@@ -11,18 +11,27 @@ Shrine
 Sidewinder
 Shared
 
+Installation Instructions:
+1. Download TagTool from my repo https://github.com/EnashMods/TagTool
+2. Install at the most convenient place (probably your maps folder)
+3. Download all scripts and tags folders into any directory, though to run them with TagTool directly they will need to be in the same directory as TagTool.
+
 Hud Install:
-1. Run Halo3Hud
-2. it be good
+A. Run Halo3Hud.cmds
+B. it be good
 
 Weapons Install:
-1. Run Halo3WeaponsNoHud
-2. Run Halo3WeaponFixes
-3. Run Halo3WeaponVariants
-4. it also be good
+A. Run Halo3WeaponsNoHud.cmds
+B. Run Halo3WeaponFixes.cmds
+C. Run Halo3WeaponVariants.cmds
+D. Run Projectiles.cmds
+E. it also be good
 
 Vehicles Install:
-1. Run Halo3Vehicles
-2. good, be it
+A. Run Halo3Vehicles.cmds
+B. good, be it
+
+4. Run Effects_Restoration.cmds
+5. Copy the provided font package into maps\fonts\
 
 #### Use the provided TagTool
