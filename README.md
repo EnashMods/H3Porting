@@ -18,20 +18,27 @@ Installation Instructions:
 
 Hud Install:
 A. Run Halo3Hud.cmds
+
 B. it be good
 
 Weapons Install:
 A. Run Halo3WeaponsNoHud.cmds
+
 B. Run Halo3WeaponFixes.cmds
+
 C. Run Halo3WeaponVariants.cmds
+
 D. Run Projectiles.cmds
+
 E. it also be good
 
 Vehicles Install:
 A. Run Halo3Vehicles.cmds
+
 B. good, be it
 
 4. Run Effects_Restoration.cmds
+
 5. Copy the provided font package into maps\fonts\
 
 #### Use the provided TagTool
