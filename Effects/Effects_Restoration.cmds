@@ -1,0 +1,1608 @@
+echo // Porting Spike Grenade Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\claymore_grenade\claymore_expl_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\grenade\claymore_grenade\fx\airborne_detonation.effe
+PortTag Replace !Ms30 objects\weapons\grenade\claymore_grenade\fx\attach.effe
+PortTag Replace !Ms30 objects\weapons\grenade\claymore_grenade\fx\attach_sizzle.effe
+PortTag Replace !Ms30 objects\weapons\grenade\claymore_grenade\fx\detonation.effe
+PortTag Replace !Ms30 objects\weapons\grenade\claymore_grenade\fx\detonation_equipment.effe
+PortTag Replace !Ms30 objects\weapons\grenade\claymore_grenade\fx\fragment\projectile.effe
+PortTag Replace !Ms30 objects\weapons\grenade\claymore_grenade\fx\projectile.effe
+Exit
+
+echo // Porting Firebomb Grenade Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\firebomb\firebomb_expl.snd!
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\detonation.effe
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\primary_impact\primary_impact.effe
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\primary_impact\primary_loop.effe
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\projectile.effe
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\secondary_impact\secondary_impact.effe
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\secondary_impact\secondary_loop.effe
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\tertiary_impact\tertiary_impact.effe
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\tertiary_impact\tertiary_impact_spawn.effe
+PortTag Replace !Ms30 objects\weapons\grenade\firebomb_grenade\fx\tertiary_impact\tertiary_loop.effe
+Exit
+
+echo // Porting Frag Grenade Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\frag_grenade\frag_expl.snd!
+PortTag Replace sound\weapons\frag_grenade\frag_expl_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\grenade\frag_grenade\fx\airborne_detonation.effe
+PortTag Replace !Ms30 objects\weapons\grenade\frag_grenade\fx\detonation.effe
+PortTag Replace !Ms30 objects\weapons\grenade\frag_grenade\fx\projectile.effe
+Exit
+
+echo // Porting Plasma Grenade Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\plasma_grenade\plasma_expl_h3.snd!
+PortTag Replace sound\weapons\plasma_grenade\plasma_expl_lod_far.snd!
+PortTag Replace sound\weapons\plasma_grenade\plasma_detonation_start.snd!
+PortTag Replace sound\weapons\plasma_grenade\plasma_grenade_armed_no_beeps.snd!
+PortTag Replace !Ms30 objects\weapons\grenade\plasma_grenade\fx\airborne_detonation.effe
+PortTag Replace !Ms30 objects\weapons\grenade\plasma_grenade\fx\detonation.effe
+PortTag Replace !Ms30 objects\weapons\grenade\plasma_grenade\fx\detonation_start.effe
+PortTag Replace !Ms30 objects\weapons\grenade\plasma_grenade\fx\projectile.effe
+Exit
+
+echo // Porting Excavator Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\excavator\excavator_fire.snd!
+PortTag Replace sound\weapons\excavator\excavator_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\pistol\excavator\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\pistol\excavator\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\pistol\excavator\fx\projectile.effe
+Exit
+
+echo // Porting Magnum Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\magnum\magnum_fire.snd!
+PortTag Replace sound\weapons\magnum\magnum_eject.snd!
+PortTag Replace sound\weapons\magnum\magnum_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\pistol\magnum\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\pistol\magnum\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\pistol\magnum\fx\impact_liquid.effe
+PortTag Replace !Ms30 objects\weapons\pistol\magnum\fx\impact_soft.effe
+Exit
+
+echo // Porting Needler Effects. . .
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\needler\expl.snd!
+PortTag Replace sound\weapons\needler\fire.snd!
+PortTag Replace sound\weapons\needler\needler_lod_far.snd!
+PortTag Replace sound\weapons\needler\needler_super_expl.snd!
+PortTag Replace sound\weapons\needler\needler_super_expl_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\pistol\needler\fx\airborne_detonation.effe
+PortTag Replace !Ms30 objects\weapons\pistol\needler\fx\bounce.effe
+PortTag Replace !Ms30 objects\weapons\pistol\needler\fx\detonation.effe
+PortTag Replace !Ms30 objects\weapons\pistol\needler\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\pistol\needler\fx\fizzle.effe
+PortTag Replace !Ms30 objects\weapons\pistol\needler\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\pistol\needler\fx\projectile.effe
+PortTag Replace !Ms30 objects\weapons\pistol\needler\fx\super_detonation.effe
+Exit
+
+echo // Porting Plasma Pistol Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\plasma_pistol\chargefire.snd!
+PortTag Replace sound\weapons\plasma_pistol\plasma_charge_lod_far.snd!
+PortTag Replace sound\weapons\plasma_pistol\fire.snd!
+PortTag Replace sound\weapons\plasma_pistol\plasma_pistol_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\charged\firing.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\charged\impact.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\charged\impact_liquid.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\charged\projectile.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\charging.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\impact_liquid.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\overheated.effe
+PortTag Replace !Ms30 objects\weapons\pistol\plasma_pistol\fx\projectile.effe
+Exit
+
+echo // Porting Assault Rifle Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\assault_rifle\ar_fire.snd!
+PortTag Replace sound\weapons\assault_rifle\assault_rifle_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\rifle\assault_rifle\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\assault_rifle\fx\flashlight.effe
+PortTag Replace !Ms30 objects\weapons\rifle\assault_rifle\fx\projectile.effe
+Exit
+
+echo // Porting Battle Rifle Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\battle_rifle\dryfire.snd!
+PortTag Replace sound\weapons\battle_rifle\fire_burst_h3.snd!
+PortTag Replace sound\weapons\battle_rifle\eject_br.snd!
+PortTag Replace sound\weapons\battle_rifle\br_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\rifle\battle_rifle\fx\empty.effe
+PortTag Replace !Ms30 objects\weapons\rifle\battle_rifle\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\battle_rifle\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\battle_rifle\fx\impact_liquid.effe
+PortTag Replace !Ms30 objects\weapons\rifle\battle_rifle\fx\impact_soft.effe
+PortTag Replace !Ms30 objects\weapons\rifle\battle_rifle\fx\projectile.effe
+Exit
+
+echo // Porting Beam Rifle Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\beam_rifle\beam_rifle_fire.snd!
+PortTag Replace sound\weapons\beam_rifle\beam_rifle_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\rifle\beam_rifle\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\beam_rifle\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\beam_rifle\fx\impact_liquid.effe
+PortTag Replace !Ms30 objects\weapons\rifle\beam_rifle\fx\overheated.effe
+PortTag Replace !Ms30 objects\weapons\rifle\beam_rifle\fx\projectile.effe
+Exit
+
+echo // Porting Covenant Carbine Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\covenant_carbine\carbine_fire.snd!
+PortTag Replace sound\weapons\covenant_carbine\carbine_lod_far.snd!
+PortTag Replace sound\weapons\covenant_carbine\carbine_misfire.snd!
+PortTag Replace !Ms30 objects\weapons\rifle\covenant_carbine\fx\carbine_misfire.effe
+PortTag Replace !Ms30 objects\weapons\rifle\covenant_carbine\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\covenant_carbine\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\covenant_carbine\fx\projectile.effe
+PortTag Replace !Ms30 objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+Exit
+
+echo // Porting Plasma Rifle Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\plasma_rifle\plas_rifle_fire.snd!
+PortTag Replace sound\weapons\plasma_rifle\plasma_rifle_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\rifle\plasma_rifle\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\plasma_rifle\fx\fizzle.effe
+PortTag Replace !Ms30 objects\weapons\rifle\plasma_rifle\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\plasma_rifle\fx\overheated.effe
+PortTag Replace !Ms30 objects\weapons\rifle\plasma_rifle\fx\projectile.effe
+Exit
+
+echo // Porting Shotgun Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\shotgun\fire.snd!
+PortTag Replace sound\weapons\shotgun\shotgun_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\rifle\shotgun\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\shotgun\fx\flashlight.effe
+PortTag Replace !Ms30 objects\weapons\rifle\shotgun\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\shotgun\fx\impact_liquid.effe
+PortTag Replace !Ms30 objects\weapons\rifle\shotgun\fx\misfire.effe
+Exit
+
+echo // Porting SMG Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\smg\smg_loop\smg_loop.lsnd
+PortTag Replace sound\weapons\smg\smg_lod_far\smg_lod_far.lsnd
+PortTag Replace sound\weapons\smg\smg_loop_left\smg_loop_left.lsnd
+PortTag Replace sound\weapons\smg\smg_loop_right\smg_loop_right.lsnd
+PortTag Replace !Ms30 objects\weapons\rifle\smg\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\smg\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\smg\fx\impact_liquid.effe
+PortTag Replace !Ms30 objects\weapons\rifle\smg\fx\impact_soft.effe
+Exit
+
+echo // Porting Sniper Rifle Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\sniper_rifle\sniper_fire_h3.snd!
+PortTag Replace sound\weapons\sniper_rifle\sniper_eject.snd!
+PortTag Replace sound\weapons\sniper_rifle\fire_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\rifle\sniper_rifle\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\sniper_rifle\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\sniper_rifle\fx\impact_liquid.effe
+PortTag Replace !Ms30 objects\weapons\rifle\sniper_rifle\fx\impact_soft.effe
+PortTag Replace !Ms30 objects\weapons\rifle\sniper_rifle\fx\projectile.effe
+Exit
+
+echo // Porting Spike Rifle Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\spike_rifle\spike_rifle_fire.snd!
+PortTag Replace sound\weapons\spike_rifle\spike_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\rifle\spike_rifle\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\rifle\spike_rifle\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\spike_rifle\fx\object_impact.effe
+PortTag Replace !Ms30 objects\weapons\rifle\spike_rifle\fx\projectile.effe
+PortTag Replace !Ms30 objects\weapons\rifle\spike_rifle\fx\reload.effe
+Exit
+
+echo // Porting Fuel Rod Cannon Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\flak_cannon\flak_fire_h3.snd!
+PortTag Replace sound\weapons\flak_cannon\flak_cannon_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\support_high\flak_cannon\fx\detonation.effe
+PortTag Replace !Ms30 objects\weapons\support_high\flak_cannon\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\support_high\flak_cannon\fx\projectile.effe
+Exit
+
+echo // Porting Rocket Launcher Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\rocket_launcher\rocket_fire_h3.snd!
+PortTag Replace sound\weapons\rocket_launcher\rocket_launcher_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\support_high\rocket_launcher\fx\detonation.effe
+PortTag Replace !Ms30 objects\weapons\support_high\rocket_launcher\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\support_high\rocket_launcher\fx\projectile.effe
+PortTag Replace !Ms30 objects\weapons\support_high_rocket_launcher\fx\firing.effe
+Exit
+
+echo // Porting Spartan Laser Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\spartan_laser\fire.snd!
+PortTag Replace sound\weapons\rocket_launcher\rocket_launcher_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\support_high\spartan_laser\fx\charging.effe
+PortTag Replace !Ms30 objects\weapons\support_high\spartan_laser\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\support_high\spartan_laser\fx\firing_tracer.effe
+PortTag Replace !Ms30 objects\weapons\support_high\spartan_laser\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\support_high\spartan_laser\fx\tracer_impact.effe
+Exit
+
+echo // Porting Brute Shot Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace sound\weapons\brute_shot\brute_shot_fire_new.snd!
+PortTag Replace sound\weapons\brute_shot\brute_shot_lod_far.snd!
+PortTag Replace !Ms30 objects\weapons\support_low\brute_shot\fx\airborne_detonation.effe
+PortTag Replace !Ms30 objects\weapons\support_low\brute_shot\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\support_low\brute_shot\fx\projectile.effe
+Exit
+
+echo // Porting Sentinel Beam Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace !Ms30 objects\weapons\support_low\sentinel_gun\fx\firing.effe
+PortTag Replace !Ms30 objects\weapons\support_low\sentinel_gun\fx\impact.effe
+PortTag Replace !Ms30 objects\weapons\support_low\sentinel_gun\fx\overheated.effe
+Exit
+
+echo // Porting Warthog Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_turret_gauss_destroyed.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_turret_gauss_major.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_hull_destroyed.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_tire_destroyed.effe
+PortTag Replace !Ms30 fx\scenery_fx\destruction\human_lights\human_headlight_break.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_f_hull_medium.effe
+PortTag Replace !Ms30 fx\scenery_fx\explosions\human_explosion_tiny\human_explosion_tiny.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_f_hull_major.effe
+PortTag Replace !Ms30 fx\scenery_fx\destruction\human_mech_break_tiny\human_mech_break_tiny.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_tire_minor.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_lf_fender_major.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_rf_fender_major.effe
+PortTag Replace !Ms30 fx\scenery_fx\destruction\human_lights\human_brakelight_break.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_lb_fender_major.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_rb_fender_major.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_bumper_destroyed.effe
+exit
+
+echo // Porting Snow Warthog Effects
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sidewinder.map
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_tire_destroyed_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_f_hull_major_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_tire_minor_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_lf_fender_major_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_rf_fender_major_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_lb_fender_major_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_rb_fender_major_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_bumper_destroyed_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_turret_gauss_destroyed_snow.effe
+PortTag Replace !Ms30 objects\vehicles\warthog\fx\destruction\trans_turret_gauss_major_snow.effe
+exit
+
+echo // Porting Particles. . .
+UseAudioCache D:\Halo3_Audio_Cache
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\fiery_smoke\smoke_fiery_small.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\rolling_smoke\fireball_brute_medium.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\rolling_smoke\fireball_dark_medium.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\rolling_smoke\fireball_human_medium.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\rolling_smoke\fireball_plasma_small.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\rolling_smoke\rolling_smoke_medium.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\rolling_smoke\rolling_smoke_small.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\soft_smoke\muzzle_smoke.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\soft_smoke\soft_smoke_large_lit.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\soft_smoke\soft_smoke_small_impact.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\soft_smoke\soft_smoke_small_projectile_lighting.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\wispy_smoke\wispy_smoke_large_zfade.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\atmospheric\wispy_smoke\wispy_smoke_small_additive.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\electric_arcs.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\electric_arcs_green.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\electric_loops_large.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\plasma_burst.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\plasma_impact.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\plasma_impact_long.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\plasma_impact_spark.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\plasma_noise.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\plasma_noise_long.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\plasma_ring.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\spark_burst_large.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\spark_burst_large_impact.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\spark_burst_large_impact_plasma.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\spark_ember.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\spark_fiery.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\spark_long.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\energy\sparks\impact_spark_orange.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\fire\fire_large.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\fire\fire_large_vertical.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\fire\fire_small.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\fire\fire_small_vertical.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\flare\explosive_flash.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\flare\explosive_flash_small.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\flare\flash_bounce.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\flare\flash_large.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\flare\flash_small_long.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\flare\flash_small_long_impact_plasma.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\flare\light_spike.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\models\weapons\bullet_casings\assault_rifle\assault_rifle.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\models\weapons\bullet_casings\battle_rifle\battle_rifle.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\models\weapons\bullet_casings\magnum\magnum.prt3
+PortTag Replace MatchShaders !Ms30 fx\particles\models\weapons\needler_shards\needler_shards.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\excavator\fx\particles\flash_large.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\excavator\fx\particles\glow_soft.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\excavator\fx\particles\muzzle_flash_long.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\excavator\fx\particles\muzzle_flash_round.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\excavator\fx\particles\spark_fiery.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\magnum\fx\particles\muzzle_flash_long.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\magnum\fx\particles\muzzle_flash_round.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\needler\fx\particles\firing_plasma_ring.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\needler\fx\particles\glow_soft.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\needler\fx\particles\impact_spark.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\needler\fx\particles\muzzle_flash_long.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\needler\fx\particles\muzzle_flash_long_soft.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\needler\fx\particles\muzzle_flash_round.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\charging_electric_arcs.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\charging_glow.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\charging_muzzle_flash_long_soft.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\charging_plasma_ring.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\charging_spark.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\flash_large.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\glow_soft.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\muzzle_flash_long.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\muzzle_flash_long_charged.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\muzzle_flash_long_soft.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\muzzle_flash_round.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\overheated_gas.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\plasma_noise_long_green.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\pistol\plasma_pistol\fx\particles\spark.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\rifle\assault_rifle\fx\particles\muzzle_flash_long.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\rifle\assault_rifle\fx\particles\muzzle_flash_long_brake.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\rifle\assault_rifle\fx\particles\muzzle_flash_round.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\rifle\battle_rifle\fx\particles\muzzle_flash_long.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\rifle\battle_rifle\fx\particles\muzzle_flash_long_brake.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\rifle\battle_rifle\fx\particles\muzzle_flash_long_soft.prt3
+PortTag Replace MatchShaders !Ms30 objects\weapons\rifle\battle_rifle\fx\particles\muzzle_flash_round.prt3
+Exit
+
+echo // Fixing Spike Grenade Effects. . .
+EditTag objects\weapons\grenade\claymore_grenade\fx\airborne_detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 2.57958
+SetField Events[0].ParticleSystems[1].Unknown7 66.8874
+SetField Events[0].ParticleSystems[2].Unknown7 36.35213
+SetField Events[0].ParticleSystems[3].Unknown7 1.258825
+SetField Events[1].ParticleSystems[0].Unknown7 2.072758
+SetField Events[1].ParticleSystems[1].Unknown7 1.95253
+SetField Events[1].ParticleSystems[2].Unknown7 3.209799
+SetField Events[1].ParticleSystems[3].Unknown7 4.35652
+SetField Events[1].ParticleSystems[4].Unknown7 1.864944
+SetField Events[7].ParticleSystems[0].Unknown7 4.35652
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\claymore_grenade\fx\attach.effe
+SetField Events[0].ParticleSystems[0].Unknown7 1.787364
+SetField Events[0].ParticleSystems[1].Unknown7 1.767053
+SetField Events[0].ParticleSystems[2].Unknown7 204.4706
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\claymore_grenade\fx\attach_sizzle.effe
+SetField Events[0].ParticleSystems[0].Unknown7 18.11972
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\claymore_grenade\fx\detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 2.57958
+SetField Events[0].ParticleSystems[1].Unknown7 66.8874
+SetField Events[0].ParticleSystems[2].Unknown7 36.35213
+SetField Events[0].ParticleSystems[3].Unknown7 1.258825
+SetField Events[1].ParticleSystems[0].Unknown7 2.072758
+SetField Events[1].ParticleSystems[1].Unknown7 1.95253
+SetField Events[1].ParticleSystems[2].Unknown7 3.209799
+SetField Events[1].ParticleSystems[3].Unknown7 4.35652
+SetField Events[1].ParticleSystems[4].Unknown7 1.864944
+SetField Events[7].ParticleSystems[0].Unknown7 4.35652
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\claymore_grenade\fx\detonation_equipment.effe
+SetField Events[0].ParticleSystems[0].Unknown7 2.57958
+SetField Events[0].ParticleSystems[1].Unknown7 66.8874
+SetField Events[0].ParticleSystems[2].Unknown7 36.35213
+SetField Events[0].ParticleSystems[3].Unknown7 1.258824
+SetField Events[1].ParticleSystems[0].Unknown7 2.072758
+SetField Events[1].ParticleSystems[1].Unknown7 1.95253
+SetField Events[1].ParticleSystems[2].Unknown7 3.209799
+SetField Events[1].ParticleSystems[3].Unknown7 4.35652
+SetField Events[1].ParticleSystems[4].Unknown7 1.864944
+SetField Events[7].ParticleSystems[0].Unknown7 4.35652
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\claymore_grenade\fx\projectile.effe
+SetField Events[1].ParticleSystems[0].Unknown7 18.11972
+SetField Events[1].ParticleSystems[1].Unknown7 4.159699
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Firebomb Grenade Effects
+EditTag objects\weapons\grenade\firebomb_grenade\fx\primary_impact\primary_impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.219119
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\firebomb_grenade\fx\primary_impact\primary_loop.effe
+SetField Events[0].ParticleSystems[0].Unknown7 2
+SetField Events[0].ParticleSystems[1].Unknown7 2
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\firebomb_grenade\fx\projectile.effe
+SetField Events[1].ParticleSystems[0].Unknown7 18.11972
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\firebomb_grenade\fx\secondary_impact\secondary_impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.219119
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\firebomb_grenade\fx\secondary_impact\secondary_loop.effe
+SetField Events[0].ParticleSystems[0].Unknown7 2
+SetField Events[0].ParticleSystems[1].Unknown7 2
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\firebomb_grenade\fx\tertiary_impact\tertiary_loop.effe
+SetField Events[0].ParticleSystems[0].Unknown7 4.671827
+SetField Events[0].ParticleSystems[1].Unknown7 5.757318
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Frag Grenade Effects
+EditTag objects\weapons\grenade\frag_grenade\fx\airborne_detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.219119
+SetField Events[0].ParticleSystems[1].Unknown7 2.072758
+SetField Events[0].ParticleSystems[2].Unknown7 95.00646
+SetField Events[0].ParticleSystems[3].Unknown7 112.4542
+SetField Events[2].ParticleSystems[0].Unknown7 3.447883
+SetField Events[2].ParticleSystems[1].Unknown7 3.181562
+SetField Events[2].ParticleSystems[2].Unknown7 4.35652
+SetField Events[2].ParticleSystems[3].Unknown7 4.35652
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\frag_grenade\fx\detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.219119
+SetField Events[0].ParticleSystems[1].Unknown7 2.072758
+SetField Events[0].ParticleSystems[2].Unknown7 95.00646
+SetField Events[0].ParticleSystems[3].Unknown7 112.4542
+SetField Events[2].ParticleSystems[0].Unknown7 3.447883
+SetField Events[2].ParticleSystems[1].Unknown7 3.181562
+SetField Events[2].ParticleSystems[2].Unknown7 4.35652
+SetField Events[2].ParticleSystems[3].Unknown7 4.35652
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\frag_grenade\fx\projectile.effe
+SetField Events[0].ParticleSystems[0].Unknown7 4.159699
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\frag_grenade\fx\detonation.effe
+CopyBlockElements Events[0].Parts 0 1
+PasteBlockElements Events[0].Parts 2
+PasteBlockElements Events[0].Parts 3
+PasteBlockElements Events[0].Parts 4
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\frag_grenade\fx\detonation.effe
+SetField Events[0].Parts[0].Type null
+SetField Events[0].Parts[2].Type null
+SetField Events[0].Parts[3].Type null
+SetField Events[0].Parts[4].Type sound\weapons\frag_grenade\frag_expl.snd!
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Plasma Grenade Effects
+EditTag objects\weapons\grenade\plasma_grenade\fx\airborne_detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.619464
+SetField Events[0].ParticleSystems[1].Unknown7 1.444108
+SetField Events[0].ParticleSystems[2].Unknown7 36.35213
+SetField Events[0].ParticleSystems[3].Unknown7 1.426269
+SetField Events[0].ParticleSystems[4].Unknown7 93.02412
+SetField Events[2].ParticleSystems[0].Unknown7 0.9028367
+SetField Events[2].ParticleSystems[1].Unknown7 1.346305
+SetField Events[2].ParticleSystems[2].Unknown7 5.850074
+SetField Events[3].ParticleSystems[0].Unknown7 1.878975
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\plasma_grenade\fx\detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.619464
+SetField Events[0].ParticleSystems[1].Unknown7 1.444108
+SetField Events[0].ParticleSystems[2].Unknown7 36.35213
+SetField Events[0].ParticleSystems[3].Unknown7 1.426269
+SetField Events[0].ParticleSystems[4].Unknown7 93.02412
+SetField Events[2].ParticleSystems[0].Unknown7 0.9028367
+SetField Events[2].ParticleSystems[1].Unknown7 1.346305
+SetField Events[2].ParticleSystems[2].Unknown7 5.850074
+SetField Events[3].ParticleSystems[0].Unknown7 1.878975
+SetField Events[4].ParticleSystems[0].Unknown7 2.203978
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\plasma_grenade\fx\detonation_start.effe
+SetField Events[0].ParticleSystems[0].Unknown7 4.956163
+SetField Events[0].ParticleSystems[1].Unknown7 9.306741
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\grenade\plasma_grenade\fx\projectile.effe
+SetField Events[1].ParticleSystems[0].Unknown7 18.11972
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Energy Sword Effects
+EditTag objects\weapons\melee\energy_blade\fx\blade_activate.effe
+SetField Events[1].ParticleSystems[0].Unknown7 14.6932
+SetField Events[1].ParticleSystems[1].Unknown7 9.721291
+SetField Events[2].ParticleSystems[0].Unknown7 14.6932
+SetField Events[2].ParticleSystems[1].Unknown7 9.721291
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\blade_on.effe
+SetField Events[0].ParticleSystems[0].Unknown7 56.095
+SetField Events[0].ParticleSystems[1].Unknown7 9.721291
+SetField Events[0].ParticleSystems[2].Unknown7 56.095
+SetField Events[0].ParticleSystems[3].Unknown7 9.721291
+SetField Events[0].ParticleSystems[4].Unknown7 56.095
+SetField Events[1].ParticleSystems[0].Unknown7 56.095
+SetField Events[1].ParticleSystems[1].Unknown7 9.721291
+SetField Events[1].ParticleSystems[2].Unknown7 9.721291
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\energy_blade\fx\sword_clash.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.545861
+SetField Events[0].ParticleSystems[1].Unknown7 1.864944
+SetField Events[0].ParticleSystems[2].Unknown7 67.58401
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Gravity Hammer Effects
+EditTag objects\weapons\melee\gravity_hammer\fx\fp_gravity_hammer_impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 4.265574
+SetField Events[0].ParticleSystems[1].Unknown7 3.545861
+SetField Events[0].ParticleSystems[2].Unknown7 1.864944
+SetField Events[0].ParticleSystems[3].Unknown7 67.58401
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\gravity_hammer\fx\gravity_hammer_impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 1
+SetField Events[0].ParticleSystems[1].Unknown7 4.265574
+SetField Events[0].ParticleSystems[2].Unknown7 3.545861
+SetField Events[0].ParticleSystems[3].Unknown7 1.864944
+SetField Events[0].ParticleSystems[4].Unknown7 67.58401
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\melee\gravity_hammer\fx\hammer_on.effe
+SetField Events[0].ParticleSystems[0].Unknown7 56.095
+SetField Events[0].ParticleSystems[1].Unknown7 56.095
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Excavator Effects
+EditTag objects\weapons\pistol\excavator\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 196.9896
+SetField Events[0].ParticleSystems[1].Unknown7 23.97892
+SetField Events[0].ParticleSystems[2].Unknown7 1.649689
+SetField Events[0].ParticleSystems[3].Unknown7 4.322287
+SetField Events[0].ParticleSystems[4].Unknown7 134.8894
+SetField Events[0].ParticleSystems[5].Unknown7 21.79034
+SetField Events[1].ParticleSystems[0].Unknown7 196.9896
+SetField Events[1].ParticleSystems[1].Unknown7 23.97892
+SetField Events[1].ParticleSystems[2].Unknown7 1.649689
+SetField Events[1].ParticleSystems[3].Unknown7 4.322287
+SetField Events[1].ParticleSystems[4].Unknown7 134.8894
+SetField Events[1].ParticleSystems[5].Unknown7 21.79034
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\excavator\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Magnum Effects
+EditTag objects\weapons\pistol\magnum\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 92.49581
+SetField Events[0].ParticleSystems[1].Unknown7 3.59909
+SetField Events[1].ParticleSystems[0].Unknown7 92.49581
+SetField Events[1].ParticleSystems[1].Unknown7 11.90431
+SetField Events[1].ParticleSystems[2].Unknown7 49.19977
+SetField Events[2].ParticleSystems[0].Unknown7 1.60956
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\magnum\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\magnum\fx\impact_liquid.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\magnum\fx\impact_soft.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Needler Effects. . .
+EditTag objects\weapons\pistol\needler\fx\airborne_detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 11.87389
+SetField Events[0].ParticleSystems[1].Unknown7 3.219119
+SetField Events[0].ParticleSystems[2].Unknown7 6.007774
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\needler\fx\bounce.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\needler\fx\detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 11.87389
+SetField Events[0].ParticleSystems[1].Unknown7 3.219119
+SetField Events[0].ParticleSystems[2].Unknown7 6.007774
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\needler\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 74.29586
+SetField Events[0].ParticleSystems[1].Unknown7 111.255
+SetField Events[0].ParticleSystems[2].Unknown7 32.70218
+SetField Events[0].ParticleSystems[3].Unknown7 111.255
+SetField Events[0].ParticleSystems[4].Unknown7 74.29586
+SetField Events[0].ParticleSystems[5].Unknown7 32.70218
+SetField Events[1].ParticleSystems[0].Unknown7 111.255
+SetField Events[1].ParticleSystems[1].Unknown7 28.61435
+SetField Events[1].ParticleSystems[2].Unknown7 74.29586
+SetField Events[1].ParticleSystems[3].Unknown7 88.83756
+SetField Events[1].ParticleSystems[4].Unknown7 32.70218
+SetField Events[1].ParticleSystems[5].Unknown7 32.70218
+SetField Events[1].ParticleSystems[6].Unknown7 74.29586
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\needler\fx\fizzle.effe
+SetField Events[0].ParticleSystems[0].Unknown7 11.87389
+SetField Events[0].ParticleSystems[1].Unknown7 3.219119
+SetField Events[0].ParticleSystems[2].Unknown7 6.007774
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\needler\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\needler\fx\super_detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 11.87389
+SetField Events[0].ParticleSystems[1].Unknown7 7.57702
+SetField Events[0].ParticleSystems[2].Unknown7 211.3062
+SetField Events[0].ParticleSystems[3].Unknown7 165.478
+SetField Events[0].ParticleSystems[4].Unknown7 5.347622
+SetField Events[0].ParticleSystems[5].Unknown7 7.77188
+SetField Events[0].ParticleSystems[6].Unknown7 8.565825
+SetField Events[0].ParticleSystems[7].Unknown7 1.426269
+SetField Events[1].ParticleSystems[0].Unknown7 4.380662
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Plasma Pistol Effects
+EditTag objects\weapons\pistol\plasma_pistol\fx\charged\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 123.3952
+SetField Events[0].ParticleSystems[1].Unknown7 74.29586
+SetField Events[0].ParticleSystems[2].Unknown7 111.255
+SetField Events[0].ParticleSystems[3].Unknown7 43.60281
+SetField Events[0].ParticleSystems[4].Unknown7 2.822913
+SetField Events[1].ParticleSystems[0].Unknown7 123.3952
+SetField Events[1].ParticleSystems[1].Unknown7 44.45906
+SetField Events[1].ParticleSystems[2].Unknown7 88.83756
+SetField Events[1].ParticleSystems[3].Unknown7 38.36621
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\charged\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 219.0806
+SetField Events[0].ParticleSystems[1].Unknown7 20.55617
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[0].ParticleSystems[3].Unknown7 29.62375
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SetField Events[0].ParticleSystems[5].Unknown7 10000
+SetField Events[1].ParticleSystems[0].Unknown7 32.05457
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\charged\impact_liquid.effe
+SetField Events[0].ParticleSystems[0].Unknown7 219.0806
+SetField Events[0].ParticleSystems[1].Unknown7 20.55617
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[0].ParticleSystems[3].Unknown7 29.62375
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SetField Events[0].ParticleSystems[5].Unknown7 10000
+SetField Events[1].ParticleSystems[0].Unknown7 32.05457
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\charged\projectile.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10.58683
+SetField Events[0].ParticleSystems[1].Unknown7 152.048
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\charging.effe
+SetField Events[0].ParticleSystems[0].Unknown7 162.876
+SetField Events[0].ParticleSystems[1].Unknown7 162.876
+SetField Events[0].ParticleSystems[2].Unknown7 162.876
+SetField Events[0].ParticleSystems[3].Unknown7 202.3509
+SetField Events[0].ParticleSystems[4].Unknown7 162.876
+SetField Events[1].ParticleSystems[0].Unknown7 162.876
+SetField Events[1].ParticleSystems[1].Unknown7 162.876
+SetField Events[1].ParticleSystems[2].Unknown7 162.876
+SetField Events[1].ParticleSystems[3].Unknown7 202.3509
+SetField Events[1].ParticleSystems[4].Unknown7 162.876
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 123.3952
+SetField Events[0].ParticleSystems[1].Unknown7 74.29586
+SetField Events[0].ParticleSystems[2].Unknown7 111.255
+SetField Events[0].ParticleSystems[3].Unknown7 43.60281
+SetField Events[1].ParticleSystems[0].Unknown7 123.3952
+SetField Events[1].ParticleSystems[1].Unknown7 44.45906
+SetField Events[1].ParticleSystems[2].Unknown7 88.83756
+SetField Events[1].ParticleSystems[3].Unknown7 38.36621
+SetField Events[1].ParticleSystems[4].Unknown7 38.36621
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 29.62375
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SetField Events[0].ParticleSystems[5].Unknown7 29.62375
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\impact_liquid.effe
+SetField Events[0].ParticleSystems[0].Unknown7 15.00922
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\overheated.effe
+SetField Events[0].ParticleSystems[0].Unknown7 51.311
+SetField Events[0].ParticleSystems[1].Unknown7 51.311
+SetField Events[1].ParticleSystems[0].Unknown7 51.311
+SetField Events[1].ParticleSystems[1].Unknown7 51.311
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Assault Rifle Effects
+EditTag objects\weapons\rifle\assault_rifle\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 7.328746
+SetField Events[0].ParticleSystems[2].Unknown7 134.8894
+SetField Events[1].ParticleSystems[0].Unknown7 134.8894
+SetField Events[1].ParticleSystems[1].Unknown7 34.68585
+SetField Events[1].ParticleSystems[2].Unknown7 72.84011
+SetField Events[1].ParticleSystems[3].Unknown7 7.328746
+SetField Events[2].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Battle Rifle Effects
+EditTag objects\weapons\rifle\battle_rifle\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 48.56019
+SetField Events[0].ParticleSystems[1].Unknown7 48.56019
+SetField Events[0].ParticleSystems[2].Unknown7 72.84011
+SetField Events[0].ParticleSystems[3].Unknown7 7.328746
+SetField Events[1].ParticleSystems[0].Unknown7 72.84011
+SetField Events[1].ParticleSystems[1].Unknown7 48.56019
+SetField Events[1].ParticleSystems[2].Unknown7 31.94755
+SetField Events[1].ParticleSystems[3].Unknown7 7.328746
+SetField Events[1].ParticleSystems[4].Unknown7 48.56019
+SetField Events[1].ParticleSystems[5].Unknown7 48.56019
+SetField Events[2].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\battle_rifle\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\battle_rifle\fx\impact_liquid.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\battle_rifle\fx\impact_soft.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Beam Rifle Effects
+EditTag objects\weapons\rifle\beam_rifle\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 27.86097
+SetField Events[0].ParticleSystems[1].Unknown7 27.86097
+SetField Events[0].ParticleSystems[2].Unknown7 30.74152
+SetField Events[0].ParticleSystems[3].Unknown7 88.83756
+SetField Events[0].ParticleSystems[4].Unknown7 14.6932
+SetField Events[1].ParticleSystems[0].Unknown7 35.52284
+SetField Events[1].ParticleSystems[1].Unknown7 74.29586
+SetField Events[1].ParticleSystems[2].Unknown7 12.7175
+SetField Events[1].ParticleSystems[3].Unknown7 34.82622
+SetField Events[1].ParticleSystems[4].Unknown7 21.79034
+SetField Events[1].ParticleSystems[5].Unknown7 14.6932
+SetField Events[2].ParticleSystems[0].Unknown7 10.9131
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\beam_rifle\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 75.87541
+SetField Events[0].ParticleSystems[1].Unknown7 29.62375
+SetField Events[0].ParticleSystems[2].Unknown7 58.86404
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\beam_rifle\fx\impact_liquid.effe
+SetField Events[0].ParticleSystems[0].Unknown7 75.87541
+SetField Events[0].ParticleSystems[1].Unknown7 29.62375
+SetField Events[0].ParticleSystems[2].Unknown7 58.86404
+SetField Events[0].ParticleSystems[3].Unknown7 58.86404
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\beam_rifle\fx\overheated.effe
+SetField Events[0].ParticleSystems[0].Unknown7 51.311
+SetField Events[0].ParticleSystems[1].Unknown7 51.311
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Covenant Carbine Effects
+EditTag objects\weapons\rifle\covenant_carbine\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 166.2345
+SetField Events[0].ParticleSystems[1].Unknown7 10.30118
+SetField Events[0].ParticleSystems[2].Unknown7 37.14793
+SetField Events[0].ParticleSystems[3].Unknown7 56.91358
+SetField Events[0].ParticleSystems[4].Unknown7 50.2124
+SetField Events[1].ParticleSystems[0].Unknown7 10.30118
+SetField Events[1].ParticleSystems[1].Unknown7 37.14793
+SetField Events[1].ParticleSystems[2].Unknown7 56.91358
+SetField Events[1].ParticleSystems[3].Unknown7 50.2124
+SetField Events[1].ParticleSystems[4].Unknown7 22.89152
+SetField Events[1].ParticleSystems[5].Unknown7 37.14793
+SetField Events[1].ParticleSystems[6].Unknown7 10.30118
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\covenant_carbine\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 29.62375
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SetField Events[0].ParticleSystems[5].Unknown7 29.62375
+SetField Events[1].ParticleSystems[0].Unknown7 29.62375
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\covenant_carbine\fx\reloading.effe
+SetField Events[0].ParticleSystems[0].Unknown7 51.311
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Plasma Rifle Effects
+EditTag objects\weapons\rifle\plasma_rifle\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 34.82622
+SetField Events[0].ParticleSystems[1].Unknown7 50.2124
+SetField Events[0].ParticleSystems[2].Unknown7 38.1525
+SetField Events[0].ParticleSystems[3].Unknown7 90.17376
+SetField Events[1].ParticleSystems[0].Unknown7 90.17376
+SetField Events[1].ParticleSystems[1].Unknown7 22.89152
+SetField Events[1].ParticleSystems[2].Unknown7 34.82622
+SetField Events[1].ParticleSystems[3].Unknown7 50.2124
+SetField Events[1].ParticleSystems[4].Unknown7 28.77466
+SetField Events[1].ParticleSystems[5].Unknown7 38.1525
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\plasma_rifle\fx\fizzle.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 29.62375
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SetField Events[0].ParticleSystems[5].Unknown7 29.62375
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\plasma_rifle\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 29.62375
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SetField Events[0].ParticleSystems[5].Unknown7 29.62375
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\plasma_rifle\fx\overheated.effe
+SetField Events[0].ParticleSystems[0].Unknown7 51.311
+SetField Events[0].ParticleSystems[1].Unknown7 51.311
+SetField Events[1].ParticleSystems[0].Unknown7 51.311
+SetField Events[1].ParticleSystems[1].Unknown7 51.311
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Shotgun Effects
+EditTag objects\weapons\rifle\shotgun\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 34.52967
+SetField Events[0].ParticleSystems[1].Unknown7 43.16205
+SetField Events[0].ParticleSystems[2].Unknown7 1.649972
+SetField Events[0].ParticleSystems[3].Unknown7 2.173899
+SetField Events[0].ParticleSystems[4].Unknown7 5
+SetField Events[1].ParticleSystems[0].Unknown7 18.4158
+SetField Events[1].ParticleSystems[1].Unknown7 23.97892
+SetField Events[1].ParticleSystems[2].Unknown7 1.649689
+SetField Events[1].ParticleSystems[3].Unknown7 14.06217
+SetField Events[1].ParticleSystems[4].Unknown7 2.157427
+SetField Events[1].ParticleSystems[5].Unknown7 4.322287
+SetField Events[2].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\shotgun\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 136.7503
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\shotgun\fx\impact_liquid.effe
+SetField Events[0].ParticleSystems[0].Unknown7 136.7503
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing SMG Effects
+EditTag objects\weapons\rifle\smg\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 122.9161
+SetField Events[0].ParticleSystems[1].Unknown7 7.328746
+SetField Events[1].ParticleSystems[0].Unknown7 28.18744
+SetField Events[1].ParticleSystems[1].Unknown7 49.75174
+SetField Events[1].ParticleSystems[2].Unknown7 7.328746
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\smg\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 50.8205
+SetField Events[0].ParticleSystems[1].Unknown7 136.7503
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\smg\fx\impact_liquid.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\smg\fx\impact_soft.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Sniper Rifle Effects
+EditTag objects\weapons\rifle\sniper_rifle\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 19.73122
+SetField Events[0].ParticleSystems[1].Unknown7 34.94695
+SetField Events[0].ParticleSystems[2].Unknown7 7.328746
+SetField Events[0].ParticleSystems[3].Unknown7 28.03044
+SetField Events[0].ParticleSystems[4].Unknown7 25.73512
+SetField Events[0].ParticleSystems[5].Unknown7 29.58379
+SetField Events[1].ParticleSystems[0].Unknown7 11.50988
+SetField Events[1].ParticleSystems[1].Unknown7 20.65045
+SetField Events[1].ParticleSystems[2].Unknown7 3.140881
+SetField Events[1].ParticleSystems[3].Unknown7 17.83755
+SetField Events[1].ParticleSystems[4].Unknown7 11.50481
+SetField Events[1].ParticleSystems[5].Unknown7 9.538162
+SetField Events[1].ParticleSystems[6].Unknown7 10.28473
+SetField Events[2].ParticleSystems[0].Unknown7 10000
+SetField Events[3].ParticleSystems[0].Unknown7 26.85898
+SetField Events[3].ParticleSystems[1].Unknown7 21.5307
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\sniper_rifle\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\sniper_rifle\fx\impact_liquid.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\sniper_rifle\fx\impact_soft.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Spike Rifle Effects
+EditTag objects\weapons\rifle\spike_rifle\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 75.62923
+SetField Events[0].ParticleSystems[1].Unknown7 55.7221
+SetField Events[0].ParticleSystems[2].Unknown7 54.93962
+SetField Events[0].ParticleSystems[3].Unknown7 2.319631
+SetField Events[0].ParticleSystems[4].Unknown7 12.79674
+SetField Events[1].ParticleSystems[0].Unknown7 34.82622
+SetField Events[1].ParticleSystems[1].Unknown7 2.822913
+SetField Events[1].ParticleSystems[2].Unknown7 6.500302
+SetField Events[1].ParticleSystems[3].Unknown7 24.97253
+SetField Events[1].ParticleSystems[4].Unknown7 3.92554
+SetField Events[1].ParticleSystems[5].Unknown7 54.93962
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\spike_rifle\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\spike_rifle\fx\object_impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Fuel Rod Cannon Effects
+EditTag objects\weapons\support_high\flak_cannon\fx\detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.219119
+SetField Events[0].ParticleSystems[1].Unknown7 0.9028367
+SetField Events[0].ParticleSystems[2].Unknown7 0.8289124
+SetField Events[0].ParticleSystems[3].Unknown7 1.346305
+SetField Events[0].ParticleSystems[4].Unknown7 1.614335
+SetField Events[2].ParticleSystems[0].Unknown7 5.850074
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\flak_cannon\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 43.16205
+SetField Events[0].ParticleSystems[1].Unknown7 30.74152
+SetField Events[0].ParticleSystems[2].Unknown7 2.173899
+SetField Events[0].ParticleSystems[3].Unknown7 10.28473
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\flak_cannon\fx\projectile.effe
+SetField Events[1].ParticleSystems[0].Unknown7 41.19414
+SetField Events[1].ParticleSystems[1].Unknown7 7.57702
+SetField Events[1].ParticleSystems[2].Unknown7 0.8289124
+SetField Events[2].ParticleSystems[0].Unknown7 7.41125
+SetField Events[2].ParticleSystems[1].Unknown7 71.25806
+SetField Events[2].ParticleSystems[2].Unknown7 7.41125
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Rocket Launcher Effects
+EditTag objects\weapons\support_high\rocket_launcher\fx\detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 0.9197516
+SetField Events[0].ParticleSystems[1].Unknown7 3.219119
+SetField Events[0].ParticleSystems[2].Unknown7 1.861438
+SetField Events[0].ParticleSystems[3].Unknown7 0.8289124
+SetField Events[0].ParticleSystems[4].Unknown7 112.2694
+SetField Events[0].ParticleSystems[5].Unknown7 95.00646
+SetField Events[1].ParticleSystems[0].Unknown7 3.447883
+SetField Events[1].ParticleSystems[1].Unknown7 0.9522268
+SetField Events[1].ParticleSystems[2].Unknown7 1.777222
+SetField Events[2].ParticleSystems[0].Unknown7 1.614335
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\rocket_launcher\fx\projectile.effe
+SetField Events[0].ParticleSystems[0].Unknown7 1.638753
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Spartan Laser Effects
+EditTag objects\weapons\support_high\spartan_laser\fx\charging.effe
+SetField Events[0].ParticleSystems[0].Unknown7 4.20456
+SetField Events[0].ParticleSystems[1].Unknown7 162.876
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[1].ParticleSystems[0].Unknown7 4.20456
+SetField Events[1].ParticleSystems[1].Unknown7 162.876
+SetField Events[1].ParticleSystems[2].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\spartan_laser\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 7.57702
+SetField Events[0].ParticleSystems[1].Unknown7 7.57702
+SetField Events[3].ParticleSystems[0].Unknown7 51.311
+SetField Events[3].ParticleSystems[1].Unknown7 51.311
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\spartan_laser\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 9.811521
+SetField Events[0].ParticleSystems[1].Unknown7 66.8874
+SetField Events[0].ParticleSystems[2].Unknown7 67.71489
+SetField Events[0].ParticleSystems[3].Unknown7 3.817697
+SetField Events[1].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\spartan_laser\fx\tracer_impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 7.223502
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Brute Shot Effects
+EditTag objects\weapons\support_low\brute_shot\fx\airborne_detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.219119
+SetField Events[0].ParticleSystems[1].Unknown7 66.8874
+SetField Events[0].ParticleSystems[2].Unknown7 67.71489
+SetField Events[0].ParticleSystems[3].Unknown7 3.817697
+SetField Events[1].ParticleSystems[0].Unknown7 2.201828
+SetField Events[1].ParticleSystems[1].Unknown7 5.117943
+SetField Events[1].ParticleSystems[2].Unknown7 7.035565
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_low\brute_shot\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 34.52967
+SetField Events[0].ParticleSystems[1].Unknown7 298.5592
+SetField Events[0].ParticleSystems[2].Unknown7 34.82622
+SetField Events[0].ParticleSystems[3].Unknown7 22.89152
+SetField Events[0].ParticleSystems[4].Unknown7 25.73512
+SetField Events[1].ParticleSystems[0].Unknown7 34.82622
+SetField Events[1].ParticleSystems[1].Unknown7 196.9896
+SetField Events[1].ParticleSystems[2].Unknown7 2.822913
+SetField Events[1].ParticleSystems[3].Unknown7 24.97253
+SetField Events[1].ParticleSystems[4].Unknown7 3.92554
+SetField Events[1].ParticleSystems[5].Unknown7 22.89152
+SetField Events[1].ParticleSystems[6].Unknown7 4.322287
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_low\brute_shot\fx\projectile.effe
+SetField Events[0].ParticleSystems[0].Unknown7 18.11972
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Sentinel Gun Effects
+EditTag objects\weapons\support_low\sentinel_gun\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 30.74152
+SetField Events[1].ParticleSystems[0].Unknown7 30.74152
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_low\sentinel_gun\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 9.811521
+SetField Events[0].ParticleSystems[1].Unknown7 1.787364
+SetField Events[0].ParticleSystems[2].Unknown7 30.74152
+SetField Events[0].ParticleSystems[3].Unknown7 67.71489
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_low\sentinel_gun\fx\overheated.effe
+SetField Events[0].ParticleSystems[0].Unknown7 51.311
+SetField Events[0].ParticleSystems[1].Unknown7 51.311
+SetField Events[0].ParticleSystems[2].Unknown7 7.781798
+SetField Events[1].ParticleSystems[0].Unknown7 51.311
+SetField Events[1].ParticleSystems[1].Unknown7 7.781798
+SetField Events[1].ParticleSystems[2].Unknown7 51.311
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Flamethrower Effects
+EditTag objects\weapons\turret\flamethrower\fx\biped_fire.effe
+SetField Events[0].ParticleSystems[0].Unknown7 9.972377
+SetField Events[0].ParticleSystems[1].Unknown7 9.910606
+SetField Events[0].ParticleSystems[2].Unknown7 5.816693
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\bounce.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 2.027855
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 6.629102
+SetField Events[0].ParticleSystems[1].Unknown7 6.211836
+SetField Events[1].ParticleSystems[0].Unknown7 4.671827
+SetField Events[1].ParticleSystems[1].Unknown7 5.757318
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\overheated.effe
+SetField Events[0].ParticleSystems[0].Unknown7 51.311
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\pilot_light.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\projectile.effe
+SetField Events[0].ParticleSystems[0].Unknown7 4.790465
+SetField Events[0].ParticleSystems[1].Unknown7 9.026248
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Machinegun Turret Effects
+EditTag objects\weapons\turret\machinegun_turret\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10.32951
+SetField Events[0].ParticleSystems[1].Unknown7 10.32951
+SetField Events[0].ParticleSystems[2].Unknown7 10.38965
+SetField Events[0].ParticleSystems[3].Unknown7 27.90677
+SetField Events[0].ParticleSystems[4].Unknown7 6.139489
+SetField Events[0].ParticleSystems[5].Unknown7 10000
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Missile Pod Effects
+EditTag objects\weapons\turret\missile_pod\fx\detonation.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.219119
+SetField Events[0].ParticleSystems[1].Unknown7 2.072758
+SetField Events[0].ParticleSystems[2].Unknown7 95.00646
+SetField Events[0].ParticleSystems[3].Unknown7 112.4542
+SetField Events[0].ParticleSystems[4].Unknown7 3.016218
+SetField Events[1].ParticleSystems[0].Unknown7 3.447883
+SetField Events[1].ParticleSystems[1].Unknown7 3.181562
+SetField Events[1].ParticleSystems[2].Unknown7 4.35652
+SetField Events[1].ParticleSystems[3].Unknown7 4.35652
+SetField Events[1].ParticleSystems[4].Unknown7 3.016218
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\missile_pod\fx\detonation_airborne.effe
+SetField Events[0].ParticleSystems[0].Unknown7 3.219119
+SetField Events[0].ParticleSystems[1].Unknown7 2.072758
+SetField Events[0].ParticleSystems[2].Unknown7 95.00646
+SetField Events[0].ParticleSystems[3].Unknown7 112.4542
+SetField Events[0].ParticleSystems[4].Unknown7 3.016218
+SetField Events[1].ParticleSystems[0].Unknown7 3.447883
+SetField Events[1].ParticleSystems[1].Unknown7 3.181562
+SetField Events[1].ParticleSystems[2].Unknown7 4.35652
+SetField Events[1].ParticleSystems[3].Unknown7 4.35652
+SetField Events[1].ParticleSystems[4].Unknown7 3.016218
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\missile_pod\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 72.84011
+SetField Events[0].ParticleSystems[1].Unknown7 196.9896
+SetField Events[0].ParticleSystems[2].Unknown7 15.01943
+SetField Events[0].ParticleSystems[3].Unknown7 40
+SetField Events[0].ParticleSystems[4].Unknown7 289.0491
+SetField Events[0].ParticleSystems[5].Unknown7 22.89152
+SetField Events[1].ParticleSystems[0].Unknown7 15.01943
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\missile_pod\fx\projectile.effe
+SetField Events[0].ParticleSystems[0].Unknown7 152.048
+SetField Events[0].ParticleSystems[1].Unknown7 7.57702
+SetField Events[1].ParticleSystems[0].Unknown7 17.38828
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Plasma Turret Effects
+EditTag objects\weapons\turret\plasma_cannon\fx\firing.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 10000
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SetField Events[0].ParticleSystems[5].Unknown7 10000
+SetField Events[0].ParticleSystems[6].Unknown7 11.3813
+SetField Events[0].ParticleSystems[7].Unknown7 14.58798
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\plasma_cannon\fx\impact.effe
+SetField Events[0].ParticleSystems[0].Unknown7 10000
+SetField Events[0].ParticleSystems[1].Unknown7 29.62375
+SetField Events[0].ParticleSystems[2].Unknown7 10000
+SetField Events[0].ParticleSystems[3].Unknown7 10000
+SetField Events[0].ParticleSystems[4].Unknown7 10000
+SetField Events[0].ParticleSystems[5].Unknown7 29.62375
+SaveTagChanges
+ExitTo tags
+
+echo // Restoring Missing Bitmap Effects
+EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_small_additive.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\atmospheric\fiery_smoke\smoke_fiery_small.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x000004E8
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x000006AD
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x0000222B
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\atmospheric\fiery_smoke\smoke_fiery_small_impact.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\atmospheric\wispy_smoke\wispy_smoke_large_zfade.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_large.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\vehicle\water\mist_water_small_impact.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\vehicle\water\soft_smoke_small_impact_water.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\covenant_carbine\fx\particles\impact_gas.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\plasma_rifle\fx\particles\overheated_gas.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\missile_pod\fx\particles\missile_exhaust.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\pistol\plasma_pistol\fx\particles\overheated_gas.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\rifle\beam_rifle\fx\particles\overheated_gas.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\spartan_laser\fx\particles\charging_ring.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\energy\_bitmaps\plasma_ring.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\spartan_laser\fx\particles\steam.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_high\spartan_laser\fx\particles\impact_smoke.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\vehicles\pelican\fx\running\particles\thrusters_gas.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_large.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag fx\particles\atmospheric\soft_smoke\soft_smoke_large_additive.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_large.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\particles\firing_gas.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\turret\flamethrower\fx\particles\overheated_steam.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag objects\weapons\support_low\sentinel_gun\fx\particles\overheated_gas.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\wispy_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+EditTag levels\multi\riverworld\fx\waterfall\particles\mist.prt3
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_large.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x3CFD
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_large.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x3D03
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x3D0B
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x3D0F
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\soft_smoke_large.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField RenderMethod.ShaderProperties[0].Transparency 9
+SaveTagChanges
+ExitTo tags
+
+EditTag 0x4189
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[0].Bitmap fx\particles\atmospheric\_bitmaps\smoke_fiery_small.bitmap
+SetField RenderMethod.ShaderProperties[0].ShaderMaps[1].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SaveTagChanges
+ExitTo tags
+
+echo // Fixing Wrong Particle RMT2
+NameTag shaders\particle_templates\_5_8_0_0_0_0_1_0_0_0.rmt2 unknown
+NameTag shaders\particle_templates\_2_8_0_0_0_0_1_0_0_0.rmt2 shaders\particle_templates\_5_8_0_0_0_0_1_0_0_0
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace !Ms30 fx\particles\energy\electric_arcs_blue.prt3
+PortTag Replace !Ms30 objects\weapons\melee\energy_blade\fx\particles\electric_bolts.prt3
+Exit
+NameTag shaders\particle_templates\_5_8_0_0_0_0_1_0_0_0.rmt2 shaders\particle_templates\_2_8_0_0_0_0_1_0_0_0
+NameTag unknown.rmt2 shaders\particle_templates\_5_8_0_0_0_0_1_0_0_0
+SaveTagNames
+
+NameTag shaders\particle_templates\_3_8_0_0_1_1_1_0_0_0.rmt2 unknown
+NameTag shaders\particle_templates\_5_8_0_0_0_1_0_0_0_0.rmt2 shaders\particle_templates\_3_8_0_0_1_1_1_0_0_0
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace !Ms30 objects\weapons\melee\energy_blade\fx\particles\plasma_wispy.prt3
+Exit
+NameTag shaders\particle_templates\_3_8_0_0_1_1_1_0_0_0.rmt2 shaders\particle_templates\_5_8_0_0_0_1_0_0_0_0
+NameTag unknown.rmt2 shaders\particle_templates\_3_8_0_0_1_1_1_0_0_0
+SaveTagNames
+
+NameTag shaders\particle_templates\_3_8_0_0_0_0_1_0_0_0.rmt2 unknown
+NameTag shaders\particle_templates\_3_7_0_0_1_0_0_0_0_0.rmt2 shaders\particle_templates\_3_8_0_0_0_0_1_0_0_0
+OpenCacheFile D:\Halo3Retail\maps\sandbox.map
+PortTag Replace !Ms30 objects\weapons\melee\energy_blade\fx\particles\energy_pulse.prt3
+Exit
+NameTag shaders\particle_templates\_3_8_0_0_0_0_1_0_0_0.rmt2 shaders\particle_templates\_3_7_0_0_1_0_0_0_0_0
+NameTag unknown.rmt2 shaders\particle_templates\_3_8_0_0_0_0_1_0_0_0
+SaveTagNames
+savemoddedtags D:\h3p\effects_restoration.csv
