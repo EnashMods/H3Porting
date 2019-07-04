@@ -1690,20 +1690,20 @@ edittag ui\chud\battle_rifle_v3.chdt
 removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
 setfield hudwidgets[5].placementdata[0].offset 30 0
-setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset -10 8
+setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset 5 0
 setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic33
-setfield hudwidgets[5].bitmapwidgets[0].widgetindex 8
+setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
+setfield hudwidgets[5].bitmapwidgets[0].widgetindex 0
 setfield hudwidgets[5].bitmapwidgets[0].flags none
-setfield hudwidgets[5].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
+setfield hudwidgets[5].bitmapwidgets[0].bitmap 0x1db1
 setfield hudwidgets[5].bitmapwidgets[0].bitmapspriteindex 1
-setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset 0 109
+setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].offset 25 105
 setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
 setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic33
-setfield hudwidgets[6].bitmapwidgets[0].widgetindex 8
+setfield hudwidgets[6].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic2
+setfield hudwidgets[6].bitmapwidgets[0].widgetindex 0
 setfield hudwidgets[6].bitmapwidgets[0].flags none
-setfield hudwidgets[6].bitmapwidgets[0].bitmap ui\chud\bitmaps\weapon_scematics.bitm
+setfield hudwidgets[6].bitmapwidgets[0].bitmap 0x1db1
 setfield hudwidgets[6].bitmapwidgets[0].bitmapspriteindex 1
 savetagchanges
 exitto tags
@@ -2001,15 +2001,13 @@ removeblockelements hudwidgets 0 2
 pasteblockelements hudwidgets 0
 setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].offset 40 103
 setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
-setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
 setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
+setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic8
 setfield hudwidgets[5].placementdata[0].offset 30 0
 setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].offset 20 8
 setfield hudwidgets[5].bitmapwidgets[0].placementdata[0].scale 0.9 0.9
-setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].localcolorb 0 0 255 255
 setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolora_ho globaldynamic2
-setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho localb
+setfield hudwidgets[5].bitmapwidgets[0].renderdata[0].outputcolorb_ho globaldynamic8
 savetagchanges
 exitto tags
 edittag ui\chud\battle_rifle.chdt
@@ -2461,3 +2459,4 @@ exitto tags
 
 savetagnames
 dumplog Halo3HUD.log
+savemoddedtags D:\h3p\hud.csv
